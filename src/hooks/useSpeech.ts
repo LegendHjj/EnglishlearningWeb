@@ -1,0 +1,1 @@
+export function useSpeech(){const speak=(text:string)=>{if(!('speechSynthesis' in window))return;window.speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(text.replace(/[.…_]/g,''));window.speechSynthesis.speak(utterance)};return {speak,supported:'speechSynthesis' in window}}
