@@ -1,0 +1,19 @@
+.speak-focus h1 {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.06;
+}
+
+.complete-screen h1 {
+  font-size: clamp(2.25rem, 4.5vw, 3.75rem);
+  line-height: 1.05;
+}
+
+.practice-prompt h2 {
+  font-size: clamp(2rem, 3.1vw, 2.9rem);
+  line-height: 1.1;
+}
+
+.question-practice h1 {
+  font-size: clamp(2.25rem, 4.5vw, 3.8rem);
+  line-height: 1.05;
+}

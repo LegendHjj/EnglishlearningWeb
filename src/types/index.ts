@@ -11,6 +11,6 @@ export interface SpeakingMission { id: string; title: string; situation: string;
 export interface SpeakingMemo { missionId: string; bullets: string[]; updatedAt: string }
 export interface Recording { id: string; name: string; createdAt: string; duration: number; missionId?: string; questionId?: string; mimeType: string; size: number }
 export interface DailyProgress { date: string; minutes: number; missions: number; confidence: number }
-export interface BigQuestion { id: string; question: string; category: string; keyPoints: string[]; frames: string[] }
+export interface BigQuestion { id: string; question: string; category: string; keyPoints: string[]; frames: string[]; modelAnswer: string }
 export interface PracticeResult { id: string; mode: string; exerciseId: string; date: string; duration: number }
 export interface AppState { preferences: UserPreferences; phrases: Phrase[]; packs: SpeakingPack[]; progress: DailyProgress[]; completedMissions: string[]; completedQuestions: string[]; memos: Record<string,string>; pinnedPhraseIds: string[]; practiceResults: PracticeResult[] }

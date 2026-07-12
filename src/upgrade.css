@@ -1,0 +1,19 @@
+.recording-list{display:grid;gap:.7rem;margin:1rem 0}
+.recording-list .card{display:grid;grid-template-columns:minmax(180px,1fr) minmax(300px,1.4fr) auto;align-items:center;gap:1rem}
+.recording-player{display:flex;align-items:center;gap:.8rem;min-width:0}
+.recording-player audio{height:34px;width:100%;min-width:180px}
+.play-btn{width:48px;height:48px;flex:none;border:0;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;cursor:pointer}
+.recording-info{display:grid;gap:.3rem}
+.recording-info span{font-size:.78rem;color:var(--muted)}
+.recording-info .source-label{color:var(--green);font-weight:750}
+.recording-list-compact .card{grid-template-columns:minmax(180px,.8fr) minmax(280px,1.2fr)}
+.card-title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
+.card-title-row h3,.card-title-row p{margin-top:0}
+.model-answer{margin:1rem 0;text-align:left;background:var(--sage)}
+.model-answer p{font-size:1.05rem;line-height:1.7}
+.listen-pill{display:inline-flex;align-items:center;gap:.35rem;margin:.2rem;border:1px solid var(--line);cursor:pointer}
+.question-recordings{text-align:left;margin-top:2rem}
+.question-recordings h2{margin-top:.35rem}
+.error-text{color:#9b3028}
+.phrase-category{font-size:.72rem;color:var(--green);font-weight:800;margin-top:.7rem}
+@media(max-width:600px){.recording-list .card,.recording-list-compact .card{grid-template-columns:1fr}.recording-player audio{min-width:0}.card-title-row{display:grid}}
