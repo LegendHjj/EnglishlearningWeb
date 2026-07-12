@@ -2,6 +2,8 @@
 
 A local-first speaking gym for adults who understand English but want a faster, more confident speaking reflex.
 
+For development history, architectural decisions, completed verification, and continuation guidance, read `PROJECT_CONTEXT.md`. AI coding agents should also read `AGENTS.md` before making changes.
+
 ## Run locally
 
 ```bash
