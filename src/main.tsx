@@ -8,5 +8,6 @@ import './features.css'
 import './pages.css'
 import './typography.css'
 import './upgrade.css'
+import './library.css'
 
 createRoot(document.getElementById('root')!).render(<StrictMode><AppRouter><AppProvider><App/></AppProvider></AppRouter></StrictMode>)

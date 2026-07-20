@@ -1,4 +1,4 @@
-import type { AppState, BigQuestion, Goal, Phrase, SpeakingMission, SpeakingPack } from '../types'
+import type { AppState, BigQuestion, Goal, Phrase, SpeakingMission, SpeakingPack, VocabularyEntry } from '../types'
 
 const useful = [
  ['From my understanding…','Use this to share your current view.'],['The main issue is…','Use this to focus attention on the key problem.'],['What I suggest is…','Use this before offering a practical next step.'],['At the moment…','Use this to describe the current situation.'],['That makes sense.','Use this to show you understand.'],['Let me check and get back to you.','Use this when you need time to confirm.'],['Here’s a quick update.','Use this to begin a concise update.'],['The next step is…','Use this to make action clear.'],['What I need is…','Use this to ask for specific support.'],['As far as I know…','Use this when information may be incomplete.'],['I’d like to clarify…','Use this to prevent misunderstanding.'],['To give you some context…','Use this before helpful background.'],['The good news is…','Use this to introduce positive progress.'],['We’re still working on…','Use this for unfinished work.'],['Could you walk me through that?','Use this to ask for an explanation.'],['I see it a little differently.','Use this to disagree politely.'],['Perhaps we could…','Use this to make a soft suggestion.'],['I’ll keep you posted.','Use this to promise an update.'],['Thanks for pointing that out.','Use this when receiving useful feedback.'],['Let’s take it one step at a time.','Use this to make a problem manageable.']
@@ -67,4 +67,13 @@ export const practice = {
  shadow:['Here’s a quick update on where we are.','The priority right now is fixing the customer issue.','Let me make sure I understood the next step.','I agree with the main point, but I see one risk.','Before we finish, can we confirm who owns this action?','I may need a little more time because the scope changed.']
 }
 
-export const defaultState: AppState = { preferences:{name:'Maya',level:'Intermediate',goals:['Workplace English'],struggle:'My mind goes blank',duration:5,situations:['Meetings'],onboarded:false}, phrases:seedPhrases,packs,progress:[{date:'2026-07-10',minutes:5,missions:1,confidence:5},{date:'2026-07-11',minutes:8,missions:1,confidence:6}],completedMissions:[],completedQuestions:[],memos:{},pinnedPhraseIds:['p2','p3'],practiceResults:[] }
+const vocabularySeedInfo=[
+  ['achieve','实现；达到','verb','To successfully complete something or reach a goal.','She achieved her goal after working hard.',['achieve a goal','achieve success','achieve results']],
+  ['clarify','澄清','verb','To make something easier to understand.','Let me clarify the next step.',['clarify a point','clarify expectations']],
+  ['reliable','可靠的','adjective','Able to be trusted or depended on.','She is a reliable teammate.',['reliable service','reliable source']],
+] as const
+export const seedVocabulary:VocabularyEntry[]=vocabularySeedInfo.map(([english,chinese,partOfSpeech,simpleDefinition,example,commonCollocations],index)=>({
+  id:`v-seed-${index+1}`,english,chinese,partOfSpeech,simpleDefinition,example,commonForms:[],commonCollocations:[...commonCollocations],notes:'',personalSentence:'',category:'Everyday confidence',tags:['starter'],status:'New',favourite:false,needsDetails:false,reviewStep:0,timesReviewed:0,timesUsedInSpeaking:0,dateAdded:'2026-07-13T00:00:00.000Z',updatedAt:'2026-07-13T00:00:00.000Z',nextReviewAt:'2026-07-13T00:00:00.000Z',source:'seed',
+}))
+
+export const defaultState:AppState={schemaVersion:4,programmeVersion:1,preferences:{name:'Maya',level:'Intermediate',goals:['Workplace English'],struggle:'My mind goes blank',duration:5,situations:['Meetings'],onboarded:false},phrases:seedPhrases,packs,vocabulary:seedVocabulary,progress:[],completedMissions:[],legacyCompletedMissions:[],completedProgrammeMissionIds:[],completedPracticeDrillIds:[],missionSelfChecks:[],checkpointRecordingIds:{},practiceQueue:[],completedQuestions:[],memos:{},pinnedPhraseIds:['p2','p3'],pinnedVocabularyIds:[],practiceResults:[],libraryTab:'Vocabulary'}

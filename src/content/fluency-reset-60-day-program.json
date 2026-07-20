@@ -1,0 +1,4712 @@
+{
+  "schemaVersion": 1,
+  "programId": "fluency-reset-60",
+  "title": "Fluency Reset: 60 Speaking Days",
+  "description": "A function-based adult speaking programme progressing from activation and conversation survival to social, workplace, service, opinion, pressure, and integrated speaking.",
+  "schedulingRules": {
+    "dayMeansPracticeDayNotCalendarDay": true,
+    "nextMission": "Return the next incomplete programme day. Missing a calendar day does not skip or fail a mission.",
+    "sessionLengths": {
+      "quickWin": "Prompt, one recording, one reflection; approximately 2 minutes.",
+      "normal": "Prepare, first recording, targeted retry, reflection; approximately 5 minutes.",
+      "fullWorkout": "Linked warm-up, mission, retry, follow-up, reflection; approximately 10 minutes."
+    },
+    "languageLoad": "Use mostly familiar language and introduce no more than one or two new chunks per mission.",
+    "difficulty": "Easy, Practical, and Brave change preparation, speaking target, requirements, visible support, and pressure.",
+    "checkpoints": "Checkpoint days repeat or combine earlier functions and offer recording comparison when possible."
+  },
+  "phases": [
+    {
+      "id": "activation",
+      "days": "1-7",
+      "title": "Activate English Thinking",
+      "purpose": "Create a low-pressure speaking reflex and establish a baseline."
+    },
+    {
+      "id": "survival",
+      "days": "8-14",
+      "title": "Conversation Survival",
+      "purpose": "Stay in the conversation when you need time, repetition, clarification, or repair."
+    },
+    {
+      "id": "storytelling",
+      "days": "15-21",
+      "title": "Personal Storytelling",
+      "purpose": "Organise experiences into clear beginnings, changes, and outcomes."
+    },
+    {
+      "id": "social",
+      "days": "22-28",
+      "title": "Social Interaction",
+      "purpose": "Start, continue, deepen, and close everyday conversations naturally."
+    },
+    {
+      "id": "workplace",
+      "days": "29-35",
+      "title": "Workplace Fluency",
+      "purpose": "Handle updates, requests, delays, decisions, and feedback."
+    },
+    {
+      "id": "services",
+      "days": "36-42",
+      "title": "Customers, Services, and Travel",
+      "purpose": "Complete practical transactions and manage problems calmly."
+    },
+    {
+      "id": "opinions",
+      "days": "43-49",
+      "title": "Opinions and Problem Solving",
+      "purpose": "Compare choices, recommend actions, and support a point."
+    },
+    {
+      "id": "pressure",
+      "days": "50-56",
+      "title": "Pressure and Recovery",
+      "purpose": "Keep speaking through forgotten words, interruptions, and correction."
+    },
+    {
+      "id": "integration",
+      "days": "57-60",
+      "title": "Integration and Independence",
+      "purpose": "Combine the skills, compare progress, and plan the next cycle."
+    }
+  ],
+  "missions": [
+    {
+      "id": "day-01",
+      "day": 1,
+      "phaseId": "activation",
+      "title": "Introduce yourself without memorising",
+      "category": "Introductions",
+      "goalTracks": [
+        "Daily conversation",
+        "Workplace English",
+        "Job interview",
+        "Social confidence"
+      ],
+      "skillFocus": [
+        "oral production",
+        "planning",
+        "baseline"
+      ],
+      "realLifeSituation": "You meet someone new and they ask, “Tell me a little about yourself.”",
+      "communicativeOutcome": "Give a friendly introduction that creates an easy next question.",
+      "keyPoints": [
+        "Who you are",
+        "What you do now",
+        "One interest or goal",
+        "A detail the listener can ask about"
+      ],
+      "supportPhrases": [
+        "I’m currently…",
+        "Most of my experience is in…",
+        "Outside of work, I enjoy…"
+      ],
+      "memoStarter": "Who you are\nWhat you do now\nOne interest or goal\nA detail the listener can ask about",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Give three simple facts about yourself.",
+          "requiredElements": [
+            "Who you are",
+            "What you do now"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Introduce yourself to a new colleague and include a listener hook.",
+          "requiredElements": [
+            "Who you are",
+            "What you do now",
+            "One interest or goal",
+            "A detail the listener can ask about"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Introduce yourself at a networking event, explain a goal, and invite the other person to speak.",
+          "requiredElements": [
+            "Who you are",
+            "What you do now",
+            "One interest or goal",
+            "A detail the listener can ask about"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Remove one unnecessary detail and add one clear hook for the listener.",
+      "followUpQuestion": "What made you interested in your current work or hobby?",
+      "reflectionQuestion": "Did your introduction sound like a conversation or a résumé?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-01",
+        "tb-01",
+        "fr-01"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-02",
+      "day": 2,
+      "phaseId": "activation",
+      "title": "Narrate what you are doing now",
+      "category": "Daily life",
+      "goalTracks": [
+        "Daily conversation",
+        "Social confidence"
+      ],
+      "skillFocus": [
+        "direct English thinking",
+        "inner monologue"
+      ],
+      "realLifeSituation": "You are doing an ordinary activity and describe it directly in English.",
+      "communicativeOutcome": "Connect visible actions and intentions to English without translating a prepared paragraph.",
+      "keyPoints": [
+        "Current action",
+        "What you can see or hear",
+        "Why you are doing it",
+        "What happens next"
+      ],
+      "supportPhrases": [
+        "Right now, I’m…",
+        "I can see…",
+        "The next thing I need to do is…"
+      ],
+      "memoStarter": "Current action\nWhat you can see or hear\nWhy you are doing it\nWhat happens next",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Describe your current action and two things around you.",
+          "requiredElements": [
+            "Current action",
+            "What you can see or hear"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Narrate the action, reason, and next step.",
+          "requiredElements": [
+            "Current action",
+            "What you can see or hear",
+            "Why you are doing it",
+            "What happens next"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Continue an English inner monologue from actions to plans and feelings.",
+          "requiredElements": [
+            "Current action",
+            "What you can see or hear",
+            "Why you are doing it",
+            "What happens next"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Connect ideas with because, so, or but instead of listing sentences.",
+      "followUpQuestion": "What could make this activity easier?",
+      "reflectionQuestion": "How often did you translate before speaking?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-02",
+        "tb-02",
+        "fr-02"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-03",
+      "day": 3,
+      "phaseId": "activation",
+      "title": "Explain today’s plan",
+      "category": "Planning",
+      "goalTracks": [
+        "Daily conversation",
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "planning",
+        "sequencing"
+      ],
+      "realLifeSituation": "A colleague or family member asks what you are doing today.",
+      "communicativeOutcome": "Explain a realistic plan in an order the listener can follow.",
+      "keyPoints": [
+        "Main priority",
+        "First action",
+        "Second action",
+        "Possible obstacle",
+        "Expected finish"
+      ],
+      "supportPhrases": [
+        "First, I need to…",
+        "After that, I’m going to…",
+        "If I have time, I’ll…"
+      ],
+      "memoStarter": "Main priority\nFirst action\nSecond action\nPossible obstacle\nExpected finish",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Say your main plan and two actions.",
+          "requiredElements": [
+            "Main priority",
+            "First action"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Explain the sequence and one possible difficulty.",
+          "requiredElements": [
+            "Main priority",
+            "First action",
+            "Second action",
+            "Possible obstacle"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Defend your priorities and give a backup plan.",
+          "requiredElements": [
+            "Main priority",
+            "First action",
+            "Second action",
+            "Possible obstacle",
+            "Expected finish"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Make the order clearer and replace one vague word with a specific noun.",
+      "followUpQuestion": "What will you do if the main task takes longer?",
+      "reflectionQuestion": "Could another person understand what happens first and why?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-03",
+        "tb-03",
+        "fr-03"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-04",
+      "day": 4,
+      "phaseId": "activation",
+      "title": "Describe a normal workday",
+      "category": "Routine",
+      "goalTracks": [
+        "Workplace English",
+        "Daily conversation"
+      ],
+      "skillFocus": [
+        "extended description",
+        "sequencing"
+      ],
+      "realLifeSituation": "Someone outside your team asks what a typical day is like.",
+      "communicativeOutcome": "Describe a routine clearly without listing every small task.",
+      "keyPoints": [
+        "How the day starts",
+        "Main responsibilities",
+        "A common challenge",
+        "How the day ends"
+      ],
+      "supportPhrases": [
+        "Usually, I start by…",
+        "Most of my time goes into…",
+        "A typical challenge is…"
+      ],
+      "memoStarter": "How the day starts\nMain responsibilities\nA common challenge\nHow the day ends",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Describe how your day starts and one main task.",
+          "requiredElements": [
+            "How the day starts",
+            "Main responsibilities"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Describe the routine from start to finish and one challenge.",
+          "requiredElements": [
+            "How the day starts",
+            "Main responsibilities",
+            "A common challenge",
+            "How the day ends"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Explain it to someone outside your field without jargon.",
+          "requiredElements": [
+            "How the day starts",
+            "Main responsibilities",
+            "A common challenge",
+            "How the day ends"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Replace one list of duties with a concrete example.",
+      "followUpQuestion": "Which part of your day requires the most communication?",
+      "reflectionQuestion": "Was the explanation understandable to a non-specialist?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-04",
+        "tb-04",
+        "fr-04"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-05",
+      "day": 5,
+      "phaseId": "activation",
+      "title": "Tell what happened yesterday",
+      "category": "Past events",
+      "goalTracks": [
+        "Daily conversation",
+        "Social confidence"
+      ],
+      "skillFocus": [
+        "past narration",
+        "sequencing"
+      ],
+      "realLifeSituation": "A friend asks what you did yesterday.",
+      "communicativeOutcome": "Tell a short sequence of past events with a clear ending.",
+      "keyPoints": [
+        "Where you were",
+        "What happened first",
+        "One interesting moment",
+        "How it ended"
+      ],
+      "supportPhrases": [
+        "Yesterday, I…",
+        "After that…",
+        "The most interesting part was…"
+      ],
+      "memoStarter": "Where you were\nWhat happened first\nOne interesting moment\nHow it ended",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Say three things you did yesterday in order.",
+          "requiredElements": [
+            "Where you were",
+            "What happened first"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Tell a short story and explain one feeling.",
+          "requiredElements": [
+            "Where you were",
+            "What happened first",
+            "One interesting moment",
+            "How it ended"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Tell it with a beginning, change, response, and outcome.",
+          "requiredElements": [
+            "Where you were",
+            "What happened first",
+            "One interesting moment",
+            "How it ended"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Add one time marker and one emotional or sensory detail.",
+      "followUpQuestion": "What would you do differently next time?",
+      "reflectionQuestion": "Did the listener know the order of events?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-05",
+        "tb-05",
+        "ls-01"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-06",
+      "day": 6,
+      "phaseId": "activation",
+      "title": "Answer “How was your weekend?”",
+      "category": "Small talk",
+      "goalTracks": [
+        "Daily conversation",
+        "Social confidence",
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "small talk",
+        "answer expansion"
+      ],
+      "realLifeSituation": "A colleague casually asks how your weekend was.",
+      "communicativeOutcome": "Give more than a one-word answer without turning it into a speech.",
+      "keyPoints": [
+        "Overall feeling",
+        "One activity",
+        "One detail",
+        "Question back"
+      ],
+      "supportPhrases": [
+        "It was pretty…",
+        "I spent some time…",
+        "How about yours?"
+      ],
+      "memoStarter": "Overall feeling\nOne activity\nOne detail\nQuestion back",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Answer with one activity and ask the question back.",
+          "requiredElements": [
+            "Overall feeling",
+            "One activity"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Share one moment, why it mattered, and invite a response.",
+          "requiredElements": [
+            "Overall feeling",
+            "One activity",
+            "One detail",
+            "Question back"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Turn the opener into a short story and ask a specific follow-up.",
+          "requiredElements": [
+            "Overall feeling",
+            "One activity",
+            "One detail",
+            "Question back"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Add one concrete detail that is easy to respond to.",
+      "followUpQuestion": "What did you enjoy most?",
+      "reflectionQuestion": "Did you give the other person an easy way to continue?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-06",
+        "tb-06",
+        "fr-05"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-07",
+      "day": 7,
+      "phaseId": "activation",
+      "title": "Baseline replay: introduce yourself",
+      "category": "Checkpoint",
+      "goalTracks": [
+        "Daily conversation",
+        "Workplace English",
+        "Job interview",
+        "Social confidence"
+      ],
+      "skillFocus": [
+        "task repetition",
+        "self-comparison"
+      ],
+      "realLifeSituation": "Repeat the Day 1 introduction after six speaking days.",
+      "communicativeOutcome": "Notice one visible improvement and choose one next target.",
+      "keyPoints": [
+        "Same core information",
+        "One clearer sentence",
+        "One useful chunk",
+        "One listener hook"
+      ],
+      "supportPhrases": [
+        "To give you a quick introduction…",
+        "At the moment…",
+        "What about you?"
+      ],
+      "memoStarter": "Same core information\nOne clearer sentence\nOne useful chunk\nOne listener hook",
+      "levels": {
+        "easy": {
+          "speakSeconds": 60,
+          "prepSeconds": 30,
+          "prompt": "Repeat Day 1 in a clear short version.",
+          "requiredElements": [
+            "Same core information",
+            "One clearer sentence"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 120,
+          "prepSeconds": 20,
+          "prompt": "Give the same introduction more smoothly and add a clearer ending.",
+          "requiredElements": [
+            "Same core information",
+            "One clearer sentence",
+            "One useful chunk",
+            "One listener hook"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 180,
+          "prepSeconds": 5,
+          "prompt": "Adapt it, answer a follow-up immediately, and avoid a memorised script.",
+          "requiredElements": [
+            "Same core information",
+            "One clearer sentence",
+            "One useful chunk",
+            "One listener hook"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Compare recordings and improve only pauses, organisation, or conversational tone.",
+      "followUpQuestion": "What part should people remember?",
+      "reflectionQuestion": "What improved since Day 1, even slightly?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "fs-01",
+        "fr-01"
+      ],
+      "isCheckpoint": true,
+      "compareWithDay": 1
+    },
+    {
+      "id": "day-08",
+      "day": 8,
+      "phaseId": "survival",
+      "title": "Buy thinking time naturally",
+      "category": "Conversation management",
+      "goalTracks": [
+        "Daily conversation",
+        "Workplace English",
+        "Job interview"
+      ],
+      "skillFocus": [
+        "turntaking",
+        "time-gaining"
+      ],
+      "realLifeSituation": "Someone asks a question and you need a few seconds to organise your answer.",
+      "communicativeOutcome": "Hold the turn politely instead of freezing.",
+      "keyPoints": [
+        "Acknowledge the question",
+        "Use a time phrase",
+        "Give a direct answer",
+        "Add one reason"
+      ],
+      "supportPhrases": [
+        "That’s a good question.",
+        "Let me think for a second.",
+        "I’d say…"
+      ],
+      "memoStarter": "Acknowledge the question\nUse a time phrase\nGive a direct answer\nAdd one reason",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Use one thinking-time phrase and answer.",
+          "requiredElements": [
+            "Acknowledge the question",
+            "Use a time phrase"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Answer an opinion question with a reason.",
+          "requiredElements": [
+            "Acknowledge the question",
+            "Use a time phrase",
+            "Give a direct answer",
+            "Add one reason"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Answer an unexpected question with two organised points.",
+          "requiredElements": [
+            "Acknowledge the question",
+            "Use a time phrase",
+            "Give a direct answer",
+            "Add one reason"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Replace one long hesitation with a deliberate phrase.",
+      "followUpQuestion": "Has your answer changed over time?",
+      "reflectionQuestion": "Did the phrase help you stay in control?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-07",
+        "repair-01",
+        "fr-06"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-09",
+      "day": 9,
+      "phaseId": "survival",
+      "title": "Ask someone to repeat or slow down",
+      "category": "Clarification",
+      "goalTracks": [
+        "Daily conversation",
+        "Travel",
+        "Customer conversations",
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "asking repetition",
+        "clarification"
+      ],
+      "realLifeSituation": "You did not catch an important detail.",
+      "communicativeOutcome": "Ask for exactly the help you need and continue.",
+      "keyPoints": [
+        "Signal the problem politely",
+        "Specify what was missed",
+        "Confirm the information",
+        "Thank the speaker"
+      ],
+      "supportPhrases": [
+        "Sorry, I didn’t catch the last part.",
+        "Could you say that again, please?",
+        "Let me make sure I heard correctly…"
+      ],
+      "memoStarter": "Signal the problem politely\nSpecify what was missed\nConfirm the information\nThank the speaker",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Ask for one missing detail and confirm it.",
+          "requiredElements": [
+            "Signal the problem politely",
+            "Specify what was missed"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Explain which part you missed and restate what you understood.",
+          "requiredElements": [
+            "Signal the problem politely",
+            "Specify what was missed",
+            "Confirm the information",
+            "Thank the speaker"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Manage two misunderstandings without a native-language fallback.",
+          "requiredElements": [
+            "Signal the problem politely",
+            "Specify what was missed",
+            "Confirm the information",
+            "Thank the speaker"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Identify the exact word, number, date, or action you missed.",
+      "followUpQuestion": "Which exact detail should I repeat?",
+      "reflectionQuestion": "Did your request tell the speaker how to help?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-08",
+        "repair-02",
+        "shadow-01"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-10",
+      "day": 10,
+      "phaseId": "survival",
+      "title": "Clarify an unclear instruction",
+      "category": "Clarification",
+      "goalTracks": [
+        "Workplace English",
+        "Customer conversations"
+      ],
+      "skillFocus": [
+        "clarification",
+        "information exchange"
+      ],
+      "realLifeSituation": "An instruction can be understood in two ways.",
+      "communicativeOutcome": "Identify the ambiguity and obtain a clear next action.",
+      "keyPoints": [
+        "What you understood",
+        "What is unclear",
+        "A precise question",
+        "Confirmed next step"
+      ],
+      "supportPhrases": [
+        "If I understand correctly…",
+        "When you say ___, do you mean…?",
+        "So the next step is…"
+      ],
+      "memoStarter": "What you understood\nWhat is unclear\nA precise question\nConfirmed next step",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Ask one specific clarification question.",
+          "requiredElements": [
+            "What you understood",
+            "What is unclear"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Restate the instruction, identify the unclear detail, and confirm the action.",
+          "requiredElements": [
+            "What you understood",
+            "What is unclear",
+            "A precise question",
+            "Confirmed next step"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Clarify scope, timing, and ownership with no more than three questions.",
+          "requiredElements": [
+            "What you understood",
+            "What is unclear",
+            "A precise question",
+            "Confirmed next step"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Turn one broad question into a precise either-or question.",
+      "followUpQuestion": "What could happen if you misunderstood?",
+      "reflectionQuestion": "Is the next action now unambiguous?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "tb-07",
+        "repair-03",
+        "fr-07"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-11",
+      "day": 11,
+      "phaseId": "survival",
+      "title": "Confirm what you understood",
+      "category": "Confirmation",
+      "goalTracks": [
+        "Workplace English",
+        "Customer conversations",
+        "Travel"
+      ],
+      "skillFocus": [
+        "checking understanding",
+        "summarising"
+      ],
+      "realLifeSituation": "Before acting, you want to verify your understanding.",
+      "communicativeOutcome": "Summarise the important information and invite correction.",
+      "keyPoints": [
+        "Main request",
+        "Important detail",
+        "Deadline or condition",
+        "Confirmation question"
+      ],
+      "supportPhrases": [
+        "Let me make sure I understood.",
+        "So, what you need is…",
+        "Is that correct?"
+      ],
+      "memoStarter": "Main request\nImportant detail\nDeadline or condition\nConfirmation question",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Restate one instruction and ask if it is correct.",
+          "requiredElements": [
+            "Main request",
+            "Important detail"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Summarise the request, deadline, and result.",
+          "requiredElements": [
+            "Main request",
+            "Important detail",
+            "Deadline or condition",
+            "Confirmation question"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Confirm responsibilities, timing, and one risk.",
+          "requiredElements": [
+            "Main request",
+            "Important detail",
+            "Deadline or condition",
+            "Confirmation question"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Make the restatement shorter while preserving conditions.",
+      "followUpQuestion": "What detail must not be misunderstood?",
+      "reflectionQuestion": "Did you paraphrase rather than copy?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-09",
+        "tb-08",
+        "shadow-02"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-12",
+      "day": 12,
+      "phaseId": "survival",
+      "title": "Agree and add something useful",
+      "category": "Agreement",
+      "goalTracks": [
+        "Daily conversation",
+        "Workplace English",
+        "Social confidence"
+      ],
+      "skillFocus": [
+        "responding",
+        "cooperation"
+      ],
+      "realLifeSituation": "Someone shares an idea you agree with.",
+      "communicativeOutcome": "Show genuine agreement and move the conversation forward.",
+      "keyPoints": [
+        "Acknowledge the point",
+        "Explain why",
+        "Add an example or consequence",
+        "Optional question"
+      ],
+      "supportPhrases": [
+        "That makes sense.",
+        "I agree, especially because…",
+        "Another thing we could consider is…"
+      ],
+      "memoStarter": "Acknowledge the point\nExplain why\nAdd an example or consequence\nOptional question",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Agree and add one reason.",
+          "requiredElements": [
+            "Acknowledge the point",
+            "Explain why"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Agree, connect an example, and add one next thought.",
+          "requiredElements": [
+            "Acknowledge the point",
+            "Explain why",
+            "Add an example or consequence",
+            "Optional question"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Agree with the main point but identify a condition for success.",
+          "requiredElements": [
+            "Acknowledge the point",
+            "Explain why",
+            "Add an example or consequence",
+            "Optional question"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Replace a general yes with an explanation.",
+      "followUpQuestion": "What would make the idea work well?",
+      "reflectionQuestion": "Did your response add value?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-10",
+        "tb-09",
+        "fr-08"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-13",
+      "day": 13,
+      "phaseId": "survival",
+      "title": "Disagree without sounding aggressive",
+      "category": "Polite disagreement",
+      "goalTracks": [
+        "Workplace English",
+        "Social confidence"
+      ],
+      "skillFocus": [
+        "politeness",
+        "argument"
+      ],
+      "realLifeSituation": "A teammate suggests a plan with a serious risk.",
+      "communicativeOutcome": "Protect the relationship while making the concern clear.",
+      "keyPoints": [
+        "Acknowledge the useful part",
+        "Signal a different view",
+        "Explain one concrete risk",
+        "Offer an alternative"
+      ],
+      "supportPhrases": [
+        "I understand your point.",
+        "I see it a little differently.",
+        "Perhaps we could…"
+      ],
+      "memoStarter": "Acknowledge the useful part\nSignal a different view\nExplain one concrete risk\nOffer an alternative",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "State one polite concern and an alternative.",
+          "requiredElements": [
+            "Acknowledge the useful part",
+            "Signal a different view"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Acknowledge, explain the risk, and recommend a safer option.",
+          "requiredElements": [
+            "Acknowledge the useful part",
+            "Signal a different view",
+            "Explain one concrete risk",
+            "Offer an alternative"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Challenge the proposal with evidence and a constructive next step.",
+          "requiredElements": [
+            "Acknowledge the useful part",
+            "Signal a different view",
+            "Explain one concrete risk",
+            "Offer an alternative"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Make the risk concrete rather than saying it will not work.",
+      "followUpQuestion": "Which part do you still support?",
+      "reflectionQuestion": "Could the listener hear both respect and concern?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-11",
+        "tb-10",
+        "repair-04"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-14",
+      "day": 14,
+      "phaseId": "survival",
+      "title": "Conversation survival checkpoint",
+      "category": "Checkpoint",
+      "goalTracks": [
+        "Daily conversation",
+        "Workplace English",
+        "Travel",
+        "Customer conversations"
+      ],
+      "skillFocus": [
+        "turntaking",
+        "clarification",
+        "repair"
+      ],
+      "realLifeSituation": "Complete a short conversation with one unclear detail.",
+      "communicativeOutcome": "Stay engaged through clarification and a final response.",
+      "keyPoints": [
+        "Answer the opening",
+        "Handle a misunderstanding",
+        "Use a recovery phrase",
+        "Complete a follow-up"
+      ],
+      "supportPhrases": [
+        "Let me think for a second.",
+        "Could you clarify what you mean by…?",
+        "What I mean is…"
+      ],
+      "memoStarter": "Answer the opening\nHandle a misunderstanding\nUse a recovery phrase\nComplete a follow-up",
+      "levels": {
+        "easy": {
+          "speakSeconds": 60,
+          "prepSeconds": 30,
+          "prompt": "Answer, clarify, and complete the message.",
+          "requiredElements": [
+            "Answer the opening",
+            "Handle a misunderstanding"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 120,
+          "prepSeconds": 20,
+          "prompt": "Complete a three-turn conversation using two survival strategies.",
+          "requiredElements": [
+            "Answer the opening",
+            "Handle a misunderstanding",
+            "Use a recovery phrase",
+            "Complete a follow-up"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 180,
+          "prepSeconds": 5,
+          "prompt": "Handle a fast question, interruption, and missing word without restarting.",
+          "requiredElements": [
+            "Answer the opening",
+            "Handle a misunderstanding",
+            "Use a recovery phrase",
+            "Complete a follow-up"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Repeat only the weakest turn with a clearer strategy.",
+      "followUpQuestion": "What kept the conversation moving?",
+      "reflectionQuestion": "Which survival phrase is easiest to retrieve?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "repair-01",
+        "repair-02",
+        "repair-03",
+        "fs-02"
+      ],
+      "isCheckpoint": true,
+      "compareWithDay": 8
+    },
+    {
+      "id": "day-15",
+      "day": 15,
+      "phaseId": "storytelling",
+      "title": "Tell the story of your first job",
+      "category": "Personal story",
+      "goalTracks": [
+        "Daily conversation",
+        "Job interview",
+        "Social confidence"
+      ],
+      "skillFocus": [
+        "narration",
+        "story structure"
+      ],
+      "realLifeSituation": "Someone asks about your first job or first responsibility.",
+      "communicativeOutcome": "Tell a compact story with context, challenge, and lesson.",
+      "keyPoints": [
+        "What the job was",
+        "How you started",
+        "A memorable challenge",
+        "What you learned"
+      ],
+      "supportPhrases": [
+        "My first job was…",
+        "One thing I remember is…",
+        "It taught me…"
+      ],
+      "memoStarter": "What the job was\nHow you started\nA memorable challenge\nWhat you learned",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Say what the job was and one lesson.",
+          "requiredElements": [
+            "What the job was",
+            "How you started"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Tell how you started, one challenge, and the lesson.",
+          "requiredElements": [
+            "What the job was",
+            "How you started",
+            "A memorable challenge",
+            "What you learned"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Tell it as an interview story showing one quality.",
+          "requiredElements": [
+            "What the job was",
+            "How you started",
+            "A memorable challenge",
+            "What you learned"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Add one specific action rather than a general description.",
+      "followUpQuestion": "How does it influence you today?",
+      "reflectionQuestion": "Did the story include a change or lesson?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "ls-02",
+        "tb-11",
+        "fr-09"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-16",
+      "day": 16,
+      "phaseId": "storytelling",
+      "title": "Describe an achievement you are proud of",
+      "category": "Achievement",
+      "goalTracks": [
+        "Job interview",
+        "Workplace English",
+        "Daily conversation"
+      ],
+      "skillFocus": [
+        "narration",
+        "results"
+      ],
+      "realLifeSituation": "Someone asks about something you achieved.",
+      "communicativeOutcome": "Explain the goal, your contribution, and why it matters.",
+      "keyPoints": [
+        "Goal or problem",
+        "Your personal action",
+        "Result",
+        "Why you are proud"
+      ],
+      "supportPhrases": [
+        "One achievement I’m proud of is…",
+        "My role was to…",
+        "The result was…"
+      ],
+      "memoStarter": "Goal or problem\nYour personal action\nResult\nWhy you are proud",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Name the achievement and result.",
+          "requiredElements": [
+            "Goal or problem",
+            "Your personal action"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Explain the goal, action, and visible result.",
+          "requiredElements": [
+            "Goal or problem",
+            "Your personal action",
+            "Result",
+            "Why you are proud"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Give a STAR-style story and connect it to a future goal.",
+          "requiredElements": [
+            "Goal or problem",
+            "Your personal action",
+            "Result",
+            "Why you are proud"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Add one concrete result or before-and-after difference.",
+      "followUpQuestion": "What was the hardest part?",
+      "reflectionQuestion": "Could the listener identify your contribution?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-12",
+        "tb-12",
+        "fr-10"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-17",
+      "day": 17,
+      "phaseId": "storytelling",
+      "title": "Explain a difficult problem you solved",
+      "category": "Problem story",
+      "goalTracks": [
+        "Workplace English",
+        "Job interview",
+        "Customer conversations"
+      ],
+      "skillFocus": [
+        "problem explanation",
+        "causal sequence"
+      ],
+      "realLifeSituation": "Someone asks how you handled a difficult problem.",
+      "communicativeOutcome": "Make the problem, reasoning, action, and result easy to follow.",
+      "keyPoints": [
+        "What went wrong",
+        "Why it mattered",
+        "How you investigated",
+        "Solution and result"
+      ],
+      "supportPhrases": [
+        "The main issue was…",
+        "I started by…",
+        "Eventually, we found that…"
+      ],
+      "memoStarter": "What went wrong\nWhy it mattered\nHow you investigated\nSolution and result",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "State the problem and solution simply.",
+          "requiredElements": [
+            "What went wrong",
+            "Why it mattered"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Explain impact, investigation, and solution.",
+          "requiredElements": [
+            "What went wrong",
+            "Why it mattered",
+            "How you investigated",
+            "Solution and result"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Explain it to a non-specialist and answer one challenge.",
+          "requiredElements": [
+            "What went wrong",
+            "Why it mattered",
+            "How you investigated",
+            "Solution and result"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Make the cause-and-effect relationship explicit.",
+      "followUpQuestion": "How did you know it was fixed?",
+      "reflectionQuestion": "Was the root problem clear before the solution?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "tb-13",
+        "ls-03",
+        "repair-05"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-18",
+      "day": 18,
+      "phaseId": "storytelling",
+      "title": "Share a mistake and what you learned",
+      "category": "Learning story",
+      "goalTracks": [
+        "Job interview",
+        "Workplace English",
+        "Daily conversation"
+      ],
+      "skillFocus": [
+        "accountability",
+        "reflection"
+      ],
+      "realLifeSituation": "You are asked about a mistake or lesson.",
+      "communicativeOutcome": "Take responsibility and show how behaviour changed.",
+      "keyPoints": [
+        "What happened",
+        "Your responsibility",
+        "How you corrected it",
+        "What you do differently now"
+      ],
+      "supportPhrases": [
+        "I realised that…",
+        "I took responsibility for…",
+        "Since then, I’ve…"
+      ],
+      "memoStarter": "What happened\nYour responsibility\nHow you corrected it\nWhat you do differently now",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Describe a small mistake and one lesson.",
+          "requiredElements": [
+            "What happened",
+            "Your responsibility"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Explain the mistake, repair, and new behaviour.",
+          "requiredElements": [
+            "What happened",
+            "Your responsibility",
+            "How you corrected it",
+            "What you do differently now"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Give an interview-quality answer with prevention.",
+          "requiredElements": [
+            "What happened",
+            "Your responsibility",
+            "How you corrected it",
+            "What you do differently now"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Remove one excuse and add a prevention step.",
+      "followUpQuestion": "What early sign would help next time?",
+      "reflectionQuestion": "Did the answer show growth?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-13",
+        "tb-14",
+        "fr-11"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-19",
+      "day": 19,
+      "phaseId": "storytelling",
+      "title": "Tell a memorable trip or event",
+      "category": "Experience story",
+      "goalTracks": [
+        "Travel",
+        "Daily conversation",
+        "Social confidence"
+      ],
+      "skillFocus": [
+        "narrative detail",
+        "emotion"
+      ],
+      "realLifeSituation": "A friend asks about a trip or event you remember clearly.",
+      "communicativeOutcome": "Create a vivid but concise story with one memorable moment.",
+      "keyPoints": [
+        "Where and when",
+        "Why you went",
+        "Unexpected moment",
+        "Why it stayed with you"
+      ],
+      "supportPhrases": [
+        "One trip I still remember is…",
+        "What surprised me was…",
+        "The best part was…"
+      ],
+      "memoStarter": "Where and when\nWhy you went\nUnexpected moment\nWhy it stayed with you",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Describe the place and best moment.",
+          "requiredElements": [
+            "Where and when",
+            "Why you went"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Tell one event and your reaction.",
+          "requiredElements": [
+            "Where and when",
+            "Why you went",
+            "Unexpected moment",
+            "Why it stayed with you"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Tell it with expectation, surprise, and reflection.",
+          "requiredElements": [
+            "Where and when",
+            "Why you went",
+            "Unexpected moment",
+            "Why it stayed with you"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Add one sensory or emotional detail.",
+      "followUpQuestion": "Would you recommend it?",
+      "reflectionQuestion": "Did you focus on one moment?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "ls-04",
+        "fr-12",
+        "fs-03"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-20",
+      "day": 20,
+      "phaseId": "storytelling",
+      "title": "Describe a person who influenced you",
+      "category": "People story",
+      "goalTracks": [
+        "Daily conversation",
+        "Job interview",
+        "Social confidence"
+      ],
+      "skillFocus": [
+        "description",
+        "example",
+        "impact"
+      ],
+      "realLifeSituation": "Someone asks who influenced how you think or work.",
+      "communicativeOutcome": "Describe the person through one concrete example.",
+      "keyPoints": [
+        "Who the person is",
+        "Important quality",
+        "One example",
+        "How you changed"
+      ],
+      "supportPhrases": [
+        "Someone who influenced me is…",
+        "What I admire is…",
+        "Because of that, I…"
+      ],
+      "memoStarter": "Who the person is\nImportant quality\nOne example\nHow you changed",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Name the person and one quality.",
+          "requiredElements": [
+            "Who the person is",
+            "Important quality"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Give an example and explain the impact.",
+          "requiredElements": [
+            "Who the person is",
+            "Important quality",
+            "One example",
+            "How you changed"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Tell a story and connect the lesson to today.",
+          "requiredElements": [
+            "Who the person is",
+            "Important quality",
+            "One example",
+            "How you changed"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Replace one general compliment with an action.",
+      "followUpQuestion": "What would you thank the person for?",
+      "reflectionQuestion": "Could the listener understand the influence?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "tb-15",
+        "ls-05",
+        "fr-13"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-21",
+      "day": 21,
+      "phaseId": "storytelling",
+      "title": "Retell one story more fluently",
+      "category": "Checkpoint",
+      "goalTracks": [
+        "Daily conversation",
+        "Job interview",
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "task repetition",
+        "fluency development"
+      ],
+      "realLifeSituation": "Choose one story from Days 15-20 and tell it with less time each round.",
+      "communicativeOutcome": "Preserve the core message while reducing hesitation and extra detail.",
+      "keyPoints": [
+        "Essential context",
+        "Main challenge",
+        "Your response",
+        "Outcome or lesson"
+      ],
+      "supportPhrases": [
+        "The short version is…",
+        "The key moment was…",
+        "What I learned was…"
+      ],
+      "memoStarter": "Essential context\nMain challenge\nYour response\nOutcome or lesson",
+      "levels": {
+        "easy": {
+          "speakSeconds": 60,
+          "prepSeconds": 30,
+          "prompt": "Tell the story once clearly.",
+          "requiredElements": [
+            "Essential context",
+            "Main challenge"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 120,
+          "prepSeconds": 20,
+          "prompt": "Tell the same story in 60 seconds and then 45 seconds.",
+          "requiredElements": [
+            "Essential context",
+            "Main challenge",
+            "Your response",
+            "Outcome or lesson"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 180,
+          "prepSeconds": 5,
+          "prompt": "Complete 60-45-30 second versions and answer a follow-up.",
+          "requiredElements": [
+            "Essential context",
+            "Main challenge",
+            "Your response",
+            "Outcome or lesson"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Improve the longest pause with a clearer transition chunk.",
+      "followUpQuestion": "Which detail could you remove without losing meaning?",
+      "reflectionQuestion": "Did the shorter version become clearer as well as faster?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "fs-02",
+        "fs-03",
+        "fs-04"
+      ],
+      "isCheckpoint": true,
+      "compareWithDay": 15
+    },
+    {
+      "id": "day-22",
+      "day": 22,
+      "phaseId": "social",
+      "title": "Start small talk from the shared situation",
+      "category": "Small talk",
+      "goalTracks": [
+        "Social confidence",
+        "Workplace English",
+        "Daily conversation"
+      ],
+      "skillFocus": [
+        "initiating interaction",
+        "questioning"
+      ],
+      "realLifeSituation": "You are waiting with someone at work, an event, or a public place.",
+      "communicativeOutcome": "Open a friendly conversation using something you both observe.",
+      "keyPoints": [
+        "Shared observation",
+        "Light reaction",
+        "Easy question",
+        "Listen for the answer"
+      ],
+      "supportPhrases": [
+        "It’s pretty busy today, isn’t it?",
+        "Looks like…",
+        "Have you been here before?"
+      ],
+      "memoStarter": "Shared observation\nLight reaction\nEasy question\nListen for the answer",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Make one observation and ask one easy question.",
+          "requiredElements": [
+            "Shared observation",
+            "Light reaction"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Open, react to the answer, and ask a follow-up.",
+          "requiredElements": [
+            "Shared observation",
+            "Light reaction",
+            "Easy question",
+            "Listen for the answer"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Sustain three turns using the shared environment.",
+          "requiredElements": [
+            "Shared observation",
+            "Light reaction",
+            "Easy question",
+            "Listen for the answer"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Make the opener less generic by using a real detail.",
+      "followUpQuestion": "What brought you here today?",
+      "reflectionQuestion": "Was the opener easy to answer?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-14",
+        "fr-14",
+        "shadow-03"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-23",
+      "day": 23,
+      "phaseId": "social",
+      "title": "Keep a conversation going with follow-ups",
+      "category": "Follow-up questions",
+      "goalTracks": [
+        "Social confidence",
+        "Daily conversation",
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "turntaking",
+        "active listening"
+      ],
+      "realLifeSituation": "The other person mentions a hobby, project, or recent event.",
+      "communicativeOutcome": "Show interest and help them continue.",
+      "keyPoints": [
+        "React to what they said",
+        "Ask about motivation",
+        "Share a related detail",
+        "Ask a deeper follow-up"
+      ],
+      "supportPhrases": [
+        "That sounds interesting.",
+        "What got you into that?",
+        "How did that go?"
+      ],
+      "memoStarter": "React to what they said\nAsk about motivation\nShare a related detail\nAsk a deeper follow-up",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "React and ask one relevant follow-up.",
+          "requiredElements": [
+            "React to what they said",
+            "Ask about motivation"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Ask two connected follow-ups and share one detail.",
+          "requiredElements": [
+            "React to what they said",
+            "Ask about motivation",
+            "Share a related detail",
+            "Ask a deeper follow-up"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Move from surface information to motivation or feeling.",
+          "requiredElements": [
+            "React to what they said",
+            "Ask about motivation",
+            "Share a related detail",
+            "Ask a deeper follow-up"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Replace one yes/no question with an open question.",
+      "followUpQuestion": "What do you enjoy most about it?",
+      "reflectionQuestion": "Did each follow-up connect to the previous answer?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-15",
+        "tb-16",
+        "fr-15"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-24",
+      "day": 24,
+      "phaseId": "social",
+      "title": "Join a group conversation politely",
+      "category": "Group conversation",
+      "goalTracks": [
+        "Social confidence",
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "turntaking",
+        "entry strategy"
+      ],
+      "realLifeSituation": "People are discussing a topic you understand and you want to contribute.",
+      "communicativeOutcome": "Enter at a suitable moment and connect to the current topic.",
+      "keyPoints": [
+        "Listen for the topic",
+        "Signal entry",
+        "Connect to the previous point",
+        "Add one concise contribution"
+      ],
+      "supportPhrases": [
+        "Can I add something?",
+        "Building on that…",
+        "I had a similar experience…"
+      ],
+      "memoStarter": "Listen for the topic\nSignal entry\nConnect to the previous point\nAdd one concise contribution",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Use one entry phrase and add a relevant sentence.",
+          "requiredElements": [
+            "Listen for the topic",
+            "Signal entry"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Connect to the previous speaker, add an example, and invite a response.",
+          "requiredElements": [
+            "Listen for the topic",
+            "Signal entry",
+            "Connect to the previous point",
+            "Add one concise contribution"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Join, handle an interruption, and return the floor smoothly.",
+          "requiredElements": [
+            "Listen for the topic",
+            "Signal entry",
+            "Connect to the previous point",
+            "Add one concise contribution"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Shorten the opening so the contribution arrives sooner.",
+      "followUpQuestion": "Has anyone else experienced something similar?",
+      "reflectionQuestion": "Did you connect before adding your own point?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "repair-06",
+        "fr-16",
+        "shadow-04"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-25",
+      "day": 25,
+      "phaseId": "social",
+      "title": "Respond with empathy",
+      "category": "Empathy",
+      "goalTracks": [
+        "Social confidence",
+        "Customer conversations",
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "sociolinguistic appropriateness",
+        "responding"
+      ],
+      "realLifeSituation": "Someone tells you about a difficult day or disappointment.",
+      "communicativeOutcome": "Acknowledge the feeling without immediately giving unwanted advice.",
+      "keyPoints": [
+        "Recognise the difficulty",
+        "Reflect the feeling carefully",
+        "Invite more",
+        "Offer help if appropriate"
+      ],
+      "supportPhrases": [
+        "I’m sorry that happened.",
+        "I can imagine that was frustrating.",
+        "What would be helpful right now?"
+      ],
+      "memoStarter": "Recognise the difficulty\nReflect the feeling carefully\nInvite more\nOffer help if appropriate",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Give one empathetic response and a gentle question.",
+          "requiredElements": [
+            "Recognise the difficulty",
+            "Reflect the feeling carefully"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Acknowledge, reflect the feeling, and ask about support.",
+          "requiredElements": [
+            "Recognise the difficulty",
+            "Reflect the feeling carefully",
+            "Invite more",
+            "Offer help if appropriate"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Balance empathy, boundaries, and a practical offer.",
+          "requiredElements": [
+            "Recognise the difficulty",
+            "Reflect the feeling carefully",
+            "Invite more",
+            "Offer help if appropriate"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Remove one sentence about yourself and return attention to the speaker.",
+      "followUpQuestion": "What would be most helpful right now?",
+      "reflectionQuestion": "Did the person feel heard?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-16",
+        "repair-07",
+        "fr-17"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-26",
+      "day": 26,
+      "phaseId": "social",
+      "title": "Give a natural compliment and continue",
+      "category": "Compliments",
+      "goalTracks": [
+        "Social confidence",
+        "Daily conversation"
+      ],
+      "skillFocus": [
+        "social language",
+        "rapport"
+      ],
+      "realLifeSituation": "You notice something positive about a person’s work, choice, or skill.",
+      "communicativeOutcome": "Give a specific sincere compliment and open a short conversation.",
+      "keyPoints": [
+        "Specific observation",
+        "Why it stood out",
+        "Question",
+        "Natural reaction"
+      ],
+      "supportPhrases": [
+        "I really like how you…",
+        "That was a clear explanation.",
+        "How did you learn to do that?"
+      ],
+      "memoStarter": "Specific observation\nWhy it stood out\nQuestion\nNatural reaction",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Give a specific compliment and ask a question.",
+          "requiredElements": [
+            "Specific observation",
+            "Why it stood out"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Explain what you appreciated and respond to the answer.",
+          "requiredElements": [
+            "Specific observation",
+            "Why it stood out",
+            "Question",
+            "Natural reaction"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Use the compliment to sustain three natural turns.",
+          "requiredElements": [
+            "Specific observation",
+            "Why it stood out",
+            "Question",
+            "Natural reaction"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Make the compliment more specific than “That’s nice.”",
+      "followUpQuestion": "What part are you most happy with?",
+      "reflectionQuestion": "Would the person know exactly what you appreciated?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-17",
+        "fr-18",
+        "shadow-05"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-27",
+      "day": 27,
+      "phaseId": "social",
+      "title": "End a conversation warmly",
+      "category": "Conversation closing",
+      "goalTracks": [
+        "Social confidence",
+        "Workplace English",
+        "Daily conversation"
+      ],
+      "skillFocus": [
+        "closing interaction",
+        "politeness"
+      ],
+      "realLifeSituation": "You need to leave without making the other person feel dismissed.",
+      "communicativeOutcome": "Signal the ending, show appreciation, and mention future contact when relevant.",
+      "keyPoints": [
+        "Reason or transition",
+        "Positive closing comment",
+        "Future contact",
+        "Goodbye"
+      ],
+      "supportPhrases": [
+        "It was nice talking with you.",
+        "I should let you get back to it.",
+        "Let’s catch up again soon."
+      ],
+      "memoStarter": "Reason or transition\nPositive closing comment\nFuture contact\nGoodbye",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "End with appreciation and a goodbye.",
+          "requiredElements": [
+            "Reason or transition",
+            "Positive closing comment"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Refer to something discussed and suggest future contact.",
+          "requiredElements": [
+            "Reason or transition",
+            "Positive closing comment",
+            "Future contact",
+            "Goodbye"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Close a networking conversation after agreeing one next action.",
+          "requiredElements": [
+            "Reason or transition",
+            "Positive closing comment",
+            "Future contact",
+            "Goodbye"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Add one specific reference so the close feels personal.",
+      "followUpQuestion": "What is the best way to stay in touch?",
+      "reflectionQuestion": "Was the ending clear without being abrupt?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-18",
+        "tb-17",
+        "fr-19"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-28",
+      "day": 28,
+      "phaseId": "social",
+      "title": "Social conversation checkpoint",
+      "category": "Checkpoint",
+      "goalTracks": [
+        "Social confidence",
+        "Daily conversation",
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "interaction sequence",
+        "rapport"
+      ],
+      "realLifeSituation": "Complete a conversation from opener to deeper question to close.",
+      "communicativeOutcome": "Manage the whole social arc rather than isolated answers.",
+      "keyPoints": [
+        "Open from context",
+        "Ask connected follow-ups",
+        "Share something",
+        "Close warmly"
+      ],
+      "supportPhrases": [
+        "Have you been here before?",
+        "What got you interested in that?",
+        "It was nice talking with you."
+      ],
+      "memoStarter": "Open from context\nAsk connected follow-ups\nShare something\nClose warmly",
+      "levels": {
+        "easy": {
+          "speakSeconds": 60,
+          "prepSeconds": 30,
+          "prompt": "Open, ask one follow-up, share one detail, and close.",
+          "requiredElements": [
+            "Open from context",
+            "Ask connected follow-ups"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 120,
+          "prepSeconds": 20,
+          "prompt": "Complete a five-turn conversation with two connected follow-ups.",
+          "requiredElements": [
+            "Open from context",
+            "Ask connected follow-ups",
+            "Share something",
+            "Close warmly"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 180,
+          "prepSeconds": 5,
+          "prompt": "Handle a spontaneous networking conversation with a topic change.",
+          "requiredElements": [
+            "Open from context",
+            "Ask connected follow-ups",
+            "Share something",
+            "Close warmly"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Repeat only the least natural transition.",
+      "followUpQuestion": "Which question produced the best answer?",
+      "reflectionQuestion": "Did it feel balanced rather than like an interview?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "fr-14",
+        "fr-15",
+        "fr-19",
+        "fs-05"
+      ],
+      "isCheckpoint": true,
+      "compareWithDay": 22
+    },
+    {
+      "id": "day-29",
+      "day": 29,
+      "phaseId": "workplace",
+      "title": "Give a concise project update",
+      "category": "Project update",
+      "goalTracks": [
+        "Workplace English",
+        "Presentations"
+      ],
+      "skillFocus": [
+        "information exchange",
+        "structured update"
+      ],
+      "realLifeSituation": "Your manager asks for a quick update during a meeting.",
+      "communicativeOutcome": "Make status, risk, and next action immediately clear.",
+      "keyPoints": [
+        "What is complete",
+        "What is in progress",
+        "Blocker or risk",
+        "Next step and timing"
+      ],
+      "supportPhrases": [
+        "Here’s a quick update.",
+        "At the moment…",
+        "The next step is…"
+      ],
+      "memoStarter": "What is complete\nWhat is in progress\nBlocker or risk\nNext step and timing",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Give the current status and next step.",
+          "requiredElements": [
+            "What is complete",
+            "What is in progress"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Give progress, blocker, next action, and timing.",
+          "requiredElements": [
+            "What is complete",
+            "What is in progress",
+            "Blocker or risk",
+            "Next step and timing"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Give an executive update and answer a challenge about timing.",
+          "requiredElements": [
+            "What is complete",
+            "What is in progress",
+            "Blocker or risk",
+            "Next step and timing"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Move the headline to the first sentence and remove one background detail.",
+      "followUpQuestion": "What support do you need?",
+      "reflectionQuestion": "Could the manager decide what to do next?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-19",
+        "tb-18",
+        "shadow-06"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-30",
+      "day": 30,
+      "phaseId": "workplace",
+      "title": "Ask for help clearly",
+      "category": "Requesting help",
+      "goalTracks": [
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "goal-oriented cooperation",
+        "specificity"
+      ],
+      "realLifeSituation": "You are blocked and need help from a busy colleague.",
+      "communicativeOutcome": "Explain what you tried and make a specific reasonable request.",
+      "keyPoints": [
+        "Desired result",
+        "What you tried",
+        "Exact blocker",
+        "Specific help and timing"
+      ],
+      "supportPhrases": [
+        "I’m trying to…",
+        "So far, I’ve…",
+        "Could you help me with…?"
+      ],
+      "memoStarter": "Desired result\nWhat you tried\nExact blocker\nSpecific help and timing",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "State the problem and one specific request.",
+          "requiredElements": [
+            "Desired result",
+            "What you tried"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Explain the goal, attempts, blocker, and help needed.",
+          "requiredElements": [
+            "Desired result",
+            "What you tried",
+            "Exact blocker",
+            "Specific help and timing"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Negotiate another time or smaller request if they are busy.",
+          "requiredElements": [
+            "Desired result",
+            "What you tried",
+            "Exact blocker",
+            "Specific help and timing"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Make the request smaller and more actionable.",
+      "followUpQuestion": "What have you already tried?",
+      "reflectionQuestion": "Would the colleague know exactly what to do?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-20",
+        "tb-19",
+        "fr-20"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-31",
+      "day": 31,
+      "phaseId": "workplace",
+      "title": "Explain a delay early and responsibly",
+      "category": "Delay update",
+      "goalTracks": [
+        "Workplace English",
+        "Customer conversations"
+      ],
+      "skillFocus": [
+        "reporting",
+        "accountability"
+      ],
+      "realLifeSituation": "A task will not be finished by the promised time.",
+      "communicativeOutcome": "Communicate early and propose a realistic recovery plan.",
+      "keyPoints": [
+        "What is delayed",
+        "Brief cause",
+        "Impact",
+        "New estimate and mitigation"
+      ],
+      "supportPhrases": [
+        "I may need a little more time because…",
+        "The impact is…",
+        "I can have it ready by…"
+      ],
+      "memoStarter": "What is delayed\nBrief cause\nImpact\nNew estimate and mitigation",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "State the delay and a new time.",
+          "requiredElements": [
+            "What is delayed",
+            "Brief cause"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Explain the cause, impact, estimate, and recovery action.",
+          "requiredElements": [
+            "What is delayed",
+            "Brief cause",
+            "Impact",
+            "New estimate and mitigation"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Deliver the update and respond to concern about reliability.",
+          "requiredElements": [
+            "What is delayed",
+            "Brief cause",
+            "Impact",
+            "New estimate and mitigation"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Replace one excuse with one action you are taking.",
+      "followUpQuestion": "What can be delivered earlier?",
+      "reflectionQuestion": "Did you give a credible next update time?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-21",
+        "repair-08",
+        "shadow-07"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-32",
+      "day": 32,
+      "phaseId": "workplace",
+      "title": "Confirm a requirement before starting",
+      "category": "Requirements",
+      "goalTracks": [
+        "Workplace English",
+        "Customer conversations"
+      ],
+      "skillFocus": [
+        "clarification",
+        "scope management"
+      ],
+      "realLifeSituation": "A request contains unclear scope or success criteria.",
+      "communicativeOutcome": "Confirm what success means before doing the work.",
+      "keyPoints": [
+        "User or business need",
+        "Included scope",
+        "Uncertain scope",
+        "Deadline and success check"
+      ],
+      "supportPhrases": [
+        "The reason I’m asking is…",
+        "Would it be correct to say…?",
+        "How will we know this is complete?"
+      ],
+      "memoStarter": "User or business need\nIncluded scope\nUncertain scope\nDeadline and success check",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Ask one question about the expected result.",
+          "requiredElements": [
+            "User or business need",
+            "Included scope"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Summarise your understanding and ask about scope and success.",
+          "requiredElements": [
+            "User or business need",
+            "Included scope",
+            "Uncertain scope",
+            "Deadline and success check"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Clarify user, outcome, constraints, priority, and acceptance.",
+          "requiredElements": [
+            "User or business need",
+            "Included scope",
+            "Uncertain scope",
+            "Deadline and success check"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Turn one vague question into a choice or measurable condition.",
+      "followUpQuestion": "What would count as success?",
+      "reflectionQuestion": "Could two people now build the same thing?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "tb-20",
+        "repair-09",
+        "fr-21"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-33",
+      "day": 33,
+      "phaseId": "workplace",
+      "title": "Summarise a meeting decision",
+      "category": "Meeting summary",
+      "goalTracks": [
+        "Workplace English",
+        "Presentations"
+      ],
+      "skillFocus": [
+        "summarising",
+        "closing"
+      ],
+      "realLifeSituation": "The meeting is ending after several decisions and actions.",
+      "communicativeOutcome": "Leave everyone with the same understanding of owners and timing.",
+      "keyPoints": [
+        "Main decision",
+        "Reason or condition",
+        "Action owners",
+        "Deadlines and open question"
+      ],
+      "supportPhrases": [
+        "Before we finish, can we confirm…",
+        "We agreed to…",
+        "The action items are…"
+      ],
+      "memoStarter": "Main decision\nReason or condition\nAction owners\nDeadlines and open question",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "State the main decision and next action.",
+          "requiredElements": [
+            "Main decision",
+            "Reason or condition"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Summarise decision, owners, and deadlines.",
+          "requiredElements": [
+            "Main decision",
+            "Reason or condition",
+            "Action owners",
+            "Deadlines and open question"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Separate decisions from open questions and invite correction.",
+          "requiredElements": [
+            "Main decision",
+            "Reason or condition",
+            "Action owners",
+            "Deadlines and open question"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Separate confirmed decisions from ideas still under discussion.",
+      "followUpQuestion": "Did I miss any action item?",
+      "reflectionQuestion": "Could every attendee state their next action?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-22",
+        "shadow-08",
+        "fr-22"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-34",
+      "day": 34,
+      "phaseId": "workplace",
+      "title": "Ask for and give useful feedback",
+      "category": "Feedback",
+      "goalTracks": [
+        "Workplace English",
+        "Presentations"
+      ],
+      "skillFocus": [
+        "feedback language",
+        "specificity"
+      ],
+      "realLifeSituation": "A colleague shares a draft, or you want feedback on your own work.",
+      "communicativeOutcome": "Make feedback specific, actionable, and respectful.",
+      "keyPoints": [
+        "What works",
+        "Specific area to improve",
+        "Reason or effect",
+        "Suggested next action"
+      ],
+      "supportPhrases": [
+        "One thing that works well is…",
+        "One area we could improve is…",
+        "Could you focus your feedback on…?"
+      ],
+      "memoStarter": "What works\nSpecific area to improve\nReason or effect\nSuggested next action",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Give one positive point and one suggestion.",
+          "requiredElements": [
+            "What works",
+            "Specific area to improve"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Explain the issue’s effect and suggest an action.",
+          "requiredElements": [
+            "What works",
+            "Specific area to improve",
+            "Reason or effect",
+            "Suggested next action"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Balance direct feedback with questions and agree a revision.",
+          "requiredElements": [
+            "What works",
+            "Specific area to improve",
+            "Reason or effect",
+            "Suggested next action"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Make one vague comment observable or measurable.",
+      "followUpQuestion": "Which part should be improved first?",
+      "reflectionQuestion": "Could the person act without guessing?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-23",
+        "repair-10",
+        "fr-23"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-35",
+      "day": 35,
+      "phaseId": "workplace",
+      "title": "Workplace meeting checkpoint",
+      "category": "Checkpoint",
+      "goalTracks": [
+        "Workplace English",
+        "Presentations"
+      ],
+      "skillFocus": [
+        "integrated workplace interaction",
+        "problem solving"
+      ],
+      "realLifeSituation": "Give an update, clarify an issue, disagree politely, and confirm actions.",
+      "communicativeOutcome": "Complete the meeting with a useful outcome.",
+      "keyPoints": [
+        "Update",
+        "Clarification",
+        "Concern",
+        "Decision and actions"
+      ],
+      "supportPhrases": [
+        "Here’s a quick update.",
+        "I’d like to clarify…",
+        "I agree with the main point, but…",
+        "Before we finish…"
+      ],
+      "memoStarter": "Update\nClarification\nConcern\nDecision and actions",
+      "levels": {
+        "easy": {
+          "speakSeconds": 60,
+          "prepSeconds": 30,
+          "prompt": "Give an update, ask one clarification, and confirm an action.",
+          "requiredElements": [
+            "Update",
+            "Clarification"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 120,
+          "prepSeconds": 20,
+          "prompt": "Complete a four-turn meeting with update, concern, and decision.",
+          "requiredElements": [
+            "Update",
+            "Clarification",
+            "Concern",
+            "Decision and actions"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 180,
+          "prepSeconds": 5,
+          "prompt": "Lead a no-prep meeting, handle interruption, and close with owners.",
+          "requiredElements": [
+            "Update",
+            "Clarification",
+            "Concern",
+            "Decision and actions"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Replay only the turn where the outcome became unclear.",
+      "followUpQuestion": "What decision should the team make?",
+      "reflectionQuestion": "Did the meeting end with clear ownership?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "fr-20",
+        "fr-21",
+        "fr-22",
+        "fs-06"
+      ],
+      "isCheckpoint": true,
+      "compareWithDay": 29
+    },
+    {
+      "id": "day-36",
+      "day": 36,
+      "phaseId": "services",
+      "title": "Calm an unhappy customer",
+      "category": "Customer service",
+      "goalTracks": [
+        "Customer conversations",
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "transactional interaction",
+        "empathy"
+      ],
+      "realLifeSituation": "A customer is upset because a service failed.",
+      "communicativeOutcome": "Acknowledge the impact, confirm the issue, and explain the next action.",
+      "keyPoints": [
+        "Acknowledge frustration",
+        "Confirm the issue",
+        "Immediate action",
+        "Update time"
+      ],
+      "supportPhrases": [
+        "I’m sorry about the inconvenience.",
+        "Let me make sure I understand…",
+        "Here’s what I can do next…"
+      ],
+      "memoStarter": "Acknowledge frustration\nConfirm the issue\nImmediate action\nUpdate time",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Acknowledge the issue and state the first action.",
+          "requiredElements": [
+            "Acknowledge frustration",
+            "Confirm the issue"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Confirm the problem, action, and update expectation.",
+          "requiredElements": [
+            "Acknowledge frustration",
+            "Confirm the issue",
+            "Immediate action",
+            "Update time"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Handle rejection of the first solution and offer alternatives.",
+          "requiredElements": [
+            "Acknowledge frustration",
+            "Confirm the issue",
+            "Immediate action",
+            "Update time"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Replace one defensive explanation with a customer-focused action.",
+      "followUpQuestion": "Which outcome would help most?",
+      "reflectionQuestion": "Did the customer know what happens next?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-24",
+        "repair-11",
+        "fr-24"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-37",
+      "day": 37,
+      "phaseId": "services",
+      "title": "Request an exchange for the wrong item",
+      "category": "Shopping and services",
+      "goalTracks": [
+        "Daily conversation",
+        "Travel"
+      ],
+      "skillFocus": [
+        "obtaining services",
+        "requesting"
+      ],
+      "realLifeSituation": "A shop or delivery service sent the wrong item or size.",
+      "communicativeOutcome": "Explain the mismatch and request a clear resolution.",
+      "keyPoints": [
+        "Order details",
+        "What was expected",
+        "What arrived",
+        "Preferred solution"
+      ],
+      "supportPhrases": [
+        "I received…, but I ordered…",
+        "Would it be possible to exchange it?",
+        "What do you need from me?"
+      ],
+      "memoStarter": "Order details\nWhat was expected\nWhat arrived\nPreferred solution",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "State the mismatch and request an exchange.",
+          "requiredElements": [
+            "Order details",
+            "What was expected"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Explain the order, condition, solution, and process question.",
+          "requiredElements": [
+            "Order details",
+            "What was expected",
+            "What arrived",
+            "Preferred solution"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Negotiate when the preferred replacement is unavailable.",
+          "requiredElements": [
+            "Order details",
+            "What was expected",
+            "What arrived",
+            "Preferred solution"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Add the exact order detail that prevents confusion.",
+      "followUpQuestion": "Would a refund or replacement work best?",
+      "reflectionQuestion": "Was the requested outcome explicit?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-25",
+        "ls-06",
+        "shadow-09"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-38",
+      "day": 38,
+      "phaseId": "services",
+      "title": "Recommend a product or place",
+      "category": "Recommendation",
+      "goalTracks": [
+        "Customer conversations",
+        "Travel",
+        "Daily conversation"
+      ],
+      "skillFocus": [
+        "describing",
+        "comparing"
+      ],
+      "realLifeSituation": "Someone asks what they should buy, eat, visit, or try.",
+      "communicativeOutcome": "Match a recommendation to their priorities.",
+      "keyPoints": [
+        "Their priority",
+        "Your recommendation",
+        "Two reasons",
+        "One limitation or alternative"
+      ],
+      "supportPhrases": [
+        "I’d recommend…",
+        "It’s a good option if…",
+        "The only thing to keep in mind is…"
+      ],
+      "memoStarter": "Their priority\nYour recommendation\nTwo reasons\nOne limitation or alternative",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Recommend one option and give a reason.",
+          "requiredElements": [
+            "Their priority",
+            "Your recommendation"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Give two reasons and one limitation.",
+          "requiredElements": [
+            "Their priority",
+            "Your recommendation",
+            "Two reasons",
+            "One limitation or alternative"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Compare two choices and recommend based on budget or preference.",
+          "requiredElements": [
+            "Their priority",
+            "Your recommendation",
+            "Two reasons",
+            "One limitation or alternative"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Replace one adjective with a practical benefit.",
+      "followUpQuestion": "What matters most: price, convenience, or quality?",
+      "reflectionQuestion": "Did the reasons connect to the listener’s needs?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "tb-21",
+        "ls-07",
+        "fr-25"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-39",
+      "day": 39,
+      "phaseId": "services",
+      "title": "Leave a clear voice message",
+      "category": "Telephone",
+      "goalTracks": [
+        "Daily conversation",
+        "Workplace English",
+        "Customer conversations"
+      ],
+      "skillFocus": [
+        "telecommunication",
+        "conciseness"
+      ],
+      "realLifeSituation": "The person does not answer and you need to leave a message.",
+      "communicativeOutcome": "Make your identity, reason, action, and contact detail clear once.",
+      "keyPoints": [
+        "Name",
+        "Reason for calling",
+        "Requested action",
+        "Callback detail and time"
+      ],
+      "supportPhrases": [
+        "Hi, this is…",
+        "I’m calling about…",
+        "You can reach me at…"
+      ],
+      "memoStarter": "Name\nReason for calling\nRequested action\nCallback detail and time",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Leave your name, reason, and callback request.",
+          "requiredElements": [
+            "Name",
+            "Reason for calling"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Add one important detail and a suitable callback time.",
+          "requiredElements": [
+            "Name",
+            "Reason for calling",
+            "Requested action",
+            "Callback detail and time"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Leave an urgent but calm message with deadline and fallback channel.",
+          "requiredElements": [
+            "Name",
+            "Reason for calling",
+            "Requested action",
+            "Callback detail and time"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Repeat numbers, dates, or references more clearly.",
+      "followUpQuestion": "What is the one action you need?",
+      "reflectionQuestion": "Could someone act after hearing it once?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-26",
+        "shadow-10",
+        "fs-07"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-40",
+      "day": 40,
+      "phaseId": "services",
+      "title": "Resolve a booking mismatch",
+      "category": "Travel and services",
+      "goalTracks": [
+        "Travel",
+        "Daily conversation"
+      ],
+      "skillFocus": [
+        "service encounter",
+        "negotiation"
+      ],
+      "realLifeSituation": "At check-in, the booking does not match your confirmation.",
+      "communicativeOutcome": "Present evidence and negotiate an acceptable alternative.",
+      "keyPoints": [
+        "Booking reference",
+        "Expected arrangement",
+        "Actual problem",
+        "Preferred solution and alternative"
+      ],
+      "supportPhrases": [
+        "According to my confirmation…",
+        "There seems to be a difference.",
+        "Is there another option available?"
+      ],
+      "memoStarter": "Booking reference\nExpected arrangement\nActual problem\nPreferred solution and alternative",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Explain the mismatch and ask staff to check.",
+          "requiredElements": [
+            "Booking reference",
+            "Expected arrangement"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Request the original arrangement and ask about alternatives.",
+          "requiredElements": [
+            "Booking reference",
+            "Expected arrangement",
+            "Actual problem",
+            "Preferred solution and alternative"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Negotiate another option and confirm cost or conditions.",
+          "requiredElements": [
+            "Booking reference",
+            "Expected arrangement",
+            "Actual problem",
+            "Preferred solution and alternative"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Use one contrast sentence: I booked X, but the system shows Y.",
+      "followUpQuestion": "Would a different time or room work?",
+      "reflectionQuestion": "Did you confirm the final arrangement?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "repair-12",
+        "ls-08",
+        "fr-26"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-41",
+      "day": 41,
+      "phaseId": "services",
+      "title": "Explain directions or a process",
+      "category": "Instructions",
+      "goalTracks": [
+        "Travel",
+        "Customer conversations",
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "giving information",
+        "sequencing"
+      ],
+      "realLifeSituation": "Someone asks how to reach a place or complete a simple process.",
+      "communicativeOutcome": "Give ordered instructions with a landmark, warning, or success check.",
+      "keyPoints": [
+        "Starting point",
+        "Ordered steps",
+        "Important landmark or warning",
+        "Final check"
+      ],
+      "supportPhrases": [
+        "First, you need to…",
+        "Once you reach…",
+        "You’ll know it worked when…"
+      ],
+      "memoStarter": "Starting point\nOrdered steps\nImportant landmark or warning\nFinal check",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Give two clear steps.",
+          "requiredElements": [
+            "Starting point",
+            "Ordered steps"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Give the full process and one warning or check.",
+          "requiredElements": [
+            "Starting point",
+            "Ordered steps",
+            "Important landmark or warning",
+            "Final check"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Explain, answer one clarification, and rephrase a confusing step.",
+          "requiredElements": [
+            "Starting point",
+            "Ordered steps",
+            "Important landmark or warning",
+            "Final check"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Break one long instruction into two short steps.",
+      "followUpQuestion": "Which step is most likely to confuse?",
+      "reflectionQuestion": "Could the listener begin without asking what comes first?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "tb-22",
+        "shadow-11",
+        "fr-27"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-42",
+      "day": 42,
+      "phaseId": "services",
+      "title": "Service encounter checkpoint",
+      "category": "Checkpoint",
+      "goalTracks": [
+        "Customer conversations",
+        "Travel",
+        "Daily conversation"
+      ],
+      "skillFocus": [
+        "transactional sequence",
+        "negotiation",
+        "repair"
+      ],
+      "realLifeSituation": "Complete a service conversation with a problem and a rejected first option.",
+      "communicativeOutcome": "Resolve the practical task while remaining clear and polite.",
+      "keyPoints": [
+        "Explain the problem",
+        "Provide evidence",
+        "Request a solution",
+        "Consider an alternative",
+        "Confirm agreement"
+      ],
+      "supportPhrases": [
+        "There seems to be a problem with…",
+        "What options are available?",
+        "Let me confirm the final details."
+      ],
+      "memoStarter": "Explain the problem\nProvide evidence\nRequest a solution\nConsider an alternative\nConfirm agreement",
+      "levels": {
+        "easy": {
+          "speakSeconds": 60,
+          "prepSeconds": 30,
+          "prompt": "Explain a problem, request a solution, and confirm it.",
+          "requiredElements": [
+            "Explain the problem",
+            "Provide evidence"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 120,
+          "prepSeconds": 20,
+          "prompt": "Negotiate an alternative after the first option is unavailable.",
+          "requiredElements": [
+            "Explain the problem",
+            "Provide evidence",
+            "Request a solution",
+            "Consider an alternative"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 180,
+          "prepSeconds": 5,
+          "prompt": "Handle an unclear policy, time pressure, and final agreement.",
+          "requiredElements": [
+            "Explain the problem",
+            "Provide evidence",
+            "Request a solution",
+            "Consider an alternative",
+            "Confirm agreement"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Repeat the turn where the practical outcome was least clear.",
+      "followUpQuestion": "What exact agreement did both sides reach?",
+      "reflectionQuestion": "Did politeness support rather than weaken the request?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "fr-24",
+        "fr-26",
+        "repair-11",
+        "fs-08"
+      ],
+      "isCheckpoint": true,
+      "compareWithDay": 36
+    },
+    {
+      "id": "day-43",
+      "day": 43,
+      "phaseId": "opinions",
+      "title": "Give an opinion with a clear reason",
+      "category": "Opinion",
+      "goalTracks": [
+        "Daily conversation",
+        "Workplace English",
+        "Presentations"
+      ],
+      "skillFocus": [
+        "argument",
+        "reasoning"
+      ],
+      "realLifeSituation": "Someone asks what you think about a familiar topic or decision.",
+      "communicativeOutcome": "State the position early and support it with a relevant reason and example.",
+      "keyPoints": [
+        "Direct opinion",
+        "Main reason",
+        "Example or evidence",
+        "Balanced closing"
+      ],
+      "supportPhrases": [
+        "Personally, I think…",
+        "The main reason is…",
+        "For example…"
+      ],
+      "memoStarter": "Direct opinion\nMain reason\nExample or evidence\nBalanced closing",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "State your opinion and one reason.",
+          "requiredElements": [
+            "Direct opinion",
+            "Main reason"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Add an example and acknowledge one condition.",
+          "requiredElements": [
+            "Direct opinion",
+            "Main reason",
+            "Example or evidence",
+            "Balanced closing"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Defend the view against a follow-up while remaining open-minded.",
+          "requiredElements": [
+            "Direct opinion",
+            "Main reason",
+            "Example or evidence",
+            "Balanced closing"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Move the position earlier and make the example more specific.",
+      "followUpQuestion": "What evidence supports that view?",
+      "reflectionQuestion": "Could the listener summarise your position?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-27",
+        "tb-23",
+        "fr-28"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-44",
+      "day": 44,
+      "phaseId": "opinions",
+      "title": "Compare two options fairly",
+      "category": "Comparison",
+      "goalTracks": [
+        "Workplace English",
+        "Daily conversation",
+        "Travel"
+      ],
+      "skillFocus": [
+        "comparison",
+        "criteria"
+      ],
+      "realLifeSituation": "A person or team must choose between two realistic options.",
+      "communicativeOutcome": "Compare them using shared criteria and make a traceable recommendation.",
+      "keyPoints": [
+        "Decision criteria",
+        "Advantage of option A",
+        "Advantage of option B",
+        "Best fit and reason"
+      ],
+      "supportPhrases": [
+        "The main difference is…",
+        "Option A is better for…, while…",
+        "It depends on what matters most."
+      ],
+      "memoStarter": "Decision criteria\nAdvantage of option A\nAdvantage of option B\nBest fit and reason",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Name one difference and your preferred option.",
+          "requiredElements": [
+            "Decision criteria",
+            "Advantage of option A"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Compare on two criteria and recommend.",
+          "requiredElements": [
+            "Decision criteria",
+            "Advantage of option A",
+            "Advantage of option B",
+            "Best fit and reason"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Compare cost, risk, and long-term value, then adapt to a changed priority.",
+          "requiredElements": [
+            "Decision criteria",
+            "Advantage of option A",
+            "Advantage of option B",
+            "Best fit and reason"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Organise by criteria, not all of A then all of B.",
+      "followUpQuestion": "Which criterion matters most?",
+      "reflectionQuestion": "Was the recommendation linked to the criteria?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "tb-24",
+        "ls-09",
+        "fr-29"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-45",
+      "day": 45,
+      "phaseId": "opinions",
+      "title": "Explain a trade-off",
+      "category": "Trade-offs",
+      "goalTracks": [
+        "Workplace English",
+        "Presentations"
+      ],
+      "skillFocus": [
+        "reasoning",
+        "qualification"
+      ],
+      "realLifeSituation": "A choice improves one thing but creates a cost or risk elsewhere.",
+      "communicativeOutcome": "Explain both sides and when the choice is worthwhile.",
+      "keyPoints": [
+        "Benefit",
+        "Cost or risk",
+        "Who is affected",
+        "Condition or mitigation"
+      ],
+      "supportPhrases": [
+        "The benefit is…",
+        "The trade-off is…",
+        "This makes sense if…"
+      ],
+      "memoStarter": "Benefit\nCost or risk\nWho is affected\nCondition or mitigation",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "State one benefit and one cost.",
+          "requiredElements": [
+            "Benefit",
+            "Cost or risk"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Explain who benefits, who carries the cost, and when it makes sense.",
+          "requiredElements": [
+            "Benefit",
+            "Cost or risk",
+            "Who is affected",
+            "Condition or mitigation"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Explain a complex trade-off and mitigate the main risk.",
+          "requiredElements": [
+            "Benefit",
+            "Cost or risk",
+            "Who is affected",
+            "Condition or mitigation"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Make the cost as concrete as the benefit.",
+      "followUpQuestion": "What would reduce the downside?",
+      "reflectionQuestion": "Did you explain when the trade-off is acceptable?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-28",
+        "repair-13",
+        "shadow-12"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-46",
+      "day": 46,
+      "phaseId": "opinions",
+      "title": "Recommend a solution to a problem",
+      "category": "Recommendation",
+      "goalTracks": [
+        "Workplace English",
+        "Customer conversations",
+        "Presentations"
+      ],
+      "skillFocus": [
+        "problem solving",
+        "proposal"
+      ],
+      "realLifeSituation": "A problem has several possible responses and the group asks for your recommendation.",
+      "communicativeOutcome": "Connect the action to the cause, constraints, and desired result.",
+      "keyPoints": [
+        "Problem and cause",
+        "Recommended action",
+        "Why it fits",
+        "Risk and first test"
+      ],
+      "supportPhrases": [
+        "What I suggest is…",
+        "This would help because…",
+        "We could test it by…"
+      ],
+      "memoStarter": "Problem and cause\nRecommended action\nWhy it fits\nRisk and first test",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "State the problem and one proposed action.",
+          "requiredElements": [
+            "Problem and cause",
+            "Recommended action"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Recommend, explain fit, and propose a first step.",
+          "requiredElements": [
+            "Problem and cause",
+            "Recommended action",
+            "Why it fits",
+            "Risk and first test"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Choose among alternatives, address risk, and define a small test.",
+          "requiredElements": [
+            "Problem and cause",
+            "Recommended action",
+            "Why it fits",
+            "Risk and first test"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Link every action to a specific cause or result.",
+      "followUpQuestion": "What is the smallest safe test?",
+      "reflectionQuestion": "Could the team act on it today?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-29",
+        "tb-25",
+        "fr-30"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-47",
+      "day": 47,
+      "phaseId": "opinions",
+      "title": "Challenge a risky idea constructively",
+      "category": "Risk discussion",
+      "goalTracks": [
+        "Workplace English",
+        "Presentations"
+      ],
+      "skillFocus": [
+        "argument",
+        "polite challenge"
+      ],
+      "realLifeSituation": "A group likes an idea, but an important risk has not been discussed.",
+      "communicativeOutcome": "Surface the risk without attacking the person or blocking progress.",
+      "keyPoints": [
+        "Shared objective",
+        "Unexamined assumption",
+        "Possible consequence",
+        "Safer test or alternative"
+      ],
+      "supportPhrases": [
+        "I like the goal behind this.",
+        "One concern I have is…",
+        "Could we test this with…?"
+      ],
+      "memoStarter": "Shared objective\nUnexamined assumption\nPossible consequence\nSafer test or alternative",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Acknowledge the goal and state one concern.",
+          "requiredElements": [
+            "Shared objective",
+            "Unexamined assumption"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Explain the consequence and suggest a safer test.",
+          "requiredElements": [
+            "Shared objective",
+            "Unexamined assumption",
+            "Possible consequence",
+            "Safer test or alternative"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Challenge it under group pressure and respond to pushback.",
+          "requiredElements": [
+            "Shared objective",
+            "Unexamined assumption",
+            "Possible consequence",
+            "Safer test or alternative"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Replace a vague fear with a cause-and-effect scenario.",
+      "followUpQuestion": "What evidence would make you comfortable?",
+      "reflectionQuestion": "Did you offer a path forward?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "repair-14",
+        "fr-31",
+        "shadow-13"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-48",
+      "day": 48,
+      "phaseId": "opinions",
+      "title": "Explain a simple trend or change",
+      "category": "Data explanation",
+      "goalTracks": [
+        "Workplace English",
+        "Presentations"
+      ],
+      "skillFocus": [
+        "describing data",
+        "interpretation"
+      ],
+      "realLifeSituation": "A chart or report shows a noticeable change.",
+      "communicativeOutcome": "Describe the pattern, avoid overclaiming, and give a cautious implication.",
+      "keyPoints": [
+        "Main direction",
+        "Important comparison",
+        "Possible reason",
+        "Practical implication or question"
+      ],
+      "supportPhrases": [
+        "The main change is…",
+        "Compared with…",
+        "This may be because…"
+      ],
+      "memoStarter": "Main direction\nImportant comparison\nPossible reason\nPractical implication or question",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Describe whether it rose, fell, or stayed stable.",
+          "requiredElements": [
+            "Main direction",
+            "Important comparison"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Compare two periods and give one cautious interpretation.",
+          "requiredElements": [
+            "Main direction",
+            "Important comparison",
+            "Possible reason",
+            "Practical implication or question"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Separate fact from hypothesis and suggest one next analysis.",
+          "requiredElements": [
+            "Main direction",
+            "Important comparison",
+            "Possible reason",
+            "Practical implication or question"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Remove one minor number and strengthen the main comparison.",
+      "followUpQuestion": "What information would confirm the cause?",
+      "reflectionQuestion": "Did you separate observation from interpretation?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-30",
+        "tb-26",
+        "shadow-14"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-49",
+      "day": 49,
+      "phaseId": "opinions",
+      "title": "Deliver a two-minute mini-presentation",
+      "category": "Presentation",
+      "goalTracks": [
+        "Presentations",
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "sustained monologue",
+        "organisation"
+      ],
+      "realLifeSituation": "You have a short opportunity to explain an idea, update, or recommendation.",
+      "communicativeOutcome": "Guide the listener through a clear opening, two points, and an actionable close.",
+      "keyPoints": [
+        "Purpose and headline",
+        "Point one with example",
+        "Point two with implication",
+        "Recommendation or takeaway"
+      ],
+      "supportPhrases": [
+        "Today I’d like to explain…",
+        "The first point is…",
+        "The key takeaway is…"
+      ],
+      "memoStarter": "Purpose and headline\nPoint one with example\nPoint two with implication\nRecommendation or takeaway",
+      "levels": {
+        "easy": {
+          "speakSeconds": 60,
+          "prepSeconds": 30,
+          "prompt": "Give a one-minute explanation with one point and example.",
+          "requiredElements": [
+            "Purpose and headline",
+            "Point one with example"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 120,
+          "prepSeconds": 20,
+          "prompt": "Deliver two organised points and a takeaway.",
+          "requiredElements": [
+            "Purpose and headline",
+            "Point one with example",
+            "Point two with implication",
+            "Recommendation or takeaway"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 180,
+          "prepSeconds": 5,
+          "prompt": "Present, then handle a question without preparation.",
+          "requiredElements": [
+            "Purpose and headline",
+            "Point one with example",
+            "Point two with implication",
+            "Recommendation or takeaway"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Improve one signpost so the structure is obvious.",
+      "followUpQuestion": "What is the one thing to remember?",
+      "reflectionQuestion": "Could a listener identify the structure?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "mr-31",
+        "shadow-15",
+        "fs-09"
+      ],
+      "isCheckpoint": true,
+      "compareWithDay": 43
+    },
+    {
+      "id": "day-50",
+      "day": 50,
+      "phaseId": "pressure",
+      "title": "Answer an unexpected question",
+      "category": "Spontaneous response",
+      "goalTracks": [
+        "Daily conversation",
+        "Workplace English",
+        "Job interview"
+      ],
+      "skillFocus": [
+        "spontaneous production",
+        "planning aloud"
+      ],
+      "realLifeSituation": "You receive a question you did not prepare for.",
+      "communicativeOutcome": "Create a usable answer with a clear position.",
+      "keyPoints": [
+        "Buy time if needed",
+        "Direct answer",
+        "One reason or example",
+        "Clear ending"
+      ],
+      "supportPhrases": [
+        "That’s an interesting question.",
+        "My first thought is…",
+        "One example would be…"
+      ],
+      "memoStarter": "Buy time if needed\nDirect answer\nOne reason or example\nClear ending",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Answer immediately with one point and reason.",
+          "requiredElements": [
+            "Buy time if needed",
+            "Direct answer"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Give a structured answer and example.",
+          "requiredElements": [
+            "Buy time if needed",
+            "Direct answer",
+            "One reason or example",
+            "Clear ending"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Answer, qualify your view, and handle a follow-up.",
+          "requiredElements": [
+            "Buy time if needed",
+            "Direct answer",
+            "One reason or example",
+            "Clear ending"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Shorten the opening so the direct answer arrives sooner.",
+      "followUpQuestion": "What experience led to that view?",
+      "reflectionQuestion": "Did you keep moving after hesitation?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "repair-01",
+        "fr-32",
+        "fs-10"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-51",
+      "day": 51,
+      "phaseId": "pressure",
+      "title": "Explain around a forgotten word",
+      "category": "Circumlocution",
+      "goalTracks": [
+        "Daily conversation",
+        "Travel",
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "compensating",
+        "paraphrase"
+      ],
+      "realLifeSituation": "You forget an important word while speaking.",
+      "communicativeOutcome": "Describe its category, function, appearance, or example and continue.",
+      "keyPoints": [
+        "Signal the missing word",
+        "Describe category or function",
+        "Give an example or contrast",
+        "Continue the original message"
+      ],
+      "supportPhrases": [
+        "The word is escaping me, but…",
+        "It’s a kind of…",
+        "You use it when…"
+      ],
+      "memoStarter": "Signal the missing word\nDescribe category or function\nGive an example or contrast\nContinue the original message",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Describe one familiar object without naming it.",
+          "requiredElements": [
+            "Signal the missing word",
+            "Describe category or function"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Explain around two missing words and finish the story.",
+          "requiredElements": [
+            "Signal the missing word",
+            "Describe category or function",
+            "Give an example or contrast",
+            "Continue the original message"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Describe a technical or abstract word through definition, example, and contrast.",
+          "requiredElements": [
+            "Signal the missing word",
+            "Describe category or function",
+            "Give an example or contrast",
+            "Continue the original message"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Start with a simple category word, then add the distinguishing detail.",
+      "followUpQuestion": "Is it something you use, do, feel, or see?",
+      "reflectionQuestion": "Could the listener guess it?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "repair-15",
+        "ls-10",
+        "fr-33"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-52",
+      "day": 52,
+      "phaseId": "pressure",
+      "title": "Recover after an interruption",
+      "category": "Interruption",
+      "goalTracks": [
+        "Workplace English",
+        "Presentations",
+        "Social confidence"
+      ],
+      "skillFocus": [
+        "turntaking",
+        "repair"
+      ],
+      "realLifeSituation": "Someone interrupts before you finish the key point.",
+      "communicativeOutcome": "Respond appropriately and return to the unfinished message.",
+      "keyPoints": [
+        "Acknowledge the interruption",
+        "Answer or park it",
+        "Signal return",
+        "Restate the key point"
+      ],
+      "supportPhrases": [
+        "That’s a fair question.",
+        "I’ll come back to that in a moment.",
+        "As I was saying…"
+      ],
+      "memoStarter": "Acknowledge the interruption\nAnswer or park it\nSignal return\nRestate the key point",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Use a return phrase and finish the point.",
+          "requiredElements": [
+            "Acknowledge the interruption",
+            "Answer or park it"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Answer briefly, then return to the original point.",
+          "requiredElements": [
+            "Acknowledge the interruption",
+            "Answer or park it",
+            "Signal return",
+            "Restate the key point"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Manage two interruptions: answer one and defer one.",
+          "requiredElements": [
+            "Acknowledge the interruption",
+            "Answer or park it",
+            "Signal return",
+            "Restate the key point"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Repeat only the transition back to the main point.",
+      "followUpQuestion": "Would you like the short answer now or detail later?",
+      "reflectionQuestion": "Did the original message remain clear?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "repair-06",
+        "repair-16",
+        "shadow-16"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-53",
+      "day": 53,
+      "phaseId": "pressure",
+      "title": "Correct yourself without losing flow",
+      "category": "Self-correction",
+      "goalTracks": [
+        "Daily conversation",
+        "Workplace English",
+        "Presentations"
+      ],
+      "skillFocus": [
+        "monitoring",
+        "repair"
+      ],
+      "realLifeSituation": "You notice that an important word, number, or statement was wrong.",
+      "communicativeOutcome": "Correct it briefly and continue the main message.",
+      "keyPoints": [
+        "Signal correction",
+        "Give corrected information",
+        "Clarify impact if needed",
+        "Continue"
+      ],
+      "supportPhrases": [
+        "Sorry, let me correct that.",
+        "What I meant was…",
+        "Let me say that again more clearly."
+      ],
+      "memoStarter": "Signal correction\nGive corrected information\nClarify impact if needed\nContinue",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Correct one wrong detail and continue.",
+          "requiredElements": [
+            "Signal correction",
+            "Give corrected information"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Reformulate a confusing sentence more simply.",
+          "requiredElements": [
+            "Signal correction",
+            "Give corrected information",
+            "Clarify impact if needed",
+            "Continue"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Correct a factual mistake and explain whether the conclusion changes.",
+          "requiredElements": [
+            "Signal correction",
+            "Give corrected information",
+            "Clarify impact if needed",
+            "Continue"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Reduce the repair to one signal and one corrected sentence.",
+      "followUpQuestion": "Does the correction change the next action?",
+      "reflectionQuestion": "Did the correction improve clarity without derailing flow?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "repair-17",
+        "tb-27",
+        "fr-34"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-54",
+      "day": 54,
+      "phaseId": "pressure",
+      "title": "Speak with no preparation",
+      "category": "No-prep fluency",
+      "goalTracks": [
+        "Daily conversation",
+        "Social confidence",
+        "Workplace English"
+      ],
+      "skillFocus": [
+        "automaticity",
+        "comfortable language"
+      ],
+      "realLifeSituation": "A familiar topic appears and recording begins immediately.",
+      "communicativeOutcome": "Use mostly familiar English to complete the message under light pressure.",
+      "keyPoints": [
+        "Opening answer",
+        "Two supporting details",
+        "Ending"
+      ],
+      "supportPhrases": [
+        "The first thing that comes to mind is…",
+        "One reason is…",
+        "Overall…"
+      ],
+      "memoStarter": "Opening answer\nTwo supporting details\nEnding",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Speak for 30 seconds without stopping.",
+          "requiredElements": [
+            "Opening answer",
+            "Two supporting details"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Speak for one minute and use one saved phrase.",
+          "requiredElements": [
+            "Opening answer",
+            "Two supporting details",
+            "Ending"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Speak for 90 seconds, handle a follow-up, and summarise.",
+          "requiredElements": [
+            "Opening answer",
+            "Two supporting details",
+            "Ending"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Repeat with a clearer opening, not harder vocabulary.",
+      "followUpQuestion": "What is one example?",
+      "reflectionQuestion": "Did familiar language help you maintain flow?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "fr-35",
+        "fs-10",
+        "fs-11"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-55",
+      "day": 55,
+      "phaseId": "pressure",
+      "title": "Complete a fluency sprint",
+      "category": "Fluency sprint",
+      "goalTracks": [
+        "Daily conversation",
+        "Workplace English",
+        "Presentations"
+      ],
+      "skillFocus": [
+        "task repetition",
+        "message compression"
+      ],
+      "realLifeSituation": "Tell the same message repeatedly with decreasing time.",
+      "communicativeOutcome": "Retrieve the same ideas more efficiently and reduce long pauses.",
+      "keyPoints": [
+        "Stable opening",
+        "Three essential points",
+        "Closing"
+      ],
+      "supportPhrases": [
+        "The main point is…",
+        "A good example is…",
+        "In short…"
+      ],
+      "memoStarter": "Stable opening\nThree essential points\nClosing",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Tell it in 60 then 45 seconds.",
+          "requiredElements": [
+            "Stable opening",
+            "Three essential points"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Complete 60-45-30 second versions.",
+          "requiredElements": [
+            "Stable opening",
+            "Three essential points",
+            "Closing"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Complete longer 120-90-60 second versions and a follow-up.",
+          "requiredElements": [
+            "Stable opening",
+            "Three essential points",
+            "Closing"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Choose a ready-made chunk for the repeated hesitation.",
+      "followUpQuestion": "Which sentence became easier?",
+      "reflectionQuestion": "Did it become more direct rather than only faster?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "fs-01",
+        "fs-02",
+        "fs-12"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-56",
+      "day": 56,
+      "phaseId": "pressure",
+      "title": "Mixed pressure simulation",
+      "category": "Checkpoint",
+      "goalTracks": [
+        "Workplace English",
+        "Customer conversations",
+        "Social confidence",
+        "Travel"
+      ],
+      "skillFocus": [
+        "compensating",
+        "repair",
+        "turntaking"
+      ],
+      "realLifeSituation": "Complete a conversation with an unexpected question, missing word, interruption, and correction.",
+      "communicativeOutcome": "Stay communicatively effective when several barriers appear together.",
+      "keyPoints": [
+        "Hold the turn",
+        "Paraphrase a missing word",
+        "Handle interruption",
+        "Correct a detail",
+        "Finish the outcome"
+      ],
+      "supportPhrases": [
+        "Let me think for a second.",
+        "It’s a kind of…",
+        "As I was saying…",
+        "Let me correct that."
+      ],
+      "memoStarter": "Hold the turn\nParaphrase a missing word\nHandle interruption\nCorrect a detail\nFinish the outcome",
+      "levels": {
+        "easy": {
+          "speakSeconds": 60,
+          "prepSeconds": 30,
+          "prompt": "Handle any two pressure events and finish.",
+          "requiredElements": [
+            "Hold the turn",
+            "Paraphrase a missing word"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 120,
+          "prepSeconds": 20,
+          "prompt": "Handle three pressure events in one roleplay.",
+          "requiredElements": [
+            "Hold the turn",
+            "Paraphrase a missing word",
+            "Handle interruption",
+            "Correct a detail"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 180,
+          "prepSeconds": 5,
+          "prompt": "Handle all four with no preparation or restart.",
+          "requiredElements": [
+            "Hold the turn",
+            "Paraphrase a missing word",
+            "Handle interruption",
+            "Correct a detail",
+            "Finish the outcome"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Repeat the exact breakdown point with a different strategy.",
+      "followUpQuestion": "Which strategy protected the conversation most?",
+      "reflectionQuestion": "Did you continue despite imperfect language?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "repair-01",
+        "repair-15",
+        "repair-16",
+        "repair-17",
+        "fs-12"
+      ],
+      "isCheckpoint": true,
+      "compareWithDay": 50
+    },
+    {
+      "id": "day-57",
+      "day": 57,
+      "phaseId": "integration",
+      "title": "Big 30 question remix",
+      "category": "Big 30",
+      "goalTracks": [
+        "Daily conversation",
+        "Job interview",
+        "Social confidence"
+      ],
+      "skillFocus": [
+        "retrieval",
+        "question switching"
+      ],
+      "realLifeSituation": "Answer several familiar personal questions in a random order.",
+      "communicativeOutcome": "Retrieve personal content flexibly rather than reciting one fixed script.",
+      "keyPoints": [
+        "Direct answer",
+        "One example",
+        "Reason or meaning",
+        "Natural ending"
+      ],
+      "supportPhrases": [
+        "I’d say…",
+        "One example is…",
+        "The reason is…"
+      ],
+      "memoStarter": "Direct answer\nOne example\nReason or meaning\nNatural ending",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Answer two familiar questions.",
+          "requiredElements": [
+            "Direct answer",
+            "One example"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Answer three questions and one follow-up.",
+          "requiredElements": [
+            "Direct answer",
+            "One example",
+            "Reason or meaning",
+            "Natural ending"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Complete a rapid five-question interview.",
+          "requiredElements": [
+            "Direct answer",
+            "One example",
+            "Reason or meaning",
+            "Natural ending"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Change one opening so the answers do not sound identical.",
+      "followUpQuestion": "Which answer needs a stronger example?",
+      "reflectionQuestion": "Could you adapt when the wording changed?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "fr-36",
+        "fr-37",
+        "fs-13"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-58",
+      "day": 58,
+      "phaseId": "integration",
+      "title": "Personal goal simulation",
+      "category": "Personal goal",
+      "goalTracks": [
+        "Workplace English",
+        "Customer conversations",
+        "Job interview",
+        "Travel",
+        "Presentations",
+        "Social confidence",
+        "Daily conversation"
+      ],
+      "skillFocus": [
+        "personalised task",
+        "transfer"
+      ],
+      "realLifeSituation": "Choose the real situation that originally motivated you to improve English.",
+      "communicativeOutcome": "Complete a realistic simulation that matters to your life.",
+      "keyPoints": [
+        "Who you are speaking to",
+        "Desired outcome",
+        "Likely difficulty",
+        "Useful support",
+        "Successful ending"
+      ],
+      "supportPhrases": [
+        "To give you some context…",
+        "What I need is…",
+        "Before we finish…"
+      ],
+      "memoStarter": "Who you are speaking to\nDesired outcome\nLikely difficulty\nUseful support\nSuccessful ending",
+      "levels": {
+        "easy": {
+          "speakSeconds": 30,
+          "prepSeconds": 30,
+          "prompt": "Complete the simplest realistic version.",
+          "requiredElements": [
+            "Who you are speaking to",
+            "Desired outcome"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 60,
+          "prepSeconds": 20,
+          "prompt": "Complete it with one follow-up or obstacle.",
+          "requiredElements": [
+            "Who you are speaking to",
+            "Desired outcome",
+            "Likely difficulty",
+            "Useful support"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 90,
+          "prepSeconds": 5,
+          "prompt": "Run the full scenario with two unexpected turns.",
+          "requiredElements": [
+            "Who you are speaking to",
+            "Desired outcome",
+            "Likely difficulty",
+            "Useful support",
+            "Successful ending"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Repeat the part most likely to happen in real life.",
+      "followUpQuestion": "What would the other person say next?",
+      "reflectionQuestion": "Did this prepare you for an actual situation?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "fr-38",
+        "repair-18",
+        "fs-14"
+      ],
+      "isCheckpoint": false
+    },
+    {
+      "id": "day-59",
+      "day": 59,
+      "phaseId": "integration",
+      "title": "Day 1 comparison: introduce yourself",
+      "category": "Progress comparison",
+      "goalTracks": [
+        "Daily conversation",
+        "Workplace English",
+        "Job interview",
+        "Social confidence"
+      ],
+      "skillFocus": [
+        "task repetition",
+        "self-assessment"
+      ],
+      "realLifeSituation": "Answer the Day 1 introduction again and compare recordings.",
+      "communicativeOutcome": "Identify changes in continuity, organisation, and conversational tone.",
+      "keyPoints": [
+        "Same identity and focus",
+        "One recent development",
+        "One memorable detail",
+        "Listener hook"
+      ],
+      "supportPhrases": [
+        "To give you a quick introduction…",
+        "Recently, I’ve been…",
+        "How about you?"
+      ],
+      "memoStarter": "Same identity and focus\nOne recent development\nOne memorable detail\nListener hook",
+      "levels": {
+        "easy": {
+          "speakSeconds": 60,
+          "prepSeconds": 30,
+          "prompt": "Repeat the introduction and compare.",
+          "requiredElements": [
+            "Same identity and focus",
+            "One recent development"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 120,
+          "prepSeconds": 20,
+          "prompt": "Give a flexible version and answer a follow-up.",
+          "requiredElements": [
+            "Same identity and focus",
+            "One recent development",
+            "One memorable detail",
+            "Listener hook"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 180,
+          "prepSeconds": 5,
+          "prompt": "Adapt it for a colleague, interviewer, and social contact.",
+          "requiredElements": [
+            "Same identity and focus",
+            "One recent development",
+            "One memorable detail",
+            "Listener hook"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Choose one measurable improvement and one next target.",
+      "followUpQuestion": "Which version best fits the listener?",
+      "reflectionQuestion": "What can you do now that was harder on Day 1?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "fs-15",
+        "fr-01"
+      ],
+      "isCheckpoint": true,
+      "compareWithDay": 1
+    },
+    {
+      "id": "day-60",
+      "day": 60,
+      "phaseId": "integration",
+      "title": "Final speaking showcase and next plan",
+      "category": "Final checkpoint",
+      "goalTracks": [
+        "Daily conversation",
+        "Workplace English",
+        "Customer conversations",
+        "Job interview",
+        "Travel",
+        "Presentations",
+        "Social confidence"
+      ],
+      "skillFocus": [
+        "integrated production",
+        "reflection"
+      ],
+      "realLifeSituation": "Complete one meaningful real-life task and design the next practice cycle.",
+      "communicativeOutcome": "Demonstrate functional communication and leave with a realistic continuation plan.",
+      "keyPoints": [
+        "Chosen task",
+        "Clear outcome",
+        "Two useful chunks",
+        "One recovery strategy",
+        "Next goal"
+      ],
+      "supportPhrases": [
+        "The main thing I want to communicate is…",
+        "What I mean is…",
+        "My next goal is…"
+      ],
+      "memoStarter": "Chosen task\nClear outcome\nTwo useful chunks\nOne recovery strategy\nNext goal",
+      "levels": {
+        "easy": {
+          "speakSeconds": 60,
+          "prepSeconds": 30,
+          "prompt": "Complete one familiar mission and name one improvement.",
+          "requiredElements": [
+            "Chosen task",
+            "Clear outcome"
+          ],
+          "pressureRule": "Full notes remain visible."
+        },
+        "practical": {
+          "speakSeconds": 120,
+          "prepSeconds": 20,
+          "prompt": "Complete a realistic roleplay, follow-up, and reflection.",
+          "requiredElements": [
+            "Chosen task",
+            "Clear outcome",
+            "Two useful chunks",
+            "One recovery strategy"
+          ],
+          "pressureRule": "Use keyword notes and partial phrase hints."
+        },
+        "brave": {
+          "speakSeconds": 180,
+          "prepSeconds": 5,
+          "prompt": "Complete a full no-prep simulation, recover, and present the next plan.",
+          "requiredElements": [
+            "Chosen task",
+            "Clear outcome",
+            "Two useful chunks",
+            "One recovery strategy",
+            "Next goal"
+          ],
+          "pressureRule": "Minimal notes, one follow-up, and no restart."
+        }
+      },
+      "firstAttemptInstruction": "Complete the message first. Do not stop to fix every small grammar mistake.",
+      "retryFocus": "Repeat the single turn with the greatest real-world value.",
+      "followUpQuestion": "What is the next real conversation where you will use this?",
+      "reflectionQuestion": "Which habits will you continue three times per week?",
+      "completionCriteria": "The listener can understand the main message and the intended outcome.",
+      "linkedPracticeIds": [
+        "fs-16",
+        "repair-18",
+        "fr-38"
+      ],
+      "isCheckpoint": true,
+      "compareWithDay": 59
+    }
+  ]
+}

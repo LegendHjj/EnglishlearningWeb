@@ -1,22 +1,209 @@
-import { Download, FileUp, RotateCcw, Save, ShieldCheck, Trash2 } from 'lucide-react'
-import { useRef, useState } from 'react'
+import { Download, FileUp, Play, RotateCcw, Save, ShieldCheck, Trash2 } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
 import { Button, Card } from '../components/ui'
 import { useApp } from '../context/AppContext'
 import { defaultState } from '../data/seed'
+import { useSpeech } from '../hooks/useSpeech'
 import { clearRecordings } from '../services/recordingDb'
-import { exportBackup, importBackup, resetState } from '../services/storage'
-import type { Goal } from '../types'
+import { exportBackup, exportState, importBackup, importState, resetState } from '../services/storage'
+import type { Goal, VoiceGender } from '../types'
 
-export default function SettingsPage(){
-  const {state,setState}=useApp()
-  const [form,setForm]=useState(state.preferences)
-  const [message,setMessage]=useState('')
-  const file=useRef<HTMLInputElement>(null)
-  const download=async()=>{setMessage('Preparing your complete backup…');try{const blob=new Blob([await exportBackup(state)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`fluency-reset-complete-${new Date().toISOString().slice(0,10)}.json`;a.click();URL.revokeObjectURL(a.href);setMessage('Complete backup created with progress and recordings.')}catch{setMessage('The complete backup could not be created.')}}
-  const upload=async(e:React.ChangeEvent<HTMLInputElement>)=>{try{const f=e.target.files?.[0];if(!f)return;setState(await importBackup(await f.text()));setMessage('Your progress and recordings were imported successfully.')}catch(err){setMessage(err instanceof Error?err.message:'The backup could not be read.')}finally{e.target.value=''}}
-  return <><div className="topline"><div><span className="eyebrow">Make practice fit your life</span><h1 className="page-title">Settings</h1></div><Button onClick={()=>{setState(s=>({...s,preferences:form}));setMessage('Settings saved.')}}><Save size={17}/> Save changes</Button></div>{message&&<div className="notice" role="status">{message}</div>}
-    <div className="settings-grid"><Card><h2>Your practice</h2><div className="settings-form"><label className="field"><span>Your name</span><input value={form.name} onChange={e=>setForm({...form,name:e.target.value})}/></label><label className="field"><span>Goal track</span><select value={form.goals[0]} onChange={e=>setForm({...form,goals:[e.target.value as Goal]})}>{['Workplace English','Customer conversations','Job interview','Daily conversation','Travel','Presentations','Social confidence'].map(x=><option key={x}>{x}</option>)}</select></label><label className="field"><span>Preferred practice time</span><select value={form.duration} onChange={e=>setForm({...form,duration:Number(e.target.value) as 2|5|10})}><option value="2">Quick Win · 2 minutes</option><option value="5">Normal · 5 minutes</option><option value="10">Full Workout · 10 minutes</option></select></label><label className="field"><span>Text-to-speech voice</span><select value={form.voice||'Browser default'} onChange={e=>setForm({...form,voice:e.target.value})}><option>Browser default</option></select></label></div></Card>
-      <div className="list"><Card><ShieldCheck color="var(--green)"/><h3>Complete local backup</h3><p className="muted">Normal use keeps progress in LocalStorage and audio in IndexedDB. A complete backup bundles both into one JSON file. Audio can make the file large.</p><div style={{display:'flex',gap:'.5rem',flexWrap:'wrap'}}><Button variant="secondary" onClick={download}><Download size={16}/> Export complete backup</Button><Button variant="secondary" onClick={()=>file.current?.click()}><FileUp size={16}/> Import backup</Button><input hidden ref={file} type="file" accept="application/json" onChange={upload}/></div></Card><Card><h3>Reset and deletion</h3><p className="muted">These actions cannot be undone.</p><Button variant="coral" onClick={async()=>{if(confirm('Delete all recordings from this device?')){await clearRecordings();setMessage('All recordings deleted.')}}}><Trash2 size={16}/> Delete all recordings</Button><Button variant="ghost" onClick={()=>{if(confirm('Reset all Fluency Reset progress and preferences?')){resetState();setState(defaultState);setMessage('Local progress reset.')}}}><RotateCcw size={16}/> Reset local data</Button></Card></div>
+function downloadJson(raw: string, name: string) {
+  const blob = new Blob([raw], { type: 'application/json' })
+  const anchor = document.createElement('a')
+  anchor.href = URL.createObjectURL(blob)
+  anchor.download = name
+  anchor.click()
+  URL.revokeObjectURL(anchor.href)
+}
+
+const VOICE_GENDER_OPTIONS: { value: VoiceGender; label: string; description: string }[] = [
+  { value: 'auto',   label: 'Auto',   description: "Browser's default English voice" },
+  { value: 'female', label: 'Female', description: 'Prefer a female English voice' },
+  { value: 'male',   label: 'Male',   description: 'Prefer a male English voice' },
+]
+
+export default function SettingsPage() {
+  const { state, setState } = useApp()
+  const [form, setForm] = useState(state.preferences)
+  const [message, setMessage] = useState('')
+  const [voices, setVoices] = useState<string[]>([])
+  const [showAdvanced, setShowAdvanced] = useState(false)
+  const progressFile = useRef<HTMLInputElement>(null)
+  const completeFile = useRef<HTMLInputElement>(null)
+
+  // Preview uses the *form* state so users hear the change before saving
+  const { speak, speaking } = useSpeech(form.voice, form.voiceGender)
+
+  useEffect(() => {
+    if (!('speechSynthesis' in window)) return
+    const refresh = () =>
+      setVoices(
+        window.speechSynthesis.getVoices()
+          .filter(v => v.lang.toLowerCase().startsWith('en'))
+          .map(v => v.name)
+      )
+    refresh()
+    window.speechSynthesis.addEventListener('voiceschanged', refresh)
+    return () => window.speechSynthesis.removeEventListener('voiceschanged', refresh)
+  }, [])
+
+  const exportComplete = async () => {
+    setMessage('Preparing your complete backup...')
+    try {
+      downloadJson(
+        await exportBackup(state),
+        `fluency-reset-complete-${new Date().toISOString().slice(0, 10)}.json`
+      )
+      setMessage('Complete backup created with progress, library, and recording audio.')
+    } catch { setMessage('The complete backup could not be created.') }
+  }
+
+  const uploadProgress = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    try {
+      const file = event.target.files?.[0]
+      if (!file) return
+      setState(importState(await file.text()))
+      setMessage('Your progress and library were imported successfully. Existing recording audio was left unchanged.')
+    } catch (error) { setMessage(error instanceof Error ? error.message : 'The export could not be read.') }
+    finally { event.target.value = '' }
+  }
+
+  const uploadComplete = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    try {
+      const file = event.target.files?.[0]
+      if (!file) return
+      setState(await importBackup(await file.text()))
+      setMessage('Your complete backup, including recordings, was imported successfully.')
+    } catch (error) { setMessage(error instanceof Error ? error.message : 'The backup could not be read.') }
+    finally { event.target.value = '' }
+  }
+
+  const currentGender: VoiceGender = form.voiceGender ?? 'auto'
+
+  return <>
+    <div className="topline">
+      <div>
+        <span className="eyebrow">Make practice fit your life</span>
+        <h1 className="page-title">Settings</h1>
+      </div>
+      <Button onClick={() => { setState(current => ({ ...current, preferences: form })); setMessage('Settings saved.') }}>
+        <Save size={17} /> Save changes
+      </Button>
+    </div>
+
+    {message && <div className="notice" role="status">{message}</div>}
+
+    <div className="settings-grid">
+      <Card>
+        <h2>Your practice</h2>
+        <div className="settings-form">
+          <label className="field">
+            <span>Your name</span>
+            <input value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} />
+          </label>
+
+          <label className="field">
+            <span>Goal track</span>
+            <select value={form.goals[0]} onChange={e => setForm({ ...form, goals: [e.target.value as Goal] })}>
+              {['Workplace English','Customer conversations','Job interview','Daily conversation','Travel','Presentations','Social confidence'].map(v => <option key={v}>{v}</option>)}
+            </select>
+          </label>
+
+          <label className="field">
+            <span>Preferred practice time</span>
+            <select value={form.duration} onChange={e => setForm({ ...form, duration: Number(e.target.value) as 2 | 5 | 10 })}>
+              <option value="2">Quick Win · 2 minutes</option>
+              <option value="5">Normal · 5 minutes</option>
+              <option value="10">Full Workout · 10 minutes</option>
+            </select>
+          </label>
+
+          {/* ── Voice gender picker ── */}
+          <div className="field">
+            <span>Text-to-speech voice</span>
+            <div className="voice-gender-grid">
+              {VOICE_GENDER_OPTIONS.map(opt => (
+                <button
+                  key={opt.value}
+                  type="button"
+                  className={`voice-gender-btn${currentGender === opt.value ? ' selected' : ''}`}
+                  onClick={() => setForm({ ...form, voiceGender: opt.value })}
+                >
+                  <strong>{opt.label}</strong>
+                  <span>{opt.description}</span>
+                </button>
+              ))}
+            </div>
+            <Button
+              variant="secondary"
+              style={{ marginTop: '.6rem', alignSelf: 'flex-start' }}
+              disabled={speaking}
+              onClick={() => speak('Hello! This is how your chosen voice sounds when playing back phrases.')}
+            >
+              <Play size={14} /> {speaking ? 'Playing…' : 'Preview voice'}
+            </Button>
+          </div>
+
+          {/* ── Advanced: pick a specific voice name ── */}
+          <details
+            className="field voice-advanced"
+            onToggle={e => setShowAdvanced((e.target as HTMLDetailsElement).open)}
+          >
+            <summary>Advanced: choose a specific voice {showAdvanced ? '▲' : '▼'}</summary>
+            <select
+              style={{ marginTop: '.5rem' }}
+              value={form.voice || 'Browser default'}
+              onChange={e => setForm({ ...form, voice: e.target.value })}
+            >
+              <option>Browser default</option>
+              {voices.map(v => <option key={v}>{v}</option>)}
+            </select>
+            <p className="muted" style={{ marginTop: '.35rem', fontSize: '.78rem', marginBottom: 0 }}>
+              A specific voice here overrides the gender choice above.
+            </p>
+          </details>
+        </div>
+      </Card>
+
+      <div className="list">
+        <Card>
+          <ShieldCheck color="var(--green)" />
+          <h3>Export progress and library</h3>
+          <p className="muted">Includes preferences, progress, phrases, Speaking Packs, vocabulary, and memos. Recording audio is not included.</p>
+          <div className="detail-actions">
+            <Button variant="secondary" onClick={() => { downloadJson(exportState(state), `fluency-reset-library-${new Date().toISOString().slice(0, 10)}.json`); setMessage('Progress and library export created without audio.') }}>
+              <Download size={16} /> Export progress and library
+            </Button>
+            <Button variant="secondary" onClick={() => progressFile.current?.click()}>
+              <FileUp size={16} /> Import progress and library
+            </Button>
+            <input hidden ref={progressFile} type="file" accept="application/json" onChange={uploadProgress} />
+          </div>
+        </Card>
+
+        <Card>
+          <ShieldCheck color="var(--coral)" />
+          <h3>Export complete backup</h3>
+          <p className="muted">Includes everything above plus IndexedDB recording audio encoded in the JSON file. This file may be large.</p>
+          <div className="detail-actions">
+            <Button variant="secondary" onClick={exportComplete}><Download size={16} /> Export complete backup</Button>
+            <Button variant="secondary" onClick={() => completeFile.current?.click()}><FileUp size={16} /> Import complete backup</Button>
+            <input hidden ref={completeFile} type="file" accept="application/json" onChange={uploadComplete} />
+          </div>
+        </Card>
+
+        <Card>
+          <h3>Reset and deletion</h3>
+          <p className="muted">These actions cannot be undone.</p>
+          <Button variant="coral" onClick={async () => { if (confirm('Delete all recordings from this device?')) { await clearRecordings(); setMessage('All recordings deleted.') } }}>
+            <Trash2 size={16} /> Delete all recordings
+          </Button>
+          <Button variant="ghost" onClick={() => { if (confirm('Reset all Fluency Reset progress and preferences?')) { resetState(); setState(defaultState); setMessage('Local progress reset.') } }}>
+            <RotateCcw size={16} /> Reset local data
+          </Button>
+        </Card>
+      </div>
     </div>
   </>
 }

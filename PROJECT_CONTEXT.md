@@ -1,6 +1,24 @@
 # Fluency Reset — Project Context and Handoff
 
-Last updated: 2026-07-12
+Last updated: 2026-07-14
+
+## 60-practice-day programme upgrade
+
+The application now uses the repository content pack as its learning source:
+
+- `src/content/fluency-reset-60-day-program.json`: 60 missions and nine phases
+- `src/content/practice-room-content.json`: 156 drills across seven guided modes
+- `src/content/big-30-question-guides.json`: 30 question-specific guides
+
+`src/services/contentRepository.ts` validates these packs at runtime and resolves phase, mission, drill, and Big 30 relationships. The dashboard selects the earliest incomplete programme day rather than rotating by calendar date. Programme completion is stored separately from preserved legacy mission history.
+
+Mission duration now changes the actual flow: Quick Win uses one attempt and a self-check, Normal adds a focused retry, and Full Workout adds a linked warm-up, retry, follow-up, and reflection. Easy, Practical, and Brave use authored preparation time, speaking targets, required points, support visibility, and pressure rules.
+
+The Practice Room now renders Mouth Reps, Tight Build, Loose Story, Free Response, Echo & Shadow, Repair Lab, and Fluency Sprint from JSON. Each follows setup, attempt, retry, reflection, and completion. Big 30 uses question-specific purposes, planners, frames, traps, follow-ups, and timed rounds.
+
+Local state is schema version 4 with a separate programme content version. Migration preserves preferences, phrases, packs, vocabulary, memos, Big 30 progress, old activity, pins, practice results, and Library state. Backup versions 1–3 remain importable. IndexedDB remains on the existing database/store, so recordings stay accessible.
+
+Progress metrics now derive from mission self-checks, completed drills, and recording metadata. Phrase/vocabulary usage and confidence are saved only when the learner explicitly reports them.
 
 ## What this project is
 

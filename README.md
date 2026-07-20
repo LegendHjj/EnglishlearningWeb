@@ -41,20 +41,32 @@ npm run build
 
 ## MVP features
 
+- Progressive 60-practice-day programme across nine phases; missed calendar days never skip lessons
+- JSON-backed content repository with runtime validation for 60 missions, 156 guided drills, and 30 Big 30 guides
+- Meaningfully different Quick Win, Normal Practice, and Full Workout mission flows
+- Authored Easy, Practical, and Brave requirements with different preparation, speaking time, support, and pressure
+- Seven-mode guided Practice Room: Mouth Reps, Tight Build, Loose Story, Free Response, Echo & Shadow, Repair Lab, and Fluency Sprint
+- Honest mission self-checks for message completion, support-item use, confidence, follow-up, and note stage
+- Programme overview, checkpoint markers, linked mission drills, and a ten-item personal Practice next queue
 - Six-step local onboarding and personalised dashboard
 - Quick Win, Normal Practice, and Full Workout session choices
-- Guided mission flow with memo, phrase pinning, Follow/Recall/Free note stages, recording, retry, and completion feedback
-- Speaking Notebook with search, status filters, phrase creation/editing/deletion, favourites, TTS playback, and Speaking Packs
+- Guided mission flow with memo, combined phrase/vocabulary pinning, Follow/Recall/Free note stages, recording, retry, and completion feedback
+- My English Library at `/app/notebook`, with Vocabulary, Speaking Phrases, and Speaking Packs tabs
+- Vocabulary quick add, ChatGPT paste-and-detect preview, manual entry, search and filters, browser text-to-speech, personal sentences, spaced review, and speaking support
 - Browser microphone recording with pause, replay, retry, save, permission guidance, and support fallback
 - IndexedDB audio storage; versioned LocalStorage for other state
 - Big 30 question planners and five practice modes
-- Recording library, progress charts, preferences, and JSON export/import
-- Responsive desktop sidebar and mobile bottom navigation
+- Recording library, saved-data progress metrics, preferences, and versioned JSON export/import
+- Responsive desktop sidebar, five-item mobile navigation, and a mobile More menu for Recordings, Progress, and Settings
 
 ## Privacy and browser support
 
-Audio recordings are stored in IndexedDB on the current device and are not uploaded. Exported JSON contains non-audio progress only. Recording requires a browser with `MediaRecorder` and microphone permission; current Chrome, Edge, Firefox, and Safari releases are recommended. Text-to-speech uses the browser's `SpeechSynthesis` support.
+Audio recordings are stored in IndexedDB on the current device and are not uploaded. **Export progress and library** includes preferences, progress, phrases, Speaking Packs, vocabulary, and memos, but no audio. **Export complete backup** includes the same data plus IndexedDB audio encoded in the JSON file, so it may be large. Recording requires a browser with `MediaRecorder` and microphone permission; current Chrome, Edge, Firefox, and Safari releases are recommended. Text-to-speech uses the browser's `SpeechSynthesis` support and the selected Settings voice when available.
 
 ## MVP limitations
 
-The app has no backend or cross-device sync. Phrase usage is user-directed rather than automatically detected because speech-to-text and pronunciation scoring are intentionally excluded. Audio is not included in JSON exports, and available recording formats depend on the browser.
+The app has no backend or cross-device sync. Phrase and vocabulary usage, confidence, message completion, and follow-up completion are self-reported because speech-to-text and pronunciation scoring are intentionally excluded. Available recording formats, pause support, and speech voices depend on the browser. Checkpoint recommendations use authored mission links and learner reflection rather than automated speech analysis.
+
+## Content and saved-data versions
+
+The authored content pack currently uses content schema version `1`. Local application state uses schema version `4` while retaining the existing `fluency-reset-state-v1` storage key so current browsers migrate in place. Imports from backup versions 1–3 remain supported. Existing audio remains in the `fluency-reset-audio` IndexedDB database and is never deleted during migration.

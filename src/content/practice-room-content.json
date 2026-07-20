@@ -1,0 +1,3717 @@
+{
+  "schemaVersion": 1,
+  "contentPackId": "fluency-reset-practice-room-v1",
+  "title": "Fluency Reset Practice Room",
+  "description": "Guided speaking workouts that move from supported production to flexible communication.",
+  "designPrinciples": [
+    "Every drill has a communicative purpose, not only a language form.",
+    "Every drill moves through setup, first attempt, one focused retry, and reflection.",
+    "Support is reduced gradually through Follow, Recall, and Free stages.",
+    "Fluency rounds reuse familiar language rather than adding several new items at once.",
+    "Repair and interaction strategies are trained directly, including planning, clarification, turn-taking, compensating, and self-correction.",
+    "Completion means the message was understandable and achieved its purpose; it does not mean perfect grammar."
+  ],
+  "modeOrder": [
+    "mouthReps",
+    "tightBuild",
+    "looseStory",
+    "freeResponse",
+    "echoShadow",
+    "repairLab",
+    "fluencySprint"
+  ],
+  "modes": {
+    "mouthReps": {
+      "label": "Mouth Reps",
+      "purpose": "Automate useful speaking chunks through physical repetition, rhythm, intention, and personal adaptation.",
+      "defaultFlow": [
+        "Listen",
+        "Slow build",
+        "Natural rhythm",
+        "Clear intention",
+        "Personal use"
+      ],
+      "items": [
+        {
+          "id": "mr-01",
+          "phrase": "Let me think for a second.",
+          "communicativeFunction": "buying time",
+          "chunkedText": "Let me think for a second.",
+          "focusWords": [
+            "second"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Answer a question about your next goal.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-02",
+          "phrase": "Right now, I’m finishing a report.",
+          "communicativeFunction": "direct English thinking",
+          "chunkedText": "Right now / I’m finishing a report.",
+          "focusWords": [
+            "finishing",
+            "report"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Replace the action with what you are doing now.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-03",
+          "phrase": "First, I need to check the details.",
+          "communicativeFunction": "sequencing a plan",
+          "chunkedText": "First / I need to check the details.",
+          "focusWords": [
+            "details"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Add your next two actions.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-04",
+          "phrase": "Usually, I start by checking urgent messages.",
+          "communicativeFunction": "describing a routine",
+          "chunkedText": "Usually / I start by checking urgent messages.",
+          "focusWords": [
+            "usually",
+            "checking",
+            "urgent"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Describe how your day normally starts.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-05",
+          "phrase": "Yesterday, I had to change my plan.",
+          "communicativeFunction": "past narration",
+          "chunkedText": "Yesterday / I had to change my plan.",
+          "focusWords": [
+            "yesterday",
+            "change"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Explain why your plan changed.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-06",
+          "phrase": "It was pretty relaxing, actually.",
+          "communicativeFunction": "small-talk answer",
+          "chunkedText": "It was pretty relaxing / actually.",
+          "focusWords": [
+            "pretty",
+            "relaxing",
+            "actually"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Add one weekend activity and ask the question back.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-07",
+          "phrase": "That’s a good question.",
+          "communicativeFunction": "holding the turn",
+          "chunkedText": "That’s a good question.",
+          "focusWords": [
+            "that’s",
+            "question"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Use it before an honest opinion.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-08",
+          "phrase": "Could you say the last part again, please?",
+          "communicativeFunction": "asking for repetition",
+          "chunkedText": "Could you say the last part again / please?",
+          "focusWords": [
+            "please"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Name the exact part you missed.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-09",
+          "phrase": "Let me make sure I understood.",
+          "communicativeFunction": "checking understanding",
+          "chunkedText": "Let me make sure I understood.",
+          "focusWords": [
+            "understood"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Add a one-sentence summary.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-10",
+          "phrase": "That makes sense, especially because it saves time.",
+          "communicativeFunction": "agreeing and adding",
+          "chunkedText": "That makes sense / especially because it saves time.",
+          "focusWords": [
+            "especially",
+            "because"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Agree with a real idea and give a reason.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-11",
+          "phrase": "I understand your point, but I see one risk.",
+          "communicativeFunction": "polite disagreement",
+          "chunkedText": "I understand your point / but I see one risk.",
+          "focusWords": [
+            "understand"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Name one risk and a safer option.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-12",
+          "phrase": "One achievement I’m proud of is improving our response time.",
+          "communicativeFunction": "describing achievement",
+          "chunkedText": "One achievement I’m proud of is improving our response time.",
+          "focusWords": [
+            "achievement",
+            "improving",
+            "response"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Replace the achievement with your own.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-13",
+          "phrase": "Since then, I’ve used a checklist.",
+          "communicativeFunction": "showing learning",
+          "chunkedText": "Since then / I’ve used a checklist.",
+          "focusWords": [
+            "checklist"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Name one habit you changed after a mistake.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-14",
+          "phrase": "It’s pretty busy today, isn’t it?",
+          "communicativeFunction": "opening small talk",
+          "chunkedText": "It’s pretty busy today / isn’t it?",
+          "focusWords": [
+            "pretty"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Use a real observation from your environment.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-15",
+          "phrase": "What got you interested in that?",
+          "communicativeFunction": "deeper follow-up",
+          "chunkedText": "What got you interested in that?",
+          "focusWords": [
+            "interested"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Ask about a hobby, career, or project.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-16",
+          "phrase": "I’m sorry that happened. That sounds frustrating.",
+          "communicativeFunction": "showing empathy",
+          "chunkedText": "I’m sorry that happened. That sounds frustrating.",
+          "focusWords": [
+            "happened",
+            "sounds",
+            "frustrating"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Respond to someone who had a difficult day.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-17",
+          "phrase": "I really liked how clearly you explained that.",
+          "communicativeFunction": "giving a specific compliment",
+          "chunkedText": "I really liked how clearly you explained that.",
+          "focusWords": [
+            "really",
+            "clearly",
+            "explained"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Compliment a real skill or piece of work.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-18",
+          "phrase": "It was nice talking with you.",
+          "communicativeFunction": "closing socially",
+          "chunkedText": "It was nice talking with you.",
+          "focusWords": [
+            "talking"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Add a future contact or good wish.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-19",
+          "phrase": "Here’s a quick update: the fix is ready for testing.",
+          "communicativeFunction": "project update headline",
+          "chunkedText": "Here’s a quick update / the fix is ready for testing.",
+          "focusWords": [
+            "here’s",
+            "update",
+            "testing"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Replace the result with a real update.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-20",
+          "phrase": "I’m trying to reproduce the customer’s error.",
+          "communicativeFunction": "explaining a help request",
+          "chunkedText": "I’m trying to reproduce the customer’s error.",
+          "focusWords": [
+            "trying",
+            "reproduce",
+            "customer’s"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Add what you already tried.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-21",
+          "phrase": "I may need one more day because the scope changed.",
+          "communicativeFunction": "explaining a delay",
+          "chunkedText": "I may need one more day because the scope changed.",
+          "focusWords": [
+            "because",
+            "changed"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Add the impact and a new deadline.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-22",
+          "phrase": "Before we finish, can we confirm the next step?",
+          "communicativeFunction": "closing a meeting",
+          "chunkedText": "Before we finish / can we confirm the next step?",
+          "focusWords": [
+            "before",
+            "finish",
+            "confirm"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Add the owner and due date.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-23",
+          "phrase": "One thing that works well is the clear opening.",
+          "communicativeFunction": "giving feedback",
+          "chunkedText": "One thing that works well is the clear opening.",
+          "focusWords": [
+            "opening"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Add one practical improvement.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-24",
+          "phrase": "I’m sorry about the inconvenience.",
+          "communicativeFunction": "customer empathy",
+          "chunkedText": "I’m sorry about the inconvenience.",
+          "focusWords": [
+            "inconvenience"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Add what you can do next.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-25",
+          "phrase": "I received a large size, but I ordered a medium.",
+          "communicativeFunction": "describing a service mismatch",
+          "chunkedText": "I received a large size / but I ordered a medium.",
+          "focusWords": [
+            "received",
+            "ordered",
+            "medium"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Request an exchange.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-26",
+          "phrase": "Hi, this is Maya. I’m calling about ticket 2468.",
+          "communicativeFunction": "leaving a voicemail",
+          "chunkedText": "Hi / this is Maya. I’m calling about ticket 2468.",
+          "focusWords": [
+            "calling",
+            "ticket"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Replace the name and reason.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-27",
+          "phrase": "Personally, I think the smaller test is safer.",
+          "communicativeFunction": "giving an opinion",
+          "chunkedText": "Personally / I think the smaller test is safer.",
+          "focusWords": [
+            "personally",
+            "smaller"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Add one reason and example.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-28",
+          "phrase": "The trade-off is higher cost for faster delivery.",
+          "communicativeFunction": "explaining a trade-off",
+          "chunkedText": "The trade-off is higher cost for faster delivery.",
+          "focusWords": [
+            "trade-off",
+            "higher",
+            "faster"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Use a real benefit and cost.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-29",
+          "phrase": "What I suggest is testing it with five users first.",
+          "communicativeFunction": "recommending a solution",
+          "chunkedText": "What I suggest is testing it with five users first.",
+          "focusWords": [
+            "suggest",
+            "testing"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Replace the test with your idea.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-30",
+          "phrase": "The main change is a steady increase since March.",
+          "communicativeFunction": "describing a trend",
+          "chunkedText": "The main change is a steady increase since March.",
+          "focusWords": [
+            "change",
+            "steady",
+            "increase"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Describe a real or imagined change.",
+          "recommendedSeconds": 90
+        },
+        {
+          "id": "mr-31",
+          "phrase": "The key takeaway is that we need to act earlier.",
+          "communicativeFunction": "closing a presentation",
+          "chunkedText": "The key takeaway is that we need to act earlier.",
+          "focusWords": [
+            "takeaway",
+            "earlier"
+          ],
+          "rounds": [
+            {
+              "name": "Slow build",
+              "instruction": "Listen once, then say the phrase slowly in thought groups."
+            },
+            {
+              "name": "Natural rhythm",
+              "instruction": "Say the complete phrase at a normal conversational speed."
+            },
+            {
+              "name": "Clear intention",
+              "instruction": "Say it as a real request, update, disagreement, or response."
+            },
+            {
+              "name": "Personal use",
+              "instruction": "Adapt it with one true detail from your life."
+            }
+          ],
+          "personalPrompt": "Finish a short explanation with one takeaway.",
+          "recommendedSeconds": 90
+        }
+      ]
+    },
+    "tightBuild": {
+      "label": "Tight Build",
+      "purpose": "Start from one safe sentence and make controlled changes before giving a short message.",
+      "defaultFlow": [
+        "Read the base",
+        "Make three changes",
+        "Hide the models",
+        "Give the final message",
+        "Reflect"
+      ],
+      "items": [
+        {
+          "id": "tb-01",
+          "title": "Build a natural introduction",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "I work in customer support.",
+          "transformations": [
+            {
+              "instruction": "Add your current focus.",
+              "model": "I work in customer support, and I’m currently focusing on problem management."
+            },
+            {
+              "instruction": "Add one past experience.",
+              "model": "Before this, I worked in technical consulting."
+            },
+            {
+              "instruction": "Add a listener hook.",
+              "model": "Outside of work, I’m building a small online business."
+            }
+          ],
+          "finalSpeakingPrompt": "Give a 45-second introduction using the three parts.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-02",
+          "title": "Describe the present moment",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "I’m checking my messages.",
+          "transformations": [
+            {
+              "instruction": "Add the location.",
+              "model": "I’m checking my messages at my desk."
+            },
+            {
+              "instruction": "Add a reason.",
+              "model": "I’m checking my messages because I’m waiting for an update."
+            },
+            {
+              "instruction": "Add what happens next.",
+              "model": "After that, I’m going to finish my report."
+            }
+          ],
+          "finalSpeakingPrompt": "Narrate what you are doing now and what you will do next.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-03",
+          "title": "Organise today’s plan",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "I need to finish one task.",
+          "transformations": [
+            {
+              "instruction": "Name the task.",
+              "model": "I need to finish the customer report."
+            },
+            {
+              "instruction": "Add a deadline.",
+              "model": "I need to finish the customer report before lunch."
+            },
+            {
+              "instruction": "Add a possible obstacle.",
+              "model": "I need to finish it before lunch, but I’m still waiting for the latest figures."
+            }
+          ],
+          "finalSpeakingPrompt": "Explain your plan for today in a clear order.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-04",
+          "title": "Describe a routine",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "I start work at nine.",
+          "transformations": [
+            {
+              "instruction": "Add what usually happens next.",
+              "model": "I start work at nine, and I usually check urgent tickets first."
+            },
+            {
+              "instruction": "Add frequency.",
+              "model": "I normally have two or three meetings in the morning."
+            },
+            {
+              "instruction": "Add a contrast.",
+              "model": "Most days are predictable, but Mondays are usually busier."
+            }
+          ],
+          "finalSpeakingPrompt": "Describe a normal workday from start to finish.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-05",
+          "title": "Move a story into the past",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "I visit a customer.",
+          "transformations": [
+            {
+              "instruction": "Change it to yesterday.",
+              "model": "Yesterday, I visited a customer."
+            },
+            {
+              "instruction": "Add the reason.",
+              "model": "Yesterday, I visited a customer to understand a system problem."
+            },
+            {
+              "instruction": "Add the result.",
+              "model": "We found the cause and agreed on the next step."
+            }
+          ],
+          "finalSpeakingPrompt": "Tell a short story about something that happened yesterday.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-06",
+          "title": "Expand a weekend answer",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "My weekend was good.",
+          "transformations": [
+            {
+              "instruction": "Replace 'good' with a precise detail.",
+              "model": "My weekend was relaxing."
+            },
+            {
+              "instruction": "Add one activity.",
+              "model": "I spent Saturday with my family."
+            },
+            {
+              "instruction": "Add one reaction.",
+              "model": "It was nice because we had not gone out together for a while."
+            }
+          ],
+          "finalSpeakingPrompt": "Answer “How was your weekend?” with two useful details.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-07",
+          "title": "Turn confusion into a clear question",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "I don’t understand.",
+          "transformations": [
+            {
+              "instruction": "Name the unclear part.",
+              "model": "I’m not clear about the deadline."
+            },
+            {
+              "instruction": "Ask a specific question.",
+              "model": "Do you mean we need to finish testing by Thursday?"
+            },
+            {
+              "instruction": "Confirm the next action.",
+              "model": "Once you confirm that, I can update the plan."
+            }
+          ],
+          "finalSpeakingPrompt": "Clarify one realistic instruction without sounding defensive.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-08",
+          "title": "Confirm understanding",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "So, I need to update the file.",
+          "transformations": [
+            {
+              "instruction": "Add the deadline.",
+              "model": "So, I need to update the file by three o’clock."
+            },
+            {
+              "instruction": "Add the recipient.",
+              "model": "Then I should send it to the project team."
+            },
+            {
+              "instruction": "Invite correction.",
+              "model": "Is that correct, or have I missed anything?"
+            }
+          ],
+          "finalSpeakingPrompt": "Summarise an instruction and ask for confirmation.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-09",
+          "title": "Agree and contribute",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "That makes sense.",
+          "transformations": [
+            {
+              "instruction": "Add a reason.",
+              "model": "That makes sense because it reduces the risk."
+            },
+            {
+              "instruction": "Add your contribution.",
+              "model": "We could also test it with one customer first."
+            },
+            {
+              "instruction": "Invite a response.",
+              "model": "Would that work for everyone?"
+            }
+          ],
+          "finalSpeakingPrompt": "Respond to an idea by agreeing and adding one useful point.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-10",
+          "title": "Disagree constructively",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "I’m not sure about that.",
+          "transformations": [
+            {
+              "instruction": "Acknowledge the other view.",
+              "model": "I understand why that option looks faster."
+            },
+            {
+              "instruction": "State your concern.",
+              "model": "However, I’m concerned that we have not tested it enough."
+            },
+            {
+              "instruction": "Offer an alternative.",
+              "model": "Perhaps we could run a small test before the full release."
+            }
+          ],
+          "finalSpeakingPrompt": "Disagree with a proposal while protecting the relationship.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-11",
+          "title": "Structure a first-job story",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "My first job was in retail.",
+          "transformations": [
+            {
+              "instruction": "Add when and where.",
+              "model": "My first job was in a small retail shop after college."
+            },
+            {
+              "instruction": "Add one challenge.",
+              "model": "At first, I found it difficult to speak to unhappy customers."
+            },
+            {
+              "instruction": "Add what you learned.",
+              "model": "It taught me to listen carefully and explain things calmly."
+            }
+          ],
+          "finalSpeakingPrompt": "Tell your first-job story with a beginning, challenge, and lesson.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-12",
+          "title": "Describe an achievement",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "I completed a difficult project.",
+          "transformations": [
+            {
+              "instruction": "Name the goal.",
+              "model": "I completed a difficult system migration."
+            },
+            {
+              "instruction": "Add the effort.",
+              "model": "My team spent several weeks testing and correcting issues."
+            },
+            {
+              "instruction": "Add why it matters.",
+              "model": "I’m proud of it because the customer could continue working without disruption."
+            }
+          ],
+          "finalSpeakingPrompt": "Describe an achievement and explain why it matters to you.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-13",
+          "title": "Explain a solved problem",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "There was a login problem.",
+          "transformations": [
+            {
+              "instruction": "Describe the impact.",
+              "model": "Several users could not access the system."
+            },
+            {
+              "instruction": "Explain your action.",
+              "model": "I compared the logs and reproduced the problem in a test environment."
+            },
+            {
+              "instruction": "State the outcome.",
+              "model": "We identified a configuration error and restored access."
+            }
+          ],
+          "finalSpeakingPrompt": "Explain a problem, your action, and the result.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-14",
+          "title": "Turn a mistake into a lesson",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "I made a mistake.",
+          "transformations": [
+            {
+              "instruction": "Name it neutrally.",
+              "model": "I sent an update before checking one important detail."
+            },
+            {
+              "instruction": "Explain the consequence.",
+              "model": "The team had to correct the information later."
+            },
+            {
+              "instruction": "State the lesson.",
+              "model": "Since then, I use a short checklist before sending critical updates."
+            }
+          ],
+          "finalSpeakingPrompt": "Share one mistake without making the story sound overly negative.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-15",
+          "title": "Describe an influential person",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "My manager influenced me.",
+          "transformations": [
+            {
+              "instruction": "Name the quality.",
+              "model": "My manager influenced me because she stayed calm under pressure."
+            },
+            {
+              "instruction": "Give an example.",
+              "model": "She asked clear questions instead of blaming people."
+            },
+            {
+              "instruction": "Connect it to yourself.",
+              "model": "I now try to use the same approach when supporting my team."
+            }
+          ],
+          "finalSpeakingPrompt": "Describe someone who influenced the way you work or think.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-16",
+          "title": "Build follow-up questions",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "I like travelling.",
+          "transformations": [
+            {
+              "instruction": "Ask for origin.",
+              "model": "What got you interested in travelling?"
+            },
+            {
+              "instruction": "Ask for an example.",
+              "model": "What is the most memorable place you have visited?"
+            },
+            {
+              "instruction": "Ask for preference.",
+              "model": "Do you prefer travelling alone or with other people?"
+            }
+          ],
+          "finalSpeakingPrompt": "Keep a conversation going with two connected follow-up questions.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-17",
+          "title": "Close a conversation warmly",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "I need to go.",
+          "transformations": [
+            {
+              "instruction": "Add appreciation.",
+              "model": "It was really nice talking with you."
+            },
+            {
+              "instruction": "Give a natural reason.",
+              "model": "I need to get back to my desk before the next meeting."
+            },
+            {
+              "instruction": "Leave a future connection.",
+              "model": "Let’s continue this conversation another time."
+            }
+          ],
+          "finalSpeakingPrompt": "End a friendly conversation without sounding abrupt.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-18",
+          "title": "Build a concise project update",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "The project is going well.",
+          "transformations": [
+            {
+              "instruction": "State completed work.",
+              "model": "We completed the main configuration yesterday."
+            },
+            {
+              "instruction": "State current work.",
+              "model": "At the moment, we are testing the data migration."
+            },
+            {
+              "instruction": "State risk and next step.",
+              "model": "The only risk is a delayed file, so I’ll follow up with the customer today."
+            }
+          ],
+          "finalSpeakingPrompt": "Give a 60-second update covering progress, risk, and next action.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-19",
+          "title": "Ask for help precisely",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "Can you help me?",
+          "transformations": [
+            {
+              "instruction": "Name the problem.",
+              "model": "Could you help me understand this error message?"
+            },
+            {
+              "instruction": "Show what you tried.",
+              "model": "I checked the configuration and restarted the service, but the error remains."
+            },
+            {
+              "instruction": "Make the request specific.",
+              "model": "Could you review the logs with me for ten minutes?"
+            }
+          ],
+          "finalSpeakingPrompt": "Ask for help in a way that makes it easy for someone to respond.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-20",
+          "title": "Confirm a requirement",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "You want a report.",
+          "transformations": [
+            {
+              "instruction": "Name your understanding.",
+              "model": "From my understanding, you need a weekly report."
+            },
+            {
+              "instruction": "Clarify the audience and format.",
+              "model": "Is it for managers, and should it be in Excel?"
+            },
+            {
+              "instruction": "Confirm timing.",
+              "model": "Would you like the first version by Friday?"
+            }
+          ],
+          "finalSpeakingPrompt": "Confirm a requirement before beginning the work.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-21",
+          "title": "Recommend with reasons",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "I recommend this café.",
+          "transformations": [
+            {
+              "instruction": "Name a benefit.",
+              "model": "I recommend this café because it is quiet and easy to reach."
+            },
+            {
+              "instruction": "Match it to the listener.",
+              "model": "It would suit you if you need somewhere to work."
+            },
+            {
+              "instruction": "Add a limitation.",
+              "model": "The food is a little expensive, though."
+            }
+          ],
+          "finalSpeakingPrompt": "Recommend a product or place with a benefit and one honest limitation.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-22",
+          "title": "Explain a process clearly",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "First, open the settings.",
+          "transformations": [
+            {
+              "instruction": "Add the next step.",
+              "model": "Then choose the account section."
+            },
+            {
+              "instruction": "Add a checkpoint.",
+              "model": "Make sure your email address is correct before continuing."
+            },
+            {
+              "instruction": "Explain the result.",
+              "model": "Once you save it, the system will send a confirmation message."
+            }
+          ],
+          "finalSpeakingPrompt": "Explain a simple process using clear sequence markers.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-23",
+          "title": "Give an opinion",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "I think remote work is useful.",
+          "transformations": [
+            {
+              "instruction": "Add a reason.",
+              "model": "I think remote work is useful because it saves travelling time."
+            },
+            {
+              "instruction": "Add an example.",
+              "model": "For example, I can use that time for focused work."
+            },
+            {
+              "instruction": "Add balance.",
+              "model": "However, face-to-face meetings are still helpful for complex discussions."
+            }
+          ],
+          "finalSpeakingPrompt": "Give a balanced opinion in 60 seconds.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-24",
+          "title": "Compare options fairly",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "Option A is cheaper.",
+          "transformations": [
+            {
+              "instruction": "Add a second criterion.",
+              "model": "Option A is cheaper, while Option B is easier to maintain."
+            },
+            {
+              "instruction": "Name the trade-off.",
+              "model": "The trade-off is lower cost versus lower support effort."
+            },
+            {
+              "instruction": "Make a recommendation.",
+              "model": "For a small team, I would choose Option B."
+            }
+          ],
+          "finalSpeakingPrompt": "Compare two options using at least two criteria.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-25",
+          "title": "Recommend a solution",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "We should improve the process.",
+          "transformations": [
+            {
+              "instruction": "Name the problem.",
+              "model": "The current handover process causes missing information."
+            },
+            {
+              "instruction": "Propose one action.",
+              "model": "I suggest using a short shared checklist."
+            },
+            {
+              "instruction": "Explain benefit and first step.",
+              "model": "That would reduce rework, and we could test it with one team next week."
+            }
+          ],
+          "finalSpeakingPrompt": "Recommend a realistic solution and explain how to start.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-26",
+          "title": "Explain a change or trend",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "Sales increased.",
+          "transformations": [
+            {
+              "instruction": "Add time and degree.",
+              "model": "Sales increased slightly over the last three months."
+            },
+            {
+              "instruction": "Give a possible reason.",
+              "model": "This may be because more customers found us through social media."
+            },
+            {
+              "instruction": "Add caution or next step.",
+              "model": "We should track another month before drawing a firm conclusion."
+            }
+          ],
+          "finalSpeakingPrompt": "Describe a simple trend without overstating what the data proves.",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "tb-27",
+          "title": "Correct yourself smoothly",
+          "skill": "controlled sentence expansion",
+          "baseSentence": "The meeting is on Thursday -",
+          "transformations": [
+            {
+              "instruction": "Use a repair phrase.",
+              "model": "Sorry, let me correct that."
+            },
+            {
+              "instruction": "Give the correction.",
+              "model": "The meeting is on Friday at two."
+            },
+            {
+              "instruction": "Continue the message.",
+              "model": "I’ll send the agenda tomorrow morning."
+            }
+          ],
+          "finalSpeakingPrompt": "Practise correcting one detail and continuing without restarting.",
+          "recommendedSeconds": 180
+        }
+      ]
+    },
+    "looseStory": {
+      "label": "Loose Story",
+      "purpose": "Use a small set of cues to organise a complete story without memorising exact sentences.",
+      "defaultFlow": [
+        "Review cues",
+        "Plan a beginning and ending",
+        "First attempt",
+        "Focused retry",
+        "Answer a follow-up"
+      ],
+      "items": [
+        {
+          "id": "ls-01",
+          "title": "Yesterday in four details",
+          "scenario": "Tell a short story about yesterday.",
+          "cueWords": [
+            "morning",
+            "message",
+            "problem",
+            "relieved"
+          ],
+          "mustUse": "Use all four cues, but change their order if needed.",
+          "supportFrames": [
+            "Yesterday…",
+            "The unexpected part was…",
+            "In the end…"
+          ],
+          "firstAttempt": "Speak for 60 seconds. Complete the story even if the grammar is imperfect.",
+          "retryFocus": "Add a clear ending.",
+          "followUpQuestion": "What would you do differently next time?",
+          "recommendedSeconds": 240
+        },
+        {
+          "id": "ls-02",
+          "title": "My first job",
+          "scenario": "Tell the story of your first job.",
+          "cueWords": [
+            "nervous",
+            "colleague",
+            "mistake",
+            "learned"
+          ],
+          "mustUse": "Include one feeling and one lesson.",
+          "supportFrames": [
+            "At first…",
+            "One day…",
+            "That experience taught me…"
+          ],
+          "firstAttempt": "Speak for 60 seconds. Complete the story even if the grammar is imperfect.",
+          "retryFocus": "Make the turning point clearer.",
+          "followUpQuestion": "Would you choose the same first job again?",
+          "recommendedSeconds": 240
+        },
+        {
+          "id": "ls-03",
+          "title": "Problem-solving story",
+          "scenario": "Explain a difficult problem you solved.",
+          "cueWords": [
+            "urgent",
+            "clue",
+            "test",
+            "result"
+          ],
+          "mustUse": "Make the listener understand why your action worked.",
+          "supportFrames": [
+            "The main issue was…",
+            "I noticed that…",
+            "Eventually…"
+          ],
+          "firstAttempt": "Speak for 60 seconds. Complete the story even if the grammar is imperfect.",
+          "retryFocus": "Replace vague words with one specific detail.",
+          "followUpQuestion": "What was the hardest decision?",
+          "recommendedSeconds": 240
+        },
+        {
+          "id": "ls-04",
+          "title": "Memorable trip or event",
+          "scenario": "Describe an event you still remember clearly.",
+          "cueWords": [
+            "arrival",
+            "surprise",
+            "weather",
+            "unforgettable"
+          ],
+          "mustUse": "Use sensory detail but keep the story focused.",
+          "supportFrames": [
+            "I still remember…",
+            "What surprised me was…",
+            "Since then…"
+          ],
+          "firstAttempt": "Speak for 60 seconds. Complete the story even if the grammar is imperfect.",
+          "retryFocus": "Remove one unnecessary detail.",
+          "followUpQuestion": "Why has this memory stayed with you?",
+          "recommendedSeconds": 240
+        },
+        {
+          "id": "ls-05",
+          "title": "A person who influenced me",
+          "scenario": "Describe someone who changed your thinking.",
+          "cueWords": [
+            "patient",
+            "example",
+            "advice",
+            "habit"
+          ],
+          "mustUse": "Include a specific example, not only adjectives.",
+          "supportFrames": [
+            "What I admire is…",
+            "For example…",
+            "Because of that…"
+          ],
+          "firstAttempt": "Speak for 60 seconds. Complete the story even if the grammar is imperfect.",
+          "retryFocus": "Connect the story more clearly to your life now.",
+          "followUpQuestion": "What would you like to thank this person for?",
+          "recommendedSeconds": 240
+        },
+        {
+          "id": "ls-06",
+          "title": "The wrong item",
+          "scenario": "Explain what happened when you received the wrong item.",
+          "cueWords": [
+            "order",
+            "expected",
+            "received",
+            "exchange"
+          ],
+          "mustUse": "Stay polite and state the action you want.",
+          "supportFrames": [
+            "I ordered…",
+            "However, I received…",
+            "Could you…"
+          ],
+          "firstAttempt": "Speak for 60 seconds. Complete the story even if the grammar is imperfect.",
+          "retryFocus": "Make the requested solution more specific.",
+          "followUpQuestion": "When do you need the replacement?",
+          "recommendedSeconds": 240
+        },
+        {
+          "id": "ls-07",
+          "title": "A recommendation",
+          "scenario": "Recommend a product, place, or service.",
+          "cueWords": [
+            "budget",
+            "quality",
+            "convenient",
+            "drawback"
+          ],
+          "mustUse": "Give one honest limitation.",
+          "supportFrames": [
+            "I’d recommend…",
+            "It’s especially good for…",
+            "The only drawback is…"
+          ],
+          "firstAttempt": "Speak for 60 seconds. Complete the story even if the grammar is imperfect.",
+          "retryFocus": "Match the recommendation to a specific listener.",
+          "followUpQuestion": "Who would not enjoy this choice?",
+          "recommendedSeconds": 240
+        },
+        {
+          "id": "ls-08",
+          "title": "Booking mismatch",
+          "scenario": "Explain a booking problem and negotiate a solution.",
+          "cueWords": [
+            "confirmation",
+            "date",
+            "unavailable",
+            "alternative"
+          ],
+          "mustUse": "Give evidence and remain flexible.",
+          "supportFrames": [
+            "According to my confirmation…",
+            "It seems that…",
+            "Would it be possible to…"
+          ],
+          "firstAttempt": "Speak for 60 seconds. Complete the story even if the grammar is imperfect.",
+          "retryFocus": "Offer two acceptable alternatives.",
+          "followUpQuestion": "Which solution would be best for you?",
+          "recommendedSeconds": 240
+        },
+        {
+          "id": "ls-09",
+          "title": "Compare two choices",
+          "scenario": "Compare two options for a real decision.",
+          "cueWords": [
+            "cost",
+            "time",
+            "quality",
+            "risk"
+          ],
+          "mustUse": "State a final preference and why.",
+          "supportFrames": [
+            "On the one hand…",
+            "On the other hand…",
+            "Overall…"
+          ],
+          "firstAttempt": "Speak for 60 seconds. Complete the story even if the grammar is imperfect.",
+          "retryFocus": "Make the trade-off explicit.",
+          "followUpQuestion": "What information could change your decision?",
+          "recommendedSeconds": 240
+        },
+        {
+          "id": "ls-10",
+          "title": "Explain around a missing word",
+          "scenario": "Describe an object or idea without saying its name.",
+          "cueWords": [
+            "shape",
+            "purpose",
+            "location",
+            "similar"
+          ],
+          "mustUse": "Keep talking even when the exact word is unavailable.",
+          "supportFrames": [
+            "It’s the thing you use to…",
+            "It looks like…",
+            "It’s similar to…"
+          ],
+          "firstAttempt": "Speak for 60 seconds. Complete the story even if the grammar is imperfect.",
+          "retryFocus": "Use a simpler description instead of pausing.",
+          "followUpQuestion": "What was the word you were trying to describe?",
+          "recommendedSeconds": 240
+        }
+      ]
+    },
+    "freeResponse": {
+      "label": "Free Response",
+      "purpose": "Complete a useful real-life message with a listener, outcome, key points, and one follow-up.",
+      "defaultFlow": [
+        "Understand the situation",
+        "Choose support",
+        "Speak",
+        "Retry one part",
+        "Answer a follow-up"
+      ],
+      "items": [
+        {
+          "id": "fr-01",
+          "title": "Introduce yourself without memorising",
+          "category": "Introductions",
+          "listenerRole": "You meet someone new and they ask, “Tell me a little about yourself.”",
+          "prompt": "Introduce yourself to a new colleague and include a listener hook.",
+          "communicativeOutcome": "Give a friendly introduction that creates an easy next question.",
+          "keyPoints": [
+            "Who you are",
+            "What you do now",
+            "One interest or goal",
+            "A detail the listener can ask about"
+          ],
+          "supportPhrases": [
+            "I’m currently…",
+            "Most of my experience is in…",
+            "Outside of work, I enjoy…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What made you interested in your current work or hobby?",
+          "retryFocus": "Remove one unnecessary detail and add one clear hook for the listener.",
+          "braveExtension": "Introduce yourself at a networking event, explain a goal, and invite the other person to speak."
+        },
+        {
+          "id": "fr-02",
+          "title": "Narrate what you are doing now",
+          "category": "Daily life",
+          "listenerRole": "You are doing an ordinary activity and describe it directly in English.",
+          "prompt": "Narrate the action, reason, and next step.",
+          "communicativeOutcome": "Connect visible actions and intentions to English without translating a prepared paragraph.",
+          "keyPoints": [
+            "Current action",
+            "What you can see or hear",
+            "Why you are doing it",
+            "What happens next"
+          ],
+          "supportPhrases": [
+            "Right now, I’m…",
+            "I can see…",
+            "The next thing I need to do is…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What could make this activity easier?",
+          "retryFocus": "Connect ideas with because, so, or but instead of listing sentences.",
+          "braveExtension": "Continue an English inner monologue from actions to plans and feelings."
+        },
+        {
+          "id": "fr-03",
+          "title": "Explain today’s plan",
+          "category": "Planning",
+          "listenerRole": "A colleague or family member asks what you are doing today.",
+          "prompt": "Explain the sequence and one possible difficulty.",
+          "communicativeOutcome": "Explain a realistic plan in an order the listener can follow.",
+          "keyPoints": [
+            "Main priority",
+            "First action",
+            "Second action",
+            "Possible obstacle",
+            "Expected finish"
+          ],
+          "supportPhrases": [
+            "First, I need to…",
+            "After that, I’m going to…",
+            "If I have time, I’ll…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What will you do if the main task takes longer?",
+          "retryFocus": "Make the order clearer and replace one vague word with a specific noun.",
+          "braveExtension": "Defend your priorities and give a backup plan."
+        },
+        {
+          "id": "fr-04",
+          "title": "Describe a normal workday",
+          "category": "Routine",
+          "listenerRole": "Someone outside your team asks what a typical day is like.",
+          "prompt": "Describe the routine from start to finish and one challenge.",
+          "communicativeOutcome": "Describe a routine clearly without listing every small task.",
+          "keyPoints": [
+            "How the day starts",
+            "Main responsibilities",
+            "A common challenge",
+            "How the day ends"
+          ],
+          "supportPhrases": [
+            "Usually, I start by…",
+            "Most of my time goes into…",
+            "A typical challenge is…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Which part of your day requires the most communication?",
+          "retryFocus": "Replace one list of duties with a concrete example.",
+          "braveExtension": "Explain it to someone outside your field without jargon."
+        },
+        {
+          "id": "fr-05",
+          "title": "Answer “How was your weekend?”",
+          "category": "Small talk",
+          "listenerRole": "A colleague casually asks how your weekend was.",
+          "prompt": "Share one moment, why it mattered, and invite a response.",
+          "communicativeOutcome": "Give more than a one-word answer without turning it into a speech.",
+          "keyPoints": [
+            "Overall feeling",
+            "One activity",
+            "One detail",
+            "Question back"
+          ],
+          "supportPhrases": [
+            "It was pretty…",
+            "I spent some time…",
+            "How about yours?"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What did you enjoy most?",
+          "retryFocus": "Add one concrete detail that is easy to respond to.",
+          "braveExtension": "Turn the opener into a short story and ask a specific follow-up."
+        },
+        {
+          "id": "fr-06",
+          "title": "Buy thinking time naturally",
+          "category": "Conversation management",
+          "listenerRole": "Someone asks a question and you need a few seconds to organise your answer.",
+          "prompt": "Answer an opinion question with a reason.",
+          "communicativeOutcome": "Hold the turn politely instead of freezing.",
+          "keyPoints": [
+            "Acknowledge the question",
+            "Use a time phrase",
+            "Give a direct answer",
+            "Add one reason"
+          ],
+          "supportPhrases": [
+            "That’s a good question.",
+            "Let me think for a second.",
+            "I’d say…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Has your answer changed over time?",
+          "retryFocus": "Replace one long hesitation with a deliberate phrase.",
+          "braveExtension": "Answer an unexpected question with two organised points."
+        },
+        {
+          "id": "fr-07",
+          "title": "Clarify an unclear instruction",
+          "category": "Clarification",
+          "listenerRole": "An instruction can be understood in two ways.",
+          "prompt": "Restate the instruction, identify the unclear detail, and confirm the action.",
+          "communicativeOutcome": "Identify the ambiguity and obtain a clear next action.",
+          "keyPoints": [
+            "What you understood",
+            "What is unclear",
+            "A precise question",
+            "Confirmed next step"
+          ],
+          "supportPhrases": [
+            "If I understand correctly…",
+            "When you say ___, do you mean…?",
+            "So the next step is…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What could happen if you misunderstood?",
+          "retryFocus": "Turn one broad question into a precise either-or question.",
+          "braveExtension": "Clarify scope, timing, and ownership with no more than three questions."
+        },
+        {
+          "id": "fr-08",
+          "title": "Agree and add something useful",
+          "category": "Agreement",
+          "listenerRole": "Someone shares an idea you agree with.",
+          "prompt": "Agree, connect an example, and add one next thought.",
+          "communicativeOutcome": "Show genuine agreement and move the conversation forward.",
+          "keyPoints": [
+            "Acknowledge the point",
+            "Explain why",
+            "Add an example or consequence",
+            "Optional question"
+          ],
+          "supportPhrases": [
+            "That makes sense.",
+            "I agree, especially because…",
+            "Another thing we could consider is…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What would make the idea work well?",
+          "retryFocus": "Replace a general yes with an explanation.",
+          "braveExtension": "Agree with the main point but identify a condition for success."
+        },
+        {
+          "id": "fr-09",
+          "title": "Tell the story of your first job",
+          "category": "Personal story",
+          "listenerRole": "Someone asks about your first job or first responsibility.",
+          "prompt": "Tell how you started, one challenge, and the lesson.",
+          "communicativeOutcome": "Tell a compact story with context, challenge, and lesson.",
+          "keyPoints": [
+            "What the job was",
+            "How you started",
+            "A memorable challenge",
+            "What you learned"
+          ],
+          "supportPhrases": [
+            "My first job was…",
+            "One thing I remember is…",
+            "It taught me…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "How does it influence you today?",
+          "retryFocus": "Add one specific action rather than a general description.",
+          "braveExtension": "Tell it as an interview story showing one quality."
+        },
+        {
+          "id": "fr-10",
+          "title": "Describe an achievement you are proud of",
+          "category": "Achievement",
+          "listenerRole": "Someone asks about something you achieved.",
+          "prompt": "Explain the goal, action, and visible result.",
+          "communicativeOutcome": "Explain the goal, your contribution, and why it matters.",
+          "keyPoints": [
+            "Goal or problem",
+            "Your personal action",
+            "Result",
+            "Why you are proud"
+          ],
+          "supportPhrases": [
+            "One achievement I’m proud of is…",
+            "My role was to…",
+            "The result was…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What was the hardest part?",
+          "retryFocus": "Add one concrete result or before-and-after difference.",
+          "braveExtension": "Give a STAR-style story and connect it to a future goal."
+        },
+        {
+          "id": "fr-11",
+          "title": "Share a mistake and what you learned",
+          "category": "Learning story",
+          "listenerRole": "You are asked about a mistake or lesson.",
+          "prompt": "Explain the mistake, repair, and new behaviour.",
+          "communicativeOutcome": "Take responsibility and show how behaviour changed.",
+          "keyPoints": [
+            "What happened",
+            "Your responsibility",
+            "How you corrected it",
+            "What you do differently now"
+          ],
+          "supportPhrases": [
+            "I realised that…",
+            "I took responsibility for…",
+            "Since then, I’ve…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What early sign would help next time?",
+          "retryFocus": "Remove one excuse and add a prevention step.",
+          "braveExtension": "Give an interview-quality answer with prevention."
+        },
+        {
+          "id": "fr-12",
+          "title": "Tell a memorable trip or event",
+          "category": "Experience story",
+          "listenerRole": "A friend asks about a trip or event you remember clearly.",
+          "prompt": "Tell one event and your reaction.",
+          "communicativeOutcome": "Create a vivid but concise story with one memorable moment.",
+          "keyPoints": [
+            "Where and when",
+            "Why you went",
+            "Unexpected moment",
+            "Why it stayed with you"
+          ],
+          "supportPhrases": [
+            "One trip I still remember is…",
+            "What surprised me was…",
+            "The best part was…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Would you recommend it?",
+          "retryFocus": "Add one sensory or emotional detail.",
+          "braveExtension": "Tell it with expectation, surprise, and reflection."
+        },
+        {
+          "id": "fr-13",
+          "title": "Describe a person who influenced you",
+          "category": "People story",
+          "listenerRole": "Someone asks who influenced how you think or work.",
+          "prompt": "Give an example and explain the impact.",
+          "communicativeOutcome": "Describe the person through one concrete example.",
+          "keyPoints": [
+            "Who the person is",
+            "Important quality",
+            "One example",
+            "How you changed"
+          ],
+          "supportPhrases": [
+            "Someone who influenced me is…",
+            "What I admire is…",
+            "Because of that, I…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What would you thank the person for?",
+          "retryFocus": "Replace one general compliment with an action.",
+          "braveExtension": "Tell a story and connect the lesson to today."
+        },
+        {
+          "id": "fr-14",
+          "title": "Start small talk from the shared situation",
+          "category": "Small talk",
+          "listenerRole": "You are waiting with someone at work, an event, or a public place.",
+          "prompt": "Open, react to the answer, and ask a follow-up.",
+          "communicativeOutcome": "Open a friendly conversation using something you both observe.",
+          "keyPoints": [
+            "Shared observation",
+            "Light reaction",
+            "Easy question",
+            "Listen for the answer"
+          ],
+          "supportPhrases": [
+            "It’s pretty busy today, isn’t it?",
+            "Looks like…",
+            "Have you been here before?"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What brought you here today?",
+          "retryFocus": "Make the opener less generic by using a real detail.",
+          "braveExtension": "Sustain three turns using the shared environment."
+        },
+        {
+          "id": "fr-15",
+          "title": "Keep a conversation going with follow-ups",
+          "category": "Follow-up questions",
+          "listenerRole": "The other person mentions a hobby, project, or recent event.",
+          "prompt": "Ask two connected follow-ups and share one detail.",
+          "communicativeOutcome": "Show interest and help them continue.",
+          "keyPoints": [
+            "React to what they said",
+            "Ask about motivation",
+            "Share a related detail",
+            "Ask a deeper follow-up"
+          ],
+          "supportPhrases": [
+            "That sounds interesting.",
+            "What got you into that?",
+            "How did that go?"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What do you enjoy most about it?",
+          "retryFocus": "Replace one yes/no question with an open question.",
+          "braveExtension": "Move from surface information to motivation or feeling."
+        },
+        {
+          "id": "fr-16",
+          "title": "Join a group conversation politely",
+          "category": "Group conversation",
+          "listenerRole": "People are discussing a topic you understand and you want to contribute.",
+          "prompt": "Connect to the previous speaker, add an example, and invite a response.",
+          "communicativeOutcome": "Enter at a suitable moment and connect to the current topic.",
+          "keyPoints": [
+            "Listen for the topic",
+            "Signal entry",
+            "Connect to the previous point",
+            "Add one concise contribution"
+          ],
+          "supportPhrases": [
+            "Can I add something?",
+            "Building on that…",
+            "I had a similar experience…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Has anyone else experienced something similar?",
+          "retryFocus": "Shorten the opening so the contribution arrives sooner.",
+          "braveExtension": "Join, handle an interruption, and return the floor smoothly."
+        },
+        {
+          "id": "fr-17",
+          "title": "Respond with empathy",
+          "category": "Empathy",
+          "listenerRole": "Someone tells you about a difficult day or disappointment.",
+          "prompt": "Acknowledge, reflect the feeling, and ask about support.",
+          "communicativeOutcome": "Acknowledge the feeling without immediately giving unwanted advice.",
+          "keyPoints": [
+            "Recognise the difficulty",
+            "Reflect the feeling carefully",
+            "Invite more",
+            "Offer help if appropriate"
+          ],
+          "supportPhrases": [
+            "I’m sorry that happened.",
+            "I can imagine that was frustrating.",
+            "What would be helpful right now?"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What would be most helpful right now?",
+          "retryFocus": "Remove one sentence about yourself and return attention to the speaker.",
+          "braveExtension": "Balance empathy, boundaries, and a practical offer."
+        },
+        {
+          "id": "fr-18",
+          "title": "Give a natural compliment and continue",
+          "category": "Compliments",
+          "listenerRole": "You notice something positive about a person’s work, choice, or skill.",
+          "prompt": "Explain what you appreciated and respond to the answer.",
+          "communicativeOutcome": "Give a specific sincere compliment and open a short conversation.",
+          "keyPoints": [
+            "Specific observation",
+            "Why it stood out",
+            "Question",
+            "Natural reaction"
+          ],
+          "supportPhrases": [
+            "I really like how you…",
+            "That was a clear explanation.",
+            "How did you learn to do that?"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What part are you most happy with?",
+          "retryFocus": "Make the compliment more specific than “That’s nice.”",
+          "braveExtension": "Use the compliment to sustain three natural turns."
+        },
+        {
+          "id": "fr-19",
+          "title": "End a conversation warmly",
+          "category": "Conversation closing",
+          "listenerRole": "You need to leave without making the other person feel dismissed.",
+          "prompt": "Refer to something discussed and suggest future contact.",
+          "communicativeOutcome": "Signal the ending, show appreciation, and mention future contact when relevant.",
+          "keyPoints": [
+            "Reason or transition",
+            "Positive closing comment",
+            "Future contact",
+            "Goodbye"
+          ],
+          "supportPhrases": [
+            "It was nice talking with you.",
+            "I should let you get back to it.",
+            "Let’s catch up again soon."
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What is the best way to stay in touch?",
+          "retryFocus": "Add one specific reference so the close feels personal.",
+          "braveExtension": "Close a networking conversation after agreeing one next action."
+        },
+        {
+          "id": "fr-20",
+          "title": "Ask for help clearly",
+          "category": "Requesting help",
+          "listenerRole": "You are blocked and need help from a busy colleague.",
+          "prompt": "Explain the goal, attempts, blocker, and help needed.",
+          "communicativeOutcome": "Explain what you tried and make a specific reasonable request.",
+          "keyPoints": [
+            "Desired result",
+            "What you tried",
+            "Exact blocker",
+            "Specific help and timing"
+          ],
+          "supportPhrases": [
+            "I’m trying to…",
+            "So far, I’ve…",
+            "Could you help me with…?"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What have you already tried?",
+          "retryFocus": "Make the request smaller and more actionable.",
+          "braveExtension": "Negotiate another time or smaller request if they are busy."
+        },
+        {
+          "id": "fr-21",
+          "title": "Confirm a requirement before starting",
+          "category": "Requirements",
+          "listenerRole": "A request contains unclear scope or success criteria.",
+          "prompt": "Summarise your understanding and ask about scope and success.",
+          "communicativeOutcome": "Confirm what success means before doing the work.",
+          "keyPoints": [
+            "User or business need",
+            "Included scope",
+            "Uncertain scope",
+            "Deadline and success check"
+          ],
+          "supportPhrases": [
+            "The reason I’m asking is…",
+            "Would it be correct to say…?",
+            "How will we know this is complete?"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What would count as success?",
+          "retryFocus": "Turn one vague question into a choice or measurable condition.",
+          "braveExtension": "Clarify user, outcome, constraints, priority, and acceptance."
+        },
+        {
+          "id": "fr-22",
+          "title": "Summarise a meeting decision",
+          "category": "Meeting summary",
+          "listenerRole": "The meeting is ending after several decisions and actions.",
+          "prompt": "Summarise decision, owners, and deadlines.",
+          "communicativeOutcome": "Leave everyone with the same understanding of owners and timing.",
+          "keyPoints": [
+            "Main decision",
+            "Reason or condition",
+            "Action owners",
+            "Deadlines and open question"
+          ],
+          "supportPhrases": [
+            "Before we finish, can we confirm…",
+            "We agreed to…",
+            "The action items are…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Did I miss any action item?",
+          "retryFocus": "Separate confirmed decisions from ideas still under discussion.",
+          "braveExtension": "Separate decisions from open questions and invite correction."
+        },
+        {
+          "id": "fr-23",
+          "title": "Ask for and give useful feedback",
+          "category": "Feedback",
+          "listenerRole": "A colleague shares a draft, or you want feedback on your own work.",
+          "prompt": "Explain the issue’s effect and suggest an action.",
+          "communicativeOutcome": "Make feedback specific, actionable, and respectful.",
+          "keyPoints": [
+            "What works",
+            "Specific area to improve",
+            "Reason or effect",
+            "Suggested next action"
+          ],
+          "supportPhrases": [
+            "One thing that works well is…",
+            "One area we could improve is…",
+            "Could you focus your feedback on…?"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Which part should be improved first?",
+          "retryFocus": "Make one vague comment observable or measurable.",
+          "braveExtension": "Balance direct feedback with questions and agree a revision."
+        },
+        {
+          "id": "fr-24",
+          "title": "Calm an unhappy customer",
+          "category": "Customer service",
+          "listenerRole": "A customer is upset because a service failed.",
+          "prompt": "Confirm the problem, action, and update expectation.",
+          "communicativeOutcome": "Acknowledge the impact, confirm the issue, and explain the next action.",
+          "keyPoints": [
+            "Acknowledge frustration",
+            "Confirm the issue",
+            "Immediate action",
+            "Update time"
+          ],
+          "supportPhrases": [
+            "I’m sorry about the inconvenience.",
+            "Let me make sure I understand…",
+            "Here’s what I can do next…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Which outcome would help most?",
+          "retryFocus": "Replace one defensive explanation with a customer-focused action.",
+          "braveExtension": "Handle rejection of the first solution and offer alternatives."
+        },
+        {
+          "id": "fr-25",
+          "title": "Recommend a product or place",
+          "category": "Recommendation",
+          "listenerRole": "Someone asks what they should buy, eat, visit, or try.",
+          "prompt": "Give two reasons and one limitation.",
+          "communicativeOutcome": "Match a recommendation to their priorities.",
+          "keyPoints": [
+            "Their priority",
+            "Your recommendation",
+            "Two reasons",
+            "One limitation or alternative"
+          ],
+          "supportPhrases": [
+            "I’d recommend…",
+            "It’s a good option if…",
+            "The only thing to keep in mind is…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What matters most: price, convenience, or quality?",
+          "retryFocus": "Replace one adjective with a practical benefit.",
+          "braveExtension": "Compare two choices and recommend based on budget or preference."
+        },
+        {
+          "id": "fr-26",
+          "title": "Resolve a booking mismatch",
+          "category": "Travel and services",
+          "listenerRole": "At check-in, the booking does not match your confirmation.",
+          "prompt": "Request the original arrangement and ask about alternatives.",
+          "communicativeOutcome": "Present evidence and negotiate an acceptable alternative.",
+          "keyPoints": [
+            "Booking reference",
+            "Expected arrangement",
+            "Actual problem",
+            "Preferred solution and alternative"
+          ],
+          "supportPhrases": [
+            "According to my confirmation…",
+            "There seems to be a difference.",
+            "Is there another option available?"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Would a different time or room work?",
+          "retryFocus": "Use one contrast sentence: I booked X, but the system shows Y.",
+          "braveExtension": "Negotiate another option and confirm cost or conditions."
+        },
+        {
+          "id": "fr-27",
+          "title": "Explain directions or a process",
+          "category": "Instructions",
+          "listenerRole": "Someone asks how to reach a place or complete a simple process.",
+          "prompt": "Give the full process and one warning or check.",
+          "communicativeOutcome": "Give ordered instructions with a landmark, warning, or success check.",
+          "keyPoints": [
+            "Starting point",
+            "Ordered steps",
+            "Important landmark or warning",
+            "Final check"
+          ],
+          "supportPhrases": [
+            "First, you need to…",
+            "Once you reach…",
+            "You’ll know it worked when…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Which step is most likely to confuse?",
+          "retryFocus": "Break one long instruction into two short steps.",
+          "braveExtension": "Explain, answer one clarification, and rephrase a confusing step."
+        },
+        {
+          "id": "fr-28",
+          "title": "Give an opinion with a clear reason",
+          "category": "Opinion",
+          "listenerRole": "Someone asks what you think about a familiar topic or decision.",
+          "prompt": "Add an example and acknowledge one condition.",
+          "communicativeOutcome": "State the position early and support it with a relevant reason and example.",
+          "keyPoints": [
+            "Direct opinion",
+            "Main reason",
+            "Example or evidence",
+            "Balanced closing"
+          ],
+          "supportPhrases": [
+            "Personally, I think…",
+            "The main reason is…",
+            "For example…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What evidence supports that view?",
+          "retryFocus": "Move the position earlier and make the example more specific.",
+          "braveExtension": "Defend the view against a follow-up while remaining open-minded."
+        },
+        {
+          "id": "fr-29",
+          "title": "Compare two options fairly",
+          "category": "Comparison",
+          "listenerRole": "A person or team must choose between two realistic options.",
+          "prompt": "Compare on two criteria and recommend.",
+          "communicativeOutcome": "Compare them using shared criteria and make a traceable recommendation.",
+          "keyPoints": [
+            "Decision criteria",
+            "Advantage of option A",
+            "Advantage of option B",
+            "Best fit and reason"
+          ],
+          "supportPhrases": [
+            "The main difference is…",
+            "Option A is better for…, while…",
+            "It depends on what matters most."
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Which criterion matters most?",
+          "retryFocus": "Organise by criteria, not all of A then all of B.",
+          "braveExtension": "Compare cost, risk, and long-term value, then adapt to a changed priority."
+        },
+        {
+          "id": "fr-30",
+          "title": "Recommend a solution to a problem",
+          "category": "Recommendation",
+          "listenerRole": "A problem has several possible responses and the group asks for your recommendation.",
+          "prompt": "Recommend, explain fit, and propose a first step.",
+          "communicativeOutcome": "Connect the action to the cause, constraints, and desired result.",
+          "keyPoints": [
+            "Problem and cause",
+            "Recommended action",
+            "Why it fits",
+            "Risk and first test"
+          ],
+          "supportPhrases": [
+            "What I suggest is…",
+            "This would help because…",
+            "We could test it by…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What is the smallest safe test?",
+          "retryFocus": "Link every action to a specific cause or result.",
+          "braveExtension": "Choose among alternatives, address risk, and define a small test."
+        },
+        {
+          "id": "fr-31",
+          "title": "Challenge a risky idea constructively",
+          "category": "Risk discussion",
+          "listenerRole": "A group likes an idea, but an important risk has not been discussed.",
+          "prompt": "Explain the consequence and suggest a safer test.",
+          "communicativeOutcome": "Surface the risk without attacking the person or blocking progress.",
+          "keyPoints": [
+            "Shared objective",
+            "Unexamined assumption",
+            "Possible consequence",
+            "Safer test or alternative"
+          ],
+          "supportPhrases": [
+            "I like the goal behind this.",
+            "One concern I have is…",
+            "Could we test this with…?"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What evidence would make you comfortable?",
+          "retryFocus": "Replace a vague fear with a cause-and-effect scenario.",
+          "braveExtension": "Challenge it under group pressure and respond to pushback."
+        },
+        {
+          "id": "fr-32",
+          "title": "Answer an unexpected question",
+          "category": "Spontaneous response",
+          "listenerRole": "You receive a question you did not prepare for.",
+          "prompt": "Give a structured answer and example.",
+          "communicativeOutcome": "Create a usable answer with a clear position.",
+          "keyPoints": [
+            "Buy time if needed",
+            "Direct answer",
+            "One reason or example",
+            "Clear ending"
+          ],
+          "supportPhrases": [
+            "That’s an interesting question.",
+            "My first thought is…",
+            "One example would be…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What experience led to that view?",
+          "retryFocus": "Shorten the opening so the direct answer arrives sooner.",
+          "braveExtension": "Answer, qualify your view, and handle a follow-up."
+        },
+        {
+          "id": "fr-33",
+          "title": "Explain around a forgotten word",
+          "category": "Circumlocution",
+          "listenerRole": "You forget an important word while speaking.",
+          "prompt": "Explain around two missing words and finish the story.",
+          "communicativeOutcome": "Describe its category, function, appearance, or example and continue.",
+          "keyPoints": [
+            "Signal the missing word",
+            "Describe category or function",
+            "Give an example or contrast",
+            "Continue the original message"
+          ],
+          "supportPhrases": [
+            "The word is escaping me, but…",
+            "It’s a kind of…",
+            "You use it when…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Is it something you use, do, feel, or see?",
+          "retryFocus": "Start with a simple category word, then add the distinguishing detail.",
+          "braveExtension": "Describe a technical or abstract word through definition, example, and contrast."
+        },
+        {
+          "id": "fr-34",
+          "title": "Correct yourself without losing flow",
+          "category": "Self-correction",
+          "listenerRole": "You notice that an important word, number, or statement was wrong.",
+          "prompt": "Reformulate a confusing sentence more simply.",
+          "communicativeOutcome": "Correct it briefly and continue the main message.",
+          "keyPoints": [
+            "Signal correction",
+            "Give corrected information",
+            "Clarify impact if needed",
+            "Continue"
+          ],
+          "supportPhrases": [
+            "Sorry, let me correct that.",
+            "What I meant was…",
+            "Let me say that again more clearly."
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Does the correction change the next action?",
+          "retryFocus": "Reduce the repair to one signal and one corrected sentence.",
+          "braveExtension": "Correct a factual mistake and explain whether the conclusion changes."
+        },
+        {
+          "id": "fr-35",
+          "title": "Speak with no preparation",
+          "category": "No-prep fluency",
+          "listenerRole": "A familiar topic appears and recording begins immediately.",
+          "prompt": "Speak for one minute and use one saved phrase.",
+          "communicativeOutcome": "Use mostly familiar English to complete the message under light pressure.",
+          "keyPoints": [
+            "Opening answer",
+            "Two supporting details",
+            "Ending"
+          ],
+          "supportPhrases": [
+            "The first thing that comes to mind is…",
+            "One reason is…",
+            "Overall…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What is one example?",
+          "retryFocus": "Repeat with a clearer opening, not harder vocabulary.",
+          "braveExtension": "Speak for 90 seconds, handle a follow-up, and summarise."
+        },
+        {
+          "id": "fr-36",
+          "title": "Big 30 question remix",
+          "category": "Big 30",
+          "listenerRole": "Answer several familiar personal questions in a random order.",
+          "prompt": "Answer three questions and one follow-up.",
+          "communicativeOutcome": "Retrieve personal content flexibly rather than reciting one fixed script.",
+          "keyPoints": [
+            "Direct answer",
+            "One example",
+            "Reason or meaning",
+            "Natural ending"
+          ],
+          "supportPhrases": [
+            "I’d say…",
+            "One example is…",
+            "The reason is…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Which answer needs a stronger example?",
+          "retryFocus": "Change one opening so the answers do not sound identical.",
+          "braveExtension": "Complete a rapid five-question interview."
+        },
+        {
+          "id": "fr-37",
+          "title": "Big 30 question remix",
+          "category": "Big 30",
+          "listenerRole": "Answer several familiar personal questions in a random order.",
+          "prompt": "Answer three questions and one follow-up.",
+          "communicativeOutcome": "Retrieve personal content flexibly rather than reciting one fixed script.",
+          "keyPoints": [
+            "Direct answer",
+            "One example",
+            "Reason or meaning",
+            "Natural ending"
+          ],
+          "supportPhrases": [
+            "I’d say…",
+            "One example is…",
+            "The reason is…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "Which answer needs a stronger example?",
+          "retryFocus": "Change one opening so the answers do not sound identical.",
+          "braveExtension": "Complete a rapid five-question interview."
+        },
+        {
+          "id": "fr-38",
+          "title": "Personal goal simulation",
+          "category": "Personal goal",
+          "listenerRole": "Choose the real situation that originally motivated you to improve English.",
+          "prompt": "Complete it with one follow-up or obstacle.",
+          "communicativeOutcome": "Complete a realistic simulation that matters to your life.",
+          "keyPoints": [
+            "Who you are speaking to",
+            "Desired outcome",
+            "Likely difficulty",
+            "Useful support",
+            "Successful ending"
+          ],
+          "supportPhrases": [
+            "To give you some context…",
+            "What I need is…",
+            "Before we finish…"
+          ],
+          "recommendedSeconds": 60,
+          "followUpQuestion": "What would the other person say next?",
+          "retryFocus": "Repeat the part most likely to happen in real life.",
+          "braveExtension": "Run the full scenario with two unexpected turns."
+        }
+      ]
+    },
+    "echoShadow": {
+      "label": "Echo & Shadow",
+      "purpose": "Practise thought groups, stress, rhythm, and delivery before adapting the message.",
+      "defaultFlow": [
+        "Listen once without speaking and notice the thought groups.",
+        "Shadow at a slower rate while reading the chunked transcript.",
+        "Shadow at normal rate and stress the highlighted words.",
+        "Hide the transcript and say the message with one personal detail."
+      ],
+      "items": [
+        {
+          "id": "shadow-01",
+          "title": "Could you say that again?",
+          "category": "Conversation survival",
+          "transcript": "Sorry, could you say that again a little more slowly?",
+          "chunkedTranscript": "Sorry / could you say that again / a little more slowly?",
+          "stressWords": [
+            "say",
+            "again",
+            "slowly"
+          ],
+          "focus": "polite request rhythm",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-02",
+          "title": "Confirm the instruction",
+          "category": "Conversation survival",
+          "transcript": "Just to make sure I understood, you’d like me to send the revised file by Friday.",
+          "chunkedTranscript": "Just to make sure I understood / you’d like me to send the revised file / by Friday.",
+          "stressWords": [
+            "make sure",
+            "revised file",
+            "Friday"
+          ],
+          "focus": "thought groups and confirmation intonation",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-03",
+          "title": "Start situational small talk",
+          "category": "Social",
+          "transcript": "It’s busier than usual today, isn’t it?",
+          "chunkedTranscript": "It’s busier than usual today / isn’t it?",
+          "stressWords": [
+            "busier",
+            "usual"
+          ],
+          "focus": "light conversational intonation",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-04",
+          "title": "Enter a group discussion",
+          "category": "Social",
+          "transcript": "Sorry to jump in, but that reminds me of something similar.",
+          "chunkedTranscript": "Sorry to jump in / but that reminds me / of something similar.",
+          "stressWords": [
+            "jump in",
+            "reminds me",
+            "similar"
+          ],
+          "focus": "polite entry and linking",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-05",
+          "title": "Compliment and continue",
+          "category": "Social",
+          "transcript": "That’s a great presentation. How did you organise the visuals?",
+          "chunkedTranscript": "That’s a great presentation / How did you organise the visuals?",
+          "stressWords": [
+            "great presentation",
+            "organise",
+            "visuals"
+          ],
+          "focus": "warm tone and follow-up question",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-06",
+          "title": "Project update structure",
+          "category": "Workplace",
+          "transcript": "We’ve completed the setup, we’re testing now, and the next step is customer approval.",
+          "chunkedTranscript": "We’ve completed the setup / we’re testing now / and the next step is customer approval.",
+          "stressWords": [
+            "completed",
+            "testing",
+            "next step",
+            "approval"
+          ],
+          "focus": "contrastive stress and concise sequencing",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-07",
+          "title": "Explain a delay responsibly",
+          "category": "Workplace",
+          "transcript": "We’re running slightly behind because one file arrived late, but we expect to finish tomorrow.",
+          "chunkedTranscript": "We’re running slightly behind / because one file arrived late / but we expect to finish tomorrow.",
+          "stressWords": [
+            "behind",
+            "late",
+            "finish tomorrow"
+          ],
+          "focus": "calm delivery and contrast",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-08",
+          "title": "Summarise a decision",
+          "category": "Workplace",
+          "transcript": "So we’ve agreed to test the change first and review the results on Monday.",
+          "chunkedTranscript": "So we’ve agreed / to test the change first / and review the results on Monday.",
+          "stressWords": [
+            "agreed",
+            "test",
+            "Monday"
+          ],
+          "focus": "summary rhythm",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-09",
+          "title": "Request an exchange",
+          "category": "Service",
+          "transcript": "I ordered the blue version, but I received the black one. Could I exchange it, please?",
+          "chunkedTranscript": "I ordered the blue version / but I received the black one / Could I exchange it, please?",
+          "stressWords": [
+            "blue",
+            "black",
+            "exchange"
+          ],
+          "focus": "clear contrast and polite request",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-10",
+          "title": "Leave a voice message",
+          "category": "Service",
+          "transcript": "Hi, this is Alex calling about tomorrow’s appointment. Please call me back when you have a moment.",
+          "chunkedTranscript": "Hi, this is Alex / calling about tomorrow’s appointment / Please call me back / when you have a moment.",
+          "stressWords": [
+            "Alex",
+            "tomorrow’s appointment",
+            "call me back"
+          ],
+          "focus": "message chunking and clarity",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-11",
+          "title": "Explain a process",
+          "category": "Service",
+          "transcript": "First, open the settings. Then select your account and check that the email address is correct.",
+          "chunkedTranscript": "First / open the settings / Then select your account / and check that the email address is correct.",
+          "stressWords": [
+            "First",
+            "Then",
+            "email address",
+            "correct"
+          ],
+          "focus": "sequence markers",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-12",
+          "title": "Explain a trade-off",
+          "category": "Opinion",
+          "transcript": "The cheaper option saves money now, but it may require more maintenance later.",
+          "chunkedTranscript": "The cheaper option / saves money now / but it may require more maintenance later.",
+          "stressWords": [
+            "cheaper",
+            "money now",
+            "maintenance later"
+          ],
+          "focus": "contrastive stress",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-13",
+          "title": "Challenge an idea constructively",
+          "category": "Problem solving",
+          "transcript": "I can see the benefit, but I’m concerned about the risk of releasing it without a test.",
+          "chunkedTranscript": "I can see the benefit / but I’m concerned about the risk / of releasing it without a test.",
+          "stressWords": [
+            "benefit",
+            "concerned",
+            "risk",
+            "test"
+          ],
+          "focus": "acknowledgement before concern",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-14",
+          "title": "Describe a trend carefully",
+          "category": "Presentation",
+          "transcript": "The number increased gradually over three months, although we need more data before reaching a conclusion.",
+          "chunkedTranscript": "The number increased gradually / over three months / although we need more data / before reaching a conclusion.",
+          "stressWords": [
+            "increased gradually",
+            "three months",
+            "more data",
+            "conclusion"
+          ],
+          "focus": "measured, evidence-based tone",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-15",
+          "title": "Open a mini-presentation",
+          "category": "Presentation",
+          "transcript": "Today I’d like to explain the problem, the option I recommend, and the first step we can take.",
+          "chunkedTranscript": "Today I’d like to explain / the problem / the option I recommend / and the first step we can take.",
+          "stressWords": [
+            "problem",
+            "recommend",
+            "first step"
+          ],
+          "focus": "signposting",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "shadow-16",
+          "title": "Recover after interruption",
+          "category": "Pressure",
+          "transcript": "As I was saying, the main reason is cost, but there is also a timing issue.",
+          "chunkedTranscript": "As I was saying / the main reason is cost / but there is also a timing issue.",
+          "stressWords": [
+            "main reason",
+            "cost",
+            "timing issue"
+          ],
+          "focus": "returning to the main point",
+          "rateOptions": [
+            0.8,
+            1.0,
+            1.1
+          ],
+          "steps": [
+            "Listen once without speaking and notice the thought groups.",
+            "Shadow at a slower rate while reading the chunked transcript.",
+            "Shadow at normal rate and stress the highlighted words.",
+            "Hide the transcript and say the message with one personal detail."
+          ],
+          "recommendedSeconds": 210
+        }
+      ]
+    },
+    "repairLab": {
+      "label": "Repair Lab",
+      "purpose": "Keep communication moving when the learner freezes, forgets a word, misunderstands, gets interrupted, or needs to correct a message.",
+      "defaultFlow": [
+        "Read the breakdown",
+        "Choose a rescue phrase",
+        "Repair the message",
+        "Compare the model",
+        "Try a personal version"
+      ],
+      "items": [
+        {
+          "id": "repair-01",
+          "title": "Buy time instead of freezing",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "You are asked an unexpected question and your mind goes blank.",
+          "rescuePhrases": [
+            "Let me think for a second.",
+            "That’s a good question.",
+            "I haven’t thought about that before, but…"
+          ],
+          "task": "Answer after using one time-buying phrase.",
+          "modelRepair": "That’s a good question. I think the main reason is convenience.",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-02",
+          "title": "Ask for repetition",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "You did not hear the last part of a question.",
+          "rescuePhrases": [
+            "Sorry, could you say that again?",
+            "Could you repeat the last part?",
+            "Could you say that a little more slowly?"
+          ],
+          "task": "Ask for exactly what you need instead of saying only “What?”",
+          "modelRepair": "Sorry, could you repeat the part about the deadline?",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-03",
+          "title": "Clarify vague instructions",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "Someone says, “Please finish it soon.”",
+          "rescuePhrases": [
+            "When you say ___, do you mean…?",
+            "Just to clarify…",
+            "Would you like me to…?"
+          ],
+          "task": "Clarify the deadline and expected result.",
+          "modelRepair": "Just to clarify, would you like the revised report by the end of today?",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-04",
+          "title": "Soften disagreement",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "A colleague suggests releasing a change without testing.",
+          "rescuePhrases": [
+            "I see your point, but…",
+            "I’m not sure that would…",
+            "One concern I have is…"
+          ],
+          "task": "Acknowledge the idea, state the risk, and offer an alternative.",
+          "modelRepair": "I see your point, but one concern is the risk of new errors. Could we run a short test first?",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-05",
+          "title": "Repair an unclear explanation",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "The listener says, “I’m not sure I follow.”",
+          "rescuePhrases": [
+            "What I mean is…",
+            "Let me explain that another way.",
+            "The key point is…"
+          ],
+          "task": "Restate the message using simpler words and one example.",
+          "modelRepair": "What I mean is that the system is working, but one permission is missing. For example, normal users cannot open the page.",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-06",
+          "title": "Enter or return after interruption",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "Two people are talking and you have a relevant point, or someone interrupts you.",
+          "rescuePhrases": [
+            "Sorry to jump in…",
+            "Can I add something here?",
+            "As I was saying…"
+          ],
+          "task": "Enter politely or return to your unfinished point.",
+          "modelRepair": "Can I add something here? We saw the same issue last month, and the cause was a missing setting.",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-07",
+          "title": "Respond with empathy",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "Someone tells you they had a very stressful week.",
+          "rescuePhrases": [
+            "That sounds difficult.",
+            "I can imagine that was stressful.",
+            "I’m sorry you had to deal with that."
+          ],
+          "task": "Acknowledge the feeling before giving advice or changing the topic.",
+          "modelRepair": "That sounds really difficult. Did you manage to get any rest over the weekend?",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-08",
+          "title": "Take responsibility for a delay",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "A task will not be finished at the promised time.",
+          "rescuePhrases": [
+            "I wanted to let you know early…",
+            "We’re running behind because…",
+            "The revised timing is…"
+          ],
+          "task": "Explain the cause briefly, give a new time, and state your action.",
+          "modelRepair": "I wanted to let you know early that we’re running behind because one file arrived late. I expect to finish tomorrow morning.",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-09",
+          "title": "Confirm a requirement",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "A request contains several possible interpretations.",
+          "rescuePhrases": [
+            "From my understanding…",
+            "Just to confirm…",
+            "Have I understood correctly that…?"
+          ],
+          "task": "Summarise your understanding and ask one targeted question.",
+          "modelRepair": "From my understanding, you need a weekly Excel report for managers. Have I understood correctly?",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-10",
+          "title": "Handle vague feedback",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "Someone says, “This is not quite right.”",
+          "rescuePhrases": [
+            "Could you show me which part…?",
+            "What would a better result look like?",
+            "Is the main concern…?"
+          ],
+          "task": "Ask for one concrete example and the priority.",
+          "modelRepair": "Could you show me which section is not working for you, and what the most important change would be?",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-11",
+          "title": "De-escalate an unhappy customer",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "A customer says, “This is unacceptable. I’ve waited all day.”",
+          "rescuePhrases": [
+            "I understand why you’re frustrated.",
+            "I’m sorry about the delay.",
+            "Here’s what I can do now…"
+          ],
+          "task": "Acknowledge, apologise appropriately, and offer a concrete next step.",
+          "modelRepair": "I understand why you’re frustrated, and I’m sorry about the delay. I’ll check the status now and update you within fifteen minutes.",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-12",
+          "title": "Resolve a booking mismatch",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "The hotel cannot find the room type shown in your confirmation.",
+          "rescuePhrases": [
+            "According to my confirmation…",
+            "Could you check…?",
+            "Would it be possible to…?"
+          ],
+          "task": "State the evidence, ask for a check, and propose an acceptable alternative.",
+          "modelRepair": "According to my confirmation, I booked a double room for tonight. Could you check the booking number again?",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-13",
+          "title": "Explain a trade-off when challenged",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "Someone asks, “Why not just choose the cheapest option?”",
+          "rescuePhrases": [
+            "The advantage is…, but…",
+            "The trade-off is…",
+            "It may cost less now, although…"
+          ],
+          "task": "Explain the hidden cost without dismissing the question.",
+          "modelRepair": "It costs less now, but the trade-off is higher maintenance. Over a year, the second option may be more economical.",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-14",
+          "title": "Challenge a risky idea",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "A senior colleague proposes an option you believe is unsafe.",
+          "rescuePhrases": [
+            "May I raise one concern?",
+            "What happens if…?",
+            "Could we reduce the risk by…?"
+          ],
+          "task": "Use a question or evidence, not a personal attack.",
+          "modelRepair": "May I raise one concern? What happens if the change fails in production? Could we reduce the risk with a pilot?",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-15",
+          "title": "Speak around a forgotten word",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "You forget the exact English word in the middle of an answer.",
+          "rescuePhrases": [
+            "It’s the thing that…",
+            "It’s similar to…",
+            "I don’t know the exact word, but…"
+          ],
+          "task": "Describe function, appearance, location, or an example and continue.",
+          "modelRepair": "I don’t know the exact word, but it’s the small device you use to connect the cable to the laptop.",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-16",
+          "title": "Recover your turn",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "Someone interrupts before you complete your point.",
+          "rescuePhrases": [
+            "Let me finish this point.",
+            "Just to complete the thought…",
+            "I’ll come to that in a moment."
+          ],
+          "task": "Protect your turn politely, then finish in one sentence.",
+          "modelRepair": "I’ll come to that in a moment. Just to complete the thought, we need approval before we can deploy.",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-17",
+          "title": "Correct yourself without restarting",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "You give the wrong date, name, number, or tense.",
+          "rescuePhrases": [
+            "Sorry, let me correct that.",
+            "I should say…",
+            "Actually, it was…"
+          ],
+          "task": "Correct only the necessary detail and continue.",
+          "modelRepair": "The meeting is on Thursday - sorry, let me correct that - Friday at two, and I’ll send the agenda tomorrow.",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        },
+        {
+          "id": "repair-18",
+          "title": "Make a next-step plan after feedback",
+          "breakdownType": "communication repair",
+          "breakdownScenario": "After a simulation, you realise one part was unclear.",
+          "rescuePhrases": [
+            "Next time, I’ll…",
+            "The part I want to improve is…",
+            "A clearer way to say it is…"
+          ],
+          "task": "Name one specific improvement and immediately try the revised line.",
+          "modelRepair": "The part I want to improve is my ending. A clearer way to say it is: ‘My recommendation is to test it with one team next week.’",
+          "reflection": "Did the repair keep the conversation moving?",
+          "recommendedSeconds": 180
+        }
+      ]
+    },
+    "fluencySprint": {
+      "label": "Fluency Sprint",
+      "purpose": "Repeat a familiar message under gradually changing time and support conditions.",
+      "defaultFlow": [
+        "Plan with keywords",
+        "Round 1: complete",
+        "Round 2: smoother",
+        "Round 3: flexible",
+        "Compare"
+      ],
+      "items": [
+        {
+          "id": "fs-01",
+          "title": "Introduction sprint",
+          "topic": "Introduce yourself.",
+          "planningBullets": [
+            "name/role",
+            "current focus",
+            "interest or goal"
+          ],
+          "roundsSeconds": [
+            30,
+            45,
+            60
+          ],
+          "focus": "Keep the same message but reduce long pauses.",
+          "followUpQuestion": "What could the listener ask next?",
+          "rule": "No restart; use simple English.",
+          "recommendedSeconds": 255
+        },
+        {
+          "id": "fs-02",
+          "title": "Story sprint",
+          "topic": "Tell a short past story.",
+          "planningBullets": [
+            "setting",
+            "problem or surprise",
+            "action",
+            "ending"
+          ],
+          "roundsSeconds": [
+            45,
+            60,
+            75
+          ],
+          "focus": "Make the sequence easier to follow.",
+          "followUpQuestion": "What did you learn or feel?",
+          "rule": "Finish the story in every round.",
+          "recommendedSeconds": 300
+        },
+        {
+          "id": "fs-03",
+          "title": "Memory sprint",
+          "topic": "Describe a memorable trip or event.",
+          "planningBullets": [
+            "where/when",
+            "key moment",
+            "reaction",
+            "why memorable"
+          ],
+          "roundsSeconds": [
+            45,
+            60,
+            75
+          ],
+          "focus": "Use one vivid detail and one clear ending.",
+          "followUpQuestion": "Would you like to experience it again?",
+          "rule": "Do not add unrelated background.",
+          "recommendedSeconds": 300
+        },
+        {
+          "id": "fs-04",
+          "title": "Retell for smoothness",
+          "topic": "Retell a story you practised earlier.",
+          "planningBullets": [
+            "opening",
+            "turning point",
+            "result",
+            "lesson"
+          ],
+          "roundsSeconds": [
+            60,
+            60,
+            60
+          ],
+          "focus": "Round 2: fewer pauses. Round 3: clearer emphasis.",
+          "followUpQuestion": "Which version felt most natural?",
+          "rule": "Keep content mostly constant across rounds.",
+          "recommendedSeconds": 300
+        },
+        {
+          "id": "fs-05",
+          "title": "Social conversation sprint",
+          "topic": "Start, continue, and close a short conversation.",
+          "planningBullets": [
+            "situational opener",
+            "follow-up",
+            "personal response",
+            "warm closing"
+          ],
+          "roundsSeconds": [
+            45,
+            60,
+            75
+          ],
+          "focus": "Make each move sound connected rather than memorised.",
+          "followUpQuestion": "What follow-up could keep it going?",
+          "rule": "Use at least one real question.",
+          "recommendedSeconds": 300
+        },
+        {
+          "id": "fs-06",
+          "title": "Workplace checkpoint",
+          "topic": "Give an update and respond to a follow-up.",
+          "planningBullets": [
+            "progress",
+            "current work",
+            "risk",
+            "next step"
+          ],
+          "roundsSeconds": [
+            60,
+            75,
+            90
+          ],
+          "focus": "Be concise before adding detail.",
+          "followUpQuestion": "What support do you need?",
+          "rule": "Do not hide the risk.",
+          "recommendedSeconds": 345
+        },
+        {
+          "id": "fs-07",
+          "title": "Voice-message sprint",
+          "topic": "Leave a complete voice message.",
+          "planningBullets": [
+            "identity",
+            "reason",
+            "key detail",
+            "requested action",
+            "callback"
+          ],
+          "roundsSeconds": [
+            30,
+            45,
+            60
+          ],
+          "focus": "Make names, numbers, and actions easy to catch.",
+          "followUpQuestion": "When should they respond?",
+          "rule": "No visual notes in the final round.",
+          "recommendedSeconds": 255
+        },
+        {
+          "id": "fs-08",
+          "title": "Service recovery sprint",
+          "topic": "Handle a customer or booking problem.",
+          "planningBullets": [
+            "acknowledge",
+            "facts",
+            "desired solution",
+            "alternative"
+          ],
+          "roundsSeconds": [
+            45,
+            60,
+            75
+          ],
+          "focus": "Stay calm and make the request specific.",
+          "followUpQuestion": "What compromise would you accept?",
+          "rule": "Avoid blaming language.",
+          "recommendedSeconds": 300
+        },
+        {
+          "id": "fs-09",
+          "title": "Mini-presentation rehearsal",
+          "topic": "Give a two-minute recommendation.",
+          "planningBullets": [
+            "opening",
+            "problem",
+            "evidence",
+            "recommendation",
+            "first step"
+          ],
+          "roundsSeconds": [
+            60,
+            90,
+            120
+          ],
+          "focus": "Use clear signposts and a strong ending.",
+          "followUpQuestion": "What objection might the audience raise?",
+          "rule": "Do not read a full script.",
+          "recommendedSeconds": 390
+        },
+        {
+          "id": "fs-10",
+          "title": "Unexpected-question sprint",
+          "topic": "Answer a question you did not prepare.",
+          "planningBullets": [
+            "buy time",
+            "direct answer",
+            "reason",
+            "example"
+          ],
+          "roundsSeconds": [
+            30,
+            45,
+            60
+          ],
+          "focus": "Start with a clear answer before explaining.",
+          "followUpQuestion": "What could change your answer?",
+          "rule": "One brief thinking phrase is allowed.",
+          "recommendedSeconds": 255
+        },
+        {
+          "id": "fs-11",
+          "title": "No-preparation rotation",
+          "topic": "Answer three unrelated prompts.",
+          "planningBullets": [
+            "daily life",
+            "work",
+            "opinion"
+          ],
+          "roundsSeconds": [
+            30,
+            30,
+            30
+          ],
+          "focus": "Switch topics without trying to be perfect.",
+          "followUpQuestion": "Which topic was hardest and why?",
+          "rule": "Begin within five seconds.",
+          "recommendedSeconds": 210
+        },
+        {
+          "id": "fs-12",
+          "title": "Three-round fluency test",
+          "topic": "Repeat one answer three times.",
+          "planningBullets": [
+            "main point",
+            "two supporting details",
+            "ending"
+          ],
+          "roundsSeconds": [
+            60,
+            60,
+            60
+          ],
+          "focus": "Round 1 complete; Round 2 smoother; Round 3 more natural.",
+          "followUpQuestion": "Which pause could you remove?",
+          "rule": "Do not memorise exact wording.",
+          "recommendedSeconds": 300
+        },
+        {
+          "id": "fs-13",
+          "title": "Big 30 remix",
+          "topic": "Answer two common personal questions back-to-back.",
+          "planningBullets": [
+            "answer 1",
+            "transition",
+            "answer 2",
+            "listener hook"
+          ],
+          "roundsSeconds": [
+            45,
+            75,
+            90
+          ],
+          "focus": "Avoid sounding like two separate scripts.",
+          "followUpQuestion": "What common theme connects the answers?",
+          "rule": "Use keywords only.",
+          "recommendedSeconds": 330
+        },
+        {
+          "id": "fs-14",
+          "title": "Personal-goal simulation",
+          "topic": "Practise the situation that matters most to you.",
+          "planningBullets": [
+            "context",
+            "goal",
+            "challenge",
+            "action",
+            "request or conclusion"
+          ],
+          "roundsSeconds": [
+            60,
+            90,
+            120
+          ],
+          "focus": "Make the outcome practical and personal.",
+          "followUpQuestion": "What would success look like?",
+          "rule": "Choose a real upcoming situation.",
+          "recommendedSeconds": 390
+        },
+        {
+          "id": "fs-15",
+          "title": "Day 1 comparison",
+          "topic": "Answer the Day 1 introduction prompt again.",
+          "planningBullets": [
+            "identity",
+            "role",
+            "goal",
+            "hook"
+          ],
+          "roundsSeconds": [
+            60,
+            75,
+            90
+          ],
+          "focus": "Notice progress rather than chasing perfection.",
+          "followUpQuestion": "What can you do now that was harder on Day 1?",
+          "rule": "Save this recording for comparison.",
+          "recommendedSeconds": 345
+        },
+        {
+          "id": "fs-16",
+          "title": "Final speaking showcase",
+          "topic": "Combine a story, opinion, and future plan.",
+          "planningBullets": [
+            "past experience",
+            "present view",
+            "next goal",
+            "clear ending"
+          ],
+          "roundsSeconds": [
+            90,
+            120,
+            180
+          ],
+          "focus": "Show flexible communication and use repair if needed.",
+          "followUpQuestion": "What will your next 30 days focus on?",
+          "rule": "Complete the message without restarting.",
+          "recommendedSeconds": 510
+        }
+      ]
+    }
+  }
+}

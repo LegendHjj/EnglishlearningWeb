@@ -17,3 +17,209 @@
   font-size: clamp(2.25rem, 4.5vw, 3.8rem);
   line-height: 1.05;
 }
+
+/* Keep the marketing page expressive without letting its display scale take over
+   the denser practice screens. */
+body {
+  line-height: 1.5;
+}
+
+p,
+li {
+  line-height: 1.55;
+}
+
+.hero h1 {
+  max-width: 13ch;
+  margin-bottom: 1.25rem;
+  font-size: clamp(3rem, 4.7vw, 4.25rem);
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.hero p {
+  font-size: clamp(1rem, 1.4vw, 1.125rem);
+}
+
+.main .topline {
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.main .topline > div,
+.card-title-row > div {
+  min-width: 0;
+}
+
+.main .page-title {
+  max-width: 820px;
+  margin: .35rem 0 .75rem;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.main h2 {
+  font-size: clamp(1.65rem, 2.3vw, 2.25rem);
+  line-height: 1.14;
+  text-wrap: pretty;
+}
+
+.today-card h2,
+.programme-next h2 {
+  margin: .45rem 0 .35rem;
+  font-size: clamp(1.75rem, 2.4vw, 2.25rem);
+}
+
+.phase-list .card-title-row {
+  margin-bottom: 1rem;
+}
+
+.phase-list h2 {
+  margin: .35rem 0 .4rem;
+  font-size: clamp(1.55rem, 2vw, 2rem);
+}
+
+.phase-list .card-title-row p {
+  max-width: 72ch;
+  margin-bottom: 0;
+}
+
+.practice-prompt {
+  padding: clamp(1.35rem, 2.2vw, 2rem);
+}
+
+.practice-prompt h2 {
+  margin: .4rem 0 .55rem;
+  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+  line-height: 1.14;
+  text-wrap: pretty;
+}
+
+.practice-prompt ol {
+  margin: .25rem 0 1.25rem;
+  padding-left: 1.35rem;
+}
+
+.practice-prompt li + li {
+  margin-top: .7rem;
+}
+
+.practice-context,
+.settings-grid > .list .card {
+  display: grid;
+  align-content: start;
+  gap: .55rem;
+}
+
+.practice-context h3,
+.practice-context p,
+.settings-grid > .list .card h3,
+.settings-grid > .list .card p {
+  margin: 0;
+}
+
+.practice-context h3:not(:first-child) {
+  margin-top: .75rem;
+}
+
+.practice-context .detail-actions,
+.settings-grid > .list .card .detail-actions {
+  margin-top: .4rem;
+}
+
+.settings-grid > .list .card .muted {
+  max-width: 48ch;
+}
+
+.dashboard-action-card {
+  display: grid;
+  align-content: start;
+  gap: .35rem;
+}
+
+.dashboard-action-card h3 {
+  margin: 0;
+}
+
+.dashboard-action-card .detail-actions {
+  margin-top: .35rem;
+  flex-wrap: nowrap;
+}
+
+.dashboard-action-card .btn {
+  padding: .75rem .85rem;
+  white-space: nowrap;
+}
+
+.dashboard-grid > .list {
+  align-self: start;
+  align-content: start;
+}
+
+.practice-prompt > .detail-actions {
+  margin: .2rem 0 .85rem;
+}
+
+.progress-summary-card {
+  display: grid;
+  align-content: start;
+  gap: 1.15rem;
+}
+
+.progress-summary-section {
+  display: grid;
+  gap: .4rem;
+}
+
+.progress-summary-section h3,
+.progress-summary-section p {
+  margin: 0;
+}
+
+.metric-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem .85rem;
+}
+
+.support-stage-list {
+  display: grid;
+  gap: .2rem;
+}
+
+.progress-summary-card .journey-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0;
+  padding: .2rem 0;
+}
+
+.focus-wrap h1,
+.question-practice h1 {
+  font-size: clamp(2rem, 3.8vw, 3.25rem);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: clamp(2.5rem, 11vw, 3rem);
+    line-height: 1.04;
+  }
+
+  .main .page-title {
+    font-size: 2rem;
+    line-height: 1.1;
+    text-wrap: pretty;
+  }
+
+  .main h2,
+  .today-card h2,
+  .programme-next h2 {
+    font-size: 1.65rem;
+  }
+}

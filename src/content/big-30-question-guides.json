@@ -1,0 +1,1117 @@
+{
+  "schemaVersion": 1,
+  "title": "Big 30 Question-Specific Guides",
+  "description": "Specific planners and follow-ups for the existing Big 30 page. Replace the current one-size-fits-all planner.",
+  "items": [
+    {
+      "id": "big-01",
+      "question": "Tell me about yourself.",
+      "purpose": "Create a friendly overview, not a full life history.",
+      "keyPoints": [
+        "Current role or situation",
+        "Relevant background",
+        "One interest or goal",
+        "A listener hook"
+      ],
+      "supportFrames": [
+        "I’m currently…",
+        "Most of my experience is in…",
+        "Outside of work…"
+      ],
+      "followUpQuestion": "What got you interested in that?",
+      "commonTrap": "Listing too many facts without a clear focus.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-02",
+      "question": "Why are you learning English?",
+      "purpose": "Connect English to a real outcome.",
+      "keyPoints": [
+        "Current difficulty",
+        "Situation where English matters",
+        "Goal",
+        "Action you are taking"
+      ],
+      "supportFrames": [
+        "I’m learning English because…",
+        "The situation I find hardest is…",
+        "My goal is to…"
+      ],
+      "followUpQuestion": "When do you most need to use English?",
+      "commonTrap": "Giving only a general answer such as “English is important.”",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-03",
+      "question": "What do you do for a living?",
+      "purpose": "Explain the value of your work in understandable language.",
+      "keyPoints": [
+        "Job title or field",
+        "Main responsibility",
+        "Who you help",
+        "One current focus"
+      ],
+      "supportFrames": [
+        "I work in…",
+        "My main responsibility is…",
+        "At the moment…"
+      ],
+      "followUpQuestion": "What do you enjoy most about it?",
+      "commonTrap": "Using too much company-specific jargon.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-04",
+      "question": "What do you do outside of work?",
+      "purpose": "Share interests in a way that invites conversation.",
+      "keyPoints": [
+        "One or two activities",
+        "How often",
+        "Why you enjoy them",
+        "Recent example"
+      ],
+      "supportFrames": [
+        "Outside of work, I enjoy…",
+        "I got into it because…",
+        "Recently, I…"
+      ],
+      "followUpQuestion": "How did you get interested in that?",
+      "commonTrap": "Listing hobbies without any personal detail.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-05",
+      "question": "How was your weekend?",
+      "purpose": "Give a natural short answer with one memorable detail.",
+      "keyPoints": [
+        "Overall feeling",
+        "Main activity",
+        "One detail",
+        "Reaction or next plan"
+      ],
+      "supportFrames": [
+        "It was pretty…",
+        "I spent most of it…",
+        "The best part was…"
+      ],
+      "followUpQuestion": "Do you have anything planned for next weekend?",
+      "commonTrap": "Saying only “fine” or narrating every hour.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-06",
+      "question": "What are your long-term goals?",
+      "purpose": "Describe direction while sounding realistic.",
+      "keyPoints": [
+        "Goal",
+        "Why it matters",
+        "Current step",
+        "Time horizon or flexibility"
+      ],
+      "supportFrames": [
+        "In the long term, I’d like to…",
+        "What matters to me is…",
+        "Right now, I’m…"
+      ],
+      "followUpQuestion": "What is the next small step?",
+      "commonTrap": "Giving a dream with no present action.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-07",
+      "question": "What got you interested in your career?",
+      "purpose": "Tell a short origin story.",
+      "keyPoints": [
+        "Starting point",
+        "Influential event or person",
+        "What attracted you",
+        "How it developed"
+      ],
+      "supportFrames": [
+        "I first became interested when…",
+        "What attracted me was…",
+        "That led me to…"
+      ],
+      "followUpQuestion": "Would you choose the same career again?",
+      "commonTrap": "Giving only the final result and no story.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-08",
+      "question": "Do you prefer working from home or the office?",
+      "purpose": "Give a balanced preference.",
+      "keyPoints": [
+        "Preference",
+        "Main reason",
+        "Benefit of other option",
+        "Best arrangement for you"
+      ],
+      "supportFrames": [
+        "I generally prefer…",
+        "The main reason is…",
+        "That said…"
+      ],
+      "followUpQuestion": "What kind of work is easier in the office?",
+      "commonTrap": "Treating the question as having only one correct answer.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-09",
+      "question": "What are you currently working on?",
+      "purpose": "Give a concise project update.",
+      "keyPoints": [
+        "Project purpose",
+        "Current stage",
+        "Challenge",
+        "Next step"
+      ],
+      "supportFrames": [
+        "I’m currently working on…",
+        "At the moment…",
+        "The next step is…"
+      ],
+      "followUpQuestion": "What is the biggest challenge?",
+      "commonTrap": "Explaining background before stating the project.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-10",
+      "question": "Tell me about your hometown.",
+      "purpose": "Help the listener picture the place.",
+      "keyPoints": [
+        "Location",
+        "What it is known for",
+        "Daily atmosphere",
+        "Personal connection"
+      ],
+      "supportFrames": [
+        "I’m from…",
+        "It’s known for…",
+        "What I like most is…"
+      ],
+      "followUpQuestion": "How has it changed?",
+      "commonTrap": "Listing tourist facts with no personal view.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-11",
+      "question": "What is a skill you want to learn?",
+      "purpose": "Connect a skill to motivation and plan.",
+      "keyPoints": [
+        "Skill",
+        "Reason",
+        "Current level",
+        "Practice plan"
+      ],
+      "supportFrames": [
+        "I’d like to learn…",
+        "It would help me…",
+        "I’ve started by…"
+      ],
+      "followUpQuestion": "What would success look like?",
+      "commonTrap": "Naming a skill without explaining why.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-12",
+      "question": "Describe a typical workday.",
+      "purpose": "Organise a routine into meaningful stages.",
+      "keyPoints": [
+        "Start of day",
+        "Main responsibilities",
+        "Busy or variable part",
+        "End of day"
+      ],
+      "supportFrames": [
+        "I usually start by…",
+        "Most of my time goes into…",
+        "Before I finish…"
+      ],
+      "followUpQuestion": "Which part of the day is most demanding?",
+      "commonTrap": "Giving a minute-by-minute timetable.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-13",
+      "question": "What makes a good teammate?",
+      "purpose": "Explain values with evidence.",
+      "keyPoints": [
+        "Two qualities",
+        "Why they matter",
+        "Example",
+        "How you practise them"
+      ],
+      "supportFrames": [
+        "For me, a good teammate…",
+        "That matters because…",
+        "For example…"
+      ],
+      "followUpQuestion": "Which quality is hardest to develop?",
+      "commonTrap": "Using adjectives without examples.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-14",
+      "question": "How do you handle pressure?",
+      "purpose": "Show a practical process rather than claiming perfection.",
+      "keyPoints": [
+        "Pressure situation",
+        "First action",
+        "How you prioritise or communicate",
+        "Example or lesson"
+      ],
+      "supportFrames": [
+        "When things get busy…",
+        "The first thing I do is…",
+        "I also make sure to…"
+      ],
+      "followUpQuestion": "What kind of pressure is hardest for you?",
+      "commonTrap": "Saying “I work well under pressure” without evidence.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-15",
+      "question": "What was your first job?",
+      "purpose": "Tell a compact beginning-to-lesson story.",
+      "keyPoints": [
+        "Role and setting",
+        "First feeling",
+        "Challenge",
+        "Lesson"
+      ],
+      "supportFrames": [
+        "My first job was…",
+        "At first…",
+        "It taught me…"
+      ],
+      "followUpQuestion": "What surprised you most?",
+      "commonTrap": "Describing duties only.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-16",
+      "question": "What is your proudest achievement?",
+      "purpose": "Explain effort, outcome, and personal meaning.",
+      "keyPoints": [
+        "Goal",
+        "Challenge",
+        "Action",
+        "Result and meaning"
+      ],
+      "supportFrames": [
+        "One achievement I’m proud of is…",
+        "The difficult part was…",
+        "It mattered because…"
+      ],
+      "followUpQuestion": "Who helped you achieve it?",
+      "commonTrap": "Choosing an achievement but not explaining why it matters.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-17",
+      "question": "Describe a difficult problem you solved.",
+      "purpose": "Show reasoning and action clearly.",
+      "keyPoints": [
+        "Problem and impact",
+        "Evidence or clue",
+        "Action",
+        "Result and lesson"
+      ],
+      "supportFrames": [
+        "The main issue was…",
+        "I noticed that…",
+        "In the end…"
+      ],
+      "followUpQuestion": "What would you do differently now?",
+      "commonTrap": "Using “we fixed it” without explaining your contribution.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-18",
+      "question": "What do you enjoy about your work?",
+      "purpose": "Connect tasks to motivation.",
+      "keyPoints": [
+        "Enjoyable part",
+        "Why",
+        "Example",
+        "Balance or challenge"
+      ],
+      "supportFrames": [
+        "What I enjoy most is…",
+        "I find it satisfying when…",
+        "For example…"
+      ],
+      "followUpQuestion": "What part do you enjoy less?",
+      "commonTrap": "Giving a generic positive answer.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-19",
+      "question": "What would you like to improve?",
+      "purpose": "Show self-awareness and action.",
+      "keyPoints": [
+        "Skill or behaviour",
+        "Why it matters",
+        "Current action",
+        "How progress will be measured"
+      ],
+      "supportFrames": [
+        "I’d like to improve…",
+        "I’ve noticed that…",
+        "To work on it, I’m…"
+      ],
+      "followUpQuestion": "What has already improved?",
+      "commonTrap": "Presenting a weakness with no improvement plan.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-20",
+      "question": "Tell me about a recent challenge.",
+      "purpose": "Tell a current, useful problem story.",
+      "keyPoints": [
+        "Context",
+        "Challenge",
+        "Action",
+        "Current result or next step"
+      ],
+      "supportFrames": [
+        "Recently, I had to…",
+        "The difficult part was…",
+        "What I did was…"
+      ],
+      "followUpQuestion": "Is the challenge fully resolved?",
+      "commonTrap": "Giving excessive confidential or technical detail.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-21",
+      "question": "What does success mean to you?",
+      "purpose": "Define success personally and concretely.",
+      "keyPoints": [
+        "Personal definition",
+        "Why",
+        "Example",
+        "How it may change"
+      ],
+      "supportFrames": [
+        "For me, success means…",
+        "It’s not only about…",
+        "A good example is…"
+      ],
+      "followUpQuestion": "Has your definition changed?",
+      "commonTrap": "Repeating a quotation or cliché.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-22",
+      "question": "Describe your ideal weekend.",
+      "purpose": "Reveal preferences through a simple sequence.",
+      "keyPoints": [
+        "Pace",
+        "People",
+        "Activity",
+        "Why it feels ideal"
+      ],
+      "supportFrames": [
+        "My ideal weekend would…",
+        "I’d probably spend…",
+        "What makes it ideal is…"
+      ],
+      "followUpQuestion": "Would you prefer it every weekend?",
+      "commonTrap": "Creating an unrealistic list with no personal reason.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-23",
+      "question": "Where would you like to travel?",
+      "purpose": "Explain destination, motivation, and experience.",
+      "keyPoints": [
+        "Place",
+        "Why",
+        "What you want to do",
+        "Possible plan"
+      ],
+      "supportFrames": [
+        "I’d love to visit…",
+        "I’m interested in it because…",
+        "If I went, I’d…"
+      ],
+      "followUpQuestion": "Who would you go with?",
+      "commonTrap": "Naming a destination only.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-24",
+      "question": "What is your favourite food?",
+      "purpose": "Turn a simple preference into a conversation.",
+      "keyPoints": [
+        "Food",
+        "Taste or ingredients",
+        "Memory or place",
+        "When you eat it"
+      ],
+      "supportFrames": [
+        "My favourite food is…",
+        "What I like about it is…",
+        "It reminds me of…"
+      ],
+      "followUpQuestion": "Can you cook it yourself?",
+      "commonTrap": "Using only “because it is delicious.”",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-25",
+      "question": "How do you stay productive?",
+      "purpose": "Describe a small, repeatable system.",
+      "keyPoints": [
+        "Planning method",
+        "Priority rule",
+        "Distraction control",
+        "Adjustment when plans fail"
+      ],
+      "supportFrames": [
+        "What helps me most is…",
+        "I usually prioritise…",
+        "If I fall behind…"
+      ],
+      "followUpQuestion": "Which habit has the biggest effect?",
+      "commonTrap": "Listing many productivity tips without a real routine.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-26",
+      "question": "Who has influenced you?",
+      "purpose": "Use one example to show influence.",
+      "keyPoints": [
+        "Person",
+        "Quality or action",
+        "Specific example",
+        "Change in you"
+      ],
+      "supportFrames": [
+        "Someone who influenced me is…",
+        "What I admire is…",
+        "Because of that…"
+      ],
+      "followUpQuestion": "Have you told them?",
+      "commonTrap": "Giving praise without a specific incident.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-27",
+      "question": "What is a useful habit you have?",
+      "purpose": "Explain trigger, behaviour, and benefit.",
+      "keyPoints": [
+        "Habit",
+        "When you do it",
+        "Benefit",
+        "How you maintain it"
+      ],
+      "supportFrames": [
+        "One habit that helps me is…",
+        "I usually do it when…",
+        "It helps because…"
+      ],
+      "followUpQuestion": "Was it difficult to build?",
+      "commonTrap": "Naming a habit without explaining its impact.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-28",
+      "question": "Describe your current project.",
+      "purpose": "Give a listener-friendly project overview.",
+      "keyPoints": [
+        "Purpose",
+        "Your role",
+        "Current status",
+        "Risk or next milestone"
+      ],
+      "supportFrames": [
+        "The project is about…",
+        "My role is…",
+        "Right now…"
+      ],
+      "followUpQuestion": "What decision is coming next?",
+      "commonTrap": "Starting with internal history rather than purpose.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-29",
+      "question": "What are you looking forward to?",
+      "purpose": "Express anticipation with a reason.",
+      "keyPoints": [
+        "Event or goal",
+        "Timing",
+        "Why it matters",
+        "Preparation"
+      ],
+      "supportFrames": [
+        "I’m looking forward to…",
+        "It matters to me because…",
+        "Before then, I need to…"
+      ],
+      "followUpQuestion": "What are you doing to prepare?",
+      "commonTrap": "Giving only the event name.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    },
+    {
+      "id": "big-30",
+      "question": "Where do you see yourself in five years?",
+      "purpose": "Show direction without pretending certainty.",
+      "keyPoints": [
+        "Professional or personal direction",
+        "Skills or responsibility",
+        "Reason",
+        "Flexible next steps"
+      ],
+      "supportFrames": [
+        "In five years, I hope to…",
+        "I’d like to be someone who…",
+        "To move in that direction…"
+      ],
+      "followUpQuestion": "What could change that plan?",
+      "commonTrap": "Giving a rigid job title with no development path.",
+      "practiceStages": {
+        "follow": "Use the key points and full support frames.",
+        "recall": "Use keywords and only the first words of the frames.",
+        "free": "Answer with no written sentences, then respond to the follow-up."
+      },
+      "recommendedRounds": [
+        {
+          "seconds": 30,
+          "focus": "complete answer"
+        },
+        {
+          "seconds": 60,
+          "focus": "clear structure and one example"
+        },
+        {
+          "seconds": 75,
+          "focus": "natural listener hook"
+        }
+      ]
+    }
+  ]
+}
