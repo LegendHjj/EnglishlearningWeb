@@ -1,0 +1,28 @@
+.chunk-overview{display:grid;gap:1rem;margin:1.5rem 0 2rem}
+.chunk-intro{display:flex;gap:1.25rem;background:var(--sage);padding:1.75rem}
+.chunk-intro h2{font-size:clamp(1.7rem,3vw,2.4rem);margin:.5rem 0 .8rem}
+.chunk-intro p{max-width:660px;line-height:1.65;margin-bottom:.6rem}
+.chunk-intro-icon{flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--paper);color:var(--green)}
+.chunk-journey{font-weight:700;font-size:.88rem}.chunk-journey span{color:var(--green);margin:0 .35rem}
+.chunk-overview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.chunk-overview-grid p{line-height:1.6}
+.chunk-guide{padding:.75rem 0;line-height:1.6}.chunk-guide summary{display:flex;gap:.6rem;align-items:center;cursor:pointer;font-weight:700}.chunk-guide p{margin:1rem 0 0;max-width:780px}
+.chunk-kind{display:block;font-size:.72rem;font-weight:700;color:var(--green);margin:-.2rem 0 .7rem}
+.chunk-review-date,.chunk-source{font-size:.78rem;color:var(--muted);overflow-wrap:anywhere}
+.chunk-practise-button{margin-top:auto;align-self:flex-start}.chunk-filter{margin:0 0 1.5rem}
+.chunk-use{display:flex;align-items:flex-start;gap:.65rem;line-height:1.5}.chunk-use input{width:18px;height:18px;flex:none;accent-color:var(--green);margin:.2rem 0 0}
+.chunk-backdrop{z-index:50;display:flex;align-items:center;justify-content:center;padding:24px;background:#f0f2ec}
+.chunk-workout{width:min(680px,100%);max-height:calc(100dvh - 48px);overflow:auto;overscroll-behavior:contain;padding:2rem;display:flex;flex-direction:column;gap:1rem}
+.chunk-workout .card-title-row{display:flex;align-items:flex-start;margin:0}.chunk-workout h2{font-size:clamp(1.55rem,3vw,2.1rem);margin:.6rem 0 0}
+.chunk-workout p{line-height:1.65;margin-bottom:0}.chunk-workout .progress{flex:none;min-height:7px;margin:0 0 .5rem}
+.chunk-model{padding:1.25rem;border-radius:16px;background:var(--sage);overflow-wrap:anywhere}.chunk-model h3{font-size:1.6rem;margin:.5rem 0;line-height:1.35}.chunk-model svg{color:var(--green)}
+.chunk-example{box-shadow:none;padding:1rem;overflow-wrap:anywhere}.chunk-example p{margin:.5rem 0 0}
+.chunk-cue{font-size:1.15rem;font-weight:650}.chunk-hint{padding:1rem;background:#f7f4eb;border-radius:12px;font-weight:750}
+.chunk-workout .note-controls{display:flex;gap:.35rem;padding:.35rem;background:var(--sage);border-radius:12px}.chunk-workout .note-controls button{flex:1;border:0;background:transparent;border-radius:9px;padding:.65rem;cursor:pointer}.chunk-workout .note-controls button.active{background:var(--paper);font-weight:750;color:var(--green)}
+.chunk-workout .field textarea{min-height:95px;resize:vertical}.chunk-workout .btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.chunk-rating-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem}
+.chunk-workout .recorder{padding:1rem;box-shadow:none}.chunk-workout .recorder .privacy{font-size:.75rem}
+.chunk-recordings summary{font-weight:700;cursor:pointer;padding:.8rem 0}.chunk-workout .recording-info strong{overflow-wrap:anywhere}
+@media(max-width:600px){.chunk-intro{padding:1.1rem;gap:.75rem}.chunk-intro-icon{display:none}.chunk-overview-grid{grid-template-columns:1fr}.chunk-backdrop{padding:12px}.chunk-workout{padding:1.2rem;max-height:calc(100dvh - 24px)}.chunk-rating-grid{grid-template-columns:1fr}.chunk-workout .detail-actions .btn{flex:1}.chunk-workout .card-title-row>div{min-width:0}.chunk-journey span{margin:0 .1rem}}
+.notebook-tools{display:grid;grid-template-columns:minmax(0,1fr) 180px 150px}.notebook-tools .search{min-width:0;min-height:48px}.notebook-tools .search input{min-width:0;width:100%}.notebook-tools .search svg{flex:none}
+@media(max-width:900px){.notebook-tools{grid-template-columns:repeat(2,minmax(0,1fr))}.notebook-tools .search{grid-column:1/-1}}
+@media(max-width:600px){.notebook-tools{grid-template-columns:minmax(0,1fr)}}

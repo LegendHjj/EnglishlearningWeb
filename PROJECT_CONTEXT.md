@@ -1,6 +1,32 @@
 # Fluency Reset — Project Context and Handoff
 
-Last updated: 2026-07-14
+Last updated: 2026-10-12
+
+## Big 30 personal answers and AI prompt helper
+
+Approved in chat on 2026-10-12. Each existing Big 30 question now has Practice and My Answer tabs. `src/features/big30/AnswerBuilder.tsx` saves long user notes, a 30/60/90-second target, pasted spoken answer, recall keywords, and useful chunks. `src/utils/big30Prompt.ts` builds a copyable, tool-independent prompt from the actual question guide: purpose, key points, frames, common trap, and follow-up. It requests relevant facts from the notes, one memorable detail, natural everyday English, corrected grammar without invented facts, and three plain-text output sections. Clipboard failure selects the visible prompt for manual copying. Timing and word ranges are estimates.
+
+`src/features/big30/PersonalAnswerSupport.tsx` shows a personal answer and optional browser voice in Follow, keywords in Recall, and no personal answer/keywords/chunks in Free. The old speaking memo is hidden outside Follow. Original guide support remains available. Personal answers are keyed by the existing q1–q30 IDs and do not count as completed speaking or programme work. Only existing recording completion updates question completion.
+
+`AppState.big30Answers` stores optional-per-question `Big30Answer` records. Current state/backup schema is 6; versions 1–5 import and migrate without losing phrases, chunks, memos, progress, or audio. Malformed optional personal fields are normalised rather than discarding a valid library. LocalStorage key and IndexedDB remain unchanged. No backend, login, AI API, or automatic transmission was added; the user copies the prompt to their chosen tool. Recordings retain their existing questionId links. Recording locks workspace/question changes until the take is stopped and saved/deleted; voice playback is cancelled when capture starts and when its support view unmounts.
+
+Verification on 2026-10-12: all 24 test files / 78 tests passed, TypeScript passed, and the production build passed. Playwright fallback (Browser plugin unavailable) passed at 1440 × 1000 and 390 × 844: actual clipboard copying, long Chinese notes, duration selection, pasted answers and reload, per-question isolation, original guide switching, Follow/Recall/Free support, keyboard tabs, recording navigation locks, synthetic microphone capture and IndexedDB replay, unchanged memos/library, no horizontal overflow, no error overlay, no console errors/warnings, and no external app requests. Human/real-device microphone capture and AI-tool-generated response quality were not exercised; the app only constructs the prompt.
+
+Reopening recordings exposed a pre-existing StrictMode bug in `RecordingList`: render-time audio URL creation was followed by effect cleanup revoking the displayed URLs. Audio URL creation and cleanup now share one effect, with a regression test for valid URLs and complete release on exit. A reviewer checked this fix and the speech/capture protection.
+
+## Personal Chunk Practice enhancement
+
+Approved in chat on 2026-10-12 after reviewing all eight files in the user's learning-materials folder; see `docs/learning-materials-review.md`. The Library now includes Chunk Practice alongside its existing tabs. It shares the existing `Phrase` collection rather than introducing a duplicate notebook. Optional fields are `chunkKind`, `source`, `recallCue`, `variations`, and `chunkReview`; old phrases work without them.
+
+The guided workout is listen/repeat → two personal sentences → hidden recall from a situation → optional short recording with Follow/Recall/Free support → self-check. Completion increments phrase practice once; usage increases only with the learner's explicit checkbox. Review suggestions use 1, 3, 7, 14, and 30 days: Again resets to one day, With help keeps the current interval, On my own advances one step. These are product defaults, not a fluency assessment. Chunk workouts do not fabricate completed programme days, authored drills, or speaking duration.
+
+The 12 authored starter chunks are opt-in and skip matching text/IDs, preserving edited existing phrases. No transcripts or PDFs are shipped with the website. Existing mission pinning retains the combined three-item phrase/vocabulary limit.
+
+`Recording.phraseId` links audio to a chunk. IndexedDB and the LocalStorage key remain unchanged; state/backup schema is 5 and versions 1–4 remain importable. Migration never adds deleted seed items. Recorder cleanup releases late permission streams and active capture; the chunk's next action stays disabled during capture, saving, or an unsaved take.
+
+Implementation boundaries: `src/features/chunks/` contains the overview/workout, `src/data/chunks.ts` the opt-in collection, `src/utils/chunks.ts` the review/deduplication/cue helpers, and `src/chunks.css` the responsive styling. Dashboard and Practice Room link into the new Library tab.
+
+Verification on 2026-10-12: all 20 test files / 69 tests passed, TypeScript passed, and the production build passed. Playwright fallback (Browser plugin unavailable) verified the app at 1440 × 1000 and 390 × 844: optional starter deduplication, personal chunk creation, variations, hidden recall/hints, synthetic microphone capture through MediaRecorder, local audio save/replay, explicit usage and review, persistence after reload, selected-tab visibility, search sizing, no horizontal overflow, dialog focus/Escape, and the existing dashboard entry. No browser console errors or warnings. A reviewer verified the microphone lifecycle and answer-concealment fixes. Real-device microphones and browsers other than Chromium remain untested in this enhancement.
 
 ## 60-practice-day programme upgrade
 
@@ -16,7 +42,7 @@ Mission duration now changes the actual flow: Quick Win uses one attempt and a s
 
 The Practice Room now renders Mouth Reps, Tight Build, Loose Story, Free Response, Echo & Shadow, Repair Lab, and Fluency Sprint from JSON. Each follows setup, attempt, retry, reflection, and completion. Big 30 uses question-specific purposes, planners, frames, traps, follow-ups, and timed rounds.
 
-Local state is schema version 4 with a separate programme content version. Migration preserves preferences, phrases, packs, vocabulary, memos, Big 30 progress, old activity, pins, practice results, and Library state. Backup versions 1–3 remain importable. IndexedDB remains on the existing database/store, so recordings stay accessible.
+Local state is schema version 6 with a separate programme content version. Migration preserves preferences, phrases, packs, vocabulary, memos, Big 30 progress, old activity, pins, practice results, and Library state. Backup versions 1–5 remain importable. IndexedDB remains on the existing database/store, so recordings stay accessible.
 
 Progress metrics now derive from mission self-checks, completed drills, and recording metadata. Phrase/vocabulary usage and confidence are saved only when the learner explicitly reports them.
 
@@ -132,7 +158,7 @@ Verified interaction paths:
 ## Known MVP limitations
 
 - There is no backend, account, or cross-device sync.
-- Audio is not included in JSON exports.
+- Progress/library JSON excludes audio; complete backups include audio.
 - Live recording format and pause support depend on the browser.
 - Real microphone capture requires user permission and a supported device/browser.
 - Phrase usage is user-directed rather than automatically detected because speech-to-text is excluded.

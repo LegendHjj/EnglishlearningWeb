@@ -1,0 +1,18 @@
+.big30-answer-tabs{display:flex;gap:.5rem;margin:1.5rem 0;border-bottom:1px solid var(--line);text-align:left}
+.big30-answer-tabs button{border:0;border-bottom:3px solid transparent;background:transparent;padding:.8rem 1.2rem;font-weight:750;color:var(--muted);cursor:pointer}
+.big30-answer-tabs button[aria-selected=true]{border-color:var(--green);color:var(--green)}
+.big30-answer-tabs button:disabled{opacity:.5;cursor:not-allowed}
+.big30-answer-builder{display:grid;gap:1rem;text-align:left;margin-bottom:2rem}
+.big30-answer-builder .card{display:flex;flex-direction:column;gap:.9rem;min-width:0}
+.big30-answer-builder p{line-height:1.65;margin:0}.big30-answer-builder h2{font-size:clamp(1.7rem,3vw,2.25rem);margin:0}.big30-answer-builder h3{margin:0}
+.answer-builder-intro{background:var(--sage)}.answer-builder-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.big30-answer-builder .field{margin:0}.big30-answer-builder textarea{resize:vertical;min-height:100px;line-height:1.6}
+.big30-answer-builder .big30-prompt{font-size:.8rem;background:#f7f8f4;min-height:250px;line-height:1.6}
+.big30-answer-builder .btn{align-self:flex-start}.big30-answer-builder .btn:disabled{opacity:.5;cursor:not-allowed}
+.personal-answer-support{text-align:left;display:flex;flex-direction:column;gap:.85rem;margin:0 0 1rem}.personal-answer-support p{margin:0;line-height:1.65}
+.answer-support-header{display:flex;align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap}.answer-support-header h3{margin:0}
+.answer-source{display:flex;gap:.5rem;flex-wrap:wrap}.answer-source .btn{padding:.55rem .85rem;font-size:.8rem}
+.personal-spoken-answer,.personal-recall-keywords{background:var(--sage);padding:1.1rem;border-radius:12px;white-space:pre-wrap;overflow-wrap:anywhere}
+.personal-chunks{white-space:pre-wrap;overflow-wrap:anywhere}.personal-answer-support details summary{cursor:pointer;font-weight:700}.personal-answer-support details p{margin-top:.6rem}
+.personal-answer-support>.btn{align-self:flex-start}
+@media(max-width:700px){.answer-builder-grid{grid-template-columns:minmax(0,1fr)}.big30-answer-builder .card{padding:1.1rem}.big30-answer-builder .btn{width:100%}.big30-answer-tabs button{flex:1}.answer-support-header{align-items:flex-start;flex-direction:column}}

@@ -9,5 +9,7 @@ import './pages.css'
 import './typography.css'
 import './upgrade.css'
 import './library.css'
+import './chunks.css'
+import './big30.css'
 
 createRoot(document.getElementById('root')!).render(<StrictMode><AppRouter><AppProvider><App/></AppProvider></AppRouter></StrictMode>)
