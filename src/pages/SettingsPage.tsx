@@ -4,6 +4,7 @@ import { Button, Card } from '../components/ui'
 import { useApp } from '../context/AppContext'
 import { defaultState } from '../data/seed'
 import { useSpeech } from '../hooks/useSpeech'
+import { speechController } from '../services/speechController'
 import { clearRecordings } from '../services/recordingDb'
 import { exportBackup, exportState, importBackup, importState, resetState } from '../services/storage'
 import type { Goal, VoiceGender } from '../types'
@@ -29,11 +30,13 @@ export default function SettingsPage() {
   const [message, setMessage] = useState('')
   const [voices, setVoices] = useState<string[]>([])
   const [showAdvanced, setShowAdvanced] = useState(false)
+  const [heartPreviewed, setHeartPreviewed] = useState(false)
   const progressFile = useRef<HTMLInputElement>(null)
   const completeFile = useRef<HTMLInputElement>(null)
 
   // Preview uses the *form* state so users hear the change before saving
-  const { speak, speaking } = useSpeech(form.voice, form.voiceGender)
+  const { speak, speaking } = useSpeech(form.voice, form.voiceGender, form.speechEngine ?? 'browser')
+  useEffect(() => setForm(state.preferences), [state.preferences])
 
   useEffect(() => {
     if (!('speechSynthesis' in window)) return
@@ -127,14 +130,24 @@ export default function SettingsPage() {
                 <button
                   key={opt.value}
                   type="button"
-                  className={`voice-gender-btn${currentGender === opt.value ? ' selected' : ''}`}
-                  onClick={() => setForm({ ...form, voiceGender: opt.value })}
+                  className={`voice-gender-btn${form.speechEngine !== 'heart' && currentGender === opt.value ? ' selected' : ''}`}
+                  aria-pressed={form.speechEngine !== 'heart' && currentGender === opt.value}
+                  onClick={() => { speechController.clearBrowserFallback(); setForm({ ...form, speechEngine: 'browser', voiceGender: opt.value }) }}
                 >
                   <strong>{opt.label}</strong>
                   <span>{opt.description}</span>
                 </button>
               ))}
+              <button type="button" className={`voice-gender-btn voice-heart-btn${form.speechEngine === 'heart' ? ' selected' : ''}`} aria-pressed={form.speechEngine === 'heart'} onClick={() => { speechController.clearBrowserFallback(); setForm({ ...form, speechEngine: 'heart' }) }}>
+                <strong>Natural Female · Heart</strong><span>American English · free · runs on this device</span>
+              </button>
             </div>
+            {form.speechEngine === 'heart' && <div className="heart-preview">
+              <p>Download the voice once to try it. The main model is about 92 MB, plus supporting files. Your text is processed on this device. Downloading and preparing the voice can take a while.</p>
+              <p className="muted">Preview: “My weekend was pretty relaxed. I had lunch with my family, and the best part was having time to talk without rushing.”</p>
+              <Button variant="secondary" disabled={speaking} onClick={() => { setHeartPreviewed(true); speak('My weekend was pretty relaxed. I had lunch with my family, and the best part was having time to talk without rushing.') }}>{heartPreviewed ? 'Preview Heart' : 'Download & preview Heart'}</Button>
+            </div>}
+            {form.speechEngine !== 'heart' && <>
             <Button
               variant="secondary"
               style={{ marginTop: '.6rem', alignSelf: 'flex-start' }}
@@ -143,6 +156,7 @@ export default function SettingsPage() {
             >
               <Play size={14} /> {speaking ? 'Playing…' : 'Preview voice'}
             </Button>
+            </>}
           </div>
 
           {/* ── Advanced: pick a specific voice name ── */}
@@ -150,9 +164,10 @@ export default function SettingsPage() {
             className="field voice-advanced"
             onToggle={e => setShowAdvanced((e.target as HTMLDetailsElement).open)}
           >
-            <summary>Advanced: choose a specific voice {showAdvanced ? '▲' : '▼'}</summary>
+            <summary>Advanced: choose a specific browser voice {showAdvanced ? '▲' : '▼'}</summary>
             <select
               style={{ marginTop: '.5rem' }}
+              disabled={form.speechEngine === 'heart'}
               value={form.voice || 'Browser default'}
               onChange={e => setForm({ ...form, voice: e.target.value })}
             >
@@ -160,7 +175,7 @@ export default function SettingsPage() {
               {voices.map(v => <option key={v}>{v}</option>)}
             </select>
             <p className="muted" style={{ marginTop: '.35rem', fontSize: '.78rem', marginBottom: 0 }}>
-              A specific voice here overrides the gender choice above.
+              This applies to browser voices only. A specific browser voice overrides the gender choice above.
             </p>
           </details>
         </div>

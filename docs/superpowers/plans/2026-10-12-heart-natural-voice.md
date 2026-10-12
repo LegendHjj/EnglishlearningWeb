@@ -10,7 +10,7 @@
 
 **Spec:** `docs/superpowers/specs/2026-10-12-heart-natural-voice-design.md` — approved in chat on 2026-10-12.
 
-**Plan status:** Prepared for user review; execution method has not been selected. No Heart product code or dependencies have been installed.
+**Plan status:** Implemented locally on `feature/fluency-reset-mvp` on 2026-10-12 using native execution and an independent read-only review. The implementation, docs, and focused regression tests are in the working tree. Final checks: 101 tests, typecheck, build, and production browser QA at desktop and mobile widths passed. The original checklist below is retained as the execution specification; `PROJECT_CONTEXT.md` records verified results and remaining browser/environment limitations. No push or deployment was performed.
 
 ## Global Constraints
 
@@ -33,9 +33,9 @@
 
 ## Execution baseline and scope
 
-Current checkout: `D:\Development\EnglishlearningWeb`, branch observed as `feature/fluency-reset-mvp`. It contains the previously completed, uncommitted Chunk Practice and Big 30 enhancements; HEAD `79474370fe1220b3b50af8f5366bdf1f9e31d625` contains the design documents but is not a complete snapshot of that working app. Do not start a worktree from HEAD and assume those features came with it.
+Execution checkout actually observed on 2026-10-12: `D:\Coding\EnglishlearningWeb`, branch `feature/fluency-reset-mvp`, clean at start, HEAD `7dfef9e` (`publish enhancement`). The earlier Chunk Practice and Big 30 enhancements were already committed in this checkout. Heart work was implemented in place, preserving them.
 
-At execution start, reread AGENTS.md and its required files, inspect status/diff, and run the baseline tests/typecheck/build. Preserve earlier work. Once its authorship and checks are confirmed, record the earlier completed enhancements in a separately named local baseline commit so Heart task commits can be reviewed independently. Do not include unknown user edits, reset, clean, discard changes, push or deploy. If selective commits are necessary, inspect their exact staged hunks. Plan preparation itself commits documents only.
+At execution start, reread AGENTS.md and its required files, inspect status/diff, and run the baseline tests/typecheck/build. Preserve earlier work. Do not include unknown user edits, reset, clean, discard changes, push or deploy. If selective commits are necessary, inspect their exact staged hunks. Plan preparation itself committed documents only.
 
 ## File boundaries and contracts
 

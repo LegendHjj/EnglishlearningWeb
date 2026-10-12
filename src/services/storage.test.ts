@@ -17,7 +17,7 @@ test('migrates existing state without vocabulary and preserves saved content',()
   expect(loaded.phrases).toHaveLength(1)
   expect(loaded.vocabulary).toEqual([])
   expect(loaded.pinnedVocabularyIds).toEqual([])
-  expect(loaded.schemaVersion).toBe(6)
+  expect(loaded.schemaVersion).toBe(7)
   expect(loaded.legacyCompletedMissions).toEqual([])
   expect(loaded.completedProgrammeMissionIds).toEqual([])
   expect(loaded.progress[0].minutes).toBe(4)
@@ -45,10 +45,10 @@ test('imports legacy backup version 2 without losing phrases or progress',async(
   expect(restored.vocabulary).toEqual([]);expect(restored.phrases).toHaveLength(1);expect(restored.progress[0].minutes).toBe(6)
 })
 
-test('exports and imports version 6 progress and library without audio',()=>{
+test('exports and imports version 7 progress and library without audio',()=>{
   const state=loadState()
   const raw=exportState({...state,vocabulary:[{...state.vocabulary[0],english:'custom word'}]})
-  expect(JSON.parse(raw)).toMatchObject({version:6,state:{schemaVersion:6,programmeVersion:1}})
+  expect(JSON.parse(raw)).toMatchObject({version:7,state:{schemaVersion:7,programmeVersion:1}})
   const restored=importState(raw)
   expect(restored.vocabulary[0].english).toBe('custom word')
 })
@@ -56,7 +56,7 @@ test('exports and imports version 6 progress and library without audio',()=>{
 test('version 4 migration preserves existing programme and library data without adding chunks',()=>{
   const old={...loadState(),schemaVersion:4,libraryTab:'Speaking Phrases',phrases:[{...seedPhrases[0],personalExample:'My existing example'}],completedProgrammeMissionIds:['day-1'],memos:{q1:'My notes'},pinnedPhraseIds:['p1']}
   const restored=importState(JSON.stringify({app:'fluency-reset',version:4,state:old}))
-  expect(restored.schemaVersion).toBe(6)
+  expect(restored.schemaVersion).toBe(7)
   expect(restored.phrases).toHaveLength(1)
   expect(restored.phrases[0]).toMatchObject({id:'p1',personalExample:'My existing example',variations:[]})
   expect(restored.phrases[0].chunkReview).toBeUndefined()
@@ -69,7 +69,7 @@ test('version 4 migration preserves existing programme and library data without 
 test('version 5 migration keeps chunk practice, memos and recording links and starts an empty personal-answer collection',async()=>{
   const old={...loadState(),schemaVersion:5,big30Answers:undefined,memos:{q5:'My existing memo'},phrases:[{...seedPhrases[0],chunkKind:'Sentence frame',variations:['My own version']}]}
   const restored=await importBackup(JSON.stringify({app:'fluency-reset',version:5,state:old,recordings:[]}))
-  expect(restored.schemaVersion).toBe(6)
+  expect(restored.schemaVersion).toBe(7)
   expect(restored.big30Answers).toEqual({})
   expect(restored.memos).toEqual(old.memos)
   expect(restored.phrases[0]).toMatchObject(old.phrases[0])
@@ -83,12 +83,37 @@ test('malformed optional personal answers do not discard an otherwise valid libr
   expect(restored.phrases).toHaveLength(state.phrases.length)
 })
 
+test('v6 import preserves personal answers and defaults to browser',()=>{
+  const legacy={...loadState(),schemaVersion:6,preferences:{...loadState().preferences,voice:'Microsoft Zira',voiceGender:'female'},big30Answers:{q1:{notes:'A long personal story',targetSeconds:60 as const,answer:'I helped my team.',keywords:'team',chunks:'helped my team',useForPractice:true}},memos:{q1:'my memo'},pinnedPhraseIds:['p2'],completedProgrammeMissionIds:['day-01']}
+  const restored=importState(JSON.stringify({app:'fluency-reset',version:6,state:legacy}))
+  expect(restored.schemaVersion).toBe(7)
+  expect(restored.preferences.speechEngine).toBe('browser')
+  expect(restored.big30Answers).toEqual(legacy.big30Answers)
+  expect(restored.memos).toEqual(legacy.memos)
+  expect(restored.pinnedPhraseIds).toEqual(legacy.pinnedPhraseIds)
+  expect(restored.completedProgrammeMissionIds).toEqual(legacy.completedProgrammeMissionIds)
+  expect(restored.phrases).toMatchObject(legacy.phrases)
+  expect(restored.vocabulary).toEqual(legacy.vocabulary)
+})
+
+test('version 7 exports preserve Heart and reject malformed engines without losing the library',()=>{
+  const state={...loadState(),preferences:{...loadState().preferences,speechEngine:'heart' as const,voice:'Microsoft Zira',voiceGender:'female' as const}}
+  const raw=exportState(state)
+  expect(JSON.parse(raw).version).toBe(7)
+  expect(importState(raw).preferences).toMatchObject({speechEngine:'heart',voice:'Microsoft Zira',voiceGender:'female'})
+  const malformed=JSON.parse(raw)
+  malformed.state.preferences.speechEngine='unknown'
+  const restored=importState(JSON.stringify(malformed))
+  expect(restored.preferences.speechEngine).toBe('browser')
+  expect(restored.phrases).toMatchObject(state.phrases)
+})
+
 test('exports and imports progress with recording audio',async()=>{
   await clearRecordings()
   await saveRecording({id:'r1',name:'Question answer',createdAt:'2026-07-12T00:00:00.000Z',duration:8,questionId:'q1',phraseId:'personal-chunk',mimeType:'audio/webm',size:5},new Blob(['audio'],{type:'audio/webm'}))
   const phrase={...seedPhrases[0],id:'personal-chunk',variations:['Another personal sentence'],chunkReview:{step:1,timesReviewed:1,lastRating:'On my own' as const,lastReviewedAt:'2026-10-12T00:00:00Z',nextReviewAt:'2026-10-15T00:00:00Z'}}
   const raw=await exportBackup({...loadState(),phrases:[phrase],libraryTab:'Chunk Practice'})
-  expect(JSON.parse(raw).version).toBe(6)
+  expect(JSON.parse(raw).version).toBe(7)
   await clearRecordings()
   const restored=await importBackup(raw)
   const recordings=await listRecordings()

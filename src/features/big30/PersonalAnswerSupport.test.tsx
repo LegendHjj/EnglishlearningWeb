@@ -21,7 +21,23 @@ test('microphone capture stops the model voice and blocks listening until captur
   expect(screen.getByRole('button',{name:'Hear my answer'})).toBeDisabled()
   rendered.rerender(view(false))
   expect(screen.getByRole('button',{name:'Hear my answer'})).toBeEnabled()
+  fireEvent.click(screen.getByRole('button',{name:'Hear my answer'}))
   cancel.mockClear()
   rendered.unmount()
   expect(cancel).toHaveBeenCalled()
+})
+
+test('hiding a personal answer stops its own voice request',()=>{
+  const speak=vi.fn(),cancel=vi.fn()
+  vi.stubGlobal('speechSynthesis',{speak,cancel,getVoices:()=>[]})
+  vi.stubGlobal('SpeechSynthesisUtterance',class {text:string;constructor(text:string){this.text=text}})
+  localStorage.setItem('fluency-reset-state-v1',JSON.stringify({...defaultState,big30Answers:{q5:{...emptyBig30Answer(),answer:'My complete private answer.',useForPractice:true}}}))
+  const view=(stage:'Follow'|'Recall')=><AppProvider><PersonalAnswerSupport questionId="q5" stage={stage} busy={false} onEdit={()=>{}}/></AppProvider>
+  const rendered=render(view('Follow'))
+  fireEvent.click(screen.getByRole('button',{name:'Hear my answer'}))
+  expect(speak).toHaveBeenCalledOnce()
+  cancel.mockClear()
+  rendered.rerender(view('Recall'))
+  expect(cancel).toHaveBeenCalled()
+  expect(screen.queryByText('My complete private answer.')).toBeNull()
 })

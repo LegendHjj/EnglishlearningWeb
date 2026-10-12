@@ -1,6 +1,7 @@
 import { act, renderHook } from '@testing-library/react'
 import { afterEach, expect, test, vi } from 'vitest'
 import { useRecorder } from './useRecorder'
+import { speechController } from '../services/speechController'
 
 afterEach(()=>vi.unstubAllGlobals())
 
@@ -42,4 +43,24 @@ test('a recorder setup failure releases the granted microphone stream',async()=>
   expect(result.current.status).toBe('denied')
   expect(track.stop).toHaveBeenCalledOnce()
   unmount()
+})
+
+test('permission setup blocks speech before the prompt resolves',async()=>{
+  let allow!:(value:MediaStream)=>void
+  const permission=new Promise<MediaStream>(resolve=>{allow=resolve})
+  const track={stop:vi.fn()}
+  const stream={getTracks:()=>[track]} as unknown as MediaStream
+  vi.stubGlobal('navigator',{mediaDevices:{getUserMedia:()=>permission}})
+  vi.stubGlobal('MediaRecorder',class {state='recording';mimeType='audio/webm';start(){};stop(){this.onstop?.()} onstop?:()=>void})
+  const {result,unmount}=renderHook(()=>useRecorder())
+  let start!:Promise<void>
+  act(()=>{start=result.current.start()})
+  expect(speechController.getSnapshot().microphoneBlocked).toBe(true)
+  const other=speechController.acquireMicrophone('second-recorder')
+  unmount()
+  expect(speechController.getSnapshot().microphoneBlocked).toBe(true)
+  await act(async()=>{allow(stream);await start})
+  expect(track.stop).toHaveBeenCalledOnce()
+  other()
+  expect(speechController.getSnapshot().microphoneBlocked).toBe(false)
 })

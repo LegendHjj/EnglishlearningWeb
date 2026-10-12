@@ -1,10 +1,11 @@
-import { AudioLines, CheckCircle2, Pause, Pin, X } from 'lucide-react'
+import { AudioLines, CheckCircle2, Pin, X } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { Button, Card, ProgressBar } from '../../components/ui'
 import { useApp } from '../../context/AppContext'
 import Recorder from '../Recorder'
 import RecordingList, { type RecordingItem } from '../RecordingList'
 import { useSpeech } from '../../hooks/useSpeech'
+import VoiceStatus from '../speech/VoiceStatus'
 import { listRecordings } from '../../services/recordingDb'
 import type { ChunkRating, NoteStage } from '../../types'
 import { chunkCue, chunkRatings, reviewChunk } from '../../utils/chunks'
@@ -14,7 +15,7 @@ const steps=['Listen & repeat','Make it yours','Recall from a situation','Speak 
 export default function ChunkWorkout({phraseId,onClose}:{phraseId:string;onClose:()=>void}){
   const {state,setState,togglePin}=useApp()
   const phrase=state.phrases.find(p=>p.id===phraseId)
-  const {speak,stop,speaking,supported}=useSpeech(state.preferences.voice,state.preferences.voiceGender)
+  const {speak,stop,supported}=useSpeech(state.preferences.voice,state.preferences.voiceGender,state.preferences.speechEngine??'browser')
   const [phase,setPhase]=useState(0)
   const [first,setFirst]=useState(phrase?.personalExample||'')
   const [second,setSecond]=useState(phrase?.variations?.[0]||'')
@@ -59,10 +60,10 @@ export default function ChunkWorkout({phraseId,onClose}:{phraseId:string;onClose
       document.removeEventListener('keydown',keydown)
       document.body.style.overflow=previousOverflow
       background.forEach(({element,inert})=>{element.inert=inert})
-      if('speechSynthesis' in window)window.speechSynthesis.cancel()
+      stop()
       returnFocus?.focus()
     }
-  },[])
+  },[stop])
 
   useEffect(()=>{dialog.current?.querySelector<HTMLElement>('h2')?.focus()},[phase])
 
@@ -85,6 +86,7 @@ export default function ChunkWorkout({phraseId,onClose}:{phraseId:string;onClose
   const opening=phrase?.text.split(/\s+/)[0]||''
 
   return <div className="modal-backdrop chunk-backdrop"><div ref={dialog} role="dialog" aria-modal="true" aria-labelledby="chunk-workout-title" className="modal card chunk-workout">
+    <VoiceStatus scope="modal" hostId="chunk-workout"/>
     <div className="card-title-row"><div><span className="eyebrow">One chunk at a time · {Math.min(phase+1,5)} of 5</span><h2 id="chunk-workout-title" tabIndex={-1}>{steps[phase]}</h2></div><button className="icon-btn" onClick={onClose} aria-label="Close chunk practice"><X/></button></div>
     <ProgressBar value={phase+1} max={steps.length}/>
     {!phrase?<><p>This expression is no longer in your library.</p><Button onClick={onClose}>Back to library</Button></>:<>
@@ -93,8 +95,8 @@ export default function ChunkWorkout({phraseId,onClose}:{phraseId:string;onClose
         <p><strong>When to use:</strong> {phrase.whenToUse||'Choose a situation from your own day.'}</p>
         {phrase.example&&<Card className="chunk-example"><span className="eyebrow">Example in context</span><p>{phrase.example}</p></Card>}
         <p>Say it three times: slowly, at a comfortable pace, then as if you mean it. For a frame with a blank, use the complete example.</p>
-        {supported?<div className="detail-actions"><Button variant="secondary" onClick={()=>speak(phrase.example||phrase.text,.8)}><AudioLines size={17}/> Listen slowly</Button><Button variant="secondary" onClick={()=>speak(phrase.example||phrase.text)}>Listen naturally</Button>{speaking&&<Button variant="ghost" onClick={stop}><Pause size={16}/> Stop voice</Button>}</div>:<p className="muted">Voice playback is unavailable here. Read the example aloud at your own pace.</p>}
-        <p className="muted">The model uses your browser voice. There is no pronunciation score.</p>
+        {supported?<div className="detail-actions"><Button variant="secondary" onClick={()=>speak(phrase.example||phrase.text,.8)}><AudioLines size={17}/> Listen slowly</Button><Button variant="secondary" onClick={()=>speak(phrase.example||phrase.text)}>Listen naturally</Button></div>:<p className="muted">Voice playback is unavailable here. Read the example aloud at your own pace.</p>}
+        <p className="muted">The model uses your selected voice. There is no pronunciation score.</p>
         {phrase.source&&<p className="chunk-source">Source: {phrase.source}</p>}
         <Button onClick={()=>next(1)}>Next: make it yours</Button>
       </>}
@@ -119,7 +121,7 @@ export default function ChunkWorkout({phraseId,onClose}:{phraseId:string;onClose
       </>}
       {phase===3&&<>
         <p className="chunk-cue">{cue}</p><p>Speak for about 30–60 seconds. Add a reason, a detail, or a follow-up question. Use the chunk if it fits and focus on getting your message across.</p>
-        <div className="note-controls" aria-label="Speaking support">{(['Follow','Recall','Free'] as NoteStage[]).map(value=><button key={value} className={support===value?'active':''} aria-pressed={support===value} onClick={()=>setSupport(value)}>{value}</button>)}</div>
+        <div className="note-controls" aria-label="Speaking support">{(['Follow','Recall','Free'] as NoteStage[]).map(value=><button key={value} className={support===value?'active':''} aria-pressed={support===value} onClick={()=>{stop();setSupport(value)}}>{value}</button>)}</div>
         {support==='Follow'&&<Card className="chunk-example"><strong>{phrase.text}</strong><p>{first}</p><p>{second}</p></Card>}
         {support==='Recall'&&<p className="chunk-hint">{opening} …</p>}
         {support==='Free'&&<p className="muted">Your expression and notes are hidden. Choose support whenever it helps.</p>}

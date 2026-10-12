@@ -11,7 +11,8 @@ export type ChunkRating = 'Again' | 'With help' | 'On my own'
 export interface ChunkReview { step:number; timesReviewed:number; lastReviewedAt:string; nextReviewAt:string; lastRating:ChunkRating }
 
 export type VoiceGender = 'auto' | 'female' | 'male'
-export interface UserPreferences { name: string; level: string; goals: Goal[]; struggle: string; duration: 2 | 5 | 10; situations: string[]; voice?: string; voiceGender?: VoiceGender; onboarded: boolean }
+export type SpeechEngine = 'browser' | 'heart'
+export interface UserPreferences { name: string; level: string; goals: Goal[]; struggle: string; duration: 2 | 5 | 10; situations: string[]; voice?: string; voiceGender?: VoiceGender; speechEngine?: SpeechEngine; onboarded: boolean }
 export interface Phrase { id: string; text: string; meaning: string; whenToUse: string; example: string; personalExample: string; category: string; tags: string[]; status: PhraseStatus; type: PhraseType; dateAdded: string; practised: number; used: number; favourite: boolean; chunkKind?:ChunkKind; source?:string; recallCue?:string; variations?:string[]; chunkReview?:ChunkReview }
 export interface SpeakingPack { id: string; name: string; description: string; phraseIds: string[]; color: string }
 export interface SpeakingMission { id: string; title: string; situation: string; category: string; goal: Goal; keyPoints: string[]; suggestedPhraseIds: string[]; difficulty: Difficulty }

@@ -8,9 +8,9 @@ import type { NoteStage } from '../../types'
 export default function PersonalAnswerSupport({questionId,stage,busy,onEdit}:{questionId:string;stage:NoteStage;busy:boolean;onEdit:()=>void}){
   const {state,setState}=useApp()
   const personal=state.big30Answers[questionId]
-  const {speak,stop,supported}=useSpeech(state.preferences.voice,state.preferences.voiceGender)
+  const {speak,stop,supported}=useSpeech(state.preferences.voice,state.preferences.voiceGender,state.preferences.speechEngine??'browser')
   useEffect(()=>{if(busy)stop()},[busy,stop])
-  useEffect(()=>()=>stop(),[stop])
+  useEffect(()=>()=>stop(),[stage,questionId,stop])
   if(!personal?.answer.trim())return <Card className="personal-answer-support"><h3>Bring your own answer</h3><p className="muted">Use your own story with a prompt tailored to this question.</p><Button variant="secondary" disabled={busy} onClick={onEdit}>Create my answer</Button></Card>
   const active=personal.useForPractice
   const choose=(useForPractice:boolean)=>{stop();setState(s=>({...s,big30Answers:{...s.big30Answers,[questionId]:{...s.big30Answers[questionId],useForPractice}}}))}

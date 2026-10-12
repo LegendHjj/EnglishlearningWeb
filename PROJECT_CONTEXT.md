@@ -2,6 +2,14 @@
 
 Last updated: 2026-10-12
 
+## Optional Heart natural voice
+
+Heart (`af_heart`) is an optional local speech engine behind the shared `speechController`; browser speech remains the default. Settings selection and save do not download the model. Explicit preview or Listen lazily loads a worker, fetches the q8 model and Heart voice from the pinned model revision, and plays generated PCM through Web Audio. Stop, request IDs, owner cleanup and recorder microphone locks prevent stale playback. Page and modal status hosts expose preparation, playback, errors, Retry and browser fallback without including learner text. The worker uses one WASM thread, a guarded tokenizer without truncation, and ordered segment acknowledgements. Runtime WebAssembly files and licences are copied locally during dev/build.
+
+Current saved-state/backup schema is 7; imports 1–6 migrate to browser speech unless a valid Heart choice exists. The storage key and IndexedDB audio store are unchanged; model files and generated speech are excluded from backups. The npm dependencies are pinned to `kokoro-js` 1.2.1, `@huggingface/transformers` 3.5.1 and `phonemizer` 1.2.1.
+
+On 2026-10-12, a real Chromium production preview at `/EnglishlearningWeb/` downloaded the q8 model, produced non-empty Heart audio, reached Playing Heart and returned to idle after the sample. A second warm preview reached playback and Stop returned to idle. A vocabulary Listen & Recap action used Heart; its modal displayed one active Stop control. Opening Review now cancelled speech before the covering modal appeared. At 1440 × 1000 and 390 × 844, the status remained visible and the page had no horizontal overflow; the Chrome app console had no errors. The final automated checks passed: 101 tests, typecheck, and production build. This was observed through browser UI and worker behavior; the agent did not make a human listening judgment about naturalness. Other browsers, real microphone hardware, cold-offline failure, warm-offline playback, cache eviction and blocked download were not exercised in that preview. Network requests were constrained to pinned public model resources by code, but individual request URLs were not captured during this browser QA.
+
 ## Big 30 personal answers and AI prompt helper
 
 Approved in chat on 2026-10-12. Each existing Big 30 question now has Practice and My Answer tabs. `src/features/big30/AnswerBuilder.tsx` saves long user notes, a 30/60/90-second target, pasted spoken answer, recall keywords, and useful chunks. `src/utils/big30Prompt.ts` builds a copyable, tool-independent prompt from the actual question guide: purpose, key points, frames, common trap, and follow-up. It requests relevant facts from the notes, one memorable detail, natural everyday English, corrected grammar without invented facts, and three plain-text output sections. Clipboard failure selects the visible prompt for manual copying. Timing and word ranges are estimates.

@@ -13,6 +13,8 @@ npm run dev
 
 Open the URL printed by Vite (normally `http://localhost:5173`).
 
+To inspect the production build at the GitHub Pages path, run `npm run build` and `npm run preview`, then open the printed `/EnglishlearningWeb/` URL.
+
 ## Publish with GitHub Pages
 
 This repository includes an automatic GitHub Pages workflow. Complete this one-time setup on GitHub:
@@ -55,6 +57,7 @@ npm run build
 - Vocabulary quick add, ChatGPT paste-and-detect preview, manual entry, search and filters, browser text-to-speech, personal sentences, spaced review, and speaking support
 - Personal chunk journal with optional source, context, and recall cue; 12 opt-in starter expressions; guided listen/personalise/recall/speak/self-check practice, local linked recordings, and suggested review dates
 - Browser microphone recording with pause, replay, retry, save, permission guidance, and support fallback
+- Optional local Heart female voice for existing Listen controls, with explicit download, Stop, Retry, and browser fallback
 - IndexedDB audio storage; versioned LocalStorage for other state
 - Big 30 question planners, per-question My Answer prompt builder and personal answers, gradual support, and local recordings
 - Recording library, saved-data progress metrics, preferences, and versioned JSON export/import
@@ -82,6 +85,14 @@ Bring the AI's three sections back into **My spoken answer**, **Recall keywords*
 
 The app builds prompts locally and has no connection to an AI service. It sends no notes automatically; you choose what to copy into another tool. Voice playback stops during recording, and tabs/questions stay locked until you stop and save or delete your take. Audio stays in the existing local recording library.
 
+## Optional Heart voice
+
+In **Settings → Text-to-speech voice**, choose **Natural Female · Heart**. Selecting or saving it does not download anything. Select **Download & preview Heart** to prepare the voice and hear the sample. The q8 model is about 92 MB plus supporting files; preparation and speech generation use your device. Browser caching is best effort, so clearing site data or using another browser may require another download. The sample and your practice text are processed locally; the network requests are for public model files at the pinned revision. Heart audio is temporary and is not added to recordings or progress.
+
+The same saved choice applies to Library, Chunk Practice, Big 30, Practice Room and other Listen controls. **Stop** works during preparation and playback. If preparation or playback fails, use **Retry** or **Use browser voice for now**. The latter changes only this browser session; it does not overwrite the saved choice. Auto, Female, Male and the advanced voice name remain browser voice choices. Microphone capture stops app speech before requesting permission.
+
+Heart requires Web Workers, WebAssembly, Web Audio and enough device memory. Generated speech speed and quality vary by device. Once prepared in an open tab, model reuse can reduce later waits; offline playback depends on the browser cache and has not been verified on every browser. The app does not install an offline service worker. See [third-party notices](THIRD_PARTY_NOTICES.md) for sources and licences.
+
 ## Privacy and browser support
 
 Audio recordings are stored in IndexedDB on the current device and are not uploaded. **Export progress and library** includes preferences, progress, phrases, Speaking Packs, vocabulary, and memos, but no audio. **Export complete backup** includes the same data plus IndexedDB audio encoded in the JSON file, so it may be large. Recording requires a browser with `MediaRecorder` and microphone permission; current Chrome, Edge, Firefox, and Safari releases are recommended. Text-to-speech uses the browser's `SpeechSynthesis` support and the selected Settings voice when available.
@@ -92,4 +103,4 @@ The app has no backend or cross-device sync. Phrase and vocabulary usage, confid
 
 ## Content and saved-data versions
 
-The authored content pack currently uses content schema version `1`. Local application state uses schema version `6` while retaining the existing `fluency-reset-state-v1` storage key so current browsers migrate in place. Imports from backup versions 1–5 remain supported. Existing audio remains in the `fluency-reset-audio` IndexedDB database and is never deleted during migration.
+The authored content pack currently uses content schema version `1`. Local application state uses schema version `7` while retaining the existing `fluency-reset-state-v1` storage key so current browsers migrate in place. Imports from backup versions 1–6 remain supported. Model downloads and temporary generated speech are excluded from backups. Existing audio remains in the `fluency-reset-audio` IndexedDB database and is never deleted during migration.

@@ -4,15 +4,21 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/prepare-heart-assets.mjs",
+    "prebuild": "node scripts/prepare-heart-assets.mjs",
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "preview": "vite preview --base /EnglishlearningWeb/",
     "typecheck": "tsc -b --pretty false",
     "test": "vitest",
     "lint": "eslint ."
   },
   "dependencies": {
+    "@huggingface/transformers": "3.5.1",
     "@tailwindcss/vite": "^4.1.11",
+    "kokoro-js": "1.2.1",
     "lucide-react": "^0.525.0",
+    "phonemizer": "1.2.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.3",

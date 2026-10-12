@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { speechController } from '../services/speechController'
 
 type Status='idle'|'requesting'|'recording'|'paused'|'ready'|'denied'|'unsupported'
 
@@ -12,11 +13,16 @@ export function useRecorder(){
   const stream=useRef<MediaStream|null>(null)
   const chunks=useRef<Blob[]>([])
   const mounted=useRef(true)
+  const captureSequence=useRef(0)
+  const releaseMicrophone=useRef<(()=>void)|null>(null)
 
   useEffect(()=>{
     mounted.current=true
     return ()=>{
       mounted.current=false
+      captureSequence.current++
+      releaseMicrophone.current?.()
+      releaseMicrophone.current=null
       const active=recorder.current
       if(active){
         active.ondataavailable=null
@@ -39,11 +45,16 @@ export function useRecorder(){
 
   const start=async()=>{
     if(!supported){setStatus('unsupported');return}
+    if(releaseMicrophone.current)return
+    const attempt=++captureSequence.current
+    const release=speechController.acquireMicrophone(`recorder-${attempt}`)
+    releaseMicrophone.current=release
+    const releaseThis=()=>{release();if(releaseMicrophone.current===release)releaseMicrophone.current=null}
     try{
       setStatus('requesting')
       const requestedStream=await navigator.mediaDevices.getUserMedia({audio:true})
       // A permission prompt may resolve after the user has left the recorder.
-      if(!mounted.current){requestedStream.getTracks().forEach(track=>track.stop());return}
+      if(!mounted.current||captureSequence.current!==attempt){requestedStream.getTracks().forEach(track=>track.stop());releaseThis();return}
       stream.current=requestedStream
       const active=new MediaRecorder(requestedStream)
       recorder.current=active
@@ -53,6 +64,7 @@ export function useRecorder(){
       active.onstop=()=>{
         requestedStream.getTracks().forEach(track=>track.stop())
         stream.current=null
+        releaseThis()
         if(!mounted.current)return
         const audio=new Blob(chunks.current,{type:active.mimeType||'audio/webm'})
         setBlob(audio);setUrl(URL.createObjectURL(audio));setStatus('ready')
@@ -62,6 +74,7 @@ export function useRecorder(){
     }catch{
       stream.current?.getTracks().forEach(track=>track.stop())
       stream.current=null
+      releaseThis()
       if(mounted.current)setStatus('denied')
     }
   }

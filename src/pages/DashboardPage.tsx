@@ -9,7 +9,7 @@ import { getNextIncompleteMission, moveQueueItem } from '../utils/programme'
 import { isVocabularyDue } from '../utils/vocabulary'
 
 export default function DashboardPage(){
-  const {state,setState}=useApp(); const [session,setSession]=useState<2|5|10>(state.preferences.duration); const nav=useNavigate(); const {speak}=useSpeech(state.preferences.voice,state.preferences.voiceGender)
+  const {state,setState}=useApp(); const [session,setSession]=useState<2|5|10>(state.preferences.duration); const nav=useNavigate(); const {speak}=useSpeech(state.preferences.voice,state.preferences.voiceGender,state.preferences.speechEngine??'browser')
   const mission=getNextIncompleteMission(contentRepository.programme.missions,state.completedProgrammeMissionIds); const phase=mission?contentRepository.programme.phases.find(p=>p.id===mission.phaseId):undefined
   const recordedMinutes=Math.round(state.missionSelfChecks.reduce((sum,item)=>sum+item.duration,0)/60); const due=state.vocabulary.filter(item=>isVocabularyDue(item)).length; const currentPhrase=state.phrases.find(p=>state.pinnedPhraseIds.includes(p.id))||state.phrases[0]
   const queuePath=(type:string,id:string)=>type==='mission'?`/app/mission?mission=${id}&duration=${state.preferences.duration}`:type==='drill'?`/app/practice?drill=${id}`:type==='big30'?'/app/big-30':'/app/notebook'

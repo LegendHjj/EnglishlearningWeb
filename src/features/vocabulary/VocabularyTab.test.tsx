@@ -62,6 +62,21 @@ test('reviews a due word after revealing the answer',async()=>{
   expect(screen.getByText(/1 word reviewed/i)).toBeInTheDocument()
 })
 
+test('opening a review over speaking word details cancels covered playback',async()=>{
+  const user=userEvent.setup();const cancel=vi.fn(),speak=vi.fn()
+  vi.stubGlobal('speechSynthesis',{speak,cancel,getVoices:()=>[]})
+  vi.stubGlobal('SpeechSynthesisUtterance',class {constructor(public text:string){}})
+  renderTab({...defaultState,vocabulary:[{...defaultState.vocabulary[0],nextReviewAt:'2020-01-01T00:00:00.000Z'}]})
+  await user.click(screen.getByRole('button',{name:/open achieve details/i}))
+  await user.click(screen.getByRole('button',{name:'Listen & Recap'}))
+  expect(speak).toHaveBeenCalled()
+  cancel.mockClear()
+  await user.click(screen.getAllByRole('button',{name:'Review now'})[1])
+  expect(cancel).toHaveBeenCalled()
+  expect(screen.getByText(/recall the meaning/i)).toBeInTheDocument()
+  vi.unstubAllGlobals()
+})
+
 test('manual add, status filter, edit, and delete work end to end',async()=>{
   const user=userEvent.setup();vi.stubGlobal('confirm',()=>true);renderTab({...defaultState,vocabulary:[]})
   await user.click(screen.getByRole('button',{name:/add word/i}))

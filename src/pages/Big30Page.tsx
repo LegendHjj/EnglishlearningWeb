@@ -14,7 +14,7 @@ import type { NoteStage } from '../types'
 import { addQueueItem } from '../utils/programme'
 
 export default function Big30Page(){
-  const {state,setState}=useApp();const {speak,stop}=useSpeech(state.preferences.voice,state.preferences.voiceGender);const [query,setQuery]=useState('');const [selected,setSelected]=useState<typeof bigQuestions[number]|null>(null);const [stage,setStage]=useState<NoteStage>('Follow');const [recordings,setRecordings]=useState<RecordingItem[]>([])
+  const {state,setState}=useApp();const {speak,stop}=useSpeech(state.preferences.voice,state.preferences.voiceGender,state.preferences.speechEngine??'browser');const [query,setQuery]=useState('');const [selected,setSelected]=useState<typeof bigQuestions[number]|null>(null);const [stage,setStage]=useState<NoteStage>('Follow');const [recordings,setRecordings]=useState<RecordingItem[]>([])
   const [tab,setTab]=useState<'Practice'|'My Answer'>('Practice')
   const [recorderBusy,setRecorderBusy]=useState(false)
   const changeTab=(value:'Practice'|'My Answer')=>{if(recorderBusy)return;stop();setTab(value);document.getElementById(value==='Practice'?'big30-practice-tab':'big30-answer-tab')?.focus()}
