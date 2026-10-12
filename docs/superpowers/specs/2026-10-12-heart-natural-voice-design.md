@@ -92,7 +92,7 @@ Upgrade local state and both JSON export formats from schema/version **6 to 7**.
 
 Backups contain the selected engine and existing preferences, not downloaded model files, generated preview audio or temporary speech queues. Restoring a Heart choice never starts a download by itself. Each device/browser obtains its own model cache through an explicit preview/listen action.
 
-No learner text, notes, recordings or generated speech is sent to Hugging Face or any inference service. Network requests for Heart are for public model/support files only. No backend, login, external AI inference API, speech-to-text, pronunciation scoring, payments or social features are added.
+Heart sends no learner text, notes, recordings or generated speech to Hugging Face or any inference service. Network requests for Heart are for public model/support files only. Existing browser voices retain their browser/provider-dependent behaviour; do not claim that every browser-supplied voice is local. Microphone recordings continue to stay on the current device. No backend, login, external AI inference API, speech-to-text, pronunciation scoring, payments or social features are added.
 
 ## Verification and acceptance
 
