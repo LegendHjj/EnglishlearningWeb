@@ -28,7 +28,7 @@ export function createSpeechController(browser: SpeechBackend, getHeart: () => P
     browser.stop()
     heart?.stop()
     audio.stop()
-    emit({ phase: 'idle', ownerId: undefined, engine: undefined, progress: undefined, error: undefined })
+    emit({ phase: 'idle', ownerId: undefined, engine: undefined, progress: undefined, preparation: undefined, error: undefined })
   }
   const loadHeart = () => {
     if (heart) return Promise.resolve(heart)
@@ -44,7 +44,7 @@ export function createSpeechController(browser: SpeechBackend, getHeart: () => P
     const abort = new AbortController()
     current = { id, ownerId: request.ownerId, abort, request }
     const effectiveEngine = request.engine === 'heart' && snapshot.browserFallback ? 'browser' : request.engine
-    emit({ phase: effectiveEngine === 'heart' ? 'preparing' : 'playing', engine: effectiveEngine, ownerId: request.ownerId, hostId: host()?.id })
+    emit({ phase: effectiveEngine === 'heart' ? 'preparing' : 'playing', preparation: effectiveEngine === 'heart' ? 'loading' : undefined, engine: effectiveEngine, ownerId: request.ownerId, hostId: host()?.id })
     const isCurrent = () => current?.id === id && !abort.signal.aborted
     const report = (patch: Partial<SpeechSnapshot>) => { if (isCurrent()) emit(patch) }
     // Activation starts in this user gesture, before dynamic imports or network work.

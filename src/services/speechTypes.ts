@@ -7,6 +7,7 @@ export interface SpeechSnapshot {
   ownerId?: string
   hostId?: string
   progress?: { file: string; loaded: number; total?: number }
+  preparation?: 'loading' | 'generating'
   error?: string
   browserFallback: boolean
   microphoneBlocked: boolean

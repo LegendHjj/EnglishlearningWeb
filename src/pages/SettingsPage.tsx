@@ -7,7 +7,7 @@ import { useSpeech } from '../hooks/useSpeech'
 import { speechController } from '../services/speechController'
 import { clearRecordings } from '../services/recordingDb'
 import { exportBackup, exportState, importBackup, importState, resetState } from '../services/storage'
-import type { Goal, VoiceGender } from '../types'
+import type { Goal, UserPreferences, VoiceGender } from '../types'
 
 function downloadJson(raw: string, name: string) {
   const blob = new Blob([raw], { type: 'application/json' })
@@ -33,10 +33,24 @@ export default function SettingsPage() {
   const [heartPreviewed, setHeartPreviewed] = useState(false)
   const progressFile = useRef<HTMLInputElement>(null)
   const completeFile = useRef<HTMLInputElement>(null)
+  const voicePreferenceUpdate = useRef<UserPreferences | null>(null)
 
-  // Preview uses the *form* state so users hear the change before saving
+  // Voice selection is saved immediately; practice fields retain Save changes.
   const { speak, speaking } = useSpeech(form.voice, form.voiceGender, form.speechEngine ?? 'browser')
-  useEffect(() => setForm(state.preferences), [state.preferences])
+  useEffect(() => {
+    // Imports/reset replace the draft; immediate voice saves retain practice edits.
+    if (state.preferences !== voicePreferenceUpdate.current) setForm(state.preferences)
+    voicePreferenceUpdate.current = null
+  }, [state.preferences])
+
+  const chooseVoice = (choice: Partial<Pick<UserPreferences, 'voice' | 'voiceGender' | 'speechEngine'>>) => {
+    speechController.stop()
+    speechController.clearBrowserFallback()
+    const preferences = { ...state.preferences, ...choice }
+    voicePreferenceUpdate.current = preferences
+    setForm(current => ({ ...current, ...choice }))
+    setState(current => ({ ...current, preferences }))
+  }
 
   useEffect(() => {
     if (!('speechSynthesis' in window)) return
@@ -132,16 +146,17 @@ export default function SettingsPage() {
                   type="button"
                   className={`voice-gender-btn${form.speechEngine !== 'heart' && currentGender === opt.value ? ' selected' : ''}`}
                   aria-pressed={form.speechEngine !== 'heart' && currentGender === opt.value}
-                  onClick={() => { speechController.clearBrowserFallback(); setForm({ ...form, speechEngine: 'browser', voiceGender: opt.value }) }}
+                  onClick={() => chooseVoice({ speechEngine: 'browser', voiceGender: opt.value })}
                 >
                   <strong>{opt.label}</strong>
                   <span>{opt.description}</span>
                 </button>
               ))}
-              <button type="button" className={`voice-gender-btn voice-heart-btn${form.speechEngine === 'heart' ? ' selected' : ''}`} aria-pressed={form.speechEngine === 'heart'} onClick={() => { speechController.clearBrowserFallback(); setForm({ ...form, speechEngine: 'heart' }) }}>
+              <button type="button" className={`voice-gender-btn voice-heart-btn${form.speechEngine === 'heart' ? ' selected' : ''}`} aria-pressed={form.speechEngine === 'heart'} onClick={() => chooseVoice({ speechEngine: 'heart' })}>
                 <strong>Natural Female · Heart</strong><span>American English · free · runs on this device</span>
               </button>
             </div>
+            <p className="muted">Voice choices save automatically and apply to all Listen buttons in this app.</p>
             {form.speechEngine === 'heart' && <div className="heart-preview">
               <p>Download the voice once to try it. The main model is about 92 MB, plus supporting files. Your text is processed on this device. Downloading and preparing the voice can take a while.</p>
               <p className="muted">Preview: “My weekend was pretty relaxed. I had lunch with my family, and the best part was having time to talk without rushing.”</p>
@@ -169,7 +184,7 @@ export default function SettingsPage() {
               style={{ marginTop: '.5rem' }}
               disabled={form.speechEngine === 'heart'}
               value={form.voice || 'Browser default'}
-              onChange={e => setForm({ ...form, voice: e.target.value })}
+              onChange={e => chooseVoice({ voice: e.target.value })}
             >
               <option>Browser default</option>
               {voices.map(v => <option key={v}>{v}</option>)}

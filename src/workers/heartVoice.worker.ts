@@ -3,6 +3,7 @@ import { KokoroTTS, TextSplitterStream } from 'kokoro-js'
 import { env as transformerEnv } from '@huggingface/transformers'
 import { HEART_MODEL, HEART_REVISION, fetchPinnedHeartResource, pinHeartResourceUrl } from '../services/heartAssets'
 import { splitHeartInput, splitHeartSegment } from '../services/heartSegments'
+import { heartRuntimePaths } from '../services/heartRuntime'
 
 type Command = { type: 'prepare' | 'speak' | 'continue' | 'cancel' | 'dispose'; jobId: number; items?: string[]; rate?: number }
 const scope = self as unknown as { fetch: typeof fetch; caches: CacheStorage; postMessage: (message: unknown, transfer?: Transferable[]) => void; onmessage: ((event: MessageEvent<Command>) => void) | null; close: () => void }
@@ -34,7 +35,7 @@ transformerEnv.remotePathTemplate = `{model}/resolve/${HEART_REVISION}/`
 const wasm = transformerEnv.backends.onnx.wasm
 if (!wasm) throw new Error('Local Heart runtime is unavailable.')
 wasm.numThreads = 1
-wasm.wasmPaths = `${import.meta.env.BASE_URL}heart-runtime/`
+wasm.wasmPaths = heartRuntimePaths
 
 function guardTokenizer(model: KokoroTTS) {
   const holder = model as unknown as { tokenizer: ((value: string, options: Record<string, unknown>) => { input_ids: { dims: number[] } }) & Record<string, unknown> }

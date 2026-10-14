@@ -1,8 +1,14 @@
 # Fluency Reset — Project Context and Handoff
 
-Last updated: 2026-10-12
+Last updated: 2026-10-14
 
 ## Optional Heart natural voice
+
+Repeat playback fix (2026-10-14): the Heart backend retains completed PCM in a session-only LRU cache bounded by 64 requests and 16 MiB, keyed by text items and rate. Matching requests across owners/pages bypass worker inference. Cancelled or incomplete requests are not cached, and Stop during a replay prevents subsequent chunks. Reload/dispose clears generated audio; unseen text still requires local inference. Status copy now distinguishes loading the model from creating speech and does not describe every asset progress event as a fresh download. All 106 tests, typecheck, production build and diff whitespace checks passed. Browser timing and desktop/mobile QA for this change could not be completed: Chrome automation detached during the first-play wait and reconnection returned an unattached debugger. No latency measurement is claimed.
+
+Voice selection fix (2026-10-13): selecting Heart, a browser voice gender, or an advanced browser voice now saves that voice choice immediately for all app Listen controls. Previously Settings preview used an unsaved form choice while other pages kept the saved engine. Voice-only saves preserve unsaved practice settings, and selecting a voice clears session fallback. Regression tests cover navigation into vocabulary listening and persistence after remount.
+
+Development runtime fix (2026-10-13): ONNX JavaScript/WASM URLs now come from explicit Vite `?url` imports in `src/services/heartRuntime.ts`, rather than dynamically importing JavaScript from `public/heart-runtime/`. The latter worked in production but Vite rejected it in development. The preparation script now copies licences only and removes its two obsolete generated runtime copies. A real Vite-server regression reproduces the old failure and passes with the asset imports. Chrome at `localhost:5173` reached Playing Heart with no console errors, and Stop returned to idle. All 102 tests, typecheck and production build passed.
 
 Heart (`af_heart`) is an optional local speech engine behind the shared `speechController`; browser speech remains the default. Settings selection and save do not download the model. Explicit preview or Listen lazily loads a worker, fetches the q8 model and Heart voice from the pinned model revision, and plays generated PCM through Web Audio. Stop, request IDs, owner cleanup and recorder microphone locks prevent stale playback. Page and modal status hosts expose preparation, playback, errors, Retry and browser fallback without including learner text. The worker uses one WASM thread, a guarded tokenizer without truncation, and ordered segment acknowledgements. Runtime WebAssembly files and licences are copied locally during dev/build.
 
