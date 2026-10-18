@@ -22,14 +22,15 @@ This repository includes an automatic GitHub Pages workflow. Complete this one-t
 1. Open the `LegendHjj/EnglishlearningWeb` repository.
 2. Select **Settings**, then **Pages** in the left sidebar.
 3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-4. Push the latest `feature/fluency-reset-mvp` branch to GitHub.
-5. Open **Actions** and wait for **Deploy to GitHub Pages** to finish with a green check.
+4. In **Settings → Environments → github-pages**, allow `mainbranch` in the deployment branch rules if selected branches are required.
+5. Push the latest `mainbranch` branch to GitHub.
+6. Open **Actions** and wait for **Deploy to GitHub Pages** to finish with a green check.
 
 The published website will be available at:
 
 `https://legendhjj.github.io/EnglishlearningWeb/`
 
-Every push to `feature/fluency-reset-mvp` rebuilds and republishes the website. To deploy again without a new commit, open **Actions > Deploy to GitHub Pages**, select **Run workflow**, choose `feature/fluency-reset-mvp`, and run it.
+Every push to `mainbranch` rebuilds and republishes the website. To deploy again without a new commit, open **Actions > Deploy to GitHub Pages**, select **Run workflow**, choose `mainbranch`, and run it.
 
 If deployment fails, open the failed run under **Actions > Deploy to GitHub Pages** and expand the failed step. Also confirm that GitHub Pages still uses **GitHub Actions** as its source. GitHub Pages is included for public repositories on GitHub Free; publishing a private repository requires a GitHub plan that supports private Pages sites.
 

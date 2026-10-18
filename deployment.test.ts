@@ -6,7 +6,8 @@ import { expect, test } from 'vitest'
 test('deploys the production build to GitHub Pages', () => {
   const workflow = readFileSync('.github/workflows/deploy-pages.yml', 'utf8')
 
-  expect(workflow).toContain('feature/fluency-reset-mvp')
+  expect(workflow).toMatch(/push:\s*branches:\s*- mainbranch\s/)
+  expect(workflow).not.toContain('feature/fluency-reset-mvp')
   expect(workflow).toContain('workflow_dispatch:')
   expect(workflow).toContain('npm ci')
   expect(workflow).toContain('npm run build')

@@ -2,6 +2,10 @@
 
 Last updated: 2026-10-18
 
+## GitHub Pages publishing branch
+
+The current publishing branch is `mainbranch`. The Pages workflow previously listened only to `feature/fluency-reset-mvp`, so the latest optional practice-pack commit on `mainbranch` did not trigger deployment. `.github/workflows/deploy-pages.yml` now deploys pushes to `mainbranch`, and its deployment test enforces that branch. The GitHub `github-pages` environment's selected-branch rules now also allow `mainbranch`. See README for publishing steps; historical branch references below describe earlier handoffs.
+
 ## Optional workbook practice packs
 
 Approved in chat on 2026-10-18 and implemented on the current `mainbranch` checkout. Settings now offers three optional JSON content packs, downloaded only on request: 600 chunks with 1,200 examples plus 60 speaking prompts and 180 plan references; 120 Big 30 answers with guide/prompt references; and 120 conversations with reply challenges plus 20 sentence-building patterns. The converter `scripts/convert-practice-workbooks.py` reads the original three Excel workbooks using Python's standard library. It excludes personal-answer/progress sheets and editable personal cells. Generated files are in `public/practice-packs/`; portable copies were also saved beside the user's workbooks in GeneratedOutput.
