@@ -5,9 +5,9 @@ import { useRecorder } from '../hooks/useRecorder'
 import { saveRecording } from '../services/recordingDb'
 import { formatDuration } from '../utils/practice'
 
-type Props={missionId?:string;questionId?:string;phraseId?:string;recordingName?:string;onSaved?:(seconds:number)=>void;onStored?:()=>void;onBusyChange?:(busy:boolean)=>void;allowRetry?:boolean}
+type Props={missionId?:string;questionId?:string;phraseId?:string;practiceItemId?:string;recordingName?:string;onSaved?:(seconds:number)=>void;onStored?:()=>void;onBusyChange?:(busy:boolean)=>void;allowRetry?:boolean}
 
-export default function Recorder({missionId,questionId,phraseId,recordingName,onSaved,onStored,onBusyChange,allowRetry=true}:Props){
+export default function Recorder({missionId,questionId,phraseId,practiceItemId,recordingName,onSaved,onStored,onBusyChange,allowRetry=true}:Props){
   const r=useRecorder()
   const [saved,setSaved]=useState(false)
   const [error,setError]=useState('')
@@ -21,7 +21,7 @@ export default function Recorder({missionId,questionId,phraseId,recordingName,on
     setSaved(true)
     onSaved?.(r.seconds)
     try{
-      await saveRecording({id:crypto.randomUUID(),name:recordingName||(missionId?'Mission recording':'Speaking practice'),createdAt:new Date().toISOString(),duration:r.seconds,missionId,questionId,phraseId,mimeType:r.blob.type,size:r.blob.size},r.blob)
+      await saveRecording({id:crypto.randomUUID(),name:recordingName||(missionId?'Mission recording':'Speaking practice'),createdAt:new Date().toISOString(),duration:r.seconds,missionId,questionId,phraseId,practiceItemId,mimeType:r.blob.type,size:r.blob.size},r.blob)
       onStored?.()
     }catch{
       setSaved(false)

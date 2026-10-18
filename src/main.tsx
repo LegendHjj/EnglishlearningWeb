@@ -12,5 +12,6 @@ import './library.css'
 import './chunks.css'
 import './big30.css'
 import './speech.css'
+import './practice-packs.css'
 
 createRoot(document.getElementById('root')!).render(<StrictMode><AppRouter><AppProvider><App/></AppProvider></AppRouter></StrictMode>)

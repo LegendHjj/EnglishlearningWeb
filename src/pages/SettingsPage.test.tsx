@@ -21,20 +21,20 @@ test('selecting Heart persists immediately and other pages use it without Save c
 })
 
 test('changing voice preserves unsaved practice edits and survives remount', () => {
-  const view = render(<AppProvider><SettingsPage/></AppProvider>)
+  const view = render(<MemoryRouter><AppProvider><SettingsPage/></AppProvider></MemoryRouter>)
   fireEvent.change(screen.getByRole('textbox', { name: 'Your name' }), { target: { value: 'Draft name' } })
   fireEvent.click(screen.getByRole('button', { name: /Natural Female · Heart/ }))
   expect(screen.getByRole('textbox', { name: 'Your name' })).toHaveValue('Draft name')
   expect(loadState().preferences.name).not.toBe('Draft name')
   view.unmount()
-  render(<AppProvider><SettingsPage/></AppProvider>)
+  render(<MemoryRouter><AppProvider><SettingsPage/></AppProvider></MemoryRouter>)
   expect(screen.getByRole('button', { name: /Natural Female · Heart/ })).toHaveAttribute('aria-pressed', 'true')
   fireEvent.click(screen.getByRole('button', { name: /Male Prefer a male/ }))
   expect(loadState().preferences.speechEngine).toBe('browser')
   expect(loadState().preferences.voiceGender).toBe('male')
 })
 test('saving Heart does not download it', () => {
-  render(<AppProvider><SettingsPage/></AppProvider>)
+  render(<MemoryRouter><AppProvider><SettingsPage/></AppProvider></MemoryRouter>)
   fireEvent.click(screen.getByRole('button', { name: /Natural Female · Heart/ }))
   expect(speechController.getSnapshot().phase).toBe('idle')
   fireEvent.click(screen.getByRole('button', { name: 'Save changes' }))

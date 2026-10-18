@@ -1,0 +1,3206 @@
+{
+  "id": "everyday-120-conversations",
+  "name": "120 everyday conversations",
+  "description": "720 dialogue turns, 120 reply challenges and 20 sentence-building patterns with 60 examples.",
+  "items": [
+    {
+      "id": "C001",
+      "kind": "conversation",
+      "title": "First day at work",
+      "topic": "Meeting people",
+      "cue": "Practise this situation: First day at work. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, I'm Kai. I started today.\nB: Welcome! I'm Nina. Which team are you joining?\nA: The support team. I'm still finding my way around.\nB: I sit near them. I can show you the kitchen.\nA: Thanks, that would be really helpful.\nB: No problem. Come with me.",
+      "examples": [],
+      "keywords": [
+        "First",
+        "day",
+        "at",
+        "work"
+      ],
+      "expressions": [
+        "finding my way around — learning where things are"
+      ],
+      "challenge": {
+        "cue": "I didn't catch your name.",
+        "model": "It's Kai, spelled K-A-I. Nice to meet you.",
+        "followUp": "Which team are you on?"
+      }
+    },
+    {
+      "id": "C002",
+      "kind": "conversation",
+      "title": "Joining a hobby group",
+      "topic": "Meeting people",
+      "cue": "Practise this situation: Joining a hobby group. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, is this the photography group?\nB: Yes, it is. Is this your first time here?\nA: It is. I've only used my phone so far.\nB: That's fine. A few of us use phones too.\nA: Great. What are we taking pictures of today?\nB: We're starting with the buildings outside.",
+      "examples": [],
+      "keywords": [
+        "Joining",
+        "a",
+        "hobby",
+        "group"
+      ],
+      "expressions": [
+        "I'm still learning the basics — I am a beginner"
+      ],
+      "challenge": {
+        "cue": "Have you brought a camera?",
+        "model": "Just my phone today. I'm still learning the basics.",
+        "followUp": "What do you enjoy photographing?"
+      }
+    },
+    {
+      "id": "C003",
+      "kind": "conversation",
+      "title": "Meeting a neighbour",
+      "topic": "Meeting people",
+      "cue": "Practise this situation: Meeting a neighbour. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, I think we've seen each other in the lift.\nB: Yes! I live on the fourth floor. I'm Sam.\nA: I'm Mei. I moved in last weekend.\nB: Welcome. How are you settling in?\nA: Pretty well, thanks. It's much quieter than my old place.\nB: That's good. Let me know if you need anything.",
+      "examples": [],
+      "keywords": [
+        "Meeting",
+        "a",
+        "neighbour"
+      ],
+      "expressions": [
+        "How are you settling in? — How is life in your new place?"
+      ],
+      "challenge": {
+        "cue": "Do you know where the recycling bins are?",
+        "model": "Not yet. I've only found the general rubbish bins.",
+        "followUp": "Could you show me where they are?"
+      }
+    },
+    {
+      "id": "C004",
+      "kind": "conversation",
+      "title": "Introducing two friends",
+      "topic": "Meeting people",
+      "cue": "Practise this situation: Introducing two friends. Respond to the other person and keep the conversation going.",
+      "model": "A: Aisha, this is my friend Ben.\nB: Hi, Ben. How do you know each other?\nA: We used to work together at a bookshop.\nB: Oh, nice. Do you still work there?\nA: No, I work at a school now.\nB: That sounds interesting. What do you do there?",
+      "examples": [],
+      "keywords": [
+        "Introducing",
+        "two",
+        "friends"
+      ],
+      "expressions": [
+        "We used to work together — we worked together in the past"
+      ],
+      "challenge": {
+        "cue": "Sorry, have we met before?",
+        "model": "I don't think so, but you might have seen me at the bookshop.",
+        "followUp": "Do you go there often?"
+      }
+    },
+    {
+      "id": "C005",
+      "kind": "conversation",
+      "title": "Remembering a name",
+      "topic": "Meeting people",
+      "cue": "Practise this situation: Remembering a name. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi! We met at Daniel's dinner, didn't we?\nB: Yes, we did. It's good to see you again.\nA: You too. Sorry, could you remind me of your name?\nB: Of course. It's Farah.\nA: Farah, thank you. How have you been?\nB: Pretty good. I've been busy with a new job.",
+      "examples": [],
+      "keywords": [
+        "Remembering",
+        "a",
+        "name"
+      ],
+      "expressions": [
+        "could you remind me — please tell me again"
+      ],
+      "challenge": {
+        "cue": "I can't remember your name either!",
+        "model": "No worries. I'm Leo. There were a lot of people that night.",
+        "followUp": "How do you know Daniel?"
+      }
+    },
+    {
+      "id": "C006",
+      "kind": "conversation",
+      "title": "Ending a first conversation",
+      "topic": "Meeting people",
+      "cue": "Practise this situation: Ending a first conversation. Respond to the other person and keep the conversation going.",
+      "model": "A: It was lovely talking to you.\nB: You too. I'm glad we finally met.\nA: I should get back to my friends.\nB: Of course. Enjoy the rest of the evening.\nA: Thanks. Maybe I'll see you at the next event.\nB: I hope so. Take care!",
+      "examples": [],
+      "keywords": [
+        "Ending",
+        "a",
+        "first",
+        "conversation"
+      ],
+      "expressions": [
+        "I should get back to — I need to return to someone or something"
+      ],
+      "challenge": {
+        "cue": "Before you go, are you coming next week?",
+        "model": "I'm not sure yet. I'll check my schedule.",
+        "followUp": "Will you be there?"
+      }
+    },
+    {
+      "id": "C007",
+      "kind": "conversation",
+      "title": "Talking about the weekend",
+      "topic": "Small talk",
+      "cue": "Practise this situation: Talking about the weekend. Respond to the other person and keep the conversation going.",
+      "model": "A: How was your weekend?\nB: Good, thanks. I went for a walk by the lake.\nA: That sounds nice. Was it busy?\nB: Not really. I went quite early.\nA: I might try that next weekend.\nB: You should. It's peaceful before nine.",
+      "examples": [],
+      "keywords": [
+        "Talking",
+        "about",
+        "the",
+        "weekend"
+      ],
+      "expressions": [
+        "It was nice to slow down — I enjoyed being less busy"
+      ],
+      "challenge": {
+        "cue": "What did you do over the weekend?",
+        "model": "I mostly stayed home and cooked. It was nice to slow down.",
+        "followUp": "Do you usually go walking on your own?"
+      }
+    },
+    {
+      "id": "C008",
+      "kind": "conversation",
+      "title": "A rainy morning",
+      "topic": "Small talk",
+      "cue": "Practise this situation: A rainy morning. Respond to the other person and keep the conversation going.",
+      "model": "A: You got caught in the rain too?\nB: Yes, just as I got off the bus.\nA: Same here. My shoes are still wet.\nB: At least it's warm inside.\nA: True. I could really use a hot drink.\nB: Me too. Shall we get some tea?",
+      "examples": [],
+      "keywords": [
+        "A",
+        "rainy",
+        "morning"
+      ],
+      "expressions": [
+        "I could really use — I would really like or need"
+      ],
+      "challenge": {
+        "cue": "I actually like rainy weather.",
+        "model": "I do too when I'm indoors. It's the wet shoes I don't enjoy.",
+        "followUp": "What's your favourite thing to do on a rainy day?"
+      }
+    },
+    {
+      "id": "C009",
+      "kind": "conversation",
+      "title": "Discussing a commute",
+      "topic": "Small talk",
+      "cue": "Practise this situation: Discussing a commute. Respond to the other person and keep the conversation going.",
+      "model": "A: How do you usually get to work?\nB: I take the train and walk from the station.\nA: How long does that take?\nB: About forty minutes, if everything runs on time.\nA: That's similar to my bus journey.\nB: Do you listen to anything on the way?",
+      "examples": [],
+      "keywords": [
+        "Discussing",
+        "a",
+        "commute"
+      ],
+      "expressions": [
+        "on the way — during the journey"
+      ],
+      "challenge": {
+        "cue": "My commute takes nearly two hours.",
+        "model": "That sounds tiring. Mine is shorter, but it can still feel long.",
+        "followUp": "What helps you pass the time?"
+      }
+    },
+    {
+      "id": "C010",
+      "kind": "conversation",
+      "title": "Noticing a new haircut",
+      "topic": "Small talk",
+      "cue": "Practise this situation: Noticing a new haircut. Respond to the other person and keep the conversation going.",
+      "model": "A: You've had your hair cut! It looks nice.\nB: Thanks. I wanted something easier to manage.\nA: It really suits you.\nB: That's kind of you. I wasn't sure at first.\nA: Did you go somewhere nearby?\nB: Yes, the salon opposite the supermarket.",
+      "examples": [],
+      "keywords": [
+        "Noticing",
+        "a",
+        "new",
+        "haircut"
+      ],
+      "expressions": [
+        "get used to — become familiar or comfortable with"
+      ],
+      "challenge": {
+        "cue": "I'm not sure I like it yet.",
+        "model": "It can take a little time to get used to a change.",
+        "followUp": "Have you tried styling it a different way?"
+      }
+    },
+    {
+      "id": "C011",
+      "kind": "conversation",
+      "title": "Talking about lunch",
+      "topic": "Small talk",
+      "cue": "Practise this situation: Talking about lunch. Respond to the other person and keep the conversation going.",
+      "model": "A: That smells good. What are you having?\nB: Leftover curry from last night.\nA: Did you make it yourself?\nB: Yes, but I followed a very simple recipe.\nA: Simple recipes are my favourite.\nB: I can send it to you if you'd like.",
+      "examples": [],
+      "keywords": [
+        "Talking",
+        "about",
+        "lunch"
+      ],
+      "expressions": [
+        "if you'd like — if you want"
+      ],
+      "challenge": {
+        "cue": "I'm trying to cook more, but I never know what to make.",
+        "model": "I usually choose something with a short ingredient list.",
+        "followUp": "What kinds of food do you enjoy?"
+      }
+    },
+    {
+      "id": "C012",
+      "kind": "conversation",
+      "title": "A quiet person",
+      "topic": "Small talk",
+      "cue": "Practise this situation: A quiet person. Respond to the other person and keep the conversation going.",
+      "model": "A: Is this seat taken?\nB: No, go ahead.\nA: Thanks. It's quite busy in here today.\nB: Yes, much busier than usual.\nA: I'll let you get back to your book.\nB: Thanks. Enjoy your coffee.",
+      "examples": [],
+      "keywords": [
+        "A",
+        "quiet",
+        "person"
+      ],
+      "expressions": [
+        "I'll leave you to it — I will stop interrupting you"
+      ],
+      "challenge": {
+        "cue": "Sorry, I'm trying to finish this chapter.",
+        "model": "Of course. I'll leave you to it.",
+        "followUp": "Could I just check whether this chair is free?"
+      }
+    },
+    {
+      "id": "C013",
+      "kind": "conversation",
+      "title": "Inviting a friend for lunch",
+      "topic": "Making plans",
+      "cue": "Practise this situation: Inviting a friend for lunch. Respond to the other person and keep the conversation going.",
+      "model": "A: Are you free for lunch on Saturday?\nB: I think so. What did you have in mind?\nA: There's a new noodle place near the station.\nB: Sounds good. What time were you thinking?\nA: Would half past twelve work for you?\nB: Yes, let's meet outside at twelve thirty.",
+      "examples": [],
+      "keywords": [
+        "Inviting",
+        "a",
+        "friend",
+        "for",
+        "lunch"
+      ],
+      "expressions": [
+        "work for you — be convenient for you"
+      ],
+      "challenge": {
+        "cue": "I can only stay for an hour.",
+        "model": "That works for me. We can have a quick lunch.",
+        "followUp": "Would somewhere near your next appointment be easier?"
+      }
+    },
+    {
+      "id": "C014",
+      "kind": "conversation",
+      "title": "Finding another time",
+      "topic": "Making plans",
+      "cue": "Practise this situation: Finding another time. Respond to the other person and keep the conversation going.",
+      "model": "A: Would you like to see a film on Friday?\nB: I'd love to, but I'm working that evening.\nA: No problem. How about Sunday afternoon?\nB: Sunday works. Is there anything good on?\nA: There's a comedy I'd like to see.\nB: Send me the details and I'll have a look.",
+      "examples": [],
+      "keywords": [
+        "Finding",
+        "another",
+        "time"
+      ],
+      "expressions": [
+        "How about — used to suggest an option"
+      ],
+      "challenge": {
+        "cue": "Sunday is difficult too, I'm afraid.",
+        "model": "No worries. We don't have to decide right now.",
+        "followUp": "Which day is usually easiest for you?"
+      }
+    },
+    {
+      "id": "C015",
+      "kind": "conversation",
+      "title": "Changing an outdoor plan",
+      "topic": "Making plans",
+      "cue": "Practise this situation: Changing an outdoor plan. Respond to the other person and keep the conversation going.",
+      "model": "A: The forecast looks wet for our picnic.\nB: Yes, I was just thinking about that.\nA: Shall we move it indoors?\nB: Good idea. We could have lunch at my place.\nA: I can bring sandwiches and fruit.\nB: Perfect. I'll make some tea.",
+      "examples": [],
+      "keywords": [
+        "Changing",
+        "an",
+        "outdoor",
+        "plan"
+      ],
+      "expressions": [
+        "Shall we — used to suggest doing something together"
+      ],
+      "challenge": {
+        "cue": "My flat is too small for everyone.",
+        "model": "That's okay. We could choose a café instead.",
+        "followUp": "Do you know one with enough space?"
+      }
+    },
+    {
+      "id": "C016",
+      "kind": "conversation",
+      "title": "Running late",
+      "topic": "Making plans",
+      "cue": "Practise this situation: Running late. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, I'm sorry. I'm running about fifteen minutes late.\nB: Thanks for letting me know. Is everything okay?\nA: Yes, the bus is moving very slowly.\nB: No rush. I'll get a table inside.\nA: Thanks. I'll message you when I'm close.\nB: See you soon.",
+      "examples": [],
+      "keywords": [
+        "Running",
+        "late"
+      ],
+      "expressions": [
+        "I'm running late — I will arrive later than planned"
+      ],
+      "challenge": {
+        "cue": "I need to leave in half an hour.",
+        "model": "I'm sorry about the delay. We may only have a short time together.",
+        "followUp": "Would you prefer to reschedule?"
+      }
+    },
+    {
+      "id": "C017",
+      "kind": "conversation",
+      "title": "Confirming a booking",
+      "topic": "Making plans",
+      "cue": "Practise this situation: Confirming a booking. Respond to the other person and keep the conversation going.",
+      "model": "A: Are we still on for dinner tomorrow?\nB: Yes, definitely. I booked a table for seven.\nA: Great. Is it the place on King Street?\nB: That's right, next to the florist.\nA: Perfect. I'll meet you there.\nB: See you tomorrow.",
+      "examples": [],
+      "keywords": [
+        "Confirming",
+        "a",
+        "booking"
+      ],
+      "expressions": [
+        "Are we still on for — Is our plan still happening?"
+      ],
+      "challenge": {
+        "cue": "I thought we said seven thirty.",
+        "model": "Thanks for checking. The booking is at seven, but I can ask to change it.",
+        "followUp": "Which time would you prefer?"
+      }
+    },
+    {
+      "id": "C018",
+      "kind": "conversation",
+      "title": "Declining an invitation",
+      "topic": "Making plans",
+      "cue": "Practise this situation: Declining an invitation. Respond to the other person and keep the conversation going.",
+      "model": "A: Do you want to join us for dinner tonight?\nB: Thanks for asking, but I need a quiet evening.\nA: Of course. It's been a busy week.\nB: It really has. I hope you have a good time.\nA: Thanks. Maybe another time.\nB: Definitely. Let's catch up next week.",
+      "examples": [],
+      "keywords": [
+        "Declining",
+        "an",
+        "invitation"
+      ],
+      "expressions": [
+        "Thanks for asking, but — a polite way to decline"
+      ],
+      "challenge": {
+        "cue": "Come on, just for an hour!",
+        "model": "Thanks, but I'm going to stay home tonight. I need some rest.",
+        "followUp": "Could we arrange something next week instead?"
+      }
+    },
+    {
+      "id": "C019",
+      "kind": "conversation",
+      "title": "Borrowing a charger",
+      "topic": "Requests and help",
+      "cue": "Practise this situation: Borrowing a charger. Respond to the other person and keep the conversation going.",
+      "model": "A: Could I borrow your charger for a few minutes?\nB: Sure. What kind of phone do you have?\nA: It uses a USB-C cable.\nB: This one should work.\nA: Thanks. I'll give it back before you leave.\nB: No problem. I'm here until four.",
+      "examples": [],
+      "keywords": [
+        "Borrowing",
+        "a",
+        "charger"
+      ],
+      "expressions": [
+        "Could I borrow — a polite request to use something temporarily"
+      ],
+      "challenge": {
+        "cue": "I'm using it at the moment.",
+        "model": "That's okay. My battery should last a little longer.",
+        "followUp": "Could I borrow it when you're finished?"
+      }
+    },
+    {
+      "id": "C020",
+      "kind": "conversation",
+      "title": "Carrying something heavy",
+      "topic": "Requests and help",
+      "cue": "Practise this situation: Carrying something heavy. Respond to the other person and keep the conversation going.",
+      "model": "A: That box looks heavy. Would you like a hand?\nB: Yes, please. I can't open the door while holding it.\nA: I'll get the door for you.\nB: Thanks. Could you hold it open for a moment?\nA: Of course. Take your time.\nB: That's a big help. Thank you.",
+      "examples": [],
+      "keywords": [
+        "Carrying",
+        "something",
+        "heavy"
+      ],
+      "expressions": [
+        "Would you like a hand? — Do you want some help?"
+      ],
+      "challenge": {
+        "cue": "Actually, could you carry the other box?",
+        "model": "I can help with the smaller one. The large one is too heavy for me.",
+        "followUp": "Where would you like me to put it?"
+      }
+    },
+    {
+      "id": "C021",
+      "kind": "conversation",
+      "title": "Asking for directions inside",
+      "topic": "Requests and help",
+      "cue": "Practise this situation: Asking for directions inside. Respond to the other person and keep the conversation going.",
+      "model": "A: Excuse me, where's the meeting room?\nB: Which one are you looking for?\nA: The room called Cedar.\nB: Go down this corridor and turn left.\nA: Thanks. Is it before the stairs?\nB: Yes, it's the first door on your right.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "for",
+        "directions",
+        "inside"
+      ],
+      "expressions": [
+        "Could you point me towards — Could you show me the direction of"
+      ],
+      "challenge": {
+        "cue": "There are two rooms with similar names.",
+        "model": "I see. My invitation says Cedar Two.",
+        "followUp": "Could you point me towards that one?"
+      }
+    },
+    {
+      "id": "C022",
+      "kind": "conversation",
+      "title": "Asking for a small favour",
+      "topic": "Requests and help",
+      "cue": "Practise this situation: Asking for a small favour. Respond to the other person and keep the conversation going.",
+      "model": "A: Could you water my plants while I'm away?\nB: Sure. How long will you be gone?\nA: Just four days. They only need watering once.\nB: Okay. Could you leave me some instructions?\nA: Of course. I'll put a note by the kitchen window.\nB: Great. Enjoy your trip.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "for",
+        "a",
+        "small",
+        "favour"
+      ],
+      "expressions": [
+        "Could you leave me — a polite request to provide something"
+      ],
+      "challenge": {
+        "cue": "I'm away for part of that week too.",
+        "model": "Thanks for telling me. I'll ask someone else to cover those days.",
+        "followUp": "Which days will you be home?"
+      }
+    },
+    {
+      "id": "C023",
+      "kind": "conversation",
+      "title": "Offering help without pressure",
+      "topic": "Requests and help",
+      "cue": "Practise this situation: Offering help without pressure. Respond to the other person and keep the conversation going.",
+      "model": "A: You look busy. Can I help with anything?\nB: Thanks, but I've nearly finished.\nA: Okay. I'm free for the next ten minutes.\nB: Actually, could you check these names?\nA: Sure. What should I look for?\nB: Just spelling mistakes, please.",
+      "examples": [],
+      "keywords": [
+        "Offering",
+        "help",
+        "without",
+        "pressure"
+      ],
+      "expressions": [
+        "Which part is most urgent? — What needs attention first?"
+      ],
+      "challenge": {
+        "cue": "I need some help, but it will take an hour.",
+        "model": "I only have ten minutes now, but I can help with one small part.",
+        "followUp": "Which part is most urgent?"
+      }
+    },
+    {
+      "id": "C024",
+      "kind": "conversation",
+      "title": "Asking someone to speak quietly",
+      "topic": "Requests and help",
+      "cue": "Practise this situation: Asking someone to speak quietly. Respond to the other person and keep the conversation going.",
+      "model": "A: Sorry, could you lower your voice a little?\nB: Oh, sorry. I didn't realise I was being loud.\nA: No problem. I'm trying to hear this call.\nB: Of course. I'll move to the other room.\nA: Thanks, I appreciate it.\nB: You're welcome.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "someone",
+        "to",
+        "speak",
+        "quietly"
+      ],
+      "expressions": [
+        "Would you mind — a polite request, usually followed by an -ing form"
+      ],
+      "challenge": {
+        "cue": "I can't hear the person on my phone either.",
+        "model": "That sounds frustrating. Maybe we could use separate rooms.",
+        "followUp": "Would you mind moving to the kitchen?"
+      }
+    },
+    {
+      "id": "C025",
+      "kind": "conversation",
+      "title": "Ordering a drink",
+      "topic": "Food and cafés",
+      "cue": "Practise this situation: Ordering a drink. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, could I have a small latte, please?\nB: Of course. Is that to have here or take away?\nA: To have here, please.\nB: Would you like anything to eat?\nA: Just the coffee, thanks.\nB: That'll be ready at the end of the counter.",
+      "examples": [],
+      "keywords": [
+        "Ordering",
+        "a",
+        "drink"
+      ],
+      "expressions": [
+        "Just the coffee, thanks — politely ordering only that item"
+      ],
+      "challenge": {
+        "cue": "We've run out of regular milk.",
+        "model": "Okay. I'll have it with oat milk, please.",
+        "followUp": "Is there an extra charge for that?"
+      }
+    },
+    {
+      "id": "C026",
+      "kind": "conversation",
+      "title": "Choosing a meal",
+      "topic": "Food and cafés",
+      "cue": "Practise this situation: Choosing a meal. Respond to the other person and keep the conversation going.",
+      "model": "A: What would you recommend?\nB: The grilled chicken is popular.\nA: Does it come with anything?\nB: Yes, rice and a small salad.\nA: That sounds good. I'll have that, please.\nB: Certainly. Anything to drink?",
+      "examples": [],
+      "keywords": [
+        "Choosing",
+        "a",
+        "meal"
+      ],
+      "expressions": [
+        "Does it come with — Is something included with it?"
+      ],
+      "challenge": {
+        "cue": "The grilled chicken has sold out.",
+        "model": "No problem. I'll choose something else.",
+        "followUp": "What would you recommend instead?"
+      }
+    },
+    {
+      "id": "C027",
+      "kind": "conversation",
+      "title": "Checking ingredients",
+      "topic": "Food and cafés",
+      "cue": "Practise this situation: Checking ingredients. Respond to the other person and keep the conversation going.",
+      "model": "A: Does this soup contain peanuts?\nB: Let me check with the kitchen.\nA: Thank you. I have a peanut allergy.\nB: The chef says it contains peanut oil.\nA: Thanks for checking. I won't order that.\nB: I can ask about another dish for you.",
+      "examples": [],
+      "keywords": [
+        "Checking",
+        "ingredients"
+      ],
+      "expressions": [
+        "Thanks for checking — showing appreciation for verification"
+      ],
+      "challenge": {
+        "cue": "We can't confirm whether it contains peanuts.",
+        "model": "Thanks for being honest. I'll choose something elsewhere.",
+        "followUp": "Could you cancel the soup order, please?"
+      }
+    },
+    {
+      "id": "C028",
+      "kind": "conversation",
+      "title": "Correcting an order",
+      "topic": "Food and cafés",
+      "cue": "Practise this situation: Correcting an order. Respond to the other person and keep the conversation going.",
+      "model": "A: Excuse me, I ordered an iced tea.\nB: I'm sorry. Did we bring you a hot one?\nA: Yes, this one is hot.\nB: I'll replace it for you.\nA: Thank you. I appreciate it.\nB: Sorry about the mix-up.",
+      "examples": [],
+      "keywords": [
+        "Correcting",
+        "an",
+        "order"
+      ],
+      "expressions": [
+        "Sorry about the mix-up — apologising for a mistake or confusion"
+      ],
+      "challenge": {
+        "cue": "The iced tea will take another ten minutes.",
+        "model": "That's okay. I can wait a little longer.",
+        "followUp": "Could I have some water while I wait?"
+      }
+    },
+    {
+      "id": "C029",
+      "kind": "conversation",
+      "title": "Sharing dishes",
+      "topic": "Food and cafés",
+      "cue": "Practise this situation: Sharing dishes. Respond to the other person and keep the conversation going.",
+      "model": "A: Shall we order a few dishes to share?\nB: That sounds good. What do you feel like?\nA: Maybe noodles and some vegetables.\nB: I'd like some chicken too.\nA: Great. Let's start with those three.\nB: We can order more if we're still hungry.",
+      "examples": [],
+      "keywords": [
+        "Sharing",
+        "dishes"
+      ],
+      "expressions": [
+        "What do you feel like? — What would you enjoy now?"
+      ],
+      "challenge": {
+        "cue": "I don't really feel like sharing today.",
+        "model": "That's fine. Let's each choose our own meal.",
+        "followUp": "What are you thinking of ordering?"
+      }
+    },
+    {
+      "id": "C030",
+      "kind": "conversation",
+      "title": "Paying after a meal",
+      "topic": "Food and cafés",
+      "cue": "Practise this situation: Paying after a meal. Respond to the other person and keep the conversation going.",
+      "model": "A: Could we have the bill, please?\nB: Certainly. Was everything all right?\nA: Yes, thank you. We enjoyed it.\nB: I'm glad to hear that. Here you are.\nA: Can we pay separately?\nB: Yes. Tell me which items you had.",
+      "examples": [],
+      "keywords": [
+        "Paying",
+        "after",
+        "a",
+        "meal"
+      ],
+      "expressions": [
+        "sort it out — resolve or organise something"
+      ],
+      "challenge": {
+        "cue": "We can only take one payment for the table.",
+        "model": "Okay, I'll pay this time and we'll sort it out between us.",
+        "followUp": "Can I pay by card?"
+      }
+    },
+    {
+      "id": "C031",
+      "kind": "conversation",
+      "title": "Finding the right size",
+      "topic": "Shopping",
+      "cue": "Practise this situation: Finding the right size. Respond to the other person and keep the conversation going.",
+      "model": "A: Do you have this shirt in a medium?\nB: Let me check. What colour would you like?\nA: The same blue, please.\nB: Here you go. Would you like to try it on?\nA: Yes, please. Where are the fitting rooms?\nB: Just behind the stairs.",
+      "examples": [],
+      "keywords": [
+        "Finding",
+        "the",
+        "right",
+        "size"
+      ],
+      "expressions": [
+        "try it on — put on clothing to see whether it fits"
+      ],
+      "challenge": {
+        "cue": "We only have it in black.",
+        "model": "I might try the black one, then.",
+        "followUp": "Could you show me what it looks like?"
+      }
+    },
+    {
+      "id": "C032",
+      "kind": "conversation",
+      "title": "Comparing two products",
+      "topic": "Shopping",
+      "cue": "Practise this situation: Comparing two products. Respond to the other person and keep the conversation going.",
+      "model": "A: What's the difference between these two bags?\nB: This one is larger and has more pockets.\nA: Is the smaller one waterproof?\nB: It's water-resistant, but not fully waterproof.\nA: I see. I'll need something for heavy rain.\nB: Then let me show you another option.",
+      "examples": [],
+      "keywords": [
+        "Comparing",
+        "two",
+        "products"
+      ],
+      "expressions": [
+        "more than I planned to spend — above my intended budget"
+      ],
+      "challenge": {
+        "cue": "The waterproof one costs quite a bit more.",
+        "model": "It's more than I planned to spend. I'll think about it.",
+        "followUp": "Do you have a less expensive waterproof option?"
+      }
+    },
+    {
+      "id": "C033",
+      "kind": "conversation",
+      "title": "Browsing without buying",
+      "topic": "Shopping",
+      "cue": "Practise this situation: Browsing without buying. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, can I help you find anything?\nB: I'm just looking for now, thanks.\nA: Of course. Let me know if you need a size.\nB: I will. These jackets look nice.\nA: They're on the rack near the window.\nB: Thanks. I'll have a look.",
+      "examples": [],
+      "keywords": [
+        "Browsing",
+        "without",
+        "buying"
+      ],
+      "expressions": [
+        "I'm just looking — I am browsing and do not need help yet"
+      ],
+      "challenge": {
+        "cue": "This offer ends today.",
+        "model": "Thanks for letting me know. I still need time to decide.",
+        "followUp": "Can I find the product details online?"
+      }
+    },
+    {
+      "id": "C034",
+      "kind": "conversation",
+      "title": "Checking a price",
+      "topic": "Shopping",
+      "cue": "Practise this situation: Checking a price. Respond to the other person and keep the conversation going.",
+      "model": "A: Excuse me, how much is this notebook?\nB: It's twelve ringgit.\nA: Thanks. Does that price include the cover?\nB: Yes, the cover comes with it.\nA: Great. I'll take one.\nB: Would you like a bag?",
+      "examples": [],
+      "keywords": [
+        "Checking",
+        "a",
+        "price"
+      ],
+      "expressions": [
+        "I'll take one — I have decided to buy one"
+      ],
+      "challenge": {
+        "cue": "The display price was for a smaller notebook.",
+        "model": "Oh, I see. I misunderstood the sign.",
+        "followUp": "Could you show me the twelve-ringgit one?"
+      }
+    },
+    {
+      "id": "C035",
+      "kind": "conversation",
+      "title": "Exchanging an item",
+      "topic": "Shopping",
+      "cue": "Practise this situation: Exchanging an item. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, I'd like to exchange this jumper.\nB: Is there anything wrong with it?\nA: It's too small. I need the next size up.\nB: Do you have the receipt?\nA: Yes, here it is.\nB: Thanks. I'll check what sizes we have.",
+      "examples": [],
+      "keywords": [
+        "Exchanging",
+        "an",
+        "item"
+      ],
+      "expressions": [
+        "the next size up — one size larger"
+      ],
+      "challenge": {
+        "cue": "We don't have the larger size in this colour.",
+        "model": "Could I exchange it for a different colour instead?",
+        "followUp": "Which colours are available in the larger size?"
+      }
+    },
+    {
+      "id": "C036",
+      "kind": "conversation",
+      "title": "Reporting a faulty item",
+      "topic": "Shopping",
+      "cue": "Practise this situation: Reporting a faulty item. Respond to the other person and keep the conversation going.",
+      "model": "A: I bought these headphones yesterday, but one side doesn't work.\nB: I'm sorry to hear that. May I see them?\nA: Of course. I've brought the receipt too.\nB: Thank you. We'll test them first.\nA: That's fine. I'd prefer a replacement if possible.\nB: I'll check our replacement options.",
+      "examples": [],
+      "keywords": [
+        "Reporting",
+        "a",
+        "faulty",
+        "item"
+      ],
+      "expressions": [
+        "I'd prefer — I would rather choose"
+      ],
+      "challenge": {
+        "cue": "We need to send them away for inspection.",
+        "model": "Okay. I'd like to understand what happens next.",
+        "followUp": "How long does the inspection usually take?"
+      }
+    },
+    {
+      "id": "C037",
+      "kind": "conversation",
+      "title": "Splitting a shared cost",
+      "topic": "Money and services",
+      "cue": "Practise this situation: Splitting a shared cost. Respond to the other person and keep the conversation going.",
+      "model": "A: The taxi came to forty ringgit.\nB: Okay. There were four of us.\nA: So that's ten ringgit each.\nB: I'll transfer my share now.\nA: Thanks. I'll send you my payment details.\nB: Great. Let me know when it arrives.",
+      "examples": [],
+      "keywords": [
+        "Splitting",
+        "a",
+        "shared",
+        "cost"
+      ],
+      "expressions": [
+        "my share — the part of a cost that I should pay"
+      ],
+      "challenge": {
+        "cue": "I don't have my banking app with me.",
+        "model": "No problem. You can pay me later.",
+        "followUp": "Would tomorrow be okay?"
+      }
+    },
+    {
+      "id": "C038",
+      "kind": "conversation",
+      "title": "Checking an unfamiliar charge",
+      "topic": "Money and services",
+      "cue": "Practise this situation: Checking an unfamiliar charge. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, I don't recognise this charge on my bill.\nB: Could you tell me which charge you mean?\nA: The service fee listed below the total.\nB: Let me check the details.\nA: Thank you. I wasn't expecting that fee.\nB: I'll explain what it covers.",
+      "examples": [],
+      "keywords": [
+        "Checking",
+        "an",
+        "unfamiliar",
+        "charge"
+      ],
+      "expressions": [
+        "I don't recognise — I do not know or remember this"
+      ],
+      "challenge": {
+        "cue": "I need to transfer you to another team.",
+        "model": "Okay. I'd like to keep the details clear.",
+        "followUp": "Could you give me a reference number?"
+      }
+    },
+    {
+      "id": "C039",
+      "kind": "conversation",
+      "title": "Asking about a subscription",
+      "topic": "Money and services",
+      "cue": "Practise this situation: Asking about a subscription. Respond to the other person and keep the conversation going.",
+      "model": "A: I'd like to ask about my monthly plan.\nB: Of course. What would you like to know?\nA: Can I switch to a cheaper plan?\nB: Let me check which plans are available.\nA: Thanks. I don't use all my current features.\nB: I'll explain the differences.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "about",
+        "a",
+        "subscription"
+      ],
+      "expressions": [
+        "switch to — change from one option to another"
+      ],
+      "challenge": {
+        "cue": "The cheaper plan has a lower usage limit.",
+        "model": "That might still be enough for me.",
+        "followUp": "How much usage does it include?"
+      }
+    },
+    {
+      "id": "C040",
+      "kind": "conversation",
+      "title": "Cancelling a service",
+      "topic": "Money and services",
+      "cue": "Practise this situation: Cancelling a service. Respond to the other person and keep the conversation going.",
+      "model": "A: I'd like to cancel my membership, please.\nB: May I ask why you're cancelling?\nA: I've moved, so I can't use this branch anymore.\nB: I understand. Let me check your account.\nA: Thank you. Please explain any final charges.\nB: Of course. I'll go through them with you.",
+      "examples": [],
+      "keywords": [
+        "Cancelling",
+        "a",
+        "service"
+      ],
+      "expressions": [
+        "go through — explain or examine something step by step"
+      ],
+      "challenge": {
+        "cue": "Would you like to pause it instead?",
+        "model": "Thanks, but I'd prefer to cancel because I've moved away.",
+        "followUp": "Could you confirm the cancellation date?"
+      }
+    },
+    {
+      "id": "C041",
+      "kind": "conversation",
+      "title": "A payment fails",
+      "topic": "Money and services",
+      "cue": "Practise this situation: A payment fails. Respond to the other person and keep the conversation going.",
+      "model": "A: I'm sorry, the payment didn't go through.\nB: Oh, let me check my phone.\nA: Take your time.\nB: It looks like there's a connection problem.\nA: You can try again or use another method.\nB: I'll use a different card, please.",
+      "examples": [],
+      "keywords": [
+        "A",
+        "payment",
+        "fails"
+      ],
+      "expressions": [
+        "didn't go through — did not complete successfully"
+      ],
+      "challenge": {
+        "cue": "It looks as though I've been charged twice.",
+        "model": "I can see two notifications on my phone. Could we check before I try again?",
+        "followUp": "Which payments can you see on your system?"
+      }
+    },
+    {
+      "id": "C042",
+      "kind": "conversation",
+      "title": "Getting a receipt",
+      "topic": "Money and services",
+      "cue": "Practise this situation: Getting a receipt. Respond to the other person and keep the conversation going.",
+      "model": "A: Could I get a receipt for that, please?\nB: Certainly. Paper or email?\nA: Paper would be great.\nB: Here you are.\nA: Thanks. Could you include the company name?\nB: I'll check whether I can add it.",
+      "examples": [],
+      "keywords": [
+        "Getting",
+        "a",
+        "receipt"
+      ],
+      "expressions": [
+        "Could I get — a polite way to ask for something"
+      ],
+      "challenge": {
+        "cue": "Our printer isn't working.",
+        "model": "An email receipt is fine instead.",
+        "followUp": "Could you check the email address with me before sending it?"
+      }
+    },
+    {
+      "id": "C043",
+      "kind": "conversation",
+      "title": "Buying a train ticket",
+      "topic": "Getting around",
+      "cue": "Practise this situation: Buying a train ticket. Respond to the other person and keep the conversation going.",
+      "model": "A: One ticket to Central, please.\nB: Single or return?\nA: Return, please. Can I come back this evening?\nB: Let me show you the ticket options.\nA: Thanks. I don't travel this route often.\nB: No problem. This screen explains the times.",
+      "examples": [],
+      "keywords": [
+        "Buying",
+        "a",
+        "train",
+        "ticket"
+      ],
+      "expressions": [
+        "I mean — used to clarify your meaning"
+      ],
+      "challenge": {
+        "cue": "There are two stations called Central on this map.",
+        "model": "I mean the one near the city library.",
+        "followUp": "Could you show me the correct route?"
+      }
+    },
+    {
+      "id": "C044",
+      "kind": "conversation",
+      "title": "Checking a bus route",
+      "topic": "Getting around",
+      "cue": "Practise this situation: Checking a bus route. Respond to the other person and keep the conversation going.",
+      "model": "A: Excuse me, does this bus go to the hospital?\nB: It stops across the road from it.\nA: Great. How many stops is that?\nB: About six stops from here.\nA: Thank you. I'll watch for it.\nB: There's a large sign outside.",
+      "examples": [],
+      "keywords": [
+        "Checking",
+        "a",
+        "bus",
+        "route"
+      ],
+      "expressions": [
+        "across the road from — on the opposite side of the road"
+      ],
+      "challenge": {
+        "cue": "The route has changed today.",
+        "model": "Thanks for telling me. I need to reach the main entrance.",
+        "followUp": "Which stop should I use today?"
+      }
+    },
+    {
+      "id": "C045",
+      "kind": "conversation",
+      "title": "Finding a pickup point",
+      "topic": "Getting around",
+      "cue": "Practise this situation: Finding a pickup point. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, I'm outside the shopping centre.\nB: Which entrance are you at?\nA: The one beside the pharmacy.\nB: I'm at the main entrance near the fountain.\nA: Okay, I'll walk over there.\nB: Thanks. I'll wait by the fountain.",
+      "examples": [],
+      "keywords": [
+        "Finding",
+        "a",
+        "pickup",
+        "point"
+      ],
+      "expressions": [
+        "I'll walk over there — I will walk to that place"
+      ],
+      "challenge": {
+        "cue": "I can't see a pharmacy.",
+        "model": "No problem. Let's use a different landmark.",
+        "followUp": "Can you see the large fountain?"
+      }
+    },
+    {
+      "id": "C046",
+      "kind": "conversation",
+      "title": "Asking for walking directions",
+      "topic": "Getting around",
+      "cue": "Practise this situation: Asking for walking directions. Respond to the other person and keep the conversation going.",
+      "model": "A: Excuse me, is the library near here?\nB: Yes, it's about a ten-minute walk.\nA: Could you tell me how to get there?\nB: Go straight, then turn right at the bank.\nA: So I turn right after the bank?\nB: At the bank, just before the crossing.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "for",
+        "walking",
+        "directions"
+      ],
+      "expressions": [
+        "Could you tell me how to — a polite way to ask for instructions"
+      ],
+      "challenge": {
+        "cue": "I'm not very good with street names.",
+        "model": "That's okay. Landmarks are easier for me too.",
+        "followUp": "What should I look for before I turn?"
+      }
+    },
+    {
+      "id": "C047",
+      "kind": "conversation",
+      "title": "Missing a stop",
+      "topic": "Getting around",
+      "cue": "Practise this situation: Missing a stop. Respond to the other person and keep the conversation going.",
+      "model": "A: I think I've missed my stop.\nB: Which stop did you want?\nA: The one near the museum.\nB: We passed it a few minutes ago.\nA: Okay. I'll get off at the next stop.\nB: You can check the return route there.",
+      "examples": [],
+      "keywords": [
+        "Missing",
+        "a",
+        "stop"
+      ],
+      "expressions": [
+        "get off — leave a bus, train or other vehicle"
+      ],
+      "challenge": {
+        "cue": "The next stop is quite far away.",
+        "model": "I see. I'll need to adjust my route.",
+        "followUp": "Where is the nearest place I can change buses?"
+      }
+    },
+    {
+      "id": "C048",
+      "kind": "conversation",
+      "title": "Arranging a lift",
+      "topic": "Getting around",
+      "cue": "Practise this situation: Arranging a lift. Respond to the other person and keep the conversation going.",
+      "model": "A: Could you give me a lift to the station?\nB: Sure. What time do you need to be there?\nA: By eight, if possible.\nB: Let's leave at half past seven.\nA: That would be great. I'll be ready.\nB: I'll message you when I'm outside.",
+      "examples": [],
+      "keywords": [
+        "Arranging",
+        "a",
+        "lift"
+      ],
+      "expressions": [
+        "give me a lift — take me somewhere in your vehicle"
+      ],
+      "challenge": {
+        "cue": "I can only drop you halfway.",
+        "model": "That would still help. I can walk from there.",
+        "followUp": "Where would be easiest for you to stop?"
+      }
+    },
+    {
+      "id": "C049",
+      "kind": "conversation",
+      "title": "Checking in",
+      "topic": "Travel and hotels",
+      "cue": "Practise this situation: Checking in. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, I have a reservation under Lee.\nB: Welcome. Could I see your identification, please?\nA: Of course. Here you are.\nB: Thank you. You're staying for two nights?\nA: That's right. Is breakfast included?\nB: Let me check your booking.",
+      "examples": [],
+      "keywords": [
+        "Checking",
+        "in"
+      ],
+      "expressions": [
+        "under Lee — booked using the name Lee"
+      ],
+      "challenge": {
+        "cue": "I can't find a booking under that name.",
+        "model": "I have the confirmation email here.",
+        "followUp": "Could you check the booking reference?"
+      }
+    },
+    {
+      "id": "C050",
+      "kind": "conversation",
+      "title": "Arriving before check-in",
+      "topic": "Travel and hotels",
+      "cue": "Practise this situation: Arriving before check-in. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, we've arrived a little early.\nB: Welcome. Your room isn't ready yet.\nA: That's okay. Could we leave our bags here?\nB: Certainly. We'll store them for you.\nA: Thank you. What time should we come back?\nB: Please check with us after two.",
+      "examples": [],
+      "keywords": [
+        "Arriving",
+        "before",
+        "check-in"
+      ],
+      "expressions": [
+        "leave our bags here — temporarily store our luggage here"
+      ],
+      "challenge": {
+        "cue": "The room may not be ready until three.",
+        "model": "That's fine. We'll explore the area first.",
+        "followUp": "Could you call us when it's ready?"
+      }
+    },
+    {
+      "id": "C051",
+      "kind": "conversation",
+      "title": "A noisy hotel room",
+      "topic": "Travel and hotels",
+      "cue": "Practise this situation: A noisy hotel room. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, there's quite a lot of noise outside my room.\nB: I'm sorry about that. Which room are you in?\nA: Room 204. I can hear music from downstairs.\nB: I'll ask the team to check.\nA: Thank you. I have an early start tomorrow.\nB: We'll see what we can do.",
+      "examples": [],
+      "keywords": [
+        "A",
+        "noisy",
+        "hotel",
+        "room"
+      ],
+      "expressions": [
+        "I have an early start — I need to begin my day early"
+      ],
+      "challenge": {
+        "cue": "The event won't finish for another hour.",
+        "model": "I understand, but I'm having trouble sleeping.",
+        "followUp": "Is a quieter room available?"
+      }
+    },
+    {
+      "id": "C052",
+      "kind": "conversation",
+      "title": "Asking about local activities",
+      "topic": "Travel and hotels",
+      "cue": "Practise this situation: Asking about local activities. Respond to the other person and keep the conversation going.",
+      "model": "A: We have a free afternoon. Any suggestions?\nB: Do you prefer museums or outdoor activities?\nA: Probably something outdoors.\nB: There's a nice walking path by the river.\nA: That sounds good. Is it easy to reach?\nB: Yes, I can show you on the map.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "about",
+        "local",
+        "activities"
+      ],
+      "expressions": [
+        "Any suggestions? — Do you have any ideas?"
+      ],
+      "challenge": {
+        "cue": "The river path is closed today.",
+        "model": "Thanks for checking. We'll choose somewhere else.",
+        "followUp": "Is there a park nearby instead?"
+      }
+    },
+    {
+      "id": "C053",
+      "kind": "conversation",
+      "title": "Storing bags after checkout",
+      "topic": "Travel and hotels",
+      "cue": "Practise this situation: Storing bags after checkout. Respond to the other person and keep the conversation going.",
+      "model": "A: We're checking out, but our train isn't until evening.\nB: Would you like us to store your bags?\nA: Yes, please. That would be helpful.\nB: We'll give you a collection tag.\nA: Thanks. We'll be back around five.\nB: That's fine. Keep the tag with you.",
+      "examples": [],
+      "keywords": [
+        "Storing",
+        "bags",
+        "after",
+        "checkout"
+      ],
+      "expressions": [
+        "We'll be back around — we will return at approximately"
+      ],
+      "challenge": {
+        "cue": "The storage area closes at four.",
+        "model": "Thanks for letting us know. We'll come back before then.",
+        "followUp": "Is three thirty okay?"
+      }
+    },
+    {
+      "id": "C054",
+      "kind": "conversation",
+      "title": "Finding a lost item",
+      "topic": "Travel and hotels",
+      "cue": "Practise this situation: Finding a lost item. Respond to the other person and keep the conversation going.",
+      "model": "A: I think I left my jacket in the room.\nB: Which room were you staying in?\nA: Room 312. It's a dark green jacket.\nB: I'll contact housekeeping.\nA: Thank you. I checked out this morning.\nB: Could you leave a phone number?",
+      "examples": [],
+      "keywords": [
+        "Finding",
+        "a",
+        "lost",
+        "item"
+      ],
+      "expressions": [
+        "turns up — is found or appears"
+      ],
+      "challenge": {
+        "cue": "We haven't found it yet.",
+        "model": "Thanks for checking. It might be in the wardrobe.",
+        "followUp": "Could you let me know if it turns up?"
+      }
+    },
+    {
+      "id": "C055",
+      "kind": "conversation",
+      "title": "Sharing housework",
+      "topic": "Home and neighbours",
+      "cue": "Practise this situation: Sharing housework. Respond to the other person and keep the conversation going.",
+      "model": "A: Could we talk about the cleaning this week?\nB: Sure. What needs doing?\nA: The kitchen and bathroom both need attention.\nB: I can clean the bathroom on Saturday.\nA: Thanks. I'll take care of the kitchen.\nB: Great. Let's get the supplies tomorrow.",
+      "examples": [],
+      "keywords": [
+        "Sharing",
+        "housework"
+      ],
+      "expressions": [
+        "take care of — handle a task or responsibility"
+      ],
+      "challenge": {
+        "cue": "Saturday won't work for me after all.",
+        "model": "No problem. We can adjust the plan.",
+        "followUp": "Which day would be better?"
+      }
+    },
+    {
+      "id": "C056",
+      "kind": "conversation",
+      "title": "Reporting a leak",
+      "topic": "Home and neighbours",
+      "cue": "Practise this situation: Reporting a leak. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, there's water dripping under the kitchen sink.\nB: When did you first notice it?\nA: About ten minutes ago.\nB: Thanks for telling me. I'll arrange a repair.\nA: Could you let me know when someone can come?\nB: Yes, I'll contact the maintenance team now.",
+      "examples": [],
+      "keywords": [
+        "Reporting",
+        "a",
+        "leak"
+      ],
+      "expressions": [
+        "When did you first notice it? — When did you become aware of it?"
+      ],
+      "challenge": {
+        "cue": "The repair person can't come until tomorrow.",
+        "model": "Thanks for the update. I'm concerned about the water spreading.",
+        "followUp": "What should I do while I wait?"
+      }
+    },
+    {
+      "id": "C057",
+      "kind": "conversation",
+      "title": "Receiving a delivery",
+      "topic": "Home and neighbours",
+      "cue": "Practise this situation: Receiving a delivery. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, I have a parcel for Alex.\nB: That's me. Thank you.\nA: Could you confirm the flat number?\nB: Flat 8, on the second floor.\nA: Great. Here's your parcel.\nB: Thanks. Have a good day.",
+      "examples": [],
+      "keywords": [
+        "Receiving",
+        "a",
+        "delivery"
+      ],
+      "expressions": [
+        "I don't think that's mine — I believe it belongs to someone else"
+      ],
+      "challenge": {
+        "cue": "The name on this parcel is different.",
+        "model": "I don't think that's mine. Please check the address.",
+        "followUp": "Could it be for another flat?"
+      }
+    },
+    {
+      "id": "C058",
+      "kind": "conversation",
+      "title": "Asking a neighbour about noise",
+      "topic": "Home and neighbours",
+      "cue": "Practise this situation: Asking a neighbour about noise. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, could I ask a quick favour?\nB: Of course. What's up?\nA: Could you turn the music down after ten?\nB: Sorry, I didn't realise you could hear it.\nA: Thanks. My bedroom is next to that wall.\nB: I'll keep it lower tonight.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "a",
+        "neighbour",
+        "about",
+        "noise"
+      ],
+      "expressions": [
+        "What's up? — informally asking what someone wants or what is happening"
+      ],
+      "challenge": {
+        "cue": "We're having a birthday party tonight.",
+        "model": "I understand. I still need to sleep, so a lower volume would help.",
+        "followUp": "Could you turn it down after ten?"
+      }
+    },
+    {
+      "id": "C059",
+      "kind": "conversation",
+      "title": "Planning groceries",
+      "topic": "Home and neighbours",
+      "cue": "Practise this situation: Planning groceries. Respond to the other person and keep the conversation going.",
+      "model": "A: I'm going to the supermarket. Do we need anything?\nB: We're nearly out of rice.\nA: Okay. I'll get a bag.\nB: Could you get some eggs too?\nA: Sure. Anything else?\nB: That's everything, thanks.",
+      "examples": [],
+      "keywords": [
+        "Planning",
+        "groceries"
+      ],
+      "expressions": [
+        "We're nearly out of — we have very little left"
+      ],
+      "challenge": {
+        "cue": "I just bought rice this morning.",
+        "model": "Great, I'll leave that off the list.",
+        "followUp": "Do we still need eggs?"
+      }
+    },
+    {
+      "id": "C060",
+      "kind": "conversation",
+      "title": "Hosting a visitor",
+      "topic": "Home and neighbours",
+      "cue": "Practise this situation: Hosting a visitor. Respond to the other person and keep the conversation going.",
+      "model": "A: Come in! It's good to see you.\nB: You too. Thanks for inviting me.\nA: Would you like something to drink?\nB: Water would be lovely, thanks.\nA: Make yourself comfortable. I'll get you a glass.\nB: Thanks. You have a lovely place.",
+      "examples": [],
+      "keywords": [
+        "Hosting",
+        "a",
+        "visitor"
+      ],
+      "expressions": [
+        "Make yourself comfortable — relax and feel at home"
+      ],
+      "challenge": {
+        "cue": "I can only stay for a short while.",
+        "model": "That's fine. I'm glad you could come.",
+        "followUp": "Do you have time for a quick drink?"
+      }
+    },
+    {
+      "id": "C061",
+      "kind": "conversation",
+      "title": "Booking a haircut",
+      "topic": "Appointments",
+      "cue": "Practise this situation: Booking a haircut. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, could I book a haircut for Saturday?\nB: Of course. Morning or afternoon?\nA: Afternoon would be better.\nB: We have a space at two thirty.\nA: That works. Could I book that, please?\nB: Certainly. What name should I put it under?",
+      "examples": [],
+      "keywords": [
+        "Booking",
+        "a",
+        "haircut"
+      ],
+      "expressions": [
+        "fully booked — no appointments are available"
+      ],
+      "challenge": {
+        "cue": "Saturday is fully booked.",
+        "model": "Okay. I can come another day.",
+        "followUp": "Do you have anything on Sunday?"
+      }
+    },
+    {
+      "id": "C062",
+      "kind": "conversation",
+      "title": "Rescheduling a visit",
+      "topic": "Appointments",
+      "cue": "Practise this situation: Rescheduling a visit. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, I need to change my appointment.\nB: No problem. When is your current appointment?\nA: Tuesday at ten.\nB: When would you like to move it to?\nA: Would Thursday afternoon be possible?\nB: Let me check what's available.",
+      "examples": [],
+      "keywords": [
+        "Rescheduling",
+        "a",
+        "visit"
+      ],
+      "expressions": [
+        "move it to — change it to a different time or date"
+      ],
+      "challenge": {
+        "cue": "The next available time is the following week.",
+        "model": "I see. I'll need to check my calendar.",
+        "followUp": "Could you tell me the exact date and time?"
+      }
+    },
+    {
+      "id": "C063",
+      "kind": "conversation",
+      "title": "Explaining symptoms to reception",
+      "topic": "Appointments",
+      "cue": "Practise this situation: Explaining symptoms to reception. Respond to the other person and keep the conversation going.",
+      "model": "A: I'd like to make an appointment with a doctor.\nB: Certainly. Could you briefly describe the problem?\nA: I've had a sore throat for three days.\nB: I'll check the available appointments.\nA: Thank you. Is there anything this afternoon?\nB: Let me look for you.",
+      "examples": [],
+      "keywords": [
+        "Explaining",
+        "symptoms",
+        "to",
+        "reception"
+      ],
+      "expressions": [
+        "I've had ... for — describing how long a condition has continued"
+      ],
+      "challenge": {
+        "cue": "Could you repeat how long you've had it?",
+        "model": "It's been three days. It started on Monday.",
+        "followUp": "Would you like me to explain any other symptoms?"
+      }
+    },
+    {
+      "id": "C064",
+      "kind": "conversation",
+      "title": "Asking a professional to explain",
+      "topic": "Appointments",
+      "cue": "Practise this situation: Asking a professional to explain. Respond to the other person and keep the conversation going.",
+      "model": "A: I'm sorry, I didn't understand that term.\nB: Of course. Let me explain it another way.\nA: Thank you. Simple words would help.\nB: Certainly. I'll write down the main points too.\nA: That would be useful.\nB: Please ask if anything is still unclear.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "a",
+        "professional",
+        "to",
+        "explain"
+      ],
+      "expressions": [
+        "Could you explain — a polite request for clearer information"
+      ],
+      "challenge": {
+        "cue": "Which part didn't you understand?",
+        "model": "I understood the first part, but not what I need to do next.",
+        "followUp": "Could you explain the next step?"
+      }
+    },
+    {
+      "id": "C065",
+      "kind": "conversation",
+      "title": "Waiting longer than expected",
+      "topic": "Appointments",
+      "cue": "Practise this situation: Waiting longer than expected. Respond to the other person and keep the conversation going.",
+      "model": "A: Excuse me, my appointment was at eleven.\nB: I'm sorry. We're running behind today.\nA: I understand. Do you know roughly how long the wait is?\nB: About twenty more minutes.\nA: Thanks for the update. I'll wait here.\nB: We'll call your name as soon as we're ready.",
+      "examples": [],
+      "keywords": [
+        "Waiting",
+        "longer",
+        "than",
+        "expected"
+      ],
+      "expressions": [
+        "running behind — taking longer than planned"
+      ],
+      "challenge": {
+        "cue": "It may be another hour.",
+        "model": "Thanks for telling me. I have another commitment later.",
+        "followUp": "Could I book a different time?"
+      }
+    },
+    {
+      "id": "C066",
+      "kind": "conversation",
+      "title": "Confirming instructions",
+      "topic": "Appointments",
+      "cue": "Practise this situation: Confirming instructions. Respond to the other person and keep the conversation going.",
+      "model": "A: Just to check, I should bring the original document?\nB: Yes, and a copy if you have one.\nA: Okay. Do I also need the confirmation email?\nB: Yes, please show it at reception.\nA: Great. I'll have everything ready.\nB: Thank you. See you on Thursday.",
+      "examples": [],
+      "keywords": [
+        "Confirming",
+        "instructions"
+      ],
+      "expressions": [
+        "Just to check — introducing a request for confirmation"
+      ],
+      "challenge": {
+        "cue": "The requirements have changed since your last visit.",
+        "model": "Thanks for letting me know. I'd like to make sure I bring everything.",
+        "followUp": "Could you send me the current list?"
+      }
+    },
+    {
+      "id": "C067",
+      "kind": "conversation",
+      "title": "Giving a short update",
+      "topic": "Work updates",
+      "cue": "Practise this situation: Giving a short update. Respond to the other person and keep the conversation going.",
+      "model": "A: How's the report coming along?\nB: The first draft is finished. I'm checking the figures now.\nA: Great. When do you think it'll be ready?\nB: I expect to send it by three.\nA: Thanks. Let me know if you need anything.\nB: Will do. I'll message you when it's sent.",
+      "examples": [],
+      "keywords": [
+        "Giving",
+        "a",
+        "short",
+        "update"
+      ],
+      "expressions": [
+        "coming along — progressing"
+      ],
+      "challenge": {
+        "cue": "We need it before lunch now.",
+        "model": "I can send the completed sections before lunch, but the figures need more checking.",
+        "followUp": "Which sections do you need first?"
+      }
+    },
+    {
+      "id": "C068",
+      "kind": "conversation",
+      "title": "Explaining a delay",
+      "topic": "Work updates",
+      "cue": "Practise this situation: Explaining a delay. Respond to the other person and keep the conversation going.",
+      "model": "A: I wanted to update you on the order.\nB: Thanks. Is it ready?\nA: Not yet. We're waiting for one missing part.\nB: Do you have an estimated arrival date?\nA: The supplier says Thursday. I'll confirm when it arrives.\nB: Okay. Please keep me posted.",
+      "examples": [],
+      "keywords": [
+        "Explaining",
+        "a",
+        "delay"
+      ],
+      "expressions": [
+        "Please keep me posted — please continue giving me updates"
+      ],
+      "challenge": {
+        "cue": "Thursday is too late for us.",
+        "model": "I understand. I'll check whether there's an alternative.",
+        "followUp": "Would a partial delivery help?"
+      }
+    },
+    {
+      "id": "C069",
+      "kind": "conversation",
+      "title": "Asking for priorities",
+      "topic": "Work updates",
+      "cue": "Practise this situation: Asking for priorities. Respond to the other person and keep the conversation going.",
+      "model": "A: I've got two urgent tasks this morning.\nB: Which ones?\nA: The customer reply and the sales summary.\nB: Please finish the customer reply first.\nA: Okay. Then I'll work on the summary.\nB: Thanks. Let me know if that changes your timing.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "for",
+        "priorities"
+      ],
+      "expressions": [
+        "work on — spend time doing or improving something"
+      ],
+      "challenge": {
+        "cue": "Actually, a third task has just come in.",
+        "model": "Okay. I'll need to review the order of work.",
+        "followUp": "Which of the three should come first?"
+      }
+    },
+    {
+      "id": "C070",
+      "kind": "conversation",
+      "title": "Admitting a mistake",
+      "topic": "Work updates",
+      "cue": "Practise this situation: Admitting a mistake. Respond to the other person and keep the conversation going.",
+      "model": "A: I've spotted a mistake in the file I sent.\nB: Thanks for telling me. What happened?\nA: I used last week's date in the heading.\nB: Can you send a corrected version?\nA: Yes. I'll clearly mark it as the updated file.\nB: Great. I'll use the new version.",
+      "examples": [],
+      "keywords": [
+        "Admitting",
+        "a",
+        "mistake"
+      ],
+      "expressions": [
+        "I've spotted a mistake — I have noticed an error"
+      ],
+      "challenge": {
+        "cue": "I've already forwarded it to the client.",
+        "model": "I'm sorry about that. I'll send the corrected file straight away.",
+        "followUp": "Would you like me to draft a short explanation?"
+      }
+    },
+    {
+      "id": "C071",
+      "kind": "conversation",
+      "title": "Asking for feedback",
+      "topic": "Work updates",
+      "cue": "Practise this situation: Asking for feedback. Respond to the other person and keep the conversation going.",
+      "model": "A: Could you give me some feedback on this draft?\nB: Sure. What would you like me to focus on?\nA: Whether the explanation is clear.\nB: Okay. The introduction is easy to follow.\nA: That's helpful. What about the middle section?\nB: I think it needs a concrete example.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "for",
+        "feedback"
+      ],
+      "expressions": [
+        "easy to follow — easy to understand"
+      ],
+      "challenge": {
+        "cue": "I haven't had time to read it yet.",
+        "model": "No problem. Even a few comments later would help.",
+        "followUp": "When would be a good time for me to check back?"
+      }
+    },
+    {
+      "id": "C072",
+      "kind": "conversation",
+      "title": "Handing over a task",
+      "topic": "Work updates",
+      "cue": "Practise this situation: Handing over a task. Respond to the other person and keep the conversation going.",
+      "model": "A: I'll be away tomorrow, so here's a quick handover.\nB: Thanks. What's still outstanding?\nA: One customer is waiting for a delivery date.\nB: Where can I find the details?\nA: They're in the shared folder under today's date.\nB: Got it. I'll check that first.",
+      "examples": [],
+      "keywords": [
+        "Handing",
+        "over",
+        "a",
+        "task"
+      ],
+      "expressions": [
+        "still outstanding — not yet completed or resolved"
+      ],
+      "challenge": {
+        "cue": "I don't have access to that folder.",
+        "model": "Thanks for flagging that. I'll ask for access to be arranged.",
+        "followUp": "Can you open the main shared drive?"
+      }
+    },
+    {
+      "id": "C073",
+      "kind": "conversation",
+      "title": "Joining a discussion",
+      "topic": "Meetings",
+      "cue": "Practise this situation: Joining a discussion. Respond to the other person and keep the conversation going.",
+      "model": "A: Could I add something here?\nB: Of course. Go ahead.\nA: I think we should check the timing with the delivery team.\nB: That's a good point.\nA: They may need more than two days.\nB: Let's ask them before we confirm the date.",
+      "examples": [],
+      "keywords": [
+        "Joining",
+        "a",
+        "discussion"
+      ],
+      "expressions": [
+        "Could I add something? — politely asking to contribute"
+      ],
+      "challenge": {
+        "cue": "We're short on time. Could you be brief?",
+        "model": "Of course. My main point is that we need to confirm delivery timing.",
+        "followUp": "Can we check that before agreeing on the date?"
+      }
+    },
+    {
+      "id": "C074",
+      "kind": "conversation",
+      "title": "Clarifying a task",
+      "topic": "Meetings",
+      "cue": "Practise this situation: Clarifying a task. Respond to the other person and keep the conversation going.",
+      "model": "A: When you say 'finish the page', what do you mean?\nB: I mean the text and images should be ready.\nA: Does that include the mobile layout?\nB: Yes, please include that too.\nA: Okay. Thanks for clarifying.\nB: No problem. Let me know if anything else is unclear.",
+      "examples": [],
+      "keywords": [
+        "Clarifying",
+        "a",
+        "task"
+      ],
+      "expressions": [
+        "When you say ... what do you mean? — asking about intended meaning"
+      ],
+      "challenge": {
+        "cue": "I only meant the first section.",
+        "model": "Thanks, that helps. I'll focus on the first section for now.",
+        "followUp": "Should I leave the other sections as they are?"
+      }
+    },
+    {
+      "id": "C075",
+      "kind": "conversation",
+      "title": "Disagreeing politely",
+      "topic": "Meetings",
+      "cue": "Practise this situation: Disagreeing politely. Respond to the other person and keep the conversation going.",
+      "model": "A: I think we should send it today.\nB: I see your point, but we haven't checked the names yet.\nA: That should only take a few minutes.\nB: True. Could we check them before sending?\nA: Yes, that seems reasonable.\nB: Great. I'll do that now.",
+      "examples": [],
+      "keywords": [
+        "Disagreeing",
+        "politely"
+      ],
+      "expressions": [
+        "I see your point, but — acknowledging a view before disagreeing"
+      ],
+      "challenge": {
+        "cue": "I don't think another check is necessary.",
+        "model": "I understand. I'm concerned because two names changed yesterday.",
+        "followUp": "Could we at least confirm those two?"
+      }
+    },
+    {
+      "id": "C076",
+      "kind": "conversation",
+      "title": "Asking for an example",
+      "topic": "Meetings",
+      "cue": "Practise this situation: Asking for an example. Respond to the other person and keep the conversation going.",
+      "model": "A: Could you give us an example of the problem?\nB: Sure. Yesterday, two people received the same confirmation.\nA: Was it sent twice to the same address?\nB: No, one message went to the wrong person.\nA: I see. That helps me understand.\nB: We should check how the addresses are selected.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "for",
+        "an",
+        "example"
+      ],
+      "expressions": [
+        "Could you give us an example? — asking for a concrete illustration"
+      ],
+      "challenge": {
+        "cue": "I don't have a specific example with me.",
+        "model": "That's okay. A real example would help us investigate later.",
+        "followUp": "Could you send one when you find it?"
+      }
+    },
+    {
+      "id": "C077",
+      "kind": "conversation",
+      "title": "Summarising a decision",
+      "topic": "Meetings",
+      "cue": "Practise this situation: Summarising a decision. Respond to the other person and keep the conversation going.",
+      "model": "A: So we've agreed to start with a small trial.\nB: Yes, with ten participants.\nA: I'll prepare the instructions.\nB: And I'll contact the participants.\nA: Shall we review the results next Friday?\nB: Yes, let's put that in the calendar.",
+      "examples": [],
+      "keywords": [
+        "Summarising",
+        "a",
+        "decision"
+      ],
+      "expressions": [
+        "So we've agreed — summarising a shared decision"
+      ],
+      "challenge": {
+        "cue": "I thought we agreed on twenty participants.",
+        "model": "I may have misunderstood. Let's confirm the number now.",
+        "followUp": "Are we starting with ten or twenty?"
+      }
+    },
+    {
+      "id": "C078",
+      "kind": "conversation",
+      "title": "Asking for thinking time",
+      "topic": "Meetings",
+      "cue": "Practise this situation: Asking for thinking time. Respond to the other person and keep the conversation going.",
+      "model": "A: What do you think of this proposal?\nB: I'd like a little time to think it through.\nA: Of course. What would help?\nB: I'd like to compare the costs first.\nA: That's fair. Could you come back to us tomorrow?\nB: Yes, I'll send my thoughts in the morning.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "for",
+        "thinking",
+        "time"
+      ],
+      "expressions": [
+        "think it through — consider something carefully"
+      ],
+      "challenge": {
+        "cue": "We need a first reaction now.",
+        "model": "My first reaction is positive, but I haven't checked the costs yet.",
+        "followUp": "Can I confirm my view after reviewing them?"
+      }
+    },
+    {
+      "id": "C079",
+      "kind": "conversation",
+      "title": "Starting a phone call",
+      "topic": "Phone and messages",
+      "cue": "Practise this situation: Starting a phone call. Respond to the other person and keep the conversation going.",
+      "model": "A: Hello, is this the repair centre?\nB: Yes, it is. How can I help?\nA: I'm calling about a booking I made yesterday.\nB: Certainly. Do you have a reference number?\nA: Yes, it's R-418.\nB: Thank you. I'll look it up.",
+      "examples": [],
+      "keywords": [
+        "Starting",
+        "a",
+        "phone",
+        "call"
+      ],
+      "expressions": [
+        "I'm calling about — introducing the reason for a phone call"
+      ],
+      "challenge": {
+        "cue": "You've reached the wrong branch.",
+        "model": "Sorry about that. I'm trying to contact the branch on Lake Road.",
+        "followUp": "Do you have their number?"
+      }
+    },
+    {
+      "id": "C080",
+      "kind": "conversation",
+      "title": "A bad connection",
+      "topic": "Phone and messages",
+      "cue": "Practise this situation: A bad connection. Respond to the other person and keep the conversation going.",
+      "model": "A: Sorry, you're breaking up.\nB: Can you hear me now?\nA: A little better, but I missed the last sentence.\nB: I'll move closer to the window.\nA: Thanks. That's much clearer.\nB: Great. I'll repeat what I said.",
+      "examples": [],
+      "keywords": [
+        "A",
+        "bad",
+        "connection"
+      ],
+      "expressions": [
+        "you're breaking up — the call audio keeps cutting out"
+      ],
+      "challenge": {
+        "cue": "The connection is still poor.",
+        "model": "I'm still having trouble hearing you.",
+        "followUp": "Could we continue by message instead?"
+      }
+    },
+    {
+      "id": "C081",
+      "kind": "conversation",
+      "title": "Taking a message",
+      "topic": "Phone and messages",
+      "cue": "Practise this situation: Taking a message. Respond to the other person and keep the conversation going.",
+      "model": "A: Hello, could I speak to Priya, please?\nB: She's in a meeting. Can I take a message?\nA: Yes, please tell her Max called about Friday's booking.\nB: Certainly. Does she have your number?\nA: Yes, but I can leave it again.\nB: That would be helpful, thank you.",
+      "examples": [],
+      "keywords": [
+        "Taking",
+        "a",
+        "message"
+      ],
+      "expressions": [
+        "Can I take a message? — offering to pass information to someone"
+      ],
+      "challenge": {
+        "cue": "Could you spell your name?",
+        "model": "Of course. It's Max, M-A-X.",
+        "followUp": "Could you read the message back to me?"
+      }
+    },
+    {
+      "id": "C082",
+      "kind": "conversation",
+      "title": "Following up on a message",
+      "topic": "Phone and messages",
+      "cue": "Practise this situation: Following up on a message. Respond to the other person and keep the conversation going.",
+      "model": "A: Hi, just following up on my message about lunch.\nB: Sorry, I saw it but forgot to reply.\nA: No worries. Are you free tomorrow?\nB: Yes, after one.\nA: Great. Shall we meet at the café downstairs?\nB: Sounds good. See you there.",
+      "examples": [],
+      "keywords": [
+        "Following",
+        "up",
+        "on",
+        "a",
+        "message"
+      ],
+      "expressions": [
+        "just following up — politely returning to an earlier message"
+      ],
+      "challenge": {
+        "cue": "I haven't seen your message.",
+        "model": "No problem. I was asking whether you're free for lunch.",
+        "followUp": "Would tomorrow after one suit you?"
+      }
+    },
+    {
+      "id": "C083",
+      "kind": "conversation",
+      "title": "Checking message tone",
+      "topic": "Phone and messages",
+      "cue": "Practise this situation: Checking message tone. Respond to the other person and keep the conversation going.",
+      "model": "A: Does this message sound too direct?\nB: Which part are you worried about?\nA: The sentence that says, 'Send it today.'\nB: You could say, 'Could you send it today, please?'\nA: That sounds better. Thanks.\nB: You can also explain why you need it.",
+      "examples": [],
+      "keywords": [
+        "Checking",
+        "message",
+        "tone"
+      ],
+      "expressions": [
+        "Which part are you worried about? — asking what specifically concerns someone"
+      ],
+      "challenge": {
+        "cue": "It needs to sound urgent.",
+        "model": "Then keep the deadline clear and add a short reason.",
+        "followUp": "Could you say you need it for tomorrow's meeting?"
+      }
+    },
+    {
+      "id": "C084",
+      "kind": "conversation",
+      "title": "Ending a call",
+      "topic": "Phone and messages",
+      "cue": "Practise this situation: Ending a call. Respond to the other person and keep the conversation going.",
+      "model": "A: I think that covers everything.\nB: Great. I'll email the details shortly.\nA: Thanks for your help today.\nB: You're welcome.\nA: Have a good afternoon.\nB: You too. Goodbye.",
+      "examples": [],
+      "keywords": [
+        "Ending",
+        "a",
+        "call"
+      ],
+      "expressions": [
+        "That covers everything — all the necessary points have been discussed"
+      ],
+      "challenge": {
+        "cue": "Before you go, one more thing.",
+        "model": "Of course. I've got another minute.",
+        "followUp": "What else would you like to check?"
+      }
+    },
+    {
+      "id": "C085",
+      "kind": "conversation",
+      "title": "Asking for the Wi-Fi password",
+      "topic": "Technology",
+      "cue": "Practise this situation: Asking for the Wi-Fi password. Respond to the other person and keep the conversation going.",
+      "model": "A: Could you tell me the Wi-Fi password?\nB: It's written on the card by the counter.\nA: Thanks. Is that a capital B?\nB: Yes, the first letter is a capital.\nA: Great. I'm connected now.\nB: Glad it worked.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "for",
+        "the",
+        "Wi-Fi",
+        "password"
+      ],
+      "expressions": [
+        "I'm connected — my device has joined the network"
+      ],
+      "challenge": {
+        "cue": "It says the password is incorrect.",
+        "model": "I may have typed it wrong. I'll check it again.",
+        "followUp": "Is the last character a zero or the letter O?"
+      }
+    },
+    {
+      "id": "C086",
+      "kind": "conversation",
+      "title": "Trouble opening a file",
+      "topic": "Technology",
+      "cue": "Practise this situation: Trouble opening a file. Respond to the other person and keep the conversation going.",
+      "model": "A: I can't open the file you sent.\nB: What happens when you try?\nA: It says the format isn't supported.\nB: I'll send a PDF version.\nA: Thanks. That should be easier to open.\nB: Let me know if it works.",
+      "examples": [],
+      "keywords": [
+        "Trouble",
+        "opening",
+        "a",
+        "file"
+      ],
+      "expressions": [
+        "What happens when you try? — asking for a description of a problem"
+      ],
+      "challenge": {
+        "cue": "I don't have a PDF version.",
+        "model": "That's okay. We can try another format.",
+        "followUp": "Could you paste the text into a message?"
+      }
+    },
+    {
+      "id": "C087",
+      "kind": "conversation",
+      "title": "Finding a button",
+      "topic": "Technology",
+      "cue": "Practise this situation: Finding a button. Respond to the other person and keep the conversation going.",
+      "model": "A: I'm trying to change my profile picture.\nB: Open your profile and look for Edit.\nA: Okay, I've found it.\nB: Now select the picture icon.\nA: Got it. I can choose a new photo.\nB: That's right. Save it when you're done.",
+      "examples": [],
+      "keywords": [
+        "Finding",
+        "a",
+        "button"
+      ],
+      "expressions": [
+        "I've found it — I have located it"
+      ],
+      "challenge": {
+        "cue": "My screen doesn't have an Edit button.",
+        "model": "Okay, your version may be different.",
+        "followUp": "What buttons can you see on the profile page?"
+      }
+    },
+    {
+      "id": "C088",
+      "kind": "conversation",
+      "title": "Sharing a screen",
+      "topic": "Technology",
+      "cue": "Practise this situation: Sharing a screen. Respond to the other person and keep the conversation going.",
+      "model": "A: Can you see my screen?\nB: Not yet. I can only see your camera.\nA: Let me try sharing again.\nB: Okay, I can see it now.\nA: Great. I'll open the document.\nB: The text is a little small. Could you zoom in?",
+      "examples": [],
+      "keywords": [
+        "Sharing",
+        "a",
+        "screen"
+      ],
+      "expressions": [
+        "Could you zoom in? — Could you make the display larger?"
+      ],
+      "challenge": {
+        "cue": "You're sharing the wrong window.",
+        "model": "Thanks for letting me know. I'll switch to the document.",
+        "followUp": "Can you see the correct window now?"
+      }
+    },
+    {
+      "id": "C089",
+      "kind": "conversation",
+      "title": "A device is not charging",
+      "topic": "Technology",
+      "cue": "Practise this situation: A device is not charging. Respond to the other person and keep the conversation going.",
+      "model": "A: My phone doesn't seem to be charging.\nB: Have you tried a different cable?\nA: Not yet. Do you have one I could try?\nB: Yes, here you go.\nA: Thanks. I'll see whether that helps.\nB: Let me know what happens.",
+      "examples": [],
+      "keywords": [
+        "A",
+        "device",
+        "is",
+        "not",
+        "charging"
+      ],
+      "expressions": [
+        "doesn't seem to be — appears not to be"
+      ],
+      "challenge": {
+        "cue": "The other cable doesn't work either.",
+        "model": "Then I'm not sure what the problem is.",
+        "followUp": "Could you help me find a repair service?"
+      }
+    },
+    {
+      "id": "C090",
+      "kind": "conversation",
+      "title": "Asking before posting a photo",
+      "topic": "Technology",
+      "cue": "Practise this situation: Asking before posting a photo. Respond to the other person and keep the conversation going.",
+      "model": "A: I took a nice photo of us yesterday.\nB: Oh, can I see it?\nA: Of course. Are you okay with me posting it?\nB: I'd rather you didn't post that one.\nA: No problem. I'll keep it private.\nB: Thanks for asking first.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "before",
+        "posting",
+        "a",
+        "photo"
+      ],
+      "expressions": [
+        "I'd rather you didn't — expressing a preference that someone not do something"
+      ],
+      "challenge": {
+        "cue": "You can post it, but please don't tag me.",
+        "model": "Sure. I'll leave your name out.",
+        "followUp": "Would you like me to send you a copy?"
+      }
+    },
+    {
+      "id": "C091",
+      "kind": "conversation",
+      "title": "Asking someone to repeat",
+      "topic": "Learning English",
+      "cue": "Practise this situation: Asking someone to repeat. Respond to the other person and keep the conversation going.",
+      "model": "A: Sorry, could you say that again?\nB: Of course. I asked what time you finish work.\nA: Oh, I usually finish at six.\nB: Do you go straight home afterwards?\nA: Most days, yes. Sometimes I meet a friend.\nB: That sounds nice.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "someone",
+        "to",
+        "repeat"
+      ],
+      "expressions": [
+        "Could you say that again? — asking for repetition"
+      ],
+      "challenge": {
+        "cue": "Which part did you miss?",
+        "model": "I heard the beginning, but I missed the time you mentioned.",
+        "followUp": "Could you repeat just the last part?"
+      }
+    },
+    {
+      "id": "C092",
+      "kind": "conversation",
+      "title": "Checking a word's meaning",
+      "topic": "Learning English",
+      "cue": "Practise this situation: Checking a word's meaning. Respond to the other person and keep the conversation going.",
+      "model": "A: What does 'roughly' mean here?\nB: It means 'approximately'.\nA: So 'roughly ten minutes' isn't exactly ten?\nB: That's right. It could be a little more or less.\nA: Got it. Thanks for explaining.\nB: You're welcome.",
+      "examples": [],
+      "keywords": [
+        "Checking",
+        "a",
+        "word's",
+        "meaning"
+      ],
+      "expressions": [
+        "Got it — I understand"
+      ],
+      "challenge": {
+        "cue": "Can you use it in your own sentence?",
+        "model": "Sure. It takes roughly twenty minutes to walk to work.",
+        "followUp": "Does that sound natural?"
+      }
+    },
+    {
+      "id": "C093",
+      "kind": "conversation",
+      "title": "Practising with a partner",
+      "topic": "Learning English",
+      "cue": "Practise this situation: Practising with a partner. Respond to the other person and keep the conversation going.",
+      "model": "A: Would you like to practise English together?\nB: Sure. What should we talk about?\nA: Let's pretend we're ordering food.\nB: Okay. I'll be the waiter first.\nA: Great. After that, we can switch roles.\nB: Sounds good. Ready?",
+      "examples": [],
+      "keywords": [
+        "Practising",
+        "with",
+        "a",
+        "partner"
+      ],
+      "expressions": [
+        "switch roles — exchange the parts each person plays"
+      ],
+      "challenge": {
+        "cue": "I get nervous when I make mistakes.",
+        "model": "That's okay. We can keep the first round short.",
+        "followUp": "Would you like to read an example together first?"
+      }
+    },
+    {
+      "id": "C094",
+      "kind": "conversation",
+      "title": "Requesting useful correction",
+      "topic": "Learning English",
+      "cue": "Practise this situation: Requesting useful correction. Respond to the other person and keep the conversation going.",
+      "model": "A: Could you listen to my short answer?\nB: Of course. Do you want corrections as you speak?\nA: Could you wait until I finish?\nB: Sure. I'll make a few notes.\nA: Thanks. Please focus on one or two useful changes.\nB: Okay. Go ahead when you're ready.",
+      "examples": [],
+      "keywords": [
+        "Requesting",
+        "useful",
+        "correction"
+      ],
+      "expressions": [
+        "focus on — give most attention to"
+      ],
+      "challenge": {
+        "cue": "There are quite a few things we could change.",
+        "model": "Let's choose the two that would make my meaning clearest.",
+        "followUp": "Which change should I practise first?"
+      }
+    },
+    {
+      "id": "C095",
+      "kind": "conversation",
+      "title": "Describing a forgotten word",
+      "topic": "Learning English",
+      "cue": "Practise this situation: Describing a forgotten word. Respond to the other person and keep the conversation going.",
+      "model": "A: I can't remember the English word for it.\nB: Can you describe what it does?\nA: It's the thing you use to open a tin.\nB: Do you mean a tin opener?\nA: Yes, that's it!\nB: You're welcome. Describing it worked well.",
+      "examples": [],
+      "keywords": [
+        "Describing",
+        "a",
+        "forgotten",
+        "word"
+      ],
+      "expressions": [
+        "the thing you use to — describing an object by its purpose"
+      ],
+      "challenge": {
+        "cue": "Do you mean the tool with two handles?",
+        "model": "Yes, it has two handles and a small wheel.",
+        "followUp": "What do you call that tool?"
+      }
+    },
+    {
+      "id": "C096",
+      "kind": "conversation",
+      "title": "Making a realistic practice plan",
+      "topic": "Learning English",
+      "cue": "Practise this situation: Making a realistic practice plan. Respond to the other person and keep the conversation going.",
+      "model": "A: How much English practice are you doing?\nB: About ten minutes after dinner.\nA: That sounds manageable. What do you do?\nB: I read a short conversation and then change the details.\nA: Do you record yourself too?\nB: Sometimes. It helps me notice where I stop.",
+      "examples": [],
+      "keywords": [
+        "Making",
+        "a",
+        "realistic",
+        "practice",
+        "plan"
+      ],
+      "expressions": [
+        "That sounds manageable — that seems possible to handle"
+      ],
+      "challenge": {
+        "cue": "I missed practice all week.",
+        "model": "You can start again with a short conversation today.",
+        "followUp": "Which topic would feel easiest to begin with?"
+      }
+    },
+    {
+      "id": "C097",
+      "kind": "conversation",
+      "title": "Talking about a new hobby",
+      "topic": "Hobbies and free time",
+      "cue": "Practise this situation: Talking about a new hobby. Respond to the other person and keep the conversation going.",
+      "model": "A: I've started learning to draw.\nB: Really? What made you choose that?\nA: I wanted something relaxing to do after work.\nB: Are you taking a class?\nA: I'm using a beginner's book for now.\nB: I'd love to see your drawings sometime.",
+      "examples": [],
+      "keywords": [
+        "Talking",
+        "about",
+        "a",
+        "new",
+        "hobby"
+      ],
+      "expressions": [
+        "for now — at the present time, possibly temporarily"
+      ],
+      "challenge": {
+        "cue": "I'm not very good at it yet.",
+        "model": "That's normal when you're starting. I'm still learning too.",
+        "followUp": "What do you enjoy drawing most?"
+      }
+    },
+    {
+      "id": "C098",
+      "kind": "conversation",
+      "title": "Discussing a film",
+      "topic": "Hobbies and free time",
+      "cue": "Practise this situation: Discussing a film. Respond to the other person and keep the conversation going.",
+      "model": "A: Have you seen that new comedy?\nB: Yes, I watched it last weekend.\nA: What did you think of it?\nB: The first half was funny, but the ending felt rushed.\nA: That's useful to know. I might still watch it.\nB: Let me know what you think.",
+      "examples": [],
+      "keywords": [
+        "Discussing",
+        "a",
+        "film"
+      ],
+      "expressions": [
+        "What did you think of it? — asking for someone's opinion"
+      ],
+      "challenge": {
+        "cue": "I loved the ending, actually.",
+        "model": "That's interesting. We noticed different things.",
+        "followUp": "What did you like about it?"
+      }
+    },
+    {
+      "id": "C099",
+      "kind": "conversation",
+      "title": "Joining an exercise class",
+      "topic": "Hobbies and free time",
+      "cue": "Practise this situation: Joining an exercise class. Respond to the other person and keep the conversation going.",
+      "model": "A: Is this class suitable for beginners?\nB: Yes, the instructor offers easier options.\nA: Good. I haven't done this before.\nB: You can go at your own pace.\nA: That makes me feel better.\nB: Just let the instructor know it's your first class.",
+      "examples": [],
+      "keywords": [
+        "Joining",
+        "an",
+        "exercise",
+        "class"
+      ],
+      "expressions": [
+        "go at your own pace — proceed at a speed comfortable for you"
+      ],
+      "challenge": {
+        "cue": "The beginner class is in the other room.",
+        "model": "Thanks for telling me. I must have come to the wrong room.",
+        "followUp": "Could you show me where it is?"
+      }
+    },
+    {
+      "id": "C100",
+      "kind": "conversation",
+      "title": "Recommending a book",
+      "topic": "Hobbies and free time",
+      "cue": "Practise this situation: Recommending a book. Respond to the other person and keep the conversation going.",
+      "model": "A: I'm looking for something interesting to read.\nB: What kind of books do you usually enjoy?\nA: Stories with short chapters.\nB: You might like this collection of short stories.\nA: Thanks. Is the language difficult?\nB: It's fairly simple, though there are a few new words.",
+      "examples": [],
+      "keywords": [
+        "Recommending",
+        "a",
+        "book"
+      ],
+      "expressions": [
+        "You might like — a gentle suggestion based on someone's interests"
+      ],
+      "challenge": {
+        "cue": "I've already read that one.",
+        "model": "Oh, I see. I'll think of another suggestion.",
+        "followUp": "What did you enjoy about it?"
+      }
+    },
+    {
+      "id": "C101",
+      "kind": "conversation",
+      "title": "Talking about cooking",
+      "topic": "Hobbies and free time",
+      "cue": "Practise this situation: Talking about cooking. Respond to the other person and keep the conversation going.",
+      "model": "A: I tried making bread yesterday.\nB: How did it turn out?\nA: A little heavy, but it tasted good.\nB: That's a good start.\nA: Next time I'll give it more time to rise.\nB: Let me know how the next one goes.",
+      "examples": [],
+      "keywords": [
+        "Talking",
+        "about",
+        "cooking"
+      ],
+      "expressions": [
+        "How did it turn out? — What was the result?"
+      ],
+      "challenge": {
+        "cue": "Mine didn't work at all.",
+        "model": "That's disappointing after all that effort.",
+        "followUp": "What happened when you baked it?"
+      }
+    },
+    {
+      "id": "C102",
+      "kind": "conversation",
+      "title": "Choosing a weekend activity",
+      "topic": "Hobbies and free time",
+      "cue": "Practise this situation: Choosing a weekend activity. Respond to the other person and keep the conversation going.",
+      "model": "A: Do you fancy doing something this weekend?\nB: Yes, but I'd prefer something inexpensive.\nA: We could go for a walk and bring lunch.\nB: That sounds ideal.\nA: Shall we try the park near the river?\nB: Yes, I've been meaning to go there.",
+      "examples": [],
+      "keywords": [
+        "Choosing",
+        "a",
+        "weekend",
+        "activity"
+      ],
+      "expressions": [
+        "I've been meaning to — I have intended to do something for some time"
+      ],
+      "challenge": {
+        "cue": "I don't feel like walking much.",
+        "model": "No problem. We could sit somewhere outdoors instead.",
+        "followUp": "Would you like to have a picnic?"
+      }
+    },
+    {
+      "id": "C103",
+      "kind": "conversation",
+      "title": "Responding to good news",
+      "topic": "Friends and feelings",
+      "cue": "Practise this situation: Responding to good news. Respond to the other person and keep the conversation going.",
+      "model": "A: I got the job I applied for!\nB: That's great news! Congratulations.\nA: Thanks. I'm excited and a bit nervous.\nB: That makes sense. It's a big change.\nA: I start next month.\nB: What are you most looking forward to?",
+      "examples": [],
+      "keywords": [
+        "Responding",
+        "to",
+        "good",
+        "news"
+      ],
+      "expressions": [
+        "looking forward to — feeling pleased about something in the future"
+      ],
+      "challenge": {
+        "cue": "I'm worried I won't be good enough.",
+        "model": "It sounds like you're putting a lot of pressure on yourself.",
+        "followUp": "What would help you feel more prepared?"
+      }
+    },
+    {
+      "id": "C104",
+      "kind": "conversation",
+      "title": "Listening after a difficult day",
+      "topic": "Friends and feelings",
+      "cue": "Practise this situation: Listening after a difficult day. Respond to the other person and keep the conversation going.",
+      "model": "A: You seem a bit quiet today.\nB: It's been a difficult day at work.\nA: I'm sorry to hear that. Want to talk about it?\nB: Maybe later. I need a little time first.\nA: Of course. I'm here if you want to talk.\nB: Thanks. I appreciate that.",
+      "examples": [],
+      "keywords": [
+        "Listening",
+        "after",
+        "a",
+        "difficult",
+        "day"
+      ],
+      "expressions": [
+        "I'm here if you want to talk — offering support without pressure"
+      ],
+      "challenge": {
+        "cue": "I don't want advice. I just need to talk.",
+        "model": "Of course. I'll listen.",
+        "followUp": "Would you like to tell me what happened?"
+      }
+    },
+    {
+      "id": "C105",
+      "kind": "conversation",
+      "title": "Checking in with a friend",
+      "topic": "Friends and feelings",
+      "cue": "Practise this situation: Checking in with a friend. Respond to the other person and keep the conversation going.",
+      "model": "A: Hey, we haven't spoken for a while.\nB: I know. Things have been busy.\nA: How have you been doing?\nB: I'm okay, just a little tired.\nA: Would you like to catch up over coffee?\nB: I'd like that. Maybe on Sunday.",
+      "examples": [],
+      "keywords": [
+        "Checking",
+        "in",
+        "with",
+        "a",
+        "friend"
+      ],
+      "expressions": [
+        "catch up — talk and exchange recent news"
+      ],
+      "challenge": {
+        "cue": "I don't have much energy for going out.",
+        "model": "That's okay. We can keep it simple.",
+        "followUp": "Would a short phone call be easier?"
+      }
+    },
+    {
+      "id": "C106",
+      "kind": "conversation",
+      "title": "Making a small apology",
+      "topic": "Friends and feelings",
+      "cue": "Practise this situation: Making a small apology. Respond to the other person and keep the conversation going.",
+      "model": "A: I'm sorry I forgot to reply yesterday.\nB: It's okay. I wondered if you were busy.\nA: I was, but I should have sent a quick message.\nB: Thanks for saying that.\nA: I've checked the dates now. Saturday works for me.\nB: Great. Let's confirm it.",
+      "examples": [],
+      "keywords": [
+        "Making",
+        "a",
+        "small",
+        "apology"
+      ],
+      "expressions": [
+        "Thanks for saying that — appreciating someone's words or acknowledgement"
+      ],
+      "challenge": {
+        "cue": "I felt a bit ignored, to be honest.",
+        "model": "I'm sorry. I can understand why it felt that way.",
+        "followUp": "Would you like to talk about it?"
+      }
+    },
+    {
+      "id": "C107",
+      "kind": "conversation",
+      "title": "Thanking someone specifically",
+      "topic": "Friends and feelings",
+      "cue": "Practise this situation: Thanking someone specifically. Respond to the other person and keep the conversation going.",
+      "model": "A: Thanks for helping me move yesterday.\nB: You're welcome. I'm glad I could help.\nA: Carrying those boxes would have taken me all day.\nB: We got it done pretty quickly together.\nA: Let me buy you lunch sometime.\nB: That would be lovely.",
+      "examples": [],
+      "keywords": [
+        "Thanking",
+        "someone",
+        "specifically"
+      ],
+      "expressions": [
+        "return the favour — help someone who previously helped you"
+      ],
+      "challenge": {
+        "cue": "You don't need to buy me anything.",
+        "model": "Okay. I just wanted you to know how much it helped.",
+        "followUp": "Can I return the favour sometime?"
+      }
+    },
+    {
+      "id": "C108",
+      "kind": "conversation",
+      "title": "Responding to a disappointment",
+      "topic": "Friends and feelings",
+      "cue": "Practise this situation: Responding to a disappointment. Respond to the other person and keep the conversation going.",
+      "model": "A: My weekend trip has been cancelled.\nB: Oh, that's disappointing.\nA: Yes, I was really looking forward to it.\nB: I can imagine. Do you have another plan?\nA: Not yet. I might have a quiet weekend instead.\nB: That sounds reasonable.",
+      "examples": [],
+      "keywords": [
+        "Responding",
+        "to",
+        "a",
+        "disappointment"
+      ],
+      "expressions": [
+        "I can imagine — showing that you can understand a feeling"
+      ],
+      "challenge": {
+        "cue": "Everyone keeps telling me to look on the bright side.",
+        "model": "That sounds frustrating when you're still disappointed.",
+        "followUp": "Would you rather talk about the trip or something else?"
+      }
+    },
+    {
+      "id": "C109",
+      "kind": "conversation",
+      "title": "Saying no to extra work",
+      "topic": "Boundaries and choices",
+      "cue": "Practise this situation: Saying no to extra work. Respond to the other person and keep the conversation going.",
+      "model": "A: Could you take on another task today?\nB: I can't finish another one today, I'm afraid.\nA: What are you working on?\nB: The two reports due this afternoon.\nA: Okay. Let's review the priorities.\nB: Thanks. I could start something new tomorrow.",
+      "examples": [],
+      "keywords": [
+        "Saying",
+        "no",
+        "to",
+        "extra",
+        "work"
+      ],
+      "expressions": [
+        "take on — accept responsibility for additional work"
+      ],
+      "challenge": {
+        "cue": "It really needs to be done today.",
+        "model": "Then we'll need to move one of my current deadlines.",
+        "followUp": "Which task should I put aside?"
+      }
+    },
+    {
+      "id": "C110",
+      "kind": "conversation",
+      "title": "Keeping personal information private",
+      "topic": "Boundaries and choices",
+      "cue": "Practise this situation: Keeping personal information private. Respond to the other person and keep the conversation going.",
+      "model": "A: How much do you earn?\nB: I'd rather keep that private.\nA: Oh, sorry. I didn't mean to pry.\nB: No worries. I'm happy to talk about the job itself.\nA: Sure. Are you enjoying it?\nB: Yes, especially the people I work with.",
+      "examples": [],
+      "keywords": [
+        "Keeping",
+        "personal",
+        "information",
+        "private"
+      ],
+      "expressions": [
+        "I'd rather keep that private — I prefer not to share that information"
+      ],
+      "challenge": {
+        "cue": "I'm only curious.",
+        "model": "I understand, but I'd still rather not share that.",
+        "followUp": "What would you like to know about the work itself?"
+      }
+    },
+    {
+      "id": "C111",
+      "kind": "conversation",
+      "title": "Asking before borrowing",
+      "topic": "Boundaries and choices",
+      "cue": "Practise this situation: Asking before borrowing. Respond to the other person and keep the conversation going.",
+      "model": "A: Is that my notebook?\nB: Yes, I borrowed it for a moment.\nA: Please ask me before taking it next time.\nB: Sorry. I should have checked.\nA: Thanks. I use it for personal notes.\nB: I understand. Here it is.",
+      "examples": [],
+      "keywords": [
+        "Asking",
+        "before",
+        "borrowing"
+      ],
+      "expressions": [
+        "Please ask me before — setting a clear expectation"
+      ],
+      "challenge": {
+        "cue": "I only used one blank page.",
+        "model": "I understand, but I still need you to ask first.",
+        "followUp": "Could you use the spare notebook next time?"
+      }
+    },
+    {
+      "id": "C112",
+      "kind": "conversation",
+      "title": "Suggesting a different restaurant",
+      "topic": "Boundaries and choices",
+      "cue": "Practise this situation: Suggesting a different restaurant. Respond to the other person and keep the conversation going.",
+      "model": "A: Shall we go to the expensive place again?\nB: I'd prefer somewhere a little cheaper tonight.\nA: Sure. Do you have anywhere in mind?\nB: There's a small noodle shop nearby.\nA: That sounds good to me.\nB: Great. I'll check whether it's open.",
+      "examples": [],
+      "keywords": [
+        "Suggesting",
+        "a",
+        "different",
+        "restaurant"
+      ],
+      "expressions": [
+        "Do you have anywhere in mind? — Have you thought of a particular place?"
+      ],
+      "challenge": {
+        "cue": "It's a special occasion, though.",
+        "model": "I know, and I'd still like to celebrate. That restaurant is beyond my budget tonight.",
+        "followUp": "Could we choose somewhere less expensive?"
+      }
+    },
+    {
+      "id": "C113",
+      "kind": "conversation",
+      "title": "Protecting quiet time",
+      "topic": "Boundaries and choices",
+      "cue": "Practise this situation: Protecting quiet time. Respond to the other person and keep the conversation going.",
+      "model": "A: Can I call you later tonight?\nB: Could we talk tomorrow instead?\nA: Sure. Is everything okay?\nB: Yes, I just need an evening without calls.\nA: Of course. What time tomorrow?\nB: After lunch would be good.",
+      "examples": [],
+      "keywords": [
+        "Protecting",
+        "quiet",
+        "time"
+      ],
+      "expressions": [
+        "tonight doesn't work for me — I am unavailable or unwilling tonight"
+      ],
+      "challenge": {
+        "cue": "It'll only take a few minutes.",
+        "model": "I understand, but tonight doesn't work for me.",
+        "followUp": "Could you send a message if it's something simple?"
+      }
+    },
+    {
+      "id": "C114",
+      "kind": "conversation",
+      "title": "Declining food politely",
+      "topic": "Boundaries and choices",
+      "cue": "Practise this situation: Declining food politely. Respond to the other person and keep the conversation going.",
+      "model": "A: Would you like another serving?\nB: It was delicious, but I'm full, thank you.\nA: Are you sure? There's plenty left.\nB: I'm sure. I really enjoyed it.\nA: Okay. Would you like some water?\nB: Yes, please. That would be lovely.",
+      "examples": [],
+      "keywords": [
+        "Declining",
+        "food",
+        "politely"
+      ],
+      "expressions": [
+        "I've had enough — I do not want or need any more"
+      ],
+      "challenge": {
+        "cue": "Just a little more!",
+        "model": "Thank you, but I've had enough. It was a lovely meal.",
+        "followUp": "Could I help clear the table instead?"
+      }
+    },
+    {
+      "id": "C115",
+      "kind": "conversation",
+      "title": "Correcting a time",
+      "topic": "Repairing misunderstandings",
+      "cue": "Practise this situation: Correcting a time. Respond to the other person and keep the conversation going.",
+      "model": "A: I'll meet you at fifteen past six.\nB: Do you mean quarter past six?\nA: Yes, six fifteen. Sorry, I said that awkwardly.\nB: No problem. I just wanted to check.\nA: Thanks. Let's meet at the entrance.\nB: See you there.",
+      "examples": [],
+      "keywords": [
+        "Correcting",
+        "a",
+        "time"
+      ],
+      "expressions": [
+        "I just wanted to check — explaining why you asked for confirmation"
+      ],
+      "challenge": {
+        "cue": "I heard six fifty.",
+        "model": "Thanks for checking. I mean six fifteen, one-five.",
+        "followUp": "Does that time still work for you?"
+      }
+    },
+    {
+      "id": "C116",
+      "kind": "conversation",
+      "title": "Explaining a different meaning",
+      "topic": "Repairing misunderstandings",
+      "cue": "Practise this situation: Explaining a different meaning. Respond to the other person and keep the conversation going.",
+      "model": "A: You said the meeting was off.\nB: I meant the timing was wrong, not that it was cancelled.\nA: Oh, I misunderstood.\nB: Sorry, I wasn't clear. It's still happening at three.\nA: Thanks for explaining.\nB: I'll send the correct time to everyone.",
+      "examples": [],
+      "keywords": [
+        "Explaining",
+        "a",
+        "different",
+        "meaning"
+      ],
+      "expressions": [
+        "Sorry, I wasn't clear — taking responsibility for unclear wording"
+      ],
+      "challenge": {
+        "cue": "So should I still attend?",
+        "model": "Yes, please come. The meeting is still happening.",
+        "followUp": "Can you make it at three?"
+      }
+    },
+    {
+      "id": "C117",
+      "kind": "conversation",
+      "title": "Correcting a person's assumption",
+      "topic": "Repairing misunderstandings",
+      "cue": "Practise this situation: Correcting a person's assumption. Respond to the other person and keep the conversation going.",
+      "model": "A: You work from home every day, right?\nB: Not every day. I go into the office twice a week.\nA: Oh, I thought you were fully remote.\nB: I used to be, but that changed recently.\nA: Which days do you go in?\nB: Usually Tuesday and Thursday.",
+      "examples": [],
+      "keywords": [
+        "Correcting",
+        "a",
+        "person's",
+        "assumption"
+      ],
+      "expressions": [
+        "Not every day — politely correcting an overgeneralisation"
+      ],
+      "challenge": {
+        "cue": "I thought you said you never went in.",
+        "model": "I did work from home all week before. My arrangement changed last month.",
+        "followUp": "Would you like me to check which days I'll be in next week?"
+      }
+    },
+    {
+      "id": "C118",
+      "kind": "conversation",
+      "title": "Buying time to explain",
+      "topic": "Repairing misunderstandings",
+      "cue": "Practise this situation: Buying time to explain. Respond to the other person and keep the conversation going.",
+      "model": "A: Why did you choose that course?\nB: Let me think how to explain it.\nA: Take your time.\nB: I wanted something practical that I could use at work.\nA: So the job connection mattered most?\nB: Yes, that's the main reason.",
+      "examples": [],
+      "keywords": [
+        "Buying",
+        "time",
+        "to",
+        "explain"
+      ],
+      "expressions": [
+        "Let me think how to explain it — asking for a moment to organise your thoughts"
+      ],
+      "challenge": {
+        "cue": "Do you mean it was required for your job?",
+        "model": "No, it wasn't required. I chose it because I thought it would be useful.",
+        "followUp": "Does that make sense?"
+      }
+    },
+    {
+      "id": "C119",
+      "kind": "conversation",
+      "title": "Checking a number",
+      "topic": "Repairing misunderstandings",
+      "cue": "Practise this situation: Checking a number. Respond to the other person and keep the conversation going.",
+      "model": "A: Did you say thirteen or thirty?\nB: Thirty, three-zero.\nA: Thanks. I sometimes mix those up.\nB: No problem. I'll write it down.\nA: That's helpful. So we need thirty copies.\nB: Exactly.",
+      "examples": [],
+      "keywords": [
+        "Checking",
+        "a",
+        "number"
+      ],
+      "expressions": [
+        "I sometimes mix those up — I sometimes confuse those things"
+      ],
+      "challenge": {
+        "cue": "Actually, I said thirteen.",
+        "model": "Thanks for correcting me. Thirteen, one-three.",
+        "followUp": "Could you write the number down too?"
+      }
+    },
+    {
+      "id": "C120",
+      "kind": "conversation",
+      "title": "Restating an idea simply",
+      "topic": "Repairing misunderstandings",
+      "cue": "Practise this situation: Restating an idea simply. Respond to the other person and keep the conversation going.",
+      "model": "A: I don't think I explained my idea well.\nB: Could you put it another way?\nA: Sure. Let's do a small version first and see what happens.\nB: Oh, you mean try it before doing the whole thing?\nA: Exactly. Then we can decide what to change.\nB: That makes sense.",
+      "examples": [],
+      "keywords": [
+        "Restating",
+        "an",
+        "idea",
+        "simply"
+      ],
+      "expressions": [
+        "Could you put it another way? — asking for a different explanation"
+      ],
+      "challenge": {
+        "cue": "I'm still not sure what we'd do first.",
+        "model": "The first step would be to try it with five people.",
+        "followUp": "Would a concrete example help?"
+      }
+    },
+    {
+      "id": "pattern-1",
+      "kind": "pattern",
+      "title": "Sentence building: Meeting people",
+      "topic": "Meeting people",
+      "cue": "Meet someone at a class. Find one interest you share without looking at the examples.",
+      "model": "I used to work in a shop, but now I work in an office.\n\nI used to live with my parents, but now I share a flat.\n\nI used to drive to work, but now I take the train.",
+      "examples": [],
+      "keywords": [
+        "Meeting",
+        "people"
+      ],
+      "expressions": [
+        "I used to ..., but now ..."
+      ],
+      "note": "Use used to + base verb for a past state or habit that has changed.",
+      "tasks": {
+        "tight": "Replace the old and current situation with two true details about yourself.",
+        "loose": "Introduce yourself, explain one change in your life and ask the other person a question.",
+        "free": "Meet someone at a class. Find one interest you share without looking at the examples."
+      }
+    },
+    {
+      "id": "pattern-2",
+      "kind": "pattern",
+      "title": "Sentence building: Small talk",
+      "topic": "Small talk",
+      "cue": "Talk about your week for one minute, then imagine and answer a follow-up question.",
+      "model": "I've been cooking more lately.\n\nI've been quite busy lately.\n\nI've been spending more time outdoors lately.",
+      "examples": [],
+      "keywords": [
+        "Small",
+        "talk"
+      ],
+      "expressions": [
+        "I've been ... lately."
+      ],
+      "note": "Use an -ing verb for an ongoing recent activity, or an adjective after been for a state.",
+      "tasks": {
+        "tight": "Replace the activity or feeling with something true about your recent life.",
+        "loose": "Give a short update, add one detail and ask about the other person's week.",
+        "free": "Talk about your week for one minute, then imagine and answer a follow-up question."
+      }
+    },
+    {
+      "id": "pattern-3",
+      "kind": "pattern",
+      "title": "Sentence building: Making plans",
+      "topic": "Making plans",
+      "cue": "Plan a day out together. Change one part of the plan when the weather changes.",
+      "model": "Would Saturday morning work for you?\n\nWould a video call work for you?\n\nWould a café near the station work for you?",
+      "examples": [],
+      "keywords": [
+        "Making",
+        "plans"
+      ],
+      "expressions": [
+        "Would ... work for you?"
+      ],
+      "note": "The subject can be a time, place or arrangement. Work means be suitable here.",
+      "tasks": {
+        "tight": "Make three suggestions: a time, a way to meet and a place.",
+        "loose": "Arrange a meeting. Offer two times, reject one politely and confirm the final plan.",
+        "free": "Plan a day out together. Change one part of the plan when the weather changes."
+      }
+    },
+    {
+      "id": "pattern-4",
+      "kind": "pattern",
+      "title": "Sentence building: Requests and help",
+      "topic": "Requests and help",
+      "cue": "Solve a practical problem with another person. Ask for only the help you actually need.",
+      "model": "Could you hold the door, please?\n\nCould you send me the address, please?\n\nCould you check the spelling, please?",
+      "examples": [],
+      "keywords": [
+        "Requests",
+        "and",
+        "help"
+      ],
+      "expressions": [
+        "Could you ... , please?"
+      ],
+      "note": "Use the base verb after could you: send, not sent or sending.",
+      "tasks": {
+        "tight": "Replace the action with three small favours you might ask for.",
+        "loose": "Ask for help, explain why and respond when the person has only five minutes.",
+        "free": "Solve a practical problem with another person. Ask for only the help you actually need."
+      }
+    },
+    {
+      "id": "pattern-5",
+      "kind": "pattern",
+      "title": "Sentence building: Food and cafés",
+      "topic": "Food and cafés",
+      "cue": "Order for yourself when your first choice is unavailable. Choose an alternative.",
+      "model": "Could I have a glass of water, please?\n\nCould I have the dressing on the side, please?\n\nCould I have a few more minutes, please?",
+      "examples": [],
+      "keywords": [
+        "Food",
+        "and",
+        "cafés"
+      ],
+      "expressions": [
+        "Could I have ... , please?"
+      ],
+      "note": "Could I have is a polite request. Use a/an for one countable item where needed.",
+      "tasks": {
+        "tight": "Change the requested item once, then make a request that is not about food.",
+        "loose": "Order a meal, ask one question about it and politely correct a mistake.",
+        "free": "Order for yourself when your first choice is unavailable. Choose an alternative."
+      }
+    },
+    {
+      "id": "pattern-6",
+      "kind": "pattern",
+      "title": "Sentence building: Shopping",
+      "topic": "Shopping",
+      "cue": "Choose something within a budget. Leave without buying if nothing suits you.",
+      "model": "Do you have this in a larger size?\n\nDo you have this in green?\n\nDo you have this in a different material?",
+      "examples": [],
+      "keywords": [
+        "Shopping"
+      ],
+      "expressions": [
+        "Do you have this in ...?"
+      ],
+      "note": "This can refer to an item you are pointing at. In introduces a version or option.",
+      "tasks": {
+        "tight": "Ask about size, colour and material for an item you would actually buy.",
+        "loose": "Compare two items, state a preference and explain one reason.",
+        "free": "Choose something within a budget. Leave without buying if nothing suits you."
+      }
+    },
+    {
+      "id": "pattern-7",
+      "kind": "pattern",
+      "title": "Sentence building: Money and services",
+      "topic": "Money and services",
+      "cue": "Call about an unclear bill. Keep asking questions until you can summarise the explanation.",
+      "model": "Could you explain this service charge?\n\nCould you explain the difference between these plans?\n\nCould you explain how the cancellation works?",
+      "examples": [],
+      "keywords": [
+        "Money",
+        "and",
+        "services"
+      ],
+      "expressions": [
+        "Could you explain ...?"
+      ],
+      "note": "Explain takes a direct object: explain the fee to me, not explain me the fee.",
+      "tasks": {
+        "tight": "Choose a charge, an option and a process you want explained.",
+        "loose": "Ask about a service, check the cost and confirm what happens next.",
+        "free": "Call about an unclear bill. Keep asking questions until you can summarise the explanation."
+      }
+    },
+    {
+      "id": "pattern-8",
+      "kind": "pattern",
+      "title": "Sentence building: Getting around",
+      "topic": "Getting around",
+      "cue": "Find another way to reach your destination after a route change.",
+      "model": "Does this bus go to the city centre?\n\nDoes this train go to the airport?\n\nDoes this road go to the beach?",
+      "examples": [],
+      "keywords": [
+        "Getting",
+        "around"
+      ],
+      "expressions": [
+        "Does this ... go to ...?"
+      ],
+      "note": "Use go, not goes, after does. Adapt the verb when asking a different kind of question.",
+      "tasks": {
+        "tight": "Replace the transport or route and the destination with local examples.",
+        "loose": "Ask about a route, check where to get off and repeat the directions back.",
+        "free": "Find another way to reach your destination after a route change."
+      }
+    },
+    {
+      "id": "pattern-9",
+      "kind": "pattern",
+      "title": "Sentence building: Travel and hotels",
+      "topic": "Travel and hotels",
+      "cue": "Explain a room problem and agree on a practical next step.",
+      "model": "Is it possible to leave our bags here?\n\nIs it possible to check in early?\n\nIs it possible to move to a quieter room?",
+      "examples": [],
+      "keywords": [
+        "Travel",
+        "and",
+        "hotels"
+      ],
+      "expressions": [
+        "Is it possible to ...?"
+      ],
+      "note": "Use to + base verb. A request may be declined; practise a calm alternative.",
+      "tasks": {
+        "tight": "Make three realistic hotel requests using the same opening.",
+        "loose": "Check in, ask about one service and handle a request that cannot be met.",
+        "free": "Explain a room problem and agree on a practical next step."
+      }
+    },
+    {
+      "id": "pattern-10",
+      "kind": "pattern",
+      "title": "Sentence building: Home and neighbours",
+      "topic": "Home and neighbours",
+      "cue": "Agree on housework with someone who has a different schedule from yours.",
+      "model": "Could we make a cleaning schedule?\n\nCould we keep the hallway clear?\n\nCould we agree on a quieter time?",
+      "examples": [],
+      "keywords": [
+        "Home",
+        "and",
+        "neighbours"
+      ],
+      "expressions": [
+        "Could we ...?"
+      ],
+      "note": "We includes the speaker and invites a shared solution.",
+      "tasks": {
+        "tight": "Suggest three arrangements that would make shared living easier.",
+        "loose": "Describe a small household problem and suggest a fair arrangement.",
+        "free": "Agree on housework with someone who has a different schedule from yours."
+      }
+    },
+    {
+      "id": "pattern-11",
+      "kind": "pattern",
+      "title": "Sentence building: Appointments",
+      "topic": "Appointments",
+      "cue": "Reschedule an appointment while working around a busy week.",
+      "model": "I'd like to book an appointment.\n\nI'd like to change the time.\n\nI'd like to check what I need to bring.",
+      "examples": [],
+      "keywords": [
+        "Appointments"
+      ],
+      "expressions": [
+        "I'd like to ..."
+      ],
+      "note": "I'd is I would. Use to + base verb after would like.",
+      "tasks": {
+        "tight": "Change the verb phrase to fit three appointment tasks.",
+        "loose": "Book a time, confirm the date and ask what to bring.",
+        "free": "Reschedule an appointment while working around a busy week."
+      }
+    },
+    {
+      "id": "pattern-12",
+      "kind": "pattern",
+      "title": "Sentence building: Work updates",
+      "topic": "Work updates",
+      "cue": "Tell a colleague what is done, what remains and when you expect to finish.",
+      "model": "I've finished the draft, but I still need to check the figures.\n\nI've finished packing, but I still need to print the label.\n\nI've finished the slides, but I still need to practise the talk.",
+      "examples": [],
+      "keywords": [
+        "Work",
+        "updates"
+      ],
+      "expressions": [
+        "I've finished ..., but I still need to ..."
+      ],
+      "note": "After finished, use a noun or an -ing form. After need to, use the base verb.",
+      "tasks": {
+        "tight": "Name a completed part and a remaining part of one real task.",
+        "loose": "Give an update, explain a delay and ask which unfinished part matters most.",
+        "free": "Tell a colleague what is done, what remains and when you expect to finish."
+      }
+    },
+    {
+      "id": "pattern-13",
+      "kind": "pattern",
+      "title": "Sentence building: Meetings",
+      "topic": "Meetings",
+      "cue": "Choose between two plans with another person. Reach a decision without using the sample frame.",
+      "model": "I see your point, but we haven't checked the dates.\n\nI see your point, but the room may be too small.\n\nI see your point, but I'd like to hear another option.",
+      "examples": [],
+      "keywords": [
+        "Meetings"
+      ],
+      "expressions": [
+        "I see your point, but ..."
+      ],
+      "note": "Follow but with a complete clause. Keep the concern specific rather than criticising the person.",
+      "tasks": {
+        "tight": "Keep the acknowledgement and change the concern three times.",
+        "loose": "Discuss a plan, disagree about one detail and suggest a workable alternative.",
+        "free": "Choose between two plans with another person. Reach a decision without using the sample frame."
+      }
+    },
+    {
+      "id": "pattern-14",
+      "kind": "pattern",
+      "title": "Sentence building: Phone and messages",
+      "topic": "Phone and messages",
+      "cue": "Make an enquiry when the first person cannot help and transfers your call.",
+      "model": "I'm calling about my appointment tomorrow.\n\nI'm calling about the parcel that hasn't arrived.\n\nI'm calling about the email you sent yesterday.",
+      "examples": [],
+      "keywords": [
+        "Phone",
+        "and",
+        "messages"
+      ],
+      "expressions": [
+        "I'm calling about ..."
+      ],
+      "note": "About is followed by a noun phrase or an -ing form, not a bare verb.",
+      "tasks": {
+        "tight": "Replace the reason for calling with three realistic situations.",
+        "loose": "Start a call, explain the reason, check one detail and close politely.",
+        "free": "Make an enquiry when the first person cannot help and transfers your call."
+      }
+    },
+    {
+      "id": "pattern-15",
+      "kind": "pattern",
+      "title": "Sentence building: Technology",
+      "topic": "Technology",
+      "cue": "Describe a technology problem to someone who cannot see your screen.",
+      "model": "When I open the file, I get an error message.\n\nWhen I tap Save, nothing happens.\n\nWhen I plug in the charger, the light flashes.",
+      "examples": [],
+      "keywords": [
+        "Technology"
+      ],
+      "expressions": [
+        "When I ..., ..."
+      ],
+      "note": "Report what you observe. Do not guess the cause if you do not know it.",
+      "tasks": {
+        "tight": "Describe an action and the visible result for three device problems.",
+        "loose": "Explain a problem, answer a clarifying question and report what happens after trying a suggestion.",
+        "free": "Describe a technology problem to someone who cannot see your screen."
+      }
+    },
+    {
+      "id": "pattern-16",
+      "kind": "pattern",
+      "title": "Sentence building: Learning English",
+      "topic": "Learning English",
+      "cue": "Continue a conversation even when you miss a word. Use a description or clarification.",
+      "model": "Do you mean the meeting starts at ten?\n\nDo you mean I should bring the original document?\n\nDo you mean the shop is closed all day?",
+      "examples": [],
+      "keywords": [
+        "Learning",
+        "English"
+      ],
+      "expressions": [
+        "Do you mean ...?"
+      ],
+      "note": "Mean can be followed by a noun phrase or a clause. Your intonation can invite confirmation.",
+      "tasks": {
+        "tight": "Choose three things a listener might need to confirm.",
+        "loose": "Ask for repetition, check your interpretation and respond to the actual meaning.",
+        "free": "Continue a conversation even when you miss a word. Use a description or clarification."
+      }
+    },
+    {
+      "id": "pattern-17",
+      "kind": "pattern",
+      "title": "Sentence building: Hobbies and free time",
+      "topic": "Hobbies and free time",
+      "cue": "Choose a free-time activity with someone whose preferences differ from yours.",
+      "model": "I've been meaning to try that café.\n\nI've been meaning to read that book.\n\nI've been meaning to join a walking group.",
+      "examples": [],
+      "keywords": [
+        "Hobbies",
+        "and",
+        "free",
+        "time"
+      ],
+      "expressions": [
+        "I've been meaning to ..."
+      ],
+      "note": "This describes an intention you have had for some time, often something not done yet.",
+      "tasks": {
+        "tight": "Replace the activity with three things you have wanted to do.",
+        "loose": "Talk about a hobby, explain why it interests you and make a small plan.",
+        "free": "Choose a free-time activity with someone whose preferences differ from yours."
+      }
+    },
+    {
+      "id": "pattern-18",
+      "kind": "pattern",
+      "title": "Sentence building: Friends and feelings",
+      "topic": "Friends and feelings",
+      "cue": "Respond to good or disappointing news. Let the other person decide how much to share.",
+      "model": "Would you like to talk about it?\n\nWould you like some company?\n\nWould you like me to call you tomorrow?",
+      "examples": [],
+      "keywords": [
+        "Friends",
+        "and",
+        "feelings"
+      ],
+      "expressions": [
+        "Would you like ...?"
+      ],
+      "note": "Use a noun, to + verb, or me to + verb. Accept no without pressure.",
+      "tasks": {
+        "tight": "Offer a conversation, company and a practical action in your own words.",
+        "loose": "Listen to a friend's update and offer one kind of support without insisting.",
+        "free": "Respond to good or disappointing news. Let the other person decide how much to share."
+      }
+    },
+    {
+      "id": "pattern-19",
+      "kind": "pattern",
+      "title": "Sentence building: Boundaries and choices",
+      "topic": "Boundaries and choices",
+      "cue": "Handle a repeated invitation that you cannot accept. Stay clear and polite.",
+      "model": "I'd rather stay home tonight.\n\nI'd rather keep that private.\n\nI'd rather choose a less expensive place.",
+      "examples": [],
+      "keywords": [
+        "Boundaries",
+        "and",
+        "choices"
+      ],
+      "expressions": [
+        "I'd rather ..."
+      ],
+      "note": "Use the base verb after I'd rather when the subject stays the same: I'd rather go.",
+      "tasks": {
+        "tight": "State three real preferences politely and give a reason only if you want to.",
+        "loose": "Decline a request, repeat your boundary once and offer an alternative if appropriate.",
+        "free": "Handle a repeated invitation that you cannot accept. Stay clear and polite."
+      }
+    },
+    {
+      "id": "pattern-20",
+      "kind": "pattern",
+      "title": "Sentence building: Repairing misunderstandings",
+      "topic": "Repairing misunderstandings",
+      "cue": "Resolve a misunderstanding about a time, number or responsibility without reading a script.",
+      "model": "What I meant was that we need more time.\n\nWhat I meant was that the room is small, not that it's unpleasant.\n\nWhat I meant was that I can help tomorrow.",
+      "examples": [],
+      "keywords": [
+        "Repairing",
+        "misunderstandings"
+      ],
+      "expressions": [
+        "What I meant was ..."
+      ],
+      "note": "That can introduce the clarification. Keep the second explanation simpler than the first.",
+      "tasks": {
+        "tight": "Clarify three ideas using a short complete clause after was.",
+        "loose": "Explain an idea, notice a misunderstanding and restate the meaning simply.",
+        "free": "Resolve a misunderstanding about a time, number or responsibility without reading a script."
+      }
+    }
+  ],
+  "resources": [
+    {
+      "title": "1. Choose one situation",
+      "body": "Filter Conversations by a topic you need soon. Six situations are available for each of 20 topics. The IDs connect the conversations, challenges and your notes."
+    },
+    {
+      "title": "2. Tight practice",
+      "body": "Read the six lines aloud as both A and B. Repeat any difficult line slowly. Change one or two details, such as the time, item or place. Use the matching Sentence builder pattern for more examples."
+    },
+    {
+      "title": "3. Loose practice",
+      "body": "Look only at the situation and useful expression. Make a new six-turn conversation using your own details. Keep the meaning clear; the wording can change."
+    },
+    {
+      "title": "4. Free practice",
+      "body": "Close or cover the model. Imagine a real conversation for 30–60 seconds. Respond to what the other person says rather than forcing a memorised expression into every turn."
+    },
+    {
+      "title": "5. Try the unexpected reply",
+      "body": "Open Reply challenges for the same ID. Read column C and reply aloud before looking at E. Write your reply in amber column D. Column F offers a follow-up question; use it only if it fits."
+    },
+    {
+      "title": "6. Record and review",
+      "body": "Optional: record yourself on your own device. Listen once, choose one useful improvement and try again. Use My practice to record true details, your stage and a review date. The workbook does not record audio."
+    },
+    {
+      "title": "A manageable starting session",
+      "body": "Try one conversation and its challenge for about 10–15 minutes. Repeat it on another day with different details. This is a large reference library, not a requirement to finish a fixed number every day."
+    },
+    {
+      "title": "How this fits the other books",
+      "body": "Use the 600-chunk workbook to find language you need. Use Big 30 to build longer personal answers. Use this workbook to practise the back-and-forth: listening to a cue, responding, clarifying and continuing."
+    },
+    {
+      "title": "The examples are flexible",
+      "body": "The dialogues and replies are new fictional learning examples. There is more than one good reply. Adapt names, details and preferences to your own life. Any prices, availability or service policies are fictional scenario details."
+    },
+    {
+      "title": "Solo or with a partner",
+      "body": "Solo: read one role, pause, then answer as the other person. With a partner: swap A and B, then introduce the unexpected reply. This workbook contains written models, not audio or pronunciation scoring."
+    },
+    {
+      "title": "Optional role-play prompt",
+      "body": "Act as my English conversation partner. Ask me which situation from this workbook I want to practise and whether I want an easy or more challenging conversation. Then play the other person and send only one short turn at a time. Wait for my reply before continuing. Use natural everyday English. After a few turns, introduce one realistic change or misunderstanding. Do not write my answers for me unless I ask. At the end, give me up to three useful corrections, a natural version of my own wording and two follow-up questions. Keep feedback kind and specific. If I type \"help\", give me one short hint. I will paste the situation and any expressions I want to practise next."
+    }
+  ],
+  "app": "fluency-reset-practice-pack",
+  "version": 1
+}

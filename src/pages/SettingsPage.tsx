@@ -6,6 +6,7 @@ import { defaultState } from '../data/seed'
 import { useSpeech } from '../hooks/useSpeech'
 import { speechController } from '../services/speechController'
 import { clearRecordings } from '../services/recordingDb'
+import PracticePackSettings from '../features/practicePacks/PracticePackSettings'
 import { exportBackup, exportState, importBackup, importState, resetState } from '../services/storage'
 import type { Goal, UserPreferences, VoiceGender } from '../types'
 
@@ -197,6 +198,7 @@ export default function SettingsPage() {
       </Card>
 
       <div className="list">
+        <PracticePackSettings/>
         <Card>
           <ShieldCheck color="var(--green)" />
           <h3>Export progress and library</h3>

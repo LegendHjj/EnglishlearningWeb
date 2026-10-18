@@ -85,6 +85,18 @@ Bring the AI's three sections back into **My spoken answer**, **Recall keywords*
 
 The app builds prompts locally and has no connection to an AI service. It sends no notes automatically; you choose what to copy into another tool. Voice playback stops during recording, and tabs/questions stay locked until you stop and save or delete your take. Audio stays in the existing local recording library.
 
+## Optional practice packs
+
+Open **Settings → Optional practice packs**. Choose **Preview pack**, review its contents, then **Add to my practice**. **Download JSON** saves a portable copy; **Import practice pack** reads a previously downloaded file. These are content imports that merge with current work. The existing backup import controls restore saved progress instead.
+
+- **600 everyday chunks:** 1,200 sentence examples in Chunk Practice, plus 60 speaking prompts and an optional 180-session plan in Extra practice.
+- **Big 30: 120 example answers:** four selectable examples per question, with recall cues, expressions and listener follow-ups. My Answer remains personal and unchanged. The workbook's original guides and reusable AI prompts are available in Extra practice references; the existing My Answer helper still builds prompts from your own notes.
+- **120 everyday conversations:** six-turn dialogues, reply challenges and 20 sentence-building patterns with 60 examples.
+
+Open **Practice Room → Extra practice packs** to search imported examples by topic, type or practice history. Follow shows models and personal notes, Recall shows short cues, and Free hides both. Write your own reply before revealing a challenge model. Select **I practised this example** after practising aloud to save a check-in. Each example retains notes, replies, its last saved support stage, practice count and date. Optional recordings are linked to the example and also appear in Recordings. Progress shows extra practice separately from programme completion. Importing or reading an example never counts as speaking practice.
+
+Packs are optional and load only when requested. Reimporting skips existing item IDs and keeps personal work; chunks also skip matching saved expressions. Invalid files and storage failures leave current data in place. Both backup types include imported content and check-ins; complete backups include linked audio. The three packs are converted from the generated workbooks, not from personal workbook answers or progress cells. To regenerate them, run `python scripts/convert-practice-workbooks.py PATH_TO_WORKBOOK_FOLDER`; the converter uses Python's standard library. JSON pack structure and limits are described in [practice pack format](docs/practice-pack-format.md).
+
 ## Optional Heart voice
 
 In **Settings → Text-to-speech voice**, choose **Natural Female · Heart**. Voice choices save immediately and apply to all Listen buttons; no separate Save changes click is needed. Selecting a voice does not download anything. Select **Download & preview Heart** to prepare the voice and hear the sample. The q8 model is about 92 MB plus supporting files; preparation and speech generation use your device. Browser caching is best effort, so clearing site data or using another browser may require another download. The sample and your practice text are processed locally; the network requests are for public model files at the pinned revision. Heart audio is temporary and is not added to recordings or progress.
@@ -103,4 +115,4 @@ The app has no backend or cross-device sync. Phrase and vocabulary usage, confid
 
 ## Content and saved-data versions
 
-The authored content pack currently uses content schema version `1`. Local application state uses schema version `7` while retaining the existing `fluency-reset-state-v1` storage key so current browsers migrate in place. Imports from backup versions 1–6 remain supported. Model downloads and temporary generated speech are excluded from backups. Existing audio remains in the `fluency-reset-audio` IndexedDB database and is never deleted during migration.
+The authored content pack currently uses content schema version `1`. Optional practice packs have their own version `1` format. Local application state uses schema version `8` while retaining the existing `fluency-reset-state-v1` storage key so current browsers migrate in place. Imports from backup versions 1–7 remain supported. Model downloads and temporary generated speech are excluded from backups. Existing audio remains in the `fluency-reset-audio` IndexedDB database and is never deleted during migration.

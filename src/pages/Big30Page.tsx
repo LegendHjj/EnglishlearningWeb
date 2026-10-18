@@ -6,6 +6,7 @@ import { bigQuestions } from '../data/seed'
 import Recorder from '../features/Recorder'
 import AnswerBuilder from '../features/big30/AnswerBuilder'
 import PersonalAnswerSupport from '../features/big30/PersonalAnswerSupport'
+import ImportedAnswerExamples from '../features/practicePacks/ImportedAnswerExamples'
 import RecordingList, { type RecordingItem } from '../features/RecordingList'
 import { useSpeech } from '../hooks/useSpeech'
 import { contentRepository } from '../services/contentRepository'
@@ -35,9 +36,10 @@ export default function Big30Page(){
     {tab==='My Answer'?<div role="tabpanel" id="big30-answer-panel" aria-labelledby="big30-answer-tab"><AnswerBuilder key={selected.id} question={selected} guide={guide} onPractise={()=>{setStage('Follow');changeTab('Practice')}}/></div>:<div role="tabpanel" id="big30-practice-panel" aria-labelledby="big30-practice-tab">
     <div className="stage-tabs">{(['Follow','Recall','Free'] as NoteStage[]).map(value=><button key={value} className={stage===value?'active':''} onClick={()=>{stop();setStage(value)}}>{value}</button>)}</div>
     <PersonalAnswerSupport questionId={selected.id} stage={stage} busy={recorderBusy} onEdit={()=>changeTab('My Answer')}/>
+    <ImportedAnswerExamples key={selected.id} questionId={selected.id} stage={stage} busy={recorderBusy}/>
     <div className="question-grid"><Card><h3>Question-specific planner</h3><p className="muted">{guide?.practiceStages[stage.toLowerCase() as 'follow'|'recall'|'free']}</p><ul>{(guide?.keyPoints||selected.keyPoints).map(item=><li key={item}>{item}</li>)}</ul><h3>Support frames</h3>{stage==='Free'?<p className="muted">Frames hidden. Use your own words.</p>:(guide?.supportFrames||selected.frames).map(item=><button className="pill listen-pill" key={item} disabled={recorderBusy} onClick={()=>speak(item)}>{stage==='Recall'?`${item.split(' ')[0]}…`:item}<AudioLines/></button>)}{guide&&<><h3>Timed rounds</h3><div className="round-list">{guide.recommendedRounds.map(round=><span className="pill" key={round.seconds}>{round.seconds}s · {round.focus}</span>)}</div></>}</Card><Card><h3>Speaking memo</h3><p className="muted">Keywords or short sentences both work.</p>{stage==='Follow'?<textarea aria-label="Speaking memo" rows={7} value={memo} onChange={e=>setState(s=>({...s,memos:{...s.memos,[selected.id]:e.target.value}}))}/>:<p className="muted">Your memo is hidden. Switch to Follow to view or edit it.</p>}</Card></div>
     {guide&&<Card><span className="eyebrow">Listener follow-up</span><h3>{guide.followUpQuestion}</h3><p className="muted">Answer this after your main response to practise flexibility.</p></Card>}
-    <Card className="model-answer"><details><summary><strong>Example answer - make it yours</strong></summary><p>{selected.modelAnswer}</p><Button variant="secondary" disabled={recorderBusy} onClick={()=>speak(selected.modelAnswer)}><AudioLines/> Hear example</Button></details></Card>
+    {stage==='Follow'&&<Card className="model-answer"><details><summary><strong>Example answer - make it yours</strong></summary><p>{selected.modelAnswer}</p><Button variant="secondary" disabled={recorderBusy} onClick={()=>speak(selected.modelAnswer)}><AudioLines/> Hear example</Button></details></Card>}
     <Recorder onBusyChange={setRecorderBusy} questionId={selected.id} recordingName={`Big 30 · ${selected.question}`} onSaved={()=>setState(s=>({...s,completedQuestions:Array.from(new Set([...s.completedQuestions,selected.id]))}))} onStored={()=>void load(selected.id)}/>
     <section className="question-recordings"><span className="eyebrow">Then vs now</span><h2>Your recordings for this question</h2>{recordings.length?<RecordingList items={recordings} compact/>:<p className="muted">Saved attempts will appear here for comparison.</p>}</section></div>}</div></>
   const shown=bigQuestions.filter(item=>item.question.toLowerCase().includes(query.toLowerCase()))

@@ -8,7 +8,7 @@ import { useSpeech } from '../../hooks/useSpeech'
 import VoiceStatus from '../speech/VoiceStatus'
 import { listRecordings } from '../../services/recordingDb'
 import type { ChunkRating, NoteStage } from '../../types'
-import { chunkCue, chunkRatings, reviewChunk } from '../../utils/chunks'
+import { chunkCue, chunkKey, chunkRatings, reviewChunk } from '../../utils/chunks'
 
 const steps=['Listen & repeat','Make it yours','Recall from a situation','Speak freely','Self-check','Complete']
 
@@ -84,6 +84,7 @@ export default function ChunkWorkout({phraseId,onClose}:{phraseId:string;onClose
   const pin=()=>{const result=togglePin(phraseId);setMessage(result==='limit'?'You can pin up to 3 support items. Remove one before adding this chunk.':result==='pinned'?'Chunk pinned for your next mission.':'Chunk removed from mission support.')}
   const cue=phrase?chunkCue(phrase):''
   const opening=phrase?.text.split(/\s+/)[0]||''
+  const extraExamples=phrase?[...new Set(state.practicePacks.flatMap(pack=>pack.items.filter(item=>item.kind==='chunk'&&chunkKey(item.title)===chunkKey(phrase.text)).flatMap(item=>[item.model,...item.examples])).filter(example=>!phrase.example.includes(example)))]:[]
 
   return <div className="modal-backdrop chunk-backdrop"><div ref={dialog} role="dialog" aria-modal="true" aria-labelledby="chunk-workout-title" className="modal card chunk-workout">
     <VoiceStatus scope="modal" hostId="chunk-workout"/>
@@ -94,6 +95,7 @@ export default function ChunkWorkout({phraseId,onClose}:{phraseId:string;onClose
         <div className="chunk-model"><span className="eyebrow">Learn the words together</span><h3>{phrase.text}</h3><p>{phrase.meaning}</p></div>
         <p><strong>When to use:</strong> {phrase.whenToUse||'Choose a situation from your own day.'}</p>
         {phrase.example&&<Card className="chunk-example"><span className="eyebrow">Example in context</span><p>{phrase.example}</p></Card>}
+        {extraExamples.length>0&&<details><summary>More examples from practice packs</summary>{extraExamples.map((example,i)=><p key={i}>{example}</p>)}</details>}
         <p>Say it three times: slowly, at a comfortable pace, then as if you mean it. For a frame with a blank, use the complete example.</p>
         {supported?<div className="detail-actions"><Button variant="secondary" onClick={()=>speak(phrase.example||phrase.text,.8)}><AudioLines size={17}/> Listen slowly</Button><Button variant="secondary" onClick={()=>speak(phrase.example||phrase.text)}>Listen naturally</Button></div>:<p className="muted">Voice playback is unavailable here. Read the example aloud at your own pace.</p>}
         <p className="muted">The model uses your selected voice. There is no pronunciation score.</p>

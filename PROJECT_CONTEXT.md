@@ -1,6 +1,18 @@
 # Fluency Reset — Project Context and Handoff
 
-Last updated: 2026-10-14
+Last updated: 2026-10-18
+
+## Optional workbook practice packs
+
+Approved in chat on 2026-10-18 and implemented on the current `mainbranch` checkout. Settings now offers three optional JSON content packs, downloaded only on request: 600 chunks with 1,200 examples plus 60 speaking prompts and 180 plan references; 120 Big 30 answers with guide/prompt references; and 120 conversations with reply challenges plus 20 sentence-building patterns. The converter `scripts/convert-practice-workbooks.py` reads the original three Excel workbooks using Python's standard library. It excludes personal-answer/progress sheets and editable personal cells. Generated files are in `public/practice-packs/`; portable copies were also saved beside the user's workbooks in GeneratedOutput.
+
+Pack upload has a separate, strict version-1 content envelope, with file/field/count limits and an import preview. It merges rather than restoring a backup. Stable pack/item IDs make repeated imports harmless, and matching chunk text is also skipped. Existing imported content, personal notes, edited phrases and completion data are retained. Import persists before changing in-memory state so storage-quota failure leaves the current library intact. No packs are auto-installed during onboarding or migration.
+
+Chunks use the existing shared Phrase collection and workout. Matching existing phrases retain their original examples while additional imported samples are available in the workout. Big 30 exposes an imported-example selector alongside My Answer; it never fills or overwrites a user's personal answer. Practice Room links to Extra practice (`?library=packs`), which searches by topic/type/history and provides Follow/Recall/Free support, model reply reveal, personal notes/replies, explicit practice check-ins and optional linked recordings. Model answers, personal notes, expressions and challenge replies are hidden in Recall/Free as appropriate. The original Big 30 example is now hidden outside Follow too.
+
+Saved state/backup schema is 8, with `practicePacks` and `packPractice` keyed by `packId/itemId`. Older backups 1–7 migrate in place without adding optional content. Imported example check-ins remain separate from programme days and Big 30 recording completion; Progress displays a separate summary. `Recording.practiceItemId` links optional audio to an example while keeping the same IndexedDB database/store. Both backup types include pack content and check-ins; complete backups preserve linked audio. No backend, login or AI connection was added. See `docs/practice-pack-format.md` for the shareable JSON format.
+
+Verification: all 35 test files / 125 tests passed; typecheck, production build and diff whitespace checks passed. Desktop/mobile Chromium QA at 1440 × 1000 and 390 × 844 verified catalogue preview, real JSON download/upload, all three pack imports, idempotent reimport, invalid-file preservation, existing My Answer/memo preservation, model hiding, saved notes/check-ins after reload, progress summary, chunk workout access and a synthetic microphone recording linked in IndexedDB. No horizontal overflow, app console errors or external requests occurred in that tested flow. Real microphone hardware and browsers other than Chromium were not exercised. One earlier full test run hit the existing lazy dashboard route's default one-second test wait under concurrent build/browser load; the focused test and subsequent complete 125-test run passed without changing its assertions.
 
 ## Optional Heart natural voice
 
