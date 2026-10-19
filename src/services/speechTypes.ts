@@ -8,6 +8,7 @@ export interface SpeechSnapshot {
   hostId?: string
   progress?: { file: string; loaded: number; total?: number }
   preparation?: 'loading' | 'generating'
+  savedAudio?: boolean
   error?: string
   browserFallback: boolean
   microphoneBlocked: boolean

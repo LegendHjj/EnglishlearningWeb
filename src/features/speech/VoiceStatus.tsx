@@ -10,7 +10,7 @@ export default function VoiceStatus({ scope, hostId }: { scope: 'page' | 'modal'
   const percent = progress?.total && progress.total > 0 ? Math.floor(100 * progress.loaded / progress.total) : undefined
   return <div className={`voice-status voice-status-${scope}`} role="status" aria-live="polite">
     {snapshot.phase === 'preparing' && <span>{snapshot.preparation === 'generating' ? 'Creating speech on this device… Completed sentences replay without generating again.' : 'Loading Heart on this device…'}{progress && <> Loading {progress.file}{percent !== undefined ? ` · ${percent}%` : ''}</>}</span>}
-    {snapshot.phase === 'playing' && <span>Playing {snapshot.engine === 'heart' ? 'Heart' : 'browser voice'}.</span>}
+    {snapshot.phase === 'playing' && <span>Playing {snapshot.engine === 'heart' ? 'Heart' : 'browser voice'}{snapshot.savedAudio ? ' · saved audio' : ''}.</span>}
     {snapshot.phase === 'error' && <span>{snapshot.error || 'Voice playback could not start.'}</span>}
     {snapshot.browserFallback && <span>Using browser voice for now. Your saved Heart choice is unchanged.</span>}
     <div className="voice-status-actions">

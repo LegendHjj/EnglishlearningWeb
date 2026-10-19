@@ -2,9 +2,11 @@ import type { SpeechEngine } from '../types'
 import type { AudioPlayback, SpeechBackend, SpeechRequest, SpeechSnapshot } from './speechTypes'
 import { createBrowserSpeech } from './browserSpeech'
 import { audioPlayback } from './audioPlayback'
+import { readVoiceClip } from './voicePack'
 
 type Host = { id: string; scope: 'page' | 'modal' }
-export function createSpeechController(browser: SpeechBackend, getHeart: () => Promise<SpeechBackend>, audio: AudioPlayback) {
+type ClipLookup = (text: string, rate: number) => Promise<{ pcm: Float32Array; sampleRate: number } | undefined>
+export function createSpeechController(browser: SpeechBackend, getHeart: () => Promise<SpeechBackend>, audio: AudioPlayback, lookup?: ClipLookup) {
   let snapshot: SpeechSnapshot = { phase: 'idle', browserFallback: false, microphoneBlocked: false }
   const listeners = new Set<() => void>()
   const hosts: Host[] = []
@@ -28,7 +30,7 @@ export function createSpeechController(browser: SpeechBackend, getHeart: () => P
     browser.stop()
     heart?.stop()
     audio.stop()
-    emit({ phase: 'idle', ownerId: undefined, engine: undefined, progress: undefined, preparation: undefined, error: undefined })
+    emit({ phase: 'idle', ownerId: undefined, engine: undefined, progress: undefined, preparation: undefined, savedAudio: undefined, error: undefined })
   }
   const loadHeart = () => {
     if (heart) return Promise.resolve(heart)
@@ -49,7 +51,7 @@ export function createSpeechController(browser: SpeechBackend, getHeart: () => P
     const report = (patch: Partial<SpeechSnapshot>) => { if (isCurrent()) emit(patch) }
     // Activation starts in this user gesture, before dynamic imports or network work.
     const activation = effectiveEngine === 'heart' ? audio.activate() : undefined
-    const finish = () => { if (isCurrent()) { current = undefined; emit({ phase: 'idle', ownerId: undefined, engine: undefined, progress: undefined, error: undefined }) } }
+    const finish = () => { if (isCurrent()) { current = undefined; emit({ phase: 'idle', ownerId: undefined, engine: undefined, progress: undefined, savedAudio: undefined, error: undefined }) } }
     const fail = (error: unknown) => {
       if (!isCurrent()) return
       current = undefined
@@ -65,7 +67,22 @@ export function createSpeechController(browser: SpeechBackend, getHeart: () => P
     }
     void (async () => {
       try {
-        const [backend] = await Promise.all([loadHeart(), activation])
+        // Look up all items before starting: a partial match must not repeat the beginning through live synthesis.
+        const [clips] = await Promise.all([
+          lookup ? Promise.all(items.map(item => lookup(item, request.rate).catch(() => undefined))) : Promise.resolve([]),
+          activation,
+        ])
+        if (!isCurrent()) return
+        if (clips.length && clips.every(clip => clip !== undefined)) {
+          report({ phase: 'playing', preparation: undefined, progress: undefined, savedAudio: true })
+          for (const clip of clips) {
+            if (!isCurrent()) return
+            await audio.play(clip.pcm, clip.sampleRate, abort.signal)
+          }
+          finish()
+          return
+        }
+        const backend = await loadHeart()
         if (!isCurrent()) return
         if (!backend.supported()) throw new Error('This voice is unavailable in this browser.')
         await backend.play(request, abort.signal, report)
@@ -103,4 +120,5 @@ export const speechController = createSpeechController(
   createBrowserSpeech(),
   async () => (await import('./heartVoice')).createHeartVoice(audioPlayback),
   audioPlayback,
+  readVoiceClip,
 )

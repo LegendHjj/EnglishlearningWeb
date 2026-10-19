@@ -1,6 +1,18 @@
 # Fluency Reset — Project Context and Handoff
 
-Last updated: 2026-10-18
+Last updated: 2026-10-19
+
+## Prepared Heart audio packs (delivery generation in progress)
+
+User requested the complete pre-generated Heart sample library, companion optional content JSONs, and a Settings voice-pack importer. Implementation is on `codex/heart-voice-pack`, branched from a clean `mainbranch`; no deployment has been made for this feature. Design and plan: `docs/superpowers/specs/2026-10-19-heart-voice-pack-design.md` and `docs/superpowers/plans/2026-10-19-heart-voice-pack.md`.
+
+Settings → Offline Heart audio previews/imports ZIP_STORED version-1 packs. A separate `fluency-reset-voice-packs` IndexedDB bank stages validated/checksummed mono PCM16 24 kHz WAV files in byte-bounded batches, then atomically publishes the installation. Web Locks serialize imports across tabs and permit recovery of abandoned staging on retry. Cancellation, invalid ZIP/WAV/checksum and storage failures preserve prior installed audio and learner data. Companion lesson JSONs use the existing explicit content merge importer. Sample audio is excluded from recording backups, practice counts and the microphone-recording store.
+
+The shared speech controller tries matching text/rate audio before loading live Heart. Saved playback retains owner/Stop/microphone protections and shows “saved audio”; browser voice selection remains authoritative. Missing/edited text uses live Heart. No backend, account, paid API, learner-text upload, or new runtime dependency was introduced.
+
+`npm run generate:voice-pack -- "D:\Coding\Others\EnglishVoicePack"` extracts 4,076 distinct requests across bundled Listen inputs, built-in vocabulary recap and promoted collocation fields, all three optional JSON packs, individual models/examples/challenges and existing slow chunk playback. It resumes checksum-verified clips and exact sentence segments. Initial q8 clips and genuine FP32 inference use the same immutable Kokoro revision and af_heart voice; dtype and pinned voice checksum are recorded. The active faster local generator uses `--openvino`, with a bounded CPU primitive cache to prevent dynamic-shape memory growth. Its optional Python packages remain isolated in the output folder, outside the app dependencies. Long inputs have truncation disabled and a splitting guard. The final ZIP is created only after independent Python validation confirms full coverage and all WAV hashes. Generation is computationally intensive on this laptop; do not start a second generator in the same folder. While in progress, see `generation-progress.log` and the incremental manifest. The folder also contains the three companion JSONs; final archive is `Heart-complete-practice-library.zip` when complete.
+
+Verification so far: all 39 test files / 149 tests passed after independent review fixes; Python packaging checks 3/3 passed; typecheck and production build passed. A real Chrome browser imported a generated 36-clip subset at 1440×1000 and 390×844, retained it across reload, played through Web Audio with zero Heart workers or external requests, stopped correctly, rejected invalid ZIP without disturbing installation, handled another tab's import lock, and preserved an existing memo, test recording in IndexedDB and unsaved Settings name. No console errors, framework overlay or horizontal overflow. QA files are outside Git in the output folder's `qa/` subdirectory. Full-archive verification and delivery completion must be recorded after generation finishes. No human audio-quality listening judgment is claimed; real microphone hardware was not exercised for this change.
 
 ## GitHub Pages publishing branch
 

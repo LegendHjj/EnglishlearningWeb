@@ -9,3 +9,8 @@
 .heart-preview p { margin:0 0 .65rem; }
 @media(max-width:760px) { .voice-status-page { left:.75rem; right:.75rem; bottom:calc(70px + env(safe-area-inset-bottom, 0px)); max-width:none; } }
 @media(max-width:640px) { .voice-status { align-items:flex-start; flex-direction:column; } .voice-status-actions { width:100%; } .voice-status-actions button { min-height:44px; } }
+.voice-pack-installed{display:flex;flex-direction:column;gap:.35rem;margin:1rem 0;overflow-wrap:anywhere}
+.voice-pack-installed span{color:var(--muted);font-size:.875rem}
+.voice-pack-preview{margin-top:1rem;padding:1rem;border:1px solid var(--green);border-radius:12px;background:var(--sage,#edf3ee);overflow-wrap:anywhere}
+.voice-pack-progress{display:grid;gap:.65rem;margin-top:1rem}
+.voice-pack-progress progress{width:100%;accent-color:var(--green)}

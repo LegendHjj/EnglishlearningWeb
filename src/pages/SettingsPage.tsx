@@ -7,6 +7,7 @@ import { useSpeech } from '../hooks/useSpeech'
 import { speechController } from '../services/speechController'
 import { clearRecordings } from '../services/recordingDb'
 import PracticePackSettings from '../features/practicePacks/PracticePackSettings'
+import VoicePackSettings from '../features/speech/VoicePackSettings'
 import { exportBackup, exportState, importBackup, importState, resetState } from '../services/storage'
 import type { Goal, UserPreferences, VoiceGender } from '../types'
 
@@ -31,7 +32,6 @@ export default function SettingsPage() {
   const [message, setMessage] = useState('')
   const [voices, setVoices] = useState<string[]>([])
   const [showAdvanced, setShowAdvanced] = useState(false)
-  const [heartPreviewed, setHeartPreviewed] = useState(false)
   const progressFile = useRef<HTMLInputElement>(null)
   const completeFile = useRef<HTMLInputElement>(null)
   const voicePreferenceUpdate = useRef<UserPreferences | null>(null)
@@ -159,9 +159,9 @@ export default function SettingsPage() {
             </div>
             <p className="muted">Voice choices save automatically and apply to all Listen buttons in this app.</p>
             {form.speechEngine === 'heart' && <div className="heart-preview">
-              <p>Download the voice once to try it. The main model is about 92 MB, plus supporting files. Your text is processed on this device. Downloading and preparing the voice can take a while.</p>
+              <p>Imported audio plays first when available. Other text uses the local Heart model: about 92 MB plus supporting files, downloaded on first use. Preparing new speech can take a while.</p>
               <p className="muted">Preview: “My weekend was pretty relaxed. I had lunch with my family, and the best part was having time to talk without rushing.”</p>
-              <Button variant="secondary" disabled={speaking} onClick={() => { setHeartPreviewed(true); speak('My weekend was pretty relaxed. I had lunch with my family, and the best part was having time to talk without rushing.') }}>{heartPreviewed ? 'Preview Heart' : 'Download & preview Heart'}</Button>
+              <Button variant="secondary" disabled={speaking} onClick={() => speak('My weekend was pretty relaxed. I had lunch with my family, and the best part was having time to talk without rushing.')}>Preview Heart</Button>
             </div>}
             {form.speechEngine !== 'heart' && <>
             <Button
@@ -199,6 +199,7 @@ export default function SettingsPage() {
 
       <div className="list">
         <PracticePackSettings/>
+        <VoicePackSettings onUseHeart={() => chooseVoice({ speechEngine: 'heart' })}/>
         <Card>
           <ShieldCheck color="var(--green)" />
           <h3>Export progress and library</h3>
@@ -217,7 +218,7 @@ export default function SettingsPage() {
         <Card>
           <ShieldCheck color="var(--coral)" />
           <h3>Export complete backup</h3>
-          <p className="muted">Includes everything above plus IndexedDB recording audio encoded in the JSON file. This file may be large.</p>
+          <p className="muted">Includes preferences, progress, library and microphone recordings in one JSON file. Keep your prepared voice pack ZIP separately; it is not included.</p>
           <div className="detail-actions">
             <Button variant="secondary" onClick={exportComplete}><Download size={16} /> Export complete backup</Button>
             <Button variant="secondary" onClick={() => completeFile.current?.click()}><FileUp size={16} /> Import complete backup</Button>

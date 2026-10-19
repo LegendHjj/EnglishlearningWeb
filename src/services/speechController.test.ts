@@ -76,6 +76,53 @@ test('activation failure reports promptly while the lazy engine import is pendin
   expect(controller.getSnapshot().error).toBe('Audio is blocked')
 })
 
+test('installed Heart clips play in order without loading the live model', async () => {
+  const { browser, heart, audio } = setup()
+  const factory = vi.fn(async () => heart)
+  const first = new Float32Array([.2, -.2]), second = new Float32Array([.4, -.4])
+  const controller = createSpeechController(browser, factory, audio, async text => ({ pcm: text === 'Hello' ? first : second, sampleRate: 24000 }))
+  controller.speak({ ...request('saved', 'heart'), items: ['Hello', 'Goodbye'] })
+  await vi.waitFor(() => expect(controller.getSnapshot().phase).toBe('idle'))
+  expect(audio.play).toHaveBeenNthCalledWith(1, first, 24000, expect.any(AbortSignal))
+  expect(audio.play).toHaveBeenNthCalledWith(2, second, 24000, expect.any(AbortSignal))
+  expect(factory).not.toHaveBeenCalled()
+})
+
+test('missing imported audio uses live Heart and browser choice never checks the pack', async () => {
+  const { browser, heart, audio } = setup(), lookup = vi.fn(async () => undefined)
+  const controller = createSpeechController(browser, async () => heart, audio, lookup)
+  controller.speak(request('browser'))
+  expect(lookup).not.toHaveBeenCalled()
+  controller.speak(request('live', 'heart'))
+  await vi.waitFor(() => expect(heart.play).toHaveBeenCalledOnce())
+  expect(lookup).toHaveBeenCalledWith('Hello', 1)
+})
+
+test('late pack lookup cannot play or load Heart after Stop or a microphone lock', async () => {
+  const { browser, heart, audio } = setup(), pending = deferred(), factory = vi.fn(async () => heart)
+  const controller = createSpeechController(browser, factory, audio, async () => { await pending.promise; return { pcm: new Float32Array([.2]), sampleRate: 24000 } })
+  controller.speak(request('saved', 'heart'))
+  const release = controller.acquireMicrophone('recorder')
+  pending.resolve()
+  await new Promise(resolve => setTimeout(resolve, 0))
+  expect(audio.play).not.toHaveBeenCalled()
+  expect(factory).not.toHaveBeenCalled()
+  expect(controller.getSnapshot().phase).toBe('idle')
+  release()
+})
+
+test('Stop between saved clips prevents the rest of the sequence', async () => {
+  const { browser, heart, audio } = setup(), playing = deferred()
+  vi.mocked(audio.play).mockImplementation(() => playing.promise)
+  const controller = createSpeechController(browser, async () => heart, audio, async () => ({ pcm: new Float32Array([.2]), sampleRate: 24000 }))
+  controller.speak({ ...request('saved', 'heart'), items: ['Hello', 'Goodbye'] })
+  await vi.waitFor(() => expect(audio.play).toHaveBeenCalledOnce())
+  controller.stop(); playing.resolve()
+  await new Promise(resolve => setTimeout(resolve, 0))
+  expect(audio.play).toHaveBeenCalledOnce()
+  expect(controller.getSnapshot().phase).toBe('idle')
+})
+
 test('unrelated owner cleanup leaves the active request alone', () => {
   const { controller } = setup()
   controller.speak(request('A'))

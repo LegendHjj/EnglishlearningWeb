@@ -11,6 +11,8 @@
     "preview": "vite preview --base /EnglishlearningWeb/",
     "typecheck": "tsc -b --pretty false",
     "test": "vitest",
+    "test:voice-pack": "vitest run scripts/voice-pack.test.mjs",
+    "generate:voice-pack": "node scripts/voice-pack-generate.mjs",
     "lint": "eslint ."
   },
   "dependencies": {

@@ -39,6 +39,6 @@ test('saving Heart does not download it', () => {
   expect(speechController.getSnapshot().phase).toBe('idle')
   fireEvent.click(screen.getByRole('button', { name: 'Save changes' }))
   expect(loadState().preferences.speechEngine).toBe('heart')
-  expect(screen.getByRole('button', { name: 'Download & preview Heart' })).toBeInTheDocument()
+  expect(screen.getByRole('button', { name: 'Preview Heart' })).toBeInTheDocument()
   expect(speechController.getSnapshot().phase).toBe('idle')
 })
